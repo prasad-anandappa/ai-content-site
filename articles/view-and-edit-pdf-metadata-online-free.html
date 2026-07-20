@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 10 View And Edit Pdf Metadata Online Free You Need to Know About | Free Online PDF Tool</title>
-    <meta name="description" content="This is a self-contained HTML document that creates an interactive tool for viewing and editing PDF metadata online. It combines a practical editor interface">
+    <title>Why View And Edit Pdf Metadata Online Free Matters More Than Ever | Free Online PDF Tool</title>
+    <meta name="description" content="Here is the interactive HTML tool page for viewing and editing PDF metadata online. It includes a clean, functional interface for uploading a PDF, examining">
     <meta name="keywords" content="View and edit PDF metadata online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Top 10 View And Edit Pdf Metadata Online Free You Need to Know About</h1>
+        <h1>Why View And Edit Pdf Metadata Online Free Matters More Than Ever</h1>
         <p>Free Online PDF Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,238 +128,267 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a self-contained HTML document that creates an interactive tool for viewing and editing PDF metadata online. It combines a practical editor interface with a comprehensive guide.
+            Here is the interactive HTML tool page for viewing and editing PDF metadata online. It includes a clean, functional interface for uploading a PDF, examining its metadata, and downloading a modified version.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF Metadata Editor · View & edit PDF metadata online free</title>
-  <meta name="description" content="Free online tool to view and edit PDF metadata: title, author, subject, keywords, creator, producer, dates. No uploads, instant editing.">
+  <title>PDF Metadata · view & edit online free</title>
+  <!-- Font & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
     body {
-      background: linear-gradient(145deg, #f6f9fc 0%, #e9f0f5 100%);
       font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      background: #f5f7fc;
+      color: #1e293b;
+      line-height: 1.6;
       padding: 2rem 1rem;
-      color: #1e2a3a;
-      line-height: 1.5;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
-      background: rgba(255,255,255,0.75);
-      backdrop-filter: blur(2px);
-      border-radius: 48px;
-      padding: 2rem 2rem 3rem;
-      box-shadow: 0 20px 40px -12px rgba(0,20,30,0.25);
-      border: 1px solid rgba(255,255,255,0.5);
     }
-    h1 {
+    /* header */
+    .tool-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .tool-header h1 {
       font-size: 2.4rem;
       font-weight: 600;
       letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #0b2b44, #1d4e6e);
+      background: linear-gradient(145deg, #0f2b4b, #1e4a6f);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.5rem;
     }
-    .subhead {
-      font-size: 1.1rem;
-      color: #2c4a62;
-      margin-bottom: 1.5rem;
-      border-left: 4px solid #3b7a9e;
-      padding-left: 1rem;
-      font-weight: 400;
+    .tool-header p {
+      font-size: 1.2rem;
+      color: #475569;
+      max-width: 650px;
+      margin: 0 auto;
     }
-    .tool-grid {
+    .keyword-badge {
+      display: inline-block;
+      background: #e6edf6;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      color: #1e4a6f;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      border: 1px solid #b9d0e7;
+    }
+
+    /* main card */
+    .card {
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 20px 40px -12px rgba(0, 20, 40, 0.25);
+      padding: 2rem 2.2rem;
+      margin-bottom: 3rem;
+      transition: box-shadow 0.2s;
+    }
+
+    /* upload zone */
+    .upload-area {
+      border: 2px dashed #b9d0e7;
+      border-radius: 28px;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      background: #fafcff;
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+    .upload-area:hover {
+      background: #f0f6fe;
+      border-color: #3b7bb7;
+    }
+    .upload-area i {
+      font-size: 3.4rem;
+      color: #2a5f8a;
+      margin-bottom: 0.5rem;
+    }
+    .upload-area h3 {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: #0f2b4b;
+    }
+    .upload-area p {
+      color: #5f6c80;
+      font-size: 0.95rem;
+    }
+    #fileInput {
+      display: none;
+    }
+
+    /* metadata form */
+    .meta-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin: 2.5rem 0 2rem;
+      gap: 1.5rem 2rem;
+      margin: 2rem 0 1.5rem;
     }
-    @media (max-width: 720px) {
-      .tool-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      .container { padding: 1.5rem; }
-      h1 { font-size: 1.9rem; }
-    }
-    .editor-panel {
-      background: white;
-      border-radius: 28px;
-      padding: 1.6rem 1.8rem;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
-      border: 1px solid #eef5fa;
-    }
-    .editor-panel h2 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #0b2b44;
+    .meta-field {
       display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1.2rem;
+      flex-direction: column;
     }
-    .field-group {
-      margin-bottom: 1rem;
-    }
-    .field-group label {
-      display: block;
-      font-size: 0.8rem;
+    .meta-field label {
       font-weight: 600;
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.03em;
-      color: #2d5a7a;
-      margin-bottom: 0.2rem;
+      color: #3e5a76;
+      margin-bottom: 0.3rem;
     }
-    .field-group input, .field-group textarea {
-      width: 100%;
-      padding: 0.6rem 0.9rem;
-      border: 1px solid #d6e2ed;
+    .meta-field input, .meta-field textarea {
+      background: #f8faff;
+      border: 1px solid #dce5ef;
       border-radius: 16px;
+      padding: 0.75rem 1rem;
       font-size: 0.95rem;
-      background: #fafdff;
       transition: 0.2s;
       font-family: inherit;
     }
-    .field-group input:focus, .field-group textarea:focus {
+    .meta-field input:focus, .meta-field textarea:focus {
       outline: none;
-      border-color: #1d6f96;
-      box-shadow: 0 0 0 3px rgba(29, 111, 150, 0.15);
+      border-color: #2a6b9e;
+      box-shadow: 0 0 0 3px rgba(42, 107, 158, 0.2);
       background: white;
     }
-    .field-group textarea {
-      min-height: 60px;
+    .meta-field textarea {
       resize: vertical;
+      min-height: 60px;
     }
-    .readonly-field input {
-      background: #f0f5fa;
-      color: #1b3b4e;
-      font-weight: 500;
+    .full-width {
+      grid-column: span 2;
     }
-    .action-buttons {
+
+    /* action buttons */
+    .action-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 1.6rem;
+      gap: 1rem;
+      justify-content: flex-end;
+      border-top: 1px solid #e6edf6;
+      padding-top: 1.8rem;
+      margin-top: 0.5rem;
     }
     .btn {
-      background: white;
-      border: 1px solid #cbdae8;
-      padding: 0.6rem 1.5rem;
-      border-radius: 40px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: #1d4e6e;
-      cursor: pointer;
-      transition: all 0.15s;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 0.5rem;
+      background: white;
+      border: 1px solid #cbdae9;
+      padding: 0.7rem 1.6rem;
+      border-radius: 60px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #1e3a5a;
+      transition: all 0.2s;
+      cursor: pointer;
       background: #f9fcff;
     }
     .btn-primary {
-      background: #1d4e6e;
-      border-color: #1d4e6e;
+      background: #1a4b77;
+      border: 1px solid #1a4b77;
       color: white;
-      box-shadow: 0 4px 8px rgba(0,40,60,0.1);
+      box-shadow: 0 4px 8px rgba(26, 75, 119, 0.15);
     }
     .btn-primary:hover {
-      background: #0f3c57;
-      transform: scale(0.98);
+      background: #0f3b5f;
+      border-color: #0f3b5f;
+      transform: scale(1.02);
+    }
+    .btn-primary i {
+      color: white;
     }
     .btn-outline:hover {
-      background: #e5eff7;
-      border-color: #7fa9c7;
+      background: #eaf1fa;
+      border-color: #8aafcf;
     }
-    .preview-box {
-      background: #f2f8fe;
-      border-radius: 20px;
-      padding: 1rem 1.4rem;
-      margin-top: 1.5rem;
-      border: 1px dashed #b8d0e3;
+    .btn:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      filter: grayscale(0.2);
     }
-    .preview-box p {
-      font-size: 0.85rem;
-      color: #1f4a64;
-      margin-bottom: 0.3rem;
-      word-break: break-word;
+    .file-info {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: #eef5fc;
+      border-radius: 40px;
+      padding: 0.3rem 1.2rem 0.3rem 1rem;
+      margin: 1rem 0 0.5rem;
+      font-size: 0.9rem;
+      color: #1f486b;
     }
-    .preview-box strong {
-      color: #0b2b44;
+    .file-info i {
+      color: #2a5f8a;
     }
+    #fileStatus {
+      margin-top: 0.5rem;
+    }
+
+    /* article section */
     .article-content {
-      margin-top: 3rem;
-      border-top: 2px solid rgba(59, 122, 158, 0.15);
-      padding-top: 2rem;
+      margin: 3rem 0 1.5rem;
     }
     .article-content h2 {
       font-size: 1.8rem;
       font-weight: 600;
-      color: #0b2b44;
+      color: #0f2b4b;
       margin: 2rem 0 0.8rem;
+      border-left: 5px solid #1e4a6f;
+      padding-left: 1rem;
     }
     .article-content h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      color: #1d4e6e;
-      margin: 1.6rem 0 0.4rem;
+      color: #1a3d5c;
+      margin: 1.5rem 0 0.5rem;
     }
     .article-content p {
-      margin-bottom: 1rem;
-      color: #1e3342;
+      margin-bottom: 1.2rem;
+      color: #1f2a3f;
     }
     .article-content ul {
-      margin: 0.8rem 0 1.2rem 1.5rem;
+      margin: 0.8rem 0 1.5rem 1.5rem;
     }
     .article-content li {
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.4rem;
     }
-    .callout {
-      background: #e1eff9;
-      border-radius: 24px;
-      padding: 1.2rem 1.8rem;
-      margin: 1.5rem 0;
-      border-left: 6px solid #1d6f96;
+    .highlight-box {
+      background: #f0f6fe;
+      border-radius: 20px;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      border-left: 6px solid #1e4a6f;
     }
     .footer-note {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #3d637b;
       text-align: center;
+      margin-top: 3rem;
+      color: #5e6f86;
+      font-size: 0.9rem;
     }
-    .badge {
-      background: #d4e3f0;
-      padding: 0.2rem 0.8rem;
-      border-radius: 40px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: #144a66;
-      letter-spacing: 0.02em;
+    .footer-note i {
+      color: #2a5f8a;
     }
-  </style>
-</head>
-<body>
-<div class="container">
-  <h1>📄 PDF Metadata · View & edit online free</h1>
-  <div class="subhead">Read, modify, and export metadata — title, author, subject, keywords & more. No uploads, all in your browser.</div>
-
-  <!-- interactive tool -->
-  <div class="tool-grid">
-    <!-- left: editor -->
-    <div class="editor-panel">
-      <h2><span>✏️</span> Edit metadata</h2>
-      <div class="field-group">
-        <label for="title">Title</label>
-        <input type="text" id="title" placeholder="Document title" value="Annual Report 2025">
-      </div>
-      <div class="field-group">
-
+    @media (max-width: 700px) {
+      .meta-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .full-width {
+        grid-column: span 
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

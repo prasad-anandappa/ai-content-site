@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Convert Json To Yaml Online Free Matters More Than Ever | Free Online DEV Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for converting JSON to YAML online. It includes a dual-pane editor with live conversion, sample data, and a">
+    <meta name="description" content="Here is the interactive HTML tool page for converting JSON to YAML online. It includes a clean, dual-pane editor with a "Convert" button, sample data, and a">
     <meta name="keywords" content="Convert JSON to YAML online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,272 +128,271 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for converting JSON to YAML online. It includes a dual-pane editor with live conversion, sample data, and a comprehensive guide.
+            Here is the interactive HTML tool page for converting JSON to YAML online. It includes a clean, dual-pane editor with a "Convert" button, sample data, and a copy-to-clipboard feature.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON to YAML · online free converter</title>
-    <meta name="description" content="Convert JSON to YAML online free. Fast, accurate, no uploads. Paste JSON, copy YAML. Developer tool with live preview and syntax highlight.">
+    <title>JSON to YAML · free online converter</title>
+    <meta name="description" content="Convert JSON to YAML online free — fast, secure, no ads. Paste JSON, get YAML instantly. Developer tool with live preview.">
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
         body {
-            background: #f5f7fb;
+            background: #f6f9fc;
             font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            padding: 2rem 1.5rem;
-            color: #1e293b;
-            line-height: 1.6;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #1a2634;
         }
+
         .container {
-            max-width: 1400px;
-            margin: 0 auto;
+            max-width: 1300px;
+            width: 100%;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
+            padding: 2rem 2rem 2.5rem;
+            transition: box-shadow 0.2s;
         }
+
         h1 {
-            font-size: 2.4rem;
-            font-weight: 600;
-            letter-spacing: -0.02em;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            flex-wrap: wrap;
+            font-weight: 600;
+            font-size: 1.9rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+            color: #0b1a2a;
         }
         h1 small {
             font-size: 1rem;
             font-weight: 400;
-            background: #e9edf5;
-            padding: 0.2rem 1rem;
+            color: #4b6a8b;
+            margin-left: 0.75rem;
+            background: #eef3f8;
+            padding: 0.2rem 0.9rem;
             border-radius: 40px;
-            color: #2563eb;
         }
         .subhead {
-            color: #475569;
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-            border-left: 4px solid #2563eb;
+            color: #3a5470;
+            margin-bottom: 1.8rem;
+            font-size: 1rem;
+            border-left: 4px solid #2d7aff;
             padding-left: 1rem;
+            background: #f0f5fe;
+            border-radius: 0 12px 12px 0;
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
         }
+
         .tool-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.8rem;
-            background: white;
-            padding: 2rem;
-            border-radius: 28px;
-            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
-            margin-bottom: 2.5rem;
+            margin: 1.5rem 0 1.2rem;
         }
-        @media (max-width: 800px) {
+
+        @media (max-width: 700px) {
             .tool-grid {
                 grid-template-columns: 1fr;
-                padding: 1.2rem;
+                gap: 1.5rem;
             }
-            body { padding: 1rem; }
-            h1 { font-size: 2rem; }
+            .container {
+                padding: 1.5rem;
+            }
         }
-        .editor-panel {
-            display: flex;
-            flex-direction: column;
+
+        .panel {
+            background: #fafcff;
+            border-radius: 20px;
+            border: 1px solid #e2eaf2;
+            overflow: hidden;
         }
+
         .panel-header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: 0.6rem;
+            justify-content: space-between;
+            padding: 0.9rem 1.2rem;
+            background: #f2f7fd;
+            border-bottom: 1px solid #dde6ef;
+            font-weight: 500;
+            color: #1d334a;
         }
-        .panel-header label {
-            font-weight: 600;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-            color: #334155;
+
+        .panel-header .label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         .panel-header .badge {
-            background: #eef2ff;
-            padding: 0.2rem 0.8rem;
+            background: #d4e2f0;
+            padding: 0.2rem 0.7rem;
             border-radius: 30px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 500;
-            color: #4338ca;
+            letter-spacing: 0.3px;
+            color: #1d3d5c;
         }
+
         textarea {
             width: 100%;
-            height: 340px;
-            padding: 1rem;
-            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            height: 320px;
+            border: none;
+            padding: 1.2rem 1.2rem;
+            font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
             font-size: 0.9rem;
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
+            background: #ffffff;
+            color: #1d2b3a;
             resize: vertical;
-            transition: 0.2s;
             line-height: 1.5;
             tab-size: 2;
-            color: #0f172a;
         }
         textarea:focus {
-            outline: none;
-            border-color: #2563eb;
-            box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
-            background: white;
+            outline: 2px solid #2d7aff;
+            outline-offset: -2px;
+            background: #fcfdff;
         }
-        .yaml-output {
-            background: #f1f5f9;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            padding: 1rem;
-            height: 340px;
-            overflow: auto;
-            white-space: pre-wrap;
-            word-break: break-word;
-            font-family: 'JetBrains Mono', 'Fira Code', monospace;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            color: #0f172a;
-        }
-        .yaml-output .empty-placeholder {
-            color: #94a3b8;
+        textarea::placeholder {
+            color: #9ab0c7;
             font-style: italic;
         }
+
+        .yaml-panel textarea {
+            background: #f8fafd;
+            color: #1f2e40;
+        }
+
         .action-bar {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.8rem;
-            margin: 1.2rem 0 0.4rem;
             align-items: center;
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+            padding: 0.8rem 0 0.2rem;
         }
+
         .btn {
-            background: white;
-            border: 1px solid #cbd5e1;
-            padding: 0.5rem 1.2rem;
-            border-radius: 40px;
+            background: #ffffff;
+            border: 1px solid #cbdae7;
+            padding: 0.6rem 1.4rem;
+            border-radius: 60px;
             font-weight: 500;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
+            color: #1a2d42;
             cursor: pointer;
-            transition: 0.15s;
+            transition: all 0.15s;
             display: inline-flex;
             align-items: center;
-            gap: 0.3rem;
-            color: #1e293b;
+            gap: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
         }
         .btn-primary {
-            background: #2563eb;
-            border-color: #2563eb;
+            background: #1d4ed8;
+            border-color: #1d4ed8;
             color: white;
-            box-shadow: 0 4px 8px rgba(37,99,235,0.2);
+            box-shadow: 0 4px 8px rgba(29,78,216,0.2);
         }
         .btn-primary:hover {
-            background: #1d4ed8;
-            transform: scale(1.02);
+            background: #1a3fbb;
+            transform: scale(0.97);
+            box-shadow: 0 6px 12px rgba(29,78,216,0.25);
         }
         .btn-outline {
             background: transparent;
+            border-color: #b6cbdf;
         }
         .btn-outline:hover {
-            background: #f1f5f9;
+            background: #eaf1fa;
+            border-color: #8dafcf;
         }
-        .btn-copy {
-            background: #f0fdf4;
-            border-color: #86efac;
-            color: #166534;
+        .btn-success {
+            background: #0f973d;
+            border-color: #0f973d;
+            color: white;
         }
-        .btn-copy:hover {
-            background: #dcfce7;
+        .btn-success:hover {
+            background: #0d7e33;
         }
-        .btn-danger {
-            color: #b91c1c;
-            border-color: #fca5a5;
-        }
-        .btn-danger:hover {
-            background: #fee2e2;
-        }
-        .error-msg {
-            color: #b91c1c;
-            background: #fee2e2;
-            padding: 0.6rem 1rem;
-            border-radius: 40px;
+
+        .status-msg {
+            margin-left: auto;
             font-size: 0.85rem;
-            margin: 0.5rem 0;
+            color: #386581;
+            background: #e6f0f9;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
             display: inline-block;
         }
-        .status-bar {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.8rem;
-            color: #64748b;
-            margin-top: 0.3rem;
-        }
-        hr {
-            margin: 2rem 0;
-            border: 0;
-            height: 1px;
-            background: #e2e8f0;
-        }
-        /* article styles */
-        .article {
-            background: white;
-            padding: 2.5rem 2rem;
-            border-radius: 28px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
-            max-width: 900px;
-        }
-        .article h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin: 2rem 0 1rem;
-            letter-spacing: -0.01em;
-        }
-        .article h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.8rem 0 0.8rem;
-            color: #1e293b;
-        }
-        .article p {
-            margin-bottom: 1rem;
-            color: #334155;
-        }
-        .article ul {
-            margin: 0.8rem 0 1.5rem 1.2rem;
-        }
-        .article li {
-            margin-bottom: 0.4rem;
-        }
-        .article .highlight {
-            background: #eef2ff;
-            padding: 0.1rem 0.4rem;
-            border-radius: 8px;
-            font-family: monospace;
-        }
-        .cta-box {
-            background: #f8fafc;
-            border-radius: 24px;
-            padding: 2rem;
-            margin-top: 2rem;
-            border-left: 6px solid #2563eb;
-        }
-        .footer-note {
-            text-align: center;
-            margin-top: 2rem;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-        .inline-code {
-            background: #f1f5f9;
-            padding: 0.1rem 0.5rem;
-            border-radius: 8px;
-            font-family: monospace;
-            font-size: 0.9em;
-        }
-    </style>
-</head>
-<body>
 
+        .footer-links {
+            margin-top: 2rem;
+            border-top: 1px solid #e2ecf5;
+            padding-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sample-badge {
+            background: #eaf1fa;
+            border-radius: 40px;
+            padding: 0.2rem 0.8rem;
+            font-size: 0.8rem;
+            color: #1f4a72;
+        }
+
+        /* article styles */
+        .article-section {
+            margin-top: 3.2rem;
+            background: #fafdff;
+            border-radius: 28px;
+            padding: 1.8rem 2rem 2rem;
+            border: 1px solid #e3edf6;
+        }
+        .article-section h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 1.4rem 0 0.8rem;
+            color: #0c2238;
+        }
+        .article-section h2:first-of-type {
+            margin-top: 0.2rem;
+        }
+        .article-section h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.6rem 0 0.4rem;
+            color: #1a3e5c;
+        }
+        .article-section p {
+            line-height: 1.6;
+            margin: 0.8rem 0;
+            color: #1f344b;
+        }
+        .article-section ul {
+            margin: 0.6rem 0 1rem 1.2rem;
+        }
+        .article-section li {
+            margin: 0.4rem 0;
+            line-height: 1.5;
+        }
+        .article-section .highlight {
+            background: #eef5ff;
+            padding: 0.8rem 1.5rem;
+           
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

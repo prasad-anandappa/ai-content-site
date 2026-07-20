@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Best Crop Photos Online Free With Custom Dimensions Solutions Compared | Free Online IMAGE Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Photo Cropper" tool. It allows you to upload an image, crop it using custom dimensions,">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Photo Cropper" tool. It allows you to upload an image, set custom crop dimensions, and">
     <meta name="keywords" content="Crop photos online free with custom dimensions">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,7 +128,7 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive "Photo Cropper" tool. It allows you to upload an image, crop it using custom dimensions, and download the result. The page also includes a detailed, SEO-optimized article about the benefits and techniques of online photo cropping.
+            This is a complete, self-contained HTML document for an interactive "Photo Cropper" tool. It allows you to upload an image, set custom crop dimensions, and preview the result before downloading.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -136,166 +136,135 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
   <title>Photo Cropper · Crop photos online free with custom dimensions</title>
-  <meta name="description" content="Crop photos online free with custom dimensions. Interactive tool, instant preview, and high‑quality download. Learn tips & techniques.">
+  <!-- Font & minimal reset -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #f4f7fc;
-      color: #1e2b3c;
-      padding: 1.5rem 1rem;
-      line-height: 1.6;
+      background: #f3f7fc;
+      font-family: 'Inter', -apple-system, system-ui, sans-serif;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+      color: #1e293b;
     }
     .container {
       max-width: 1200px;
       margin: 0 auto;
       background: white;
       border-radius: 2rem;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-      padding: 2rem 1.5rem;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
+      padding: 2rem 1.8rem;
     }
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
+    @media (min-width: 700px) {
+      .container { padding: 3rem 3rem; }
     }
-    h1 small {
-      font-size: 1rem;
-      font-weight: 400;
-      color: #4a6a85;
-      background: #e6edf5;
-      padding: 0.2rem 1rem;
-      border-radius: 40px;
-    }
-    .subhead {
-      color: #2c4b6b;
-      margin-bottom: 1.8rem;
-      border-left: 4px solid #3b82f6;
-      padding-left: 1rem;
-      font-size: 1.1rem;
-    }
+    /* tool area */
     .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      background: #f9fbfe;
-      border-radius: 1.8rem;
-      padding: 1.8rem;
-      margin-bottom: 2.5rem;
-      border: 1px solid #e2ebf3;
-    }
-    @media (max-width: 720px) {
-      .tool-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      h1 { font-size: 1.8rem; }
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin: 2rem 0 1.5rem;
+      align-items: flex-start;
     }
     .upload-area {
-      background: #ffffff;
+      flex: 1 1 280px;
+      min-width: 240px;
+    }
+    .preview-area {
+      flex: 2 1 400px;
+      min-width: 280px;
+    }
+    .upload-box {
+      background: #f8fafc;
+      border: 2px dashed #cbd5e1;
       border-radius: 1.5rem;
-      padding: 1.5rem 1rem;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-      border: 2px dashed #b8cbd9;
-      transition: 0.25s;
-    }
-    .upload-area:hover {
-      border-color: #3b82f6;
-      background: #f2f8ff;
-    }
-    .upload-label {
-      display: inline-block;
-      background: #1e3a5f;
-      color: white;
-      font-weight: 600;
-      padding: 0.8rem 2rem;
-      border-radius: 60px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: 0.2s;
-      border: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .upload-label:hover {
-      background: #16324d;
-      transform: scale(1.01);
-    }
-    #imageInput {
-      display: none;
-    }
-    .preview-box {
-      margin-top: 1.2rem;
-      min-height: 180px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .preview-box img {
-      max-width: 100%;
-      max-height: 260px;
-      border-radius: 1rem;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-      object-fit: contain;
-      background: #f0f4fa;
-    }
-    .placeholder {
-      color: #7a8b9f;
-      background: #eef3f9;
       padding: 2rem 1rem;
-      border-radius: 1.5rem;
-      width: 100%;
-      font-weight: 450;
+      text-align: center;
+      transition: 0.2s;
+      cursor: pointer;
     }
-    .controls {
-      background: white;
-      border-radius: 1.5rem;
-      padding: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    .upload-box:hover {
+      border-color: #3b82f6;
+      background: #f1f5fe;
+    }
+    .upload-box.dragover {
+      border-color: #2563eb;
+      background: #e9f0ff;
+    }
+    .upload-box svg {
+      width: 48px;
+      height: 48px;
+      stroke: #64748b;
+      margin-bottom: 0.5rem;
+    }
+    .upload-box p { font-weight: 500; color: #334155; }
+    .upload-box .small { font-size: 0.85rem; color: #64748b; margin-top: 0.3rem; }
+    #fileInput { display: none; }
+
+    /* controls */
+    .crop-controls {
+      background: #f1f5f9;
+      border-radius: 1.25rem;
+      padding: 1.5rem 1.2rem;
+      margin-top: 1.5rem;
     }
     .dimension-row {
       display: flex;
-      gap: 1rem;
       flex-wrap: wrap;
-      margin-bottom: 1.2rem;
+      gap: 0.8rem 1.2rem;
+      align-items: center;
+      margin-bottom: 1rem;
     }
-    .dimension-group {
-      flex: 1;
-      min-width: 100px;
+    .dimension-row label {
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
     }
-    .dimension-group label {
-      display: block;
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: #1f3a54;
-      margin-bottom: 0.3rem;
-    }
-    .dimension-group input {
-      width: 100%;
-      padding: 0.7rem 0.8rem;
-      border: 1px solid #ccdbe9;
-      border-radius: 30px;
-      font-size: 1rem;
-      background: #f8fafc;
-      transition: 0.15s;
-    }
-    .dimension-group input:focus {
-      border-color: #3b82f6;
-      outline: none;
+    .dimension-row input {
+      width: 80px;
+      padding: 0.5rem 0.6rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 0.75rem;
+      font-weight: 500;
+      text-align: center;
       background: white;
-      box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+      font-size: 0.95rem;
     }
-    .action-group {
+    .dimension-row input:focus {
+      outline: 2px solid #3b82f6;
+      border-color: transparent;
+    }
+    .unit-toggle {
+      display: flex;
+      gap: 0.3rem;
+      background: #e2e8f0;
+      padding: 0.2rem;
+      border-radius: 2rem;
+    }
+    .unit-btn {
+      background: transparent;
+      border: none;
+      padding: 0.3rem 0.9rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: #475569;
+      transition: 0.1s;
+    }
+    .unit-btn.active {
+      background: white;
+      color: #0f172a;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .action-row {
       display: flex;
       flex-wrap: wrap;
       gap: 0.8rem;
@@ -303,79 +272,93 @@
     }
     .btn {
       background: white;
-      border: 1px solid #cbddee;
+      border: 1px solid #cbd5e1;
       padding: 0.6rem 1.4rem;
-      border-radius: 40px;
-      font-weight: 550;
+      border-radius: 2rem;
+      font-weight: 600;
+      font-size: 0.9rem;
       cursor: pointer;
-      transition: 0.2s;
-      font-size: 0.95rem;
-      color: #1e3a5f;
+      transition: 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
     }
     .btn-primary {
-      background: #1e3a5f;
-      border: 1px solid #1e3a5f;
+      background: #2563eb;
+      border: 1px solid #2563eb;
       color: white;
     }
-    .btn-primary:hover {
-      background: #14304b;
-      transform: scale(0.98);
-    }
-    .btn:active { transform: scale(0.96); }
-    .btn:disabled {
+    .btn-primary:hover { background: #1d4ed8; }
+    .btn-primary:disabled {
       opacity: 0.5;
       pointer-events: none;
-      filter: grayscale(0.4);
     }
-    .crop-preview {
-      margin-top: 1.5rem;
-      border-top: 1px solid #dce6f0;
-      padding-top: 1.5rem;
+    .btn-outline:hover { background: #f1f5f9; }
+    .btn-success {
+      background: #16a34a;
+      border-color: #16a34a;
+      color: white;
     }
-    .crop-preview h4 {
-      font-weight: 600;
-      color: #1f3a54;
-      margin-bottom: 0.5rem;
+    .btn-success:hover { background: #15803d; }
+
+    /* preview canvas wrapper */
+    .canvas-wrapper {
+      background: #f1f5f9;
+      border-radius: 1.25rem;
+      padding: 0.8rem;
+      text-align: center;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    #croppedResult {
+    .canvas-wrapper canvas {
       max-width: 100%;
-      max-height: 200px;
-      border-radius: 1rem;
+      max-height: 420px;
+      border-radius: 0.8rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      background: #eef3f9;
+      background: #ffffff;
+      object-fit: contain;
     }
-    .download-section {
-      margin: 1rem 0 0.2rem;
+    .placeholder-text {
+      color: #94a3b8;
+      font-weight: 500;
+      padding: 1.8rem;
     }
-    .article {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 2px solid #e2ebf3;
+
+    /* article section */
+    .article-section {
+      margin-top: 3.5rem;
+      border-top: 1px solid #e9edf2;
+      padding-top: 2rem;
     }
-    .article h2 {
-      font-size: 1.9rem;
-      margin: 1.8rem 0 0.6rem;
-      font-weight: 650;
-      letter-spacing: -0.01em;
+    h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.02em; }
+    h2 { font-size: 1.6rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; letter-spacing: -0.01em; }
+    h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.4rem; }
+    p { margin-bottom: 1rem; color: #1e293b; }
+    ul, ol { padding-left: 1.5rem; margin-bottom: 1.2rem; }
+    li { margin-bottom: 0.3rem; }
+    .highlight { background: #eef2ff; padding: 0.1rem 0.3rem; border-radius: 0.3rem; }
+    .cta-box {
+      background: #f0f7ff;
+      border-radius: 1.5rem;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0 0.5rem;
+      text-align: center;
     }
-    .article h3 {
-      font-size: 1.4rem;
-      margin: 1.5rem 0 0.4rem;
-      color: #1e3a5f;
+    .cta-box p { margin-bottom: 0.5rem; }
+    .footnote { font-size: 0.9rem; color: #475569; }
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem 1rem; }
+      h1 { font-size: 1.5rem; }
     }
-    .article p {
-      margin-bottom: 1rem;
-    }
-    .article ul {
-      margin: 0.8rem 0 1.2rem 1.5rem;
-    }
-    .article li {
-      margin-bottom: 0.4rem;
-    }
-    .highlight {
-      background: #eef4fa;
-      padding: 0.2rem 0.6rem;
-      border-radius: 
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <h1>📐 Photo Cropper · crop photos online free with custom dimensions</
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

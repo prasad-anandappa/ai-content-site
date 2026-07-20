@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Change Audio Pitch Online Free Matters More Than Ever | Free Online MEDIA Tool</title>
-    <meta name="description" content="This is a self-contained HTML document for an interactive Pitch Shifter tool. It lets you change the pitch of any audio file online for free, with real-time">
+    <meta name="description" content="This is a self-contained HTML document that creates an interactive "Pitch Shifter" tool. You can use it to change the pitch of audio files online for free. The">
     <meta name="keywords" content="Change audio pitch online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,299 +128,299 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a self-contained HTML document for an interactive Pitch Shifter tool. It lets you change the pitch of any audio file online for free, with real-time playback and download options.
+            This is a self-contained HTML document that creates an interactive "Pitch Shifter" tool. You can use it to change the pitch of audio files online for free. The page includes a comprehensive guide on pitch shifting, practical tips, and a clear call-to-action.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pitch Shifter · Change audio pitch online free</title>
-  <meta name="description" content="Change audio pitch online free – real‑time pitch shifter tool. Upload any audio, adjust semitones, preview and download shifted audio instantly.">
+  <title>Pitch Shifter · change audio pitch online free</title>
+  <!-- Font and icons (Font Awesome for minor icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #f6f9fc;
+      background: #f5f7fc;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       padding: 2rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #1e1e2f;
     }
 
     .container {
       max-width: 1100px;
       width: 100%;
       background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.15);
+      border-radius: 2.5rem;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
       padding: 2rem 2rem 3rem;
-      margin-bottom: 3rem;
-      transition: box-shadow 0.2s ease;
+      transition: all 0.2s;
     }
 
     h1 {
       font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      color: #0b1e2e;
-      margin-bottom: 0.5rem;
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 10px;
       flex-wrap: wrap;
+      border-bottom: 2px solid #eef2f9;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 i {
+      color: #3b5de7;
+      font-size: 2rem;
     }
 
     .subhead {
-      font-size: 1.2rem;
-      color: #2c4a5e;
-      margin-bottom: 2.5rem;
-      border-left: 4px solid #3b8fc2;
-      padding-left: 1.2rem;
-      font-weight: 400;
-    }
-
-    .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin: 2.5rem 0 1.5rem;
-    }
-
-    @media (max-width: 680px) {
-      .tool-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      h1 { font-size: 1.9rem; }
-      .container { padding: 1.5rem; }
-    }
-
-    .upload-area {
-      background: #f0f5fa;
-      border-radius: 1.5rem;
-      padding: 2rem 1.5rem;
-      border: 2px dashed #b8d0dd;
-      transition: background 0.2s, border-color 0.2s;
-      text-align: center;
-    }
-
-    .upload-area.drag-over {
-      background: #e3edf5;
-      border-color: #3b8fc2;
-    }
-
-    .upload-icon {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .file-input-label {
-      display: inline-block;
-      background: #1d4e6e;
-      color: white;
-      font-weight: 600;
-      padding: 0.8rem 2rem;
+      color: #4a4a6a;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      background: #f0f4ff;
+      padding: 0.75rem 1.5rem;
       border-radius: 60px;
-      cursor: pointer;
-      transition: background 0.2s;
-      box-shadow: 0 4px 8px rgba(0, 40, 60, 0.08);
-      margin-top: 0.5rem;
+      display: inline-block;
     }
 
-    .file-input-label:hover {
-      background: #0f3b55;
-    }
-
-    input[type="file"] {
-      display: none;
-    }
-
-    .file-name {
-      margin-top: 1rem;
-      font-weight: 500;
-      color: #1a3c4f;
-      word-break: break-all;
-    }
-
-    .pitch-control {
+    /* Pitch Shifter interactive card */
+    .shifter-card {
       background: #ffffff;
-      border-radius: 1.5rem;
-      padding: 1.8rem 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-      border: 1px solid #e2ecf3;
+      border: 1px solid #e4e9f2;
+      border-radius: 2rem;
+      padding: 2rem 1.8rem 2.5rem;
+      margin: 2rem 0 2.5rem;
+      box-shadow: 0 8px 18px rgba(0,20,50,0.05);
     }
 
-    .pitch-header {
+    .shifter-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .upload-zone {
+      flex: 1 1 240px;
+      min-width: 200px;
+      background: #f8faff;
+      border: 2px dashed #b7c6e6;
+      border-radius: 1.8rem;
+      padding: 2rem 1rem;
+      text-align: center;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .upload-zone:hover {
+      background: #eef4ff;
+      border-color: #3b5de7;
+    }
+
+    .upload-zone i {
+      font-size: 2.8rem;
+      color: #3b5de7;
+      margin-bottom: 0.75rem;
+    }
+
+    .upload-zone p {
+      font-weight: 500;
+      color: #1e2b4f;
+    }
+
+    .upload-zone small {
+      color: #6b7a9a;
+      font-size: 0.85rem;
+    }
+
+    .controls {
+      flex: 2 1 300px;
+      min-width: 220px;
+    }
+
+    .pitch-slider-block {
+      margin-bottom: 1.8rem;
+    }
+
+    .pitch-slider-block label {
+      font-weight: 600;
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
+      color: #1a2542;
     }
 
     .pitch-value {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #0b2b3e;
-      background: #eaf1f7;
-      padding: 0.1rem 1.2rem;
+      background: #eef3fe;
+      padding: 0.15rem 1rem;
       border-radius: 40px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1f3a8a;
     }
 
     input[type="range"] {
       width: 100%;
-      margin: 1rem 0 0.5rem;
+      margin: 0.8rem 0 0.5rem;
       -webkit-appearance: none;
-      background: transparent;
-    }
-
-    input[type="range"]::-webkit-slider-runnable-track {
-      height: 8px;
-      background: #d4e2ec;
+      background: #d9e2f5;
+      height: 6px;
       border-radius: 10px;
+      outline: none;
     }
 
     input[type="range"]::-webkit-slider-thumb {
       -webkit-appearance: none;
-      width: 22px;
-      height: 22px;
-      background: #1d6b96;
+      width: 20px;
+      height: 20px;
+      background: #3b5de7;
       border-radius: 50%;
-      margin-top: -7px;
-      box-shadow: 0 2px 8px rgba(0,40,70,0.2);
       cursor: pointer;
-      transition: 0.1s;
-    }
-
-    input[type="range"]::-moz-range-track {
-      height: 8px;
-      background: #d4e2ec;
-      border-radius: 10px;
-      border: none;
-    }
-
-    input[type="range"]::-moz-range-thumb {
-      width: 22px;
-      height: 22px;
-      background: #1d6b96;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(59,93,231,0.4);
     }
 
     .preset-buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin: 1.2rem 0 0.8rem;
+      margin: 1rem 0 1.5rem;
     }
 
     .preset-btn {
-      background: #eaf1f7;
+      background: #ecf0f9;
       border: none;
       padding: 0.4rem 1rem;
-      border-radius: 30px;
+      border-radius: 40px;
+      font-size: 0.8rem;
       font-weight: 500;
-      font-size: 0.9rem;
-      color: #1b4a66;
+      color: #1f2b4e;
       cursor: pointer;
-      transition: 0.1s;
-    }
-
-    .preset-btn.active {
-      background: #1d6b96;
-      color: white;
-      box-shadow: 0 2px 6px rgba(29,107,150,0.3);
+      transition: 0.15s;
     }
 
     .preset-btn:hover {
-      background: #cbdde9;
+      background: #d4def7;
+      color: #0f1e42;
     }
 
     .action-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1.8rem;
-      align-items: center;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
     }
 
     .btn {
-      background: #eef4f9;
       border: none;
-      padding: 0.7rem 1.8rem;
+      padding: 0.75rem 1.8rem;
       border-radius: 60px;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.95rem;
+      background: #eef2f9;
+      color: #1e2a4a;
       cursor: pointer;
-      transition: all 0.15s;
-      color: #1a4057;
+      transition: 0.2s;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 8px;
     }
 
     .btn-primary {
-      background: #1d6b96;
+      background: #3b5de7;
       color: white;
-      box-shadow: 0 4px 10px rgba(29,107,150,0.25);
+      box-shadow: 0 6px 14px rgba(59,93,231,0.25);
     }
 
     .btn-primary:hover {
-      background: #11547a;
+      background: #2f4bd0;
       transform: scale(1.02);
-    }
-
-    .btn-primary:disabled {
-      opacity: 0.5;
-      pointer-events: none;
-    }
-
-    .btn-outline {
-      border: 1px solid #b8d0dd;
-      background: white;
-    }
-
-    .btn-outline:hover {
-      background: #e9f1f7;
     }
 
     .btn:disabled {
       opacity: 0.5;
       pointer-events: none;
+      filter: grayscale(0.5);
+    }
+
+    .btn i {
+      font-size: 1rem;
+    }
+
+    .file-name {
+      margin: 1.2rem 0 0.2rem;
+      font-size: 0.9rem;
+      color: #2f3f66;
+      font-weight: 500;
+      word-break: break-all;
     }
 
     .status-msg {
-      margin-top: 1.2rem;
-      font-size: 0.95rem;
-      color: #2a5772;
-      background: #e9f2f9;
-      padding: 0.5rem 1rem;
-      border-radius: 40px;
-      display: inline-block;
-    }
-
-    .player-wrapper {
-      margin-top: 1.8rem;
-      padding: 1rem 0;
-      border-top: 1px solid #e2ecf3;
-    }
-
-    audio {
-      width: 100%;
       margin-top: 0.5rem;
-      border-radius: 30px;
+      min-height: 1.8rem;
+      font-size: 0.9rem;
+      color: #2b4b6f;
     }
 
-    .article-section {
-      margin-top: 3rem;
-      border-top:
+    .download-section {
+      margin-top: 1.2rem;
+      border-top: 1px solid #e4eaf5;
+      padding-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .article-content {
+      margin-top: 3.5rem;
+      border-top: 2px solid #eef2f9;
+      padding-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+      color: #121826;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin: 1.8rem 0 0.8rem;
+      font-weight: 600;
+      color: #1f2b4a;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 1rem 0;
+      color: #2a3147;
+    }
+
+    ul {
+      margin: 1rem 0 1.5rem 1.8rem;
+    }
+
+    li {
+      margin: 0.5rem 0;
+      line-height: 1.5;
+    }
+
+    .faq-note {
+      background: #
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

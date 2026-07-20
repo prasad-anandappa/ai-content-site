@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Best Apply Instagram-Style Filters To Photos Online Free Solutions Compared | Free Online IMAGE Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for applying Instagram-style filters to photos online for free. It includes a filter editor and a detailed">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive photo filter tool. You can run it directly in your browser to apply Instagram-style filters">
     <meta name="keywords" content="Apply Instagram-style filters to photos online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,267 +128,273 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for applying Instagram-style filters to photos online for free. It includes a filter editor and a detailed guide.
+            This is a complete, self-contained HTML document for an interactive photo filter tool. You can run it directly in your browser to apply Instagram-style filters to your images for free.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Filter · Instagram‑style filters online free</title>
-    <!-- Font Awesome for icons (optional) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: #f5f7fa;
-            color: #1e293b;
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-        .container {
-            max-width: 1120px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 32px;
-            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
-            overflow: hidden;
-            padding: 2rem 2rem 3rem;
-        }
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #0f172a, #3b0764);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.25rem;
-        }
-        .subhead {
-            font-size: 1.1rem;
-            color: #475569;
-            margin-bottom: 2rem;
-            border-left: 4px solid #a855f7;
-            padding-left: 1rem;
-        }
-        .tool-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin: 2.5rem 0 2rem;
-        }
-        .upload-area {
-            flex: 1 1 280px;
-            background: #f8fafc;
-            border-radius: 24px;
-            padding: 1.8rem 1.5rem;
-            border: 2px dashed #cbd5e1;
-            transition: 0.2s;
-            text-align: center;
-        }
-        .upload-area:hover {
-            border-color: #a855f7;
-            background: #faf5ff;
-        }
-        .upload-icon {
-            font-size: 3rem;
-            color: #a855f7;
-            margin-bottom: 0.75rem;
-        }
-        .upload-btn {
-            background: #1e293b;
-            color: white;
-            border: none;
-            padding: 0.7rem 1.5rem;
-            border-radius: 60px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: 0.2s;
-            margin: 0.5rem 0 0.8rem;
-            display: inline-block;
-        }
-        .upload-btn:hover {
-            background: #3b0764;
-            transform: scale(1.02);
-        }
-        .file-info {
-            font-size: 0.85rem;
-            color: #64748b;
-            margin-top: 0.5rem;
-        }
-        .preview-box {
-            flex: 2 1 480px;
-            background: #f1f5f9;
-            border-radius: 24px;
-            padding: 1rem 1rem 0.8rem;
-            display: flex;
-            flex-direction: column;
-        }
-        .image-container {
-            position: relative;
-            width: 100%;
-            min-height: 280px;
-            background: #e2e8f0;
-            border-radius: 18px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #previewImage {
-            display: block;
-            max-width: 100%;
-            max-height: 400px;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            transition: filter 0.2s ease;
-        }
-        .placeholder {
-            color: #94a3b8;
-            font-size: 1.1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .placeholder i {
-            font-size: 3rem;
-            opacity: 0.5;
-        }
-        .filter-controls {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 1rem 1.5rem;
-            margin: 1.2rem 0 0.5rem;
-        }
-        .filter-badge {
-            background: #f1f5f9;
-            border-radius: 60px;
-            padding: 0.3rem 1rem 0.3rem 1.2rem;
-            font-weight: 500;
-            font-size: 0.9rem;
-            color: #0f172a;
-            border: 1px solid #e2e8f0;
-        }
-        .filter-selector {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem 0.8rem;
-            flex: 1;
-        }
-        .filter-btn {
-            background: white;
-            border: 1px solid #d1d5db;
-            padding: 0.4rem 1.1rem;
-            border-radius: 40px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.15s;
-            color: #1e293b;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
-        }
-        .filter-btn:hover {
-            background: #f3e8ff;
-            border-color: #a855f7;
-        }
-        .filter-btn.active {
-            background: #7c3aed;
-            border-color: #7c3aed;
-            color: white;
-            box-shadow: 0 4px 8px rgba(124, 58, 237, 0.25);
-        }
-        .action-bar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin: 1rem 0 0.5rem;
-            gap: 0.8rem;
-        }
-        .download-btn {
-            background: #0f172a;
-            color: white;
-            border: none;
-            padding: 0.6rem 1.8rem;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-        .download-btn:hover {
-            background: #2e1065;
-            transform: scale(1.02);
-        }
-        .reset-btn {
-            background: transparent;
-            border: 1px solid #cbd5e1;
-            padding: 0.5rem 1.2rem;
-            border-radius: 60px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: 0.15s;
-        }
-        .reset-btn:hover {
-            background: #f1f5f9;
-        }
-        /* Article styling */
-        .article {
-            margin-top: 3.5rem;
-            border-top: 1px solid #e9edf2;
-            padding-top: 2.5rem;
-        }
-        .article h2 {
-            font-size: 1.8rem;
-            font-weight: 650;
-            margin: 2rem 0 0.8rem;
-            letter-spacing: -0.01em;
-        }
-        .article h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.8rem 0 0.5rem;
-            color: #1e293b;
-        }
-        .article p {
-            margin-bottom: 1.2rem;
-            color: #1e293b;
-        }
-        .article ul {
-            margin: 1rem 0 1.5rem 1.8rem;
-        }
-        .article li {
-            margin-bottom: 0.5rem;
-        }
-        .highlight {
-            background: #faf5ff;
-            padding: 0.1rem 0.3rem;
-            border-radius: 8px;
-            font-weight: 500;
-        }
-        .cta-box {
-            background: #f1f4f9;
-            border-radius: 28px;
-            padding: 2rem 2.2rem;
-            margin: 2.5rem 0 0.5rem;
-            text-align: center;
-        }
-        .cta-box p {
-            font-size: 1.2rem;
-            font-weight: 500;
-            margin-bottom:
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Filter · Instagram‑style filters online free</title>
+  <!-- Font Awesome Icons (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f6fa;
+      color: #1e1e2a;
+      line-height: 1.5;
+      padding: 1.5rem;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      padding: 2rem 1.5rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    h1 i {
+      color: #5b6abf;
+      font-size: 2rem;
+    }
+    .subhead {
+      font-size: 1.1rem;
+      color: #4a4a5a;
+      margin-bottom: 2rem;
+      border-left: 4px solid #5b6abf;
+      padding-left: 1rem;
+    }
+    .tool-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0 2.5rem;
+    }
+    .upload-area {
+      flex: 1 1 320px;
+      background: #f9faff;
+      border-radius: 1.5rem;
+      padding: 1.8rem 1.2rem;
+      border: 2px dashed #cdd4f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: 0.2s;
+      min-height: 320px;
+    }
+    .upload-area:hover {
+      border-color: #5b6abf;
+      background: #f2f5ff;
+    }
+    .upload-area i {
+      font-size: 3.2rem;
+      color: #5b6abf;
+      margin-bottom: 1rem;
+    }
+    .upload-area p {
+      color: #3f3f55;
+      font-weight: 500;
+    }
+    .upload-area input[type="file"] {
+      margin-top: 1.2rem;
+      background: white;
+      border: 1px solid #cdd4f0;
+      padding: 0.6rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: 0.15s;
+      max-width: 220px;
+    }
+    .upload-area input[type="file"]::file-selector-button {
+      background: #5b6abf;
+      color: white;
+      border: none;
+      padding: 0.35rem 1rem;
+      border-radius: 30px;
+      margin-right: 0.8rem;
+      font-weight: 500;
+    }
+    .image-preview-box {
+      flex: 2 1 480px;
+      background: #f9faff;
+      border-radius: 1.5rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-preview-box h3 {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #2e2e42;
+      margin-bottom: 0.5rem;
+    }
+    .canvas-wrapper {
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+      border-radius: 1rem;
+      background: #eef1fa;
+      display: flex;
+      justify-content: center;
+    }
+    #imageCanvas {
+      max-width: 100%;
+      max-height: 380px;
+      object-fit: contain;
+      display: block;
+      background: #ffffff;
+      transition: filter 0.15s;
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.2rem 0 0.5rem;
+      justify-content: center;
+    }
+    .filter-btn {
+      background: white;
+      border: 1px solid #dde2f5;
+      border-radius: 40px;
+      padding: 0.4rem 1.1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #1e1e2a;
+      cursor: pointer;
+      transition: all 0.1s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .filter-btn i {
+      color: #5b6abf;
+      font-size: 0.8rem;
+    }
+    .filter-btn.active {
+      background: #5b6abf;
+      border-color: #5b6abf;
+      color: white;
+    }
+    .filter-btn.active i {
+      color: white;
+    }
+    .filter-btn:hover {
+      background: #eef2ff;
+      border-color: #8d9ae0;
+    }
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1.2rem 0 0.8rem;
+    }
+    .btn-download {
+      background: #1e1e2a;
+      color: white;
+      border: none;
+      padding: 0.7rem 2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+    .btn-download:hover {
+      background: #3b3b50;
+    }
+    .btn-reset {
+      background: transparent;
+      border: 1px solid #bcc3dd;
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .btn-reset:hover {
+      background: #f0f2fc;
+    }
+    .article-section {
+      margin-top: 3rem;
+      border-top: 1px solid #e5e9f5;
+      padding-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 2rem 0 0.8rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.8rem 0 0.6rem;
+    }
+    p {
+      margin: 1rem 0;
+      color: #2d2d3a;
+    }
+    ul {
+      margin: 1rem 0 1rem 1.8rem;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    .tip-box {
+      background: #f2f6ff;
+      padding: 1.2rem 1.8rem;
+      border-radius: 1.5rem;
+      margin: 1.8rem 0;
+      border-left: 5px solid #5b6abf;
+    }
+    .footer-note {
+      margin-top: 2rem;
+      text-align: center;
+      color: #5b5b70;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 650px) {
+      .container { padding: 1.2rem; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <h1>
+    <i class="fas fa-camera-retro"></i> 
+    Photo Filter · Instagram‑style
+  </h1>
+  <div class="subhead">
+    <i class="fas fa-magic"></i> Apply Instagram‑style filters to photos online free — no sign‑up, instant preview.
+  </div>
+
+  <!-- TOOL INTERFACE -->
+  <div
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

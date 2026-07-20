@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Best Minify Html Code Online Free Solutions Compared | Free Online DEV Tool</title>
-    <meta name="description" content="This is a complete, ready-to-use HTML document for an interactive "HTML Minifier" tool page. It combines a powerful, real-time code minifier with an">
+    <meta name="description" content="This is a complete, interactive HTML page for an online HTML Minifier tool. It allows you to paste, minify, and copy HTML code directly in your browser. The">
     <meta name="keywords" content="Minify HTML code online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,260 +128,241 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, ready-to-use HTML document for an interactive "HTML Minifier" tool page. It combines a powerful, real-time code minifier with an SEO-optimized article about the benefits of minifying HTML.
+            This is a complete, interactive HTML page for an online HTML Minifier tool. It allows you to paste, minify, and copy HTML code directly in your browser. The page also includes a comprehensive, SEO-optimized article about the benefits and practical use of HTML minification.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Minifier · Minify HTML code online free</title>
-    <meta name="description" content="Minify HTML code online free with our interactive HTML minifier. Remove whitespace, comments, and extra lines to boost page speed. Fast, safe, and developer-friendly.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: #f5f7fb;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: #1e293b;
-            line-height: 1.6;
-            padding: 2rem 1.5rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        /* tool card */
-        .tool-card {
-            background: white;
-            border-radius: 28px;
-            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.15);
-            padding: 2rem 2rem 2.5rem;
-            margin-bottom: 3rem;
-            transition: box-shadow 0.2s;
-        }
-        .tool-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-bottom: 1.8rem;
-        }
-        .tool-header h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(145deg, #0f172a, #334155);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .badge {
-            background: #dbeafe;
-            color: #1e40af;
-            font-weight: 500;
-            font-size: 0.8rem;
-            padding: 0.25rem 1rem;
-            border-radius: 40px;
-            letter-spacing: 0.3px;
-        }
-        .tool-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        @media (min-width: 700px) {
-            .tool-grid {
-                flex-direction: row;
-            }
-            .tool-grid .input-area,
-            .tool-grid .output-area {
-                flex: 1;
-            }
-        }
-        .label-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #1e293b;
-        }
-        .label-row small {
-            font-weight: 400;
-            color: #64748b;
-        }
-        textarea {
-            width: 100%;
-            padding: 1rem 1.2rem;
-            font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
-            font-size: 0.9rem;
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 18px;
-            resize: vertical;
-            min-height: 230px;
-            transition: 0.2s;
-            color: #0f172a;
-            line-height: 1.5;
-        }
-        textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
-            background: #ffffff;
-        }
-        .output-box {
-            position: relative;
-        }
-        .output-box textarea {
-            background: #f1f5f9;
-        }
-        .action-bar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem 1rem;
-            margin-top: 1.5rem;
-            align-items: center;
-        }
-        .btn {
-            background: white;
-            border: 1px solid #cbd5e1;
-            padding: 0.6rem 1.5rem;
-            border-radius: 60px;
-            font-weight: 500;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: #ffffff;
-            color: #1e293b;
-        }
-        .btn-primary {
-            background: #1e293b;
-            color: white;
-            border: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        .btn-primary:hover {
-            background: #0f172a;
-            transform: translateY(-1px);
-        }
-        .btn-outline {
-            background: transparent;
-            border: 1px solid #cbd5e1;
-        }
-        .btn-outline:hover {
-            background: #f1f5f9;
-            border-color: #94a3b8;
-        }
-        .btn-success {
-            background: #0b3b2c;
-            border: none;
-            color: white;
-        }
-        .btn-success:hover {
-            background: #064e3b;
-        }
-        .stats {
-            font-size: 0.85rem;
-            color: #475569;
-            margin-left: auto;
-            background: #f1f5f9;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-        }
-        .article {
-            background: white;
-            border-radius: 28px;
-            padding: 2.5rem 2.2rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.02);
-        }
-        .article h2 {
-            font-size: 1.9rem;
-            font-weight: 700;
-            margin: 2rem 0 1rem 0;
-            letter-spacing: -0.01em;
-            color: #0f172a;
-        }
-        .article h2:first-of-type {
-            margin-top: 0.2rem;
-        }
-        .article h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.8rem 0 0.6rem 0;
-            color: #1e293b;
-        }
-        .article p {
-            margin: 1rem 0;
-            color: #334155;
-        }
-        .article ul {
-            margin: 1rem 0 1.5rem 1.8rem;
-        }
-        .article li {
-            margin: 0.4rem 0;
-        }
-        .highlight {
-            background: #f8fafc;
-            padding: 0.1rem 0.4rem;
-            border-radius: 6px;
-            font-family: monospace;
-            color: #0f172a;
-        }
-        .callout {
-            background: #f0f9ff;
-            border-left: 5px solid #3b82f6;
-            padding: 1.2rem 1.5rem;
-            border-radius: 16px;
-            margin: 1.8rem 0;
-        }
-        .callout strong {
-            color: #075985;
-        }
-        .footnote {
-            margin-top: 2.5rem;
-            text-align: center;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-        hr {
-            margin: 2rem 0;
-            border: 0;
-            border-top: 2px solid #f1f5f9;
-        }
-        @media (max-width: 500px) {
-            body { padding: 1rem; }
-            .tool-card { padding: 1.5rem; }
-            .article { padding: 1.8rem 1.2rem; }
-            .tool-header h1 { font-size: 1.7rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Minifier · Minify HTML code online free</title>
+  <!-- SEO meta -->
+  <meta name="description" content="Minify HTML code online free with our fast HTML Minifier. Remove whitespace, comments & newlines instantly. Improve page speed & SEO.">
+  <meta name="keywords" content="HTML minifier, minify HTML code online free, compress HTML, HTML optimizer">
+  <link rel="canonical" href="https://tool.example.com/html-minifier">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background: #f6f9fc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.15);
+      padding: 2rem 2rem 3rem;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #0b2a3e, #1b5e7a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .subhead {
+      color: #3a5a6e;
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 1.8rem;
+      border-left: 4px solid #2b7a9c;
+      padding-left: 1rem;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+      margin: 2rem 0 1.5rem;
+    }
+    @media (max-width: 700px) {
+      .tool-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+      .container { padding: 1.5rem; }
+      h1 { font-size: 2rem; }
+    }
+    .panel {
+      background: #f1f7fc;
+      border-radius: 20px;
+      padding: 1.2rem 1.2rem 1.2rem;
+      transition: box-shadow 0.2s;
+    }
+    .panel label {
+      font-weight: 600;
+      color: #0b2a3e;
+      display: block;
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    textarea {
+      width: 100%;
+      min-height: 240px;
+      background: white;
+      border: 1px solid #dbe6ed;
+      border-radius: 18px;
+      padding: 1rem 1.2rem;
+      font-size: 0.95rem;
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      line-height: 1.5;
+      resize: vertical;
+      transition: 0.2s;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+    }
+    textarea:focus {
+      outline: 2px solid #2b7a9c;
+      outline-offset: 2px;
+      border-color: transparent;
+    }
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 1.2rem 0 0.5rem;
+    }
+    .btn {
+      background: #1b5e7a;
+      border: none;
+      color: white;
+      font-weight: 500;
+      padding: 0.7rem 1.4rem;
+      border-radius: 60px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 8px rgba(27,94,122,0.15);
+      letter-spacing: 0.2px;
+    }
+    .btn:hover {
+      background: #104c66;
+      transform: scale(0.98);
+      box-shadow: 0 6px 12px rgba(27,94,122,0.25);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #1b5e7a;
+      color: #1b5e7a;
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background: #e6f0f6;
+    }
+    .btn-success {
+      background: #1e7e5c;
+    }
+    .btn-success:hover {
+      background: #146a4b;
+    }
+    .stats {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin: 0.8rem 0 0.2rem;
+      font-size: 0.9rem;
+      color: #1f4a5e;
+    }
+    .stats span {
+      background: #e2edf5;
+      padding: 0.2rem 0.9rem;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+    .badge {
+      background: #d4e3ed;
+      padding: 0.2rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #0f3b4f;
+    }
+    .article-section {
+      margin-top: 2.5rem;
+      border-top: 2px dashed #cbdde9;
+      padding-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 650;
+      color: #0b2a3e;
+      margin: 1.8rem 0 0.8rem;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1b4b61;
+      margin: 1.5rem 0 0.5rem;
+    }
+    p {
+      line-height: 1.7;
+      color: #1e3647;
+      margin: 0.9rem 0;
+      font-size: 1.05rem;
+    }
+    ul {
+      margin: 0.8rem 0 1.2rem 1.8rem;
+    }
+    li {
+      line-height: 1.7;
+      margin: 0.4rem 0;
+      color: #1e3647;
+    }
+    .callout {
+      background: #e5f1fa;
+      padding: 1.2rem 1.8rem;
+      border-radius: 28px;
+      border-left: 6px solid #1b5e7a;
+      margin: 1.8rem 0;
+    }
+    .footer-note {
+      text-align: center;
+      color: #4b6f82;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    .keyword-highlight {
+      background: #f2f9ff;
+      font-weight: 500;
+      padding: 0 0.2rem;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #d6e3ed;
+      margin: 1.5rem 0;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-    <!-- interactive tool -->
-    <div class="tool-card">
-        <div class="tool-header">
-            <h1>⚡ HTML Minifier</h1>
-            <span class="badge">Minify HTML code online free</span>
-        </div>
-        <div class="tool-grid">
-            <div class="input-area">
-                <div class="label-row">
-                    <span>📄 Input HTML</span>
-                    <small>paste or type</small>
-                </div>
-                <textarea id="inputHtml" placeholder="Paste your HTML code here...">&lt;!--  sample  --&gt;
-&lt;div class="container"&gt;
-  &lt;h1&gt;   Hello, world!   &lt;/h1&gt;
-  &lt;p&gt;   This is
+  <!-- HEADER -->
+  <header>
+    <h1>⚡ HTML Minifier <span style="font-size:1.2rem; background: #dcebf5; padding: 0.1rem 1rem; border-radius: 60px; font-weight: 500; -webkit-text-fill-color: #0b2a3e;">free online tool
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

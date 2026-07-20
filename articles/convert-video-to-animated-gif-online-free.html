@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ultimate Guide to Convert Video To Animated Gif Online Free in 2025 | Free Online MEDIA Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive "Video to GIF" conversion tool. It allows you to upload a video file, select a">
+    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive tool for converting videos to animated GIFs. It combines a practical online">
     <meta name="keywords" content="Convert video to animated GIF online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,7 +128,7 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document that creates an interactive "Video to GIF" conversion tool. It allows you to upload a video file, select a segment, and preview the resulting animated GIF, all within your browser.
+            This is a complete, self-contained HTML document that creates an interactive tool for converting videos to animated GIFs. It combines a practical online converter with an informative article, all styled for a modern, user-friendly experience.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -136,244 +136,289 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video to GIF · Convert video to animated GIF online free</title>
-  <!-- Font & minimal styling -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <meta name="description" content="Convert video to animated GIF online free – no signup, no watermark. Upload your video, trim, resize, and download high-quality GIF instantly.">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     }
+
     body {
-      background: #f8fafc;
-      font-family: 'Inter', -apple-system, system-ui, sans-serif;
-      color: #0b1e33;
-      line-height: 1.6;
-      padding: 2rem 1rem;
+      background: #f6f9fc;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
     .container {
-      max-width: 1120px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.15);
-      padding: 2rem 1.8rem 3rem;
+      max-width: 1200px;
+      width: 100%;
     }
-    h1 {
-      font-size: 2.2rem;
+
+    /* tool card */
+    .tool-card {
+      background: white;
+      border-radius: 2.5rem;
+      box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.15);
+      padding: 2rem 2rem 2.5rem;
+      margin-bottom: 3rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .tool-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .tool-header h1 {
+      font-size: 2rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
+      background: linear-gradient(145deg, #0b2b3b, #1c4e5f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.01em;
+    }
+
+    .badge {
+      background: #e2f0f5;
+      padding: 0.4rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #0b4b5e;
+    }
+
+    .upload-area {
+      border: 2px dashed #b8d4de;
+      border-radius: 2rem;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      background: #fafdff;
+      transition: background 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+
+    .upload-area:hover {
+      background: #f0f7fa;
+      border-color: #4a8a9c;
+    }
+
+    .upload-area svg {
+      width: 48px;
+      height: 48px;
+      fill: #4a8a9c;
+      margin-bottom: 0.75rem;
+    }
+
+    .upload-area p {
+      font-size: 1.1rem;
+      color: #1d4e5e;
+      font-weight: 500;
+    }
+
+    .upload-area .small {
+      font-size: 0.9rem;
+      color: #5f7e8a;
+      margin-top: 0.3rem;
+    }
+
+    .file-input {
+      display: none;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.8rem;
+      margin: 1.8rem 0 1.2rem;
+      align-items: center;
+    }
+
+    .control-group {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.6rem;
       flex-wrap: wrap;
-      margin-bottom: 0.25rem;
     }
-    h1 small {
-      font-size: 1rem;
-      font-weight: 400;
-      background: #e6f0ff;
-      padding: 0.2rem 0.8rem;
-      border-radius: 40px;
-      color: #0066cc;
-      margin-left: 0.5rem;
-    }
-    .subhead {
-      font-size: 1.1rem;
-      color: #2c3e58;
-      margin-bottom: 1.8rem;
-      border-left: 4px solid #3b82f6;
-      padding-left: 1rem;
-      background: #f0f6ff;
-      border-radius: 0 12px 12px 0;
-      padding: 0.75rem 1.2rem;
-    }
-    .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.8rem;
-      margin: 2rem 0 2.5rem;
-    }
-    @media (max-width: 720px) {
-      .tool-grid { grid-template-columns: 1fr; }
-      h1 { font-size: 1.8rem; }
-    }
-    .upload-area {
-      background: #f2f7fe;
-      border: 2px dashed #b8d0f0;
-      border-radius: 28px;
-      padding: 2.2rem 1.5rem;
-      text-align: center;
-      transition: 0.2s ease;
-    }
-    .upload-area:hover {
-      background: #eaf2fd;
-      border-color: #3b82f6;
-    }
-    .upload-area input {
-      display: block;
-      margin: 0.8rem auto 0.4rem;
-      font-size: 0.95rem;
-    }
-    .upload-area p {
+
+    .control-group label {
       font-weight: 500;
-      color: #1e3a6b;
+      color: #1a4452;
     }
-    .file-name {
-      background: white;
-      padding: 0.2rem 1rem;
-      border-radius: 40px;
-      display: inline-block;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+
+    .control-group input[type="range"] {
+      width: 140px;
+      accent-color: #1d6b7e;
     }
-    .controls {
-      background: #ffffff;
-      border-radius: 24px;
-      padding: 1.5rem 1.2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-      border: 1px solid #e9edf4;
+
+    .control-group .value {
+      min-width: 2.8rem;
+      font-weight: 600;
+      color: #0b3b48;
     }
-    .controls label {
-      font-weight: 500;
-      font-size: 0.9rem;
-      display: block;
-      margin: 0.8rem 0 0.25rem;
-      color: #1f3a5f;
-    }
-    .controls label:first-of-type {
-      margin-top: 0;
-    }
-    input[type="range"] {
-      width: 100%;
-      margin: 0.2rem 0 0.5rem;
-      accent-color: #2563eb;
-    }
-    .time-values {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      color: #2c4c7a;
-      background: #f4f8ff;
-      padding: 0.2rem 0.5rem;
-      border-radius: 20px;
-    }
-    .action-row {
+
+    .btn-group {
       display: flex;
       flex-wrap: wrap;
       gap: 0.8rem;
-      margin-top: 1.4rem;
+      margin: 0.8rem 0 1.2rem;
     }
+
     .btn {
       background: white;
-      border: 1px solid #cbd5e1;
-      padding: 0.6rem 1.4rem;
-      border-radius: 60px;
-      font-weight: 500;
-      font-size: 0.9rem;
+      border: 1px solid #cbdae1;
+      padding: 0.6rem 1.6rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1b4d5c;
       cursor: pointer;
       transition: 0.15s;
-      flex: 1 0 auto;
-      color: #1e293b;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
     }
+
     .btn-primary {
-      background: #2563eb;
-      border: 1px solid #2563eb;
+      background: #1d6b7e;
+      border: 1px solid #1d6b7e;
       color: white;
-      box-shadow: 0 4px 8px rgba(37,99,235,0.2);
     }
+
     .btn-primary:hover {
-      background: #1d4ed8;
-      transform: scale(0.97);
+      background: #135a6b;
+      border-color: #135a6b;
     }
+
+    .btn-primary:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
     .btn-outline {
       background: transparent;
-      border: 1px solid #94a3b8;
+      border: 1px solid #b8d0d9;
     }
+
     .btn-outline:hover {
-      background: #eef2f7;
+      background: #eaf3f6;
     }
-    .preview-box {
-      margin-top: 2rem;
-      background: #fafcff;
-      border-radius: 24px;
-      padding: 1.5rem;
-      border: 1px solid #e2e8f0;
-    }
-    .preview-box h3 {
-      font-weight: 600;
-      font-size: 1.2rem;
-      margin-bottom: 0.75rem;
-    }
+
     .preview-area {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
-    }
-    .preview-area video, .preview-area img {
-      max-width: 100%;
-      border-radius: 18px;
-      background: #000;
-      max-height: 260px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-    }
-    .preview-area .placeholder {
-      background: #eef3fa;
-      padding: 2rem 1.5rem;
-      border-radius: 20px;
-      color: #3a5d7c;
-      font-size: 0.95rem;
-      width: 100%;
-      text-align: center;
-    }
-    .gif-result {
+      margin: 1.5rem 0 0.5rem;
       display: flex;
       flex-direction: column;
-      gap: 0.4rem;
+      align-items: center;
     }
-    .gif-result img {
-      max-height: 240px;
+
+    .preview-area video, .preview-area img {
+      max-width: 100%;
+      max-height: 380px;
+      border-radius: 1.2rem;
+      box-shadow: 0 8px 18px rgba(0, 20, 20, 0.08);
+      background: #000;
     }
-    .download-btn {
-      background: #0b2b4a;
-      color: white;
-      border: none;
-      padding: 0.5rem 1.2rem;
-      border-radius: 40px;
+
+    .preview-area .placeholder {
+      background: #eef5f8;
+      width: 100%;
+      min-height: 180px;
+      border-radius: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3e6f7e;
       font-weight: 500;
-      cursor: pointer;
-      transition: 0.15s;
-      width: fit-content;
     }
-    .download-btn:hover {
-      background: #1f4a72;
+
+    .download-link {
+      margin-top: 1.2rem;
     }
-    .badge {
-      background: #d9e6ff;
-      color: #004e9e;
-      font-size: 0.7rem;
-      padding: 0.2rem 0.7rem;
-      border-radius: 30px;
-      font-weight: 600;
-      letter-spacing: 0.3px;
+
+    .status-msg {
+      font-size: 0.95rem;
+      color: #1f5b6b;
+      min-height: 1.6rem;
+      margin-top: 0.6rem;
     }
-    article {
-      margin-top: 3rem;
-      border-top: 1px solid #e2eaf2;
-      padding-top: 2rem;
+
+    /* article */
+    .article {
+      background: white;
+      border-radius: 2.5rem;
+      padding: 2.5rem 2.2rem;
+      box-shadow: 0 10px 28px rgba(0, 20, 30, 0.06);
     }
-    article h2 {
-      font-size: 1.7rem;
-      font-weight: 600;
+
+    .article h2 {
+      font-size: 1.9rem;
       margin: 1.8rem 0 0.8rem;
+      color: #0a2f3b;
+      font-weight: 700;
       letter-spacing: -0.01em;
     }
-    article h3
+
+    .article h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .article h3 {
+      font-size: 1.3rem;
+      margin: 1.6rem 0 0.4rem;
+      color: #124b5c;
+      font-weight: 600;
+    }
+
+    .article p {
+      line-height: 1.7;
+      color: #1e3e49;
+      margin: 1rem 0;
+      font-size: 1.05rem;
+    }
+
+    .article ul {
+      margin: 0.8rem 0 1.2rem 1.6rem;
+    }
+
+    .article li {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+      color: #1e3e49;
+      font-size: 1.02rem;
+    }
+
+    .highlight {
+      background: #e5f2f6;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    .callout {
+      background: #eef8fb;
+      border-left: 5px solid #1d6b7e;
+      padding: 1.2rem 1.8rem;
+      border-radius: 1.5rem;
+      margin: 1.8rem 0;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      text-align: center;
+      color: #4d6d79;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      body { padding: 1rem; }
+      .tool-card { padding: 1.5rem; }
+      .article { padding: 1.5rem; }
+      .tool-header h1 {
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>
