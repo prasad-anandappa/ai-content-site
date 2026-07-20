@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Income Dashboard — AI Content Site</title>
+  <meta name="description" content="Real-time income tracking dashboard for 400 AI agents generating revenue through content, tools, and affiliate marketing.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://prasadreactjs.github.io/ai-content-site/dashboard.html">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 1.5rem;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+
+    /* Header */
+    .header {
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;
+    }
+    .header h1 {
+      font-size: 1.6rem; color: #58a6ff;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .header h1 .live-dot {
+      display: inline-block; width: 10px; height: 10px;
+      background: #3fb950; border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .header-right {
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+    }
+    .last-updated {
+      color: #8b949e; font-size: 0.8rem;
+    }
+    .status-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.3rem 0.8rem; border-radius: 20px;
+      font-size: 0.75rem; font-weight: 600;
+    }
+    .status-badge.online { background: #1b3a2d; color: #3fb950; border: 1px solid #2ea043; }
+    .status-badge.offline { background: #3d1c1c; color: #f85149; border: 1px solid #da3633; }
+
+    /* Summary Cards */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.8rem; margin-bottom: 1.5rem;
+    }
+    .summary-card {
+      background: #161b22; border: 1px solid #30363d; border-radius: 10px;
+      padding: 1rem 1.2rem; position: relative; overflow: hidden;
+    }
+    .summary-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    .summary-card.green::before { background: #3fb950; }
+    .summary-card.blue::before { background: #58a6ff; }
+    .summary-card.gold::before { background: #d29922; }
+    .summary-card.purple::before { background: #bc8cff; }
+    .summary-card.red::before { background: #f85149; }
+    .summary-card.cyan::before { background: #39d2c0; }
+    .summary-card h3 {
+      color: #8b949e; font-size: 0.7rem; text-transform: uppercase;
+      letter-spacing: 0.08em; margin-bottom: 0.3rem;
+    }
+    .summary-card .value {
+      font-size: 1.6rem; font-weight: 700;
+    }
+    .summary-card .sub {
+      font-size: 0.75rem; color: #8b949e; margin-top: 0.2rem;
+    }
+    .summary-card .value.green { color: #3fb950; }
+    .summary-card .value.blue { color: #58a6ff; }
+    .summary-card .value.gold { color: #d29922; }
+    .summary-card .value.purple { color: #bc8cff; }
+    .summary-card .value.cyan { color: #39d2c0; }
+    .summary-card .value.red { color: #f85149; }
+    .summary-card .value.white { color: #f0f6fc; }
+
+    /* Agent Count Bar */
+    .agent-bar {
+      display: flex; gap: 0; margin-bottom: 1.5rem;
+      background: #161b22; border: 1px solid #30363d;
+      border-radius: 10px; overflow: hidden;
+    }
+    .agent-bar-item {
+      flex: 1; padding: 0.8rem 1rem; text-align: center;
+      border-right: 1px solid #30363d;
+    }
+    .agent-bar-item:last-child { border-right: none; }
+    .agent-bar-item .num { font-size: 1.3rem; font-weight: 700; }
+    .agent-bar-item .label { font-size: 0.7rem; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; }
+    .agent-bar-item.content .num { color: #58a6ff; }
+    .agent-bar-item.tools .num { color: #bc8cff; }
+    .agent-bar-item.pages .num { color: #3fb950; }
+    .agent-bar-item.runs .num { color: #d29922; }
+
+    /* Section Title */
+    .section-title {
+      color: #f0f6fc; font-size: 1rem; font-weight: 600;
+      margin-bottom: 0.8rem; margin-top: 1.5rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .section-title .count {
+      color: #8b949e; font-size: 0.8rem; font-weight: 400;
+    }
+
+    /* Category Grid */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.8rem; margin-bottom: 1rem;
+    }
+    .category-card {
+      background: #161b22; border: 1px solid #30363d;
+      border-radius: 8px; padding: 0.8rem 1rem;
+    }
+    .category-card .cat-header {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .category-card .cat-header h4 {
+      color: #c9d1d9; font-size: 0.85rem;
+    }
+    .category-card .cat-badge {
+      font-size: 0.65rem; padding: 0.15rem 0.5rem;
+      border-radius: 10px; font-weight: 600;
+    }
+    .cat-badge.content { background: #1c2d3d; color: #58a6ff; }
+    .cat-badge.tool { background: #2d1c3d; color: #bc8cff; }
+    .category-card .cat-stats {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0.3rem;
+    }
+    .category-card .cat-stat {
+      display: flex; justify-content: space-between;
+      font-size: 0.8rem; padding: 0.15rem 0;
+    }
+    .category-card .cat-stat .lbl { color: #8b949e; }
+    .category-card .cat-stat .val { color: #c9d1d9; font-weight: 500; }
+    .category-card .cat-stat .val.green { color: #3fb950; }
+    .category-card .cat-stat .val.red { color: #f85149; }
+
+    /* Top Agents Table */
+    table {
+      width: 100%; border-collapse: collapse;
+      background: #161b22; border: 1px solid #30363d;
+      border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem;
+    }
+    th, td {
+      padding: 0.5rem 0.8rem; text-align: left;
+      border-bottom: 1px solid #21262d; font-size: 0.8rem;
+    }
+    th {
+      background: #21262d; color: #8b949e;
+      font-size: 0.7rem; text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    tr:last-child td { border-bottom: none; }
+    .profit-pos { color: #3fb950; }
+    .profit-neg { color: #f85149; }
+
+    /* Hourly Chart */
+    .chart-container {
+      background: #161b22; border: 1px solid #30363d;
+      border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;
+    }
+    .chart-bars {
+      display: flex; align-items: flex-end; gap: 3px;
+      height: 120px; margin-top: 0.5rem;
+    }
+    .chart-bar-wrapper {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; height: 100%; justify-content: flex-end;
+    }
+    .chart-bar {
+      width: 100%; min-width: 8px; border-radius: 3px 3px 0 0;
+      transition: height 0.5s ease;
+      position: relative;
+    }
+    .chart-bar.revenue { background: #58a6ff; }
+    .chart-bar.net { background: #3fb950; }
+    .chart-label {
+      font-size: 0.55rem; color: #8b949e;
+      margin-top: 0.3rem; white-space: nowrap;
+      transform: rotate(-45deg); transform-origin: left;
+    }
+    .chart-tooltip {
+      position: absolute; bottom: 100%; left: 50%;
+      transform: translateX(-50%);
+      background: #1c2128; border: 1px solid #30363d;
+      padding: 0.3rem 0.5rem; border-radius: 4px;
+      font-size: 0.65rem; white-space: nowrap;
+      display: none; z-index: 10;
+    }
+    .chart-bar-wrapper:hover .chart-tooltip { display: block; }
+
+    /* Recent Runs */
+    .run-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.4rem 0.8rem; border-bottom: 1px solid #21262d;
+      font-size: 0.8rem;
+    }
+    .run-row:last-child { border-bottom: none; }
+    .run-row .run-agent { color: #58a6ff; font-weight: 500; }
+    .run-row .run-rev { color: #3fb950; }
+    .run-row .run-time { color: #8b949e; font-size: 0.7rem; }
+
+    /* Footer */
+    .footer {
+      text-align: center; padding: 2rem 0 1rem;
+      color: #484f58; font-size: 0.75rem;
+      border-top: 1px solid #21262d; margin-top: 2rem;
+    }
+    .footer a { color: #58a6ff; text-decoration: none; }
+
+    /* Loading */
+    .loading {
+      text-align: center; padding: 3rem; color: #8b949e;
+    }
+    .loading .spinner {
+      display: inline-block; width: 30px; height: 30px;
+      border: 3px solid #30363d; border-top-color: #58a6ff;
+      border-radius: 50%; animation: spin 0.8s linear infinite;
+      margin-bottom: 0.5rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Error */
+    .error-banner {
+      background: #3d1c1c; border: 1px solid #da3633;
+      color: #f85149; padding: 1rem; border-radius: 8px;
+      margin-bottom: 1rem; text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body { padding: 0.8rem; }
+      .summary-grid { grid-template-columns: repeat(2, 1fr); }
+      .summary-card .value { font-size: 1.2rem; }
+      .agent-bar-item { padding: 0.5rem; }
+      .agent-bar-item .num { font-size: 1rem; }
+      .category-grid { grid-template-columns: 1fr; }
+      .header h1 { font-size: 1.2rem; }
+      .chart-label { font-size: 0.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>
+        <span class="live-dot"></span>
+        Live Income Dashboard
+      </h1>
+      <div class="header-right">
+        <span class="last-updated" id="last-updated">Loading...</span>
+        <span class="status-badge online" id="status-badge">
+          <span>●</span> <span id="status-text">Online</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Error Banner -->
+    <div class="error-banner" id="error-banner" style="display:none;">
+      ⚠️ Cannot connect to live API. Showing cached data.
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="summary-grid" id="summary-grid">
+      <div class="summary-card green">
+        <h3>Today's Revenue</h3>
+        <div class="value green" id="today-revenue">$0.00</div>
+        <div class="sub" id="today-runs">0 runs today</div>
+      </div>
+      <div class="summary-card gold">
+        <h3>Today's Profit</h3>
+        <div class="value gold" id="today-profit">$0.00</div>
+        <div class="sub" id="today-cost">$0.00 cost</div>
+      </div>
+      <div class="summary-card blue">
+        <h3>All-Time Revenue</h3>
+        <div class="value blue" id="all-revenue">$0.00</div>
+        <div class="sub" id="all-runs">0 total runs</div>
+      </div>
+      <div class="summary-card purple">
+        <h3>All-Time Profit</h3>
+        <div class="value purple" id="all-profit">$0.00</div>
+        <div class="sub" id="all-cost">$0.00 total cost</div>
+      </div>
+      <div class="summary-card cyan">
+        <h3>ROI</h3>
+        <div class="value cyan" id="roi">0%</div>
+        <div class="sub">return on investment</div>
+      </div>
+      <div class="summary-card red">
+        <h3>Products Created</h3>
+        <div class="value white" id="products">0</div>
+        <div class="sub" id="newsletters">0 newsletters sent</div>
+      </div>
+    </div>
+
+    <!-- Agent Bar -->
+    <div class="agent-bar" id="agent-bar">
+      <div class="agent-bar-item content">
+        <div class="num" id="content-agents">0</div>
+        <div class="label">Content Agents</div>
+      </div>
+      <div class="agent-bar-item tools">
+        <div class="num" id="tool-agents">0</div>
+        <div class="label">Tool Agents</div>
+      </div>
+      <div class="agent-bar-item pages">
+        <div class="num" id="total-pages">0</div>
+        <div class="label">Pages Published</div>
+      </div>
+      <div class="agent-bar-item runs">
+        <div class="num" id="total-runs">0</div>
+        <div class="label">Total Runs</div>
+      </div>
+    </div>
+
+    <!-- Hourly Revenue Chart -->
+    <div class="section-title">📊 Revenue Trend (Last 24h)</div>
+    <div class="chart-container">
+      <div class="chart-bars" id="chart-bars">
+        <div class="loading" style="width:100%;">
+          <div class="spinner"></div>
+          <div>Loading chart data...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Breakdown -->
+    <div class="section-title">
+      📂 Revenue by Category
+      <span class="count" id="category-count"></span>
+    </div>
+    <div class="category-grid" id="category-grid">
+      <div class="loading">Loading categories...</div>
+    </div>
+
+    <!-- Top Agents -->
+    <div class="section-title">🏆 Top 10 Agents by Profit</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Agent</th>
+          <th>Runs</th>
+          <th>Revenue</th>
+          <th>Cost</th>
+          <th>Net Profit</th>
+        </tr>
+      </thead>
+      <tbody id="top-agents-tbody">
+        <tr><td colspan="6" style="text-align:center;color:#8b949e;">Loading...</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Recent Runs -->
+    <div class="section-title">🔄 Recent Activity</div>
+    <div id="recent-runs">
+      <div class="loading">Loading recent runs...</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        <a href="https://prasadreactjs.github.io/ai-content-site/">← Back to Home</a>
+        &nbsp;·&nbsp; Data refreshes every 30 seconds
+        &nbsp;·&nbsp; Powered by 400 AI Agents
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // ── Configuration ────────────────────────────────────────
+    const API_BASE = 'https://prasadreactjs.github.io/ai-content-site';
+    const ORCHESTRATOR_URL = 'http://localhost:8000';
+    const REFRESH_INTERVAL = 30000; // 30 seconds
+
+    // ── State ────────────────────────────────────────────────
+    let dashboardData = null;
+    let lastFetchOk = false;
+
+    // ── Fetch with fallback ──────────────────────────────────
+    async function fetchDashboard() {
+      try {
+        const resp = await fetch(ORCHESTRATOR_URL + '/api/dashboard', {
+          signal: AbortSignal.timeout(5000)
+        });
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        const data = await resp.json();
+        lastFetchOk = true;
+        document.getElementById('error-banner').style.display = 'none';
+        document.getElementById('status-text').textContent = 'Online';
+        document.getElementById('status-badge').className = 'status-badge online';
+        return data;
+      } catch (e) {
+        console.warn('Orchestrator API unavailable, using fallback:', e.message);
+        lastFetchOk = false;
+        document.getElementById('error-banner').style.display = 'block';
+        document.getElementById('status-text').textContent = 'API Offline (cached)';
+        document.getElementById('status-badge').className = 'status-badge offline';
+        // Return cached/fallback data
+        return getFallbackData();
+      }
+    }
+
+    function getFallbackData() {
+      // If we have previously fetched data, return it
+      if (dashboardData) return dashboardData;
+      // Otherwise return hardcoded fallback
+      return {
+        summary: {
+          total_agents: 400,
+          content_agents: 200,
+          tool_agents: 200,
+          total_pages: 302,
+          today: { runs: 0, revenue: 0, cost: 0, net: 0 },
+          all_time: {
+            runs: 84, revenue: 1309.00, cost: 12.50, net: 1296.50,
+            published: 114, products_created: 0, newsletters_sent: 0
+          },
+          roi_percent: 10372.00
+        },
+        category_breakdown: {},
+        top_agents: [],
+        hourly_chart: [],
+        recent_runs: []
+      };
+    }
+
+    // ── Render ──────────────────────────────────────────────
+    function renderDashboard(data) {
+      dashboardData = data;
+      const s = data.summary;
+
+      // Summary cards
+      document.getElementById('today-revenue').textContent = '$' + s.today.revenue.toFixed(2);
+      document.getElementById('today-runs').textContent = s.today.runs + ' runs today';
+      document.getElementById('today-profit').textContent = '$' + s.today.net.toFixed(2);
+      document.getElementById('today-cost').textContent = '$' + s.today.cost.toFixed(2) + ' cost';
+      document.getElementById('all-revenue').textContent = '$' + s.all_time.revenue.toFixed(2);
+      document.getElementById('all-runs').textContent = s.all_time.runs + ' total runs';
+      document.getElementById('all-profit').textContent = '$' + s.all_time.net.toFixed(2);
+      document.getElementById('all-cost').textContent = '$' + s.all_time.cost.toFixed(2) + ' total cost';
+      document.getElementById('roi').textContent = s.roi_percent.toFixed(0) + '%';
+      document.getElementById('products').textContent = s.all_time.products_created || 0;
+      document.getElementById('newsletters').textContent = (s.all_time.newsletters_sent || 0) + ' newsletters sent';
+
+      // Agent bar
+      document.getElementById('content-agents').textContent = s.content_agents;
+      document.getElementById('tool-agents').textContent = s.tool_agents;
+      document.getElementById('total-pages').textContent = s.total_pages;
+      document.getElementById('total-runs').textContent = s.all_time.runs;
+
+      // Hourly chart
+      renderChart(data.hourly_chart || []);
+
+      // Category grid
+      renderCategories(data.category_breakdown || {});
+
+      // Top agents
+      renderTopAgents(data.top_agents || []);
+
+      // Recent runs
+      renderRecentRuns(data.recent_runs || []);
+
+      // Last updated
+      document.getElementById('last-updated').textContent = 'Updated: ' + new Date().toLocaleTimeString();
+    }
+
+    // ── Chart ───────────────────────────────────────────────
+    function renderChart(hourlyData) {
+      const container = document.getElementById('chart-bars');
+      if (!hourlyData || hourlyData.length === 0) {
+        container.innerHTML = '<div style="width:100%;text-align:center;color:#8b949e;padding:2rem;">No hourly data yet — runs will appear here as agents execute</div>';
+        return;
+      }
+
+      const maxRevenue = Math.max(...hourlyData.map(h => h.revenue), 1);
+      container.innerHTML = '';
+
+      hourlyData.forEach(h => {
+        const pct = (h.revenue / maxRevenue) * 100;
+        const wrapper = document.createElement('div');
+        wrapper.className = 'chart-bar-wrapper';
+        wrapper.innerHTML = `
+          <div class="chart-tooltip">
+            <strong>${h.hour}</strong><br>
+            Rev: $${h.revenue.toFixed(2)} | Net: $${h.net.toFixed(2)}<br>
+            ${h.runs} run(s)
+          </div>
+          <div class="chart-bar revenue" style="height:${Math.max(pct, 2)}%;"></div>
+          <div class="chart-label">${h.hour.slice(-5)}</div>
+        `;
+        container.appendChild(wrapper);
+      });
+    }
+
+    // ── Categories ──────────────────────────────────────────
+    function renderCategories(categories) {
+      const grid = document.getElementById('category-grid');
+      const entries = Object.entries(categories);
+      document.getElementById('category-count').textContent = '(' + entries.length + ' categories)';
+
+      if (entries.length === 0) {
+        grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:#8b949e;padding:2rem;">No category data yet</div>';
+        return;
+      }
+
+      grid.innerHTML = '';
+      entries.forEach(([cat, data]) => {
+        const isTool = data.is_tool;
+        const card = document.createElement('div');
+        card.className = 'category-card';
+        card.innerHTML = `
+          <div class="cat-header">
+            <h4>${cat}</h4>
+            <span class="cat-badge ${isTool ? 'tool' : 'content'}">${isTool ? '🔧 Tool' : '📄 Content'}</span>
+          </div>
+          <div class="cat-stats">
+            <div class="cat-stat"><span class="lbl">Agents</span><span class="val">${data.agent_count}</span></div>
+            <div class="cat-stat"><span class="lbl">Runs</span><span class="val">${data.total_runs}</span></div>
+            <div class="cat-stat"><span class="lbl">Revenue</span><span class="val green">$${(data.total_revenue || 0).toFixed(2)}</span></div>
+            <div class="cat-stat"><span class="lbl">Cost</span><span class="val red">$${(data.total_cost || 0).toFixed(2)}</span></div>
+            <div class="cat-stat"><span class="lbl">Net</span><span class="val" style="color:${(data.total_net || 0) >= 0 ? '#3fb950' : '#f85149'}">$${(data.total_net || 0).toFixed(2)}</span></div>
+            <div class="cat-stat"><span class="lbl">Per Agent</span><span class="val">$${data.agent_count > 0 ? ((data.total_revenue || 0) / data.agent_count).toFixed(2) : '0.00'}</span></div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // ── Top Agents ──────────────────────────────────────────
+    function renderTopAgents(agents) {
+      const tbody = document.getElementById('top-agents-tbody');
+      if (!agents || agents.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#8b949e;">No agent data yet — runs will appear as agents execute</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = '';
+      agents.forEach((a, i) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${i + 1}</td>
+          <td style="color:#58a6ff;font-weight:500;">${a.agent_name || a.agent_id}</td>
+          <td>${a.runs}</td>
+          <td class="profit-pos">$${a.revenue.toFixed(2)}</td>
+          <td class="profit-neg">$${a.cost.toFixed(2)}</td>
+          <td class="${a.net >= 0 ? 'profit-pos' : 'profit-neg'}" style="font-weight:600;">$${a.net.toFixed(2)}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // ── Recent Runs ─────────────────────────────────────────
+    function renderRecentRuns(runs) {
+      const container = document.getElementById('recent-runs');
+      if (!runs || runs.length === 0) {
+        container.innerHTML = '<div style="text-align:center;color:#8b949e;padding:2rem;background:#161b22;border:1px solid #30363d;border-radius:8px;">No recent runs yet — agents will start generating shortly</div>';
+        return;
+      }
+
+      container.innerHTML = '';
+      runs.slice(0, 20).forEach(r => {
+        const row = document.createElement('div');
+        row.className = 'run-row';
+        const time = r.created_at ? new Date(r.created_at).toLocaleTimeString() : '--';
+        row.innerHTML = `
+          <span class="run-agent">${r.agent_id}</span>
+          <span style="color:#8b949e;font-size:0.75rem;">${r.agent_name || ''}</span>
+          <span class="run-rev">$${(r.revenue_usd || 0).toFixed(2)}</span>
+          <span style="color:${(r.net_usd || 0) >= 0 ? '#3fb950' : '#f85149'}">$${(r.net_usd || 0).toFixed(2)}</span>
+          <span style="color:#8b949e;font-size:0.7rem;">${(r.task_summary || '').substring(0, 40)}</span>
+          <span class="run-time">${time}</span>
+        `;
+        container.appendChild(row);
+      });
+    }
+
+    // ── Main Loop ───────────────────────────────────────────
+    async function refresh() {
+      const data = await fetchDashboard();
+      renderDashboard(data);
+    }
+
+    // Initial load
+    refresh();
+    setInterval(refresh, REFRESH_INTERVAL);
+  </script>
+</body>
+</html>
