@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Calculate Body Mass Index Online Free Matters More Than Ever | Free Online CALCULATOR Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive BMI Calculator tool. It includes a clean, modern interface where you can input your height">
+    <title>Top 10 Calculate Body Mass Index Online Free You Need to Know About | Free Online CALCULATOR Tool</title>
+    <meta name="description" content="This is a complete, interactive HTML webpage for a BMI Calculator tool. It allows you to calculate your Body Mass Index instantly using either metric or">
     <meta name="keywords" content="Calculate Body Mass Index online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Why Calculate Body Mass Index Online Free Matters More Than Ever</h1>
+        <h1>Top 10 Calculate Body Mass Index Online Free You Need to Know About</h1>
         <p>Free Online CALCULATOR Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,7 +128,7 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive BMI Calculator tool. It includes a clean, modern interface where you can input your height and weight to instantly calculate your Body Mass Index. The page also features a detailed article explaining BMI, its categories, limitations, and practical health advice, all styled for easy reading.
+            This is a complete, interactive HTML webpage for a BMI Calculator tool. It allows you to calculate your Body Mass Index instantly using either metric or imperial units. The page includes the calculator, a comprehensive guide, and an easy-to-read BMI chart.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -136,249 +136,251 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Calculator · Calculate Body Mass Index online free</title>
-  <meta name="description" content="Calculate Body Mass Index online free with our interactive BMI calculator. Learn what your BMI means, get health tips, and understand your results.">
+  <meta name="description" content="Free online BMI calculator – calculate Body Mass Index instantly. Metric & imperial units, BMI chart, health tips, and actionable advice.">
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     }
     body {
-      background: #f8fafc;
-      color: #0f172a;
+      background: #f4f7fc;
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      display: flex;
+      justify-content: center;
       padding: 2rem 1rem;
       line-height: 1.6;
+      color: #1e2a41;
     }
     .container {
       max-width: 1100px;
-      margin: 0 auto;
-    }
-    .tool-card {
+      width: 100%;
       background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.1);
-      padding: 2.5rem 2rem;
-      margin-bottom: 3rem;
-      transition: all 0.2s;
-      border: 1px solid #e9edf2;
+      border-radius: 32px;
+      box-shadow: 0 20px 40px rgba(0, 20, 40, 0.12);
+      padding: 2rem 2rem 2.5rem;
     }
-    .tool-grid {
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0b1a33;
+      margin-bottom: 0.25rem;
+      border-left: 6px solid #2a7de1;
+      padding-left: 1.2rem;
+    }
+    .subhead {
+      font-size: 1.1rem;
+      color: #3b4b6e;
+      margin-bottom: 2rem;
+      padding-left: 1.8rem;
+    }
+    .calc-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 2.5rem;
+      gap: 2rem;
+      background: #f0f5fe;
+      border-radius: 28px;
+      padding: 2rem 1.8rem;
+      margin-bottom: 2.5rem;
       align-items: flex-start;
     }
     .calc-panel {
-      flex: 1 1 300px;
-      background: #f1f5f9;
-      padding: 1.8rem 1.8rem 2rem;
-      border-radius: 1.5rem;
+      flex: 2 1 340px;
+      min-width: 280px;
     }
-    .calc-panel h2 {
-      font-size: 1.6rem;
-      font-weight: 600;
-      margin-top: 0;
-      margin-bottom: 1rem;
-      color: #0b3b5c;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .input-group {
-      margin-bottom: 1.2rem;
-    }
-    .input-group label {
-      display: block;
-      font-weight: 500;
-      font-size: 0.9rem;
-      color: #1e293b;
-      margin-bottom: 0.25rem;
-    }
-    .input-group input, .input-group select {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      font-size: 1rem;
-      border: 1px solid #cbd5e1;
-      border-radius: 1rem;
+    .result-panel {
+      flex: 1.5 1 240px;
       background: white;
-      outline: none;
-      transition: 0.2s;
-    }
-    .input-group input:focus, .input-group select:focus {
-      border-color: #2563eb;
-      box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+      border-radius: 24px;
+      padding: 1.5rem 1.2rem;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.03);
+      text-align: center;
     }
     .unit-toggle {
       display: flex;
-      gap: 0.5rem;
+      gap: 0.75rem;
       margin-bottom: 1.5rem;
       flex-wrap: wrap;
     }
-    .unit-toggle button {
-      flex: 1;
-      padding: 0.5rem 1rem;
+    .unit-btn {
       background: white;
-      border: 1px solid #cbd5e1;
-      border-radius: 2rem;
-      font-weight: 500;
+      border: 1px solid #cad5e6;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
       cursor: pointer;
       transition: 0.2s;
-      font-size: 0.9rem;
+      color: #1e2a41;
     }
-    .unit-toggle button.active {
-      background: #2563eb;
+    .unit-btn.active {
+      background: #1e3a6b;
+      border-color: #1e3a6b;
       color: white;
-      border-color: #2563eb;
+      box-shadow: 0 4px 8px rgba(0,40,80,0.15);
+    }
+    .input-group {
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .input-group label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #1f334f;
+      letter-spacing: 0.01em;
+    }
+    .input-row {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .input-row input {
+      flex: 2;
+      min-width: 100px;
+      padding: 0.7rem 1rem;
+      border: 1px solid #d3deef;
+      border-radius: 20px;
+      font-size: 1rem;
+      background: white;
+      transition: 0.15s;
+    }
+    .input-row input:focus {
+      outline: 2px solid #2a7de1;
+      border-color: transparent;
+    }
+    .input-row span {
+      font-weight: 500;
+      color: #2a405e;
+      min-width: 30px;
+    }
+    .height-flex {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .height-flex input {
+      flex: 1 1 80px;
     }
     .calc-btn {
-      width: 100%;
-      padding: 0.9rem;
-      background: #2563eb;
+      background: #1e3a6b;
       color: white;
-      font-weight: 600;
-      font-size: 1.2rem;
       border: none;
-      border-radius: 2rem;
+      padding: 0.9rem 2rem;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      width: 100%;
       cursor: pointer;
       transition: 0.2s;
-      margin: 0.5rem 0 1rem;
+      margin: 1rem 0 0.5rem;
+      letter-spacing: 0.3px;
     }
     .calc-btn:hover {
-      background: #1d4ed8;
-      transform: scale(0.98);
+      background: #112a50;
+      transform: scale(1.01);
+      box-shadow: 0 8px 18px rgba(20,50,100,0.2);
     }
-    .result-box {
-      background: white;
-      border-radius: 1.5rem;
-      padding: 1.5rem;
-      margin-top: 1.5rem;
-      text-align: center;
-      border: 1px solid #e2e8f0;
-    }
-    .bmi-value {
-      font-size: 3rem;
-      font-weight: 700;
-      line-height: 1.2;
-      color: #0f172a;
+    .bmi-number {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #0b1a33;
+      line-height: 1;
+      margin: 0.5rem 0 0.2rem;
     }
     .bmi-category {
-      font-size: 1.3rem;
-      font-weight: 500;
-      padding: 0.3rem 1.2rem;
-      border-radius: 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
       display: inline-block;
       margin: 0.5rem 0;
     }
-    .bmi-desc {
-      color: #334155;
-      margin-top: 0.5rem;
-    }
-    .bmi-bar {
-      margin-top: 1.2rem;
-      height: 8px;
-      background: #e2e8f0;
-      border-radius: 4px;
-      position: relative;
+    .bmi-meter {
+      background: #e6edf6;
+      height: 10px;
+      border-radius: 20px;
+      margin: 1rem 0;
     }
     .bmi-fill {
-      height: 8px;
-      border-radius: 4px;
+      height: 10px;
+      border-radius: 20px;
       width: 0%;
-      background: linear-gradient(90deg, #22c55e, #eab308, #ef4444);
-      transition: width 0.4s;
+      background: #2a7de1;
+      transition: width 0.3s;
     }
-    .info-panel {
-      flex: 1 1 280px;
-      background: #f8fafc;
-      padding: 0.5rem 0.2rem;
+    .bmi-desc {
+      color: #2b405e;
     }
-    .info-panel h3 {
+    .article {
+      margin-top: 1.8rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 2rem 0 0.8rem;
+      color: #0f2642;
+      border-bottom: 2px solid #e3ebf6;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      color: #0b3b5c;
-      margin-bottom: 0.75rem;
+      margin: 1.8rem 0 0.6rem;
+      color: #1a3458;
     }
-    .category-list {
-      list-style: none;
-      background: white;
-      border-radius: 1.2rem;
-      padding: 1rem 1.2rem;
-      border: 1px solid #e2e8f0;
-    }
-    .category-list li {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.4rem 0;
-      border-bottom: 1px dashed #e9edf2;
-    }
-    .category-list li:last-child { border-bottom: none; }
-    .badge {
-      background: #e9edf2;
-      padding: 0.15rem 0.8rem;
-      border-radius: 1rem;
-      font-weight: 500;
-    }
-    .article-section {
-      background: white;
-      border-radius: 2rem;
-      padding: 2rem 2.2rem;
-      box-shadow: 0 10px 20px -8px rgba(0,0,0,0.05);
-      border: 1px solid #e9edf2;
-      margin-top: 1rem;
-    }
-    .article-section h2 {
-      font-size: 1.8rem;
-      color: #0b3b5c;
-      margin: 1.5rem 0 0.8rem;
-    }
-    .article-section h2:first-of-type {
-      margin-top: 0;
-    }
-    .article-section h3 {
-      font-size: 1.3rem;
-      color: #1e293b;
-      margin: 1.5rem 0 0.5rem;
-    }
-    .article-section p {
+    p {
       margin-bottom: 1rem;
-      color: #1e293b;
     }
-    .article-section ul {
-      margin: 0.8rem 0 1.5rem 1.5rem;
+    ul, ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.2rem;
     }
-    .article-section li {
-      margin-bottom: 0.4rem;
+    li {
+      margin-bottom: 0.3rem;
     }
-    .cta-box {
-      background: #eef2ff;
-      border-radius: 1.5rem;
-      padding: 1.5rem 2rem;
-      margin: 2rem 0 0.5rem;
-      border-left: 6px solid #2563eb;
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+      gap: 0.8rem;
+      background: #f6faff;
+      padding: 1.2rem;
+      border-radius: 24px;
+      margin: 1.5rem 0;
     }
-    .cta-box p {
-      margin-bottom: 0.5rem;
-    }
-    footer {
+    .chart-item {
+      background: white;
+      border-radius: 20px;
+      padding: 0.8rem 0.6rem;
       text-align: center;
-      margin-top: 3rem;
-      color: #64748b;
-      font-size: 0.9rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
-    @media (max-width: 700px) {
-      .tool-card { padding: 1.5rem; }
-      .calc-panel { padding: 1.2rem; }
-      .article-section { padding: 1.5rem; }
+    .chart-item span {
+      display: block;
+      font-weight: 700;
+      font-size: 1.2rem;
     }
-  </style>
-</head>
-<body>
-<div class="container">
-  <!-- Interactive BMI Calculator -->
-  <div class="tool-card">
-    <div class="tool-grid">
-      <div class
+    .chart-item small {
+      color: #3a567a;
+    }
+    .underweight { border-left: 5px solid #7fa8d9; }
+    .normal { border-left: 5px solid #2b9e6b; }
+    .overweight { border-left: 5px solid #e68a2e; }
+    .obese { border-left: 5px solid #c94f4f; }
+    .callout {
+      background: #e5effa;
+      border-radius: 24px;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0 1rem;
+      text-align: center;
+    }
+    .callout a {
+      background: #1e3a6b;
+      color: white;
+      padding: 0.8rem 2.2
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

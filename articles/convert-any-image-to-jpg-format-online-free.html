@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Convert Any Image To Jpg Format Online Free Matters More Than Ever | Free Online IMAGE Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for converting images to JPG format online. It includes a drag-and-drop uploader, real-time preview, and a comprehensive">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Image to JPG" conversion tool. It combines a clean, modern interface with the core">
     <meta name="keywords" content="Convert any image to JPG format online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,7 +128,7 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for converting images to JPG format online. It includes a drag-and-drop uploader, real-time preview, and a comprehensive guide article.
+            This is a complete, self-contained HTML document for an interactive "Image to JPG" conversion tool. It combines a clean, modern interface with the core conversion functionality, allowing you to upload any image and download it as a JPG file. The page also includes a detailed, SEO-friendly article about the benefits and usage of the tool.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -136,262 +136,257 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image to JPG · Convert any image to JPG format online free</title>
-  <!-- Font Awesome Icons (free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     }
     body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
       background: #f5f7fb;
       color: #1e293b;
-      padding: 2rem 1rem;
       line-height: 1.6;
+      padding: 2rem 1rem;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: 0 auto;
-    }
-    /* tool card */
-    .tool-card {
       background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 35px -8px rgba(0,0,0,0.1);
-      padding: 2rem 1.8rem;
-      margin-bottom: 3rem;
-      transition: box-shadow 0.2s;
+      border-radius: 2rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      padding: 2rem 2rem 3rem;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem 1rem; }
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: #0f172a;
-      margin-bottom: 0.5rem;
-      flex-wrap: wrap;
-    }
-    h1 i {
-      color: #2563eb;
-      font-size: 2rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+      background: linear-gradient(145deg, #0f172a, #2563eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     .subhead {
-      color: #475569;
       font-size: 1.1rem;
-      margin-bottom: 1.8rem;
-      border-left: 4px solid #2563eb;
+      color: #475569;
+      margin-bottom: 2rem;
+      border-left: 4px solid #3b82f6;
       padding-left: 1rem;
     }
-    .upload-area {
-      border: 2px dashed #cbd5e1;
-      border-radius: 24px;
-      padding: 2.5rem 1.5rem;
-      text-align: center;
+    .tool-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
       background: #f8fafc;
-      transition: all 0.2s ease;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      margin-bottom: 2.5rem;
+      align-items: center;
+    }
+    .upload-area {
+      flex: 2 1 280px;
+      background: white;
+      border: 2px dashed #cbd5e1;
+      border-radius: 1.25rem;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: 0.2s ease;
       cursor: pointer;
     }
-    .upload-area:hover, .upload-area.dragover {
-      border-color: #2563eb;
-      background: #eff6ff;
+    .upload-area:hover {
+      border-color: #3b82f6;
+      background: #f1f5fe;
     }
-    .upload-area i {
-      font-size: 3.5rem;
-      color: #2563eb;
-      margin-bottom: 0.6rem;
+    .upload-area.dragover {
+      border-color: #2563eb;
+      background: #eef2ff;
+    }
+    .upload-area svg {
+      width: 48px;
+      height: 48px;
+      stroke: #3b82f6;
+      stroke-width: 1.5;
+      fill: none;
+      margin-bottom: 0.75rem;
     }
     .upload-area p {
-      font-size: 1.1rem;
       font-weight: 500;
+      color: #1e293b;
     }
-    .upload-area .small {
-      font-size: 0.9rem;
+    .upload-area small {
       color: #64748b;
-      margin-top: 6px;
+      display: block;
+      margin-top: 0.4rem;
     }
     #fileInput {
       display: none;
     }
-    .preview-row {
+    .preview-box {
+      flex: 3 1 320px;
+      background: white;
+      border-radius: 1.25rem;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .preview-box h3 {
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #475569;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .preview-flex {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
-      margin: 2rem 0 1.5rem;
-      align-items: flex-start;
+      gap: 1.5rem;
+      align-items: center;
     }
-    .preview-box {
-      flex: 1 1 200px;
-      min-width: 150px;
-      background: #f1f5f9;
-      border-radius: 20px;
-      padding: 1rem;
+    .preview-item {
+      flex: 1 1 140px;
       text-align: center;
     }
-    .preview-box h4 {
-      font-weight: 600;
-      color: #334155;
-      margin-bottom: 10px;
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .preview-box img {
+    .preview-item img {
       max-width: 100%;
-      max-height: 180px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      background: white;
+      max-height: 120px;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      background: #f1f5f9;
       object-fit: contain;
     }
-    .file-info {
-      background: #f1f5f9;
-      padding: 0.8rem 1.2rem;
-      border-radius: 40px;
-      display: inline-block;
-      font-size: 0.9rem;
-      color: #1e293b;
-      margin: 0.5rem 0 0.2rem;
+    .preview-item p {
+      font-size: 0.8rem;
+      color: #64748b;
+      margin-top: 0.3rem;
     }
-    .action-bar {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 1.5rem;
-      justify-content: space-between;
-    }
-    .btn {
+    .action-btn {
+      background: #2563eb;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.7rem 1.6rem;
+      border-radius: 60px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.15s;
+      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background: white;
-      border: 1px solid #cbd5e1;
-      padding: 0.7rem 1.5rem;
-      border-radius: 40px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: #1e293b;
-      transition: 0.15s;
-      cursor: pointer;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+      gap: 0.5rem;
+      margin-top: 0.5rem;
     }
-    .btn-primary {
-      background: #2563eb;
-      border: 1px solid #2563eb;
-      color: white;
-      box-shadow: 0 4px 8px rgba(37,99,235,0.2);
-    }
-    .btn-primary i {
-      color: white;
-    }
-    .btn-primary:hover {
+    .action-btn:hover {
       background: #1d4ed8;
       transform: scale(1.02);
     }
-    .btn:hover {
-      background: #f1f5f9;
-    }
-    .btn-primary:hover {
-      background: #1d4ed8;
-    }
-    .btn:disabled {
+    .action-btn:disabled {
       opacity: 0.5;
-      cursor: not-allowed;
+      pointer-events: none;
+      filter: grayscale(0.4);
+    }
+    .reset-btn {
+      background: transparent;
+      border: 1px solid #cbd5e1;
+      color: #334155;
+      box-shadow: none;
+      margin-left: 0.5rem;
+    }
+    .reset-btn:hover {
+      background: #f1f5f9;
       transform: none;
     }
-    .quality-control {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .quality-control label {
-      font-weight: 500;
-      font-size: 0.9rem;
-    }
-    input[type="range"] {
-      width: 140px;
-      accent-color: #2563eb;
-    }
-    #qualityValue {
-      font-weight: 600;
-      min-width: 35px;
-    }
     .badge {
-      background: #e2e8f0;
-      border-radius: 40px;
-      padding: 0.25rem 1rem;
-      font-size: 0.8rem;
-      color: #334155;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      font-weight: 600;
     }
-    .status-msg {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      border-radius: 40px;
-      background: #e2e8f0;
-      display: inline-block;
-      font-size: 0.9rem;
-    }
-    .status-msg i {
-      margin-right: 6px;
-    }
-    .footer-note {
-      margin-top: 1.2rem;
-      font-size: 0.85rem;
-      color: #64748b;
-      border-top: 1px solid #e2e8f0;
-      padding-top: 1.2rem;
-    }
-    /* article styles */
+    /* article */
     .article {
-      background: white;
-      border-radius: 32px;
-      padding: 2.2rem 2rem;
-      box-shadow: 0 10px 25px -8px rgba(0,0,0,0.04);
+      margin-top: 2rem;
     }
     .article h2 {
       font-size: 1.8rem;
-      margin: 1.8rem 0 1rem;
-      color: #0f172a;
       font-weight: 700;
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.3rem;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: -0.01em;
     }
     .article h3 {
       font-size: 1.3rem;
-      margin: 1.5rem 0 0.8rem;
-      color: #1e293b;
       font-weight: 600;
+      margin: 1.8rem 0 0.6rem;
+      color: #0f172a;
     }
     .article p {
-      margin-bottom: 1.2rem;
-      color: #334155;
+      margin-bottom: 1.1rem;
+      color: #1e293b;
     }
     .article ul {
-      margin: 0.8rem 0 1.5rem 1.5rem;
+      margin: 0.8rem 0 1.4rem 1.5rem;
     }
     .article li {
       margin-bottom: 0.4rem;
     }
     .article .highlight {
-      background: #f0f4ff;
-      padding: 0.2rem 0.6rem;
-      border-radius: 12px;
+      background: #f1f5fe;
+      padding: 0.1rem 0.3rem;
+      border-radius: 6px;
       font-weight: 500;
     }
     .cta-box {
-      background: #f8fafc;
-      border-radius: 28px;
+      background: #f1f5fe;
+      border-radius: 1.5rem;
       padding: 1.8rem 2rem;
       margin: 2rem 0 0.5rem;
       text-align: center;
-      border: 1px solid #e2e8f0;
     }
-    .cta-box h3 {
-      margin-top: 
+    .cta-box p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .footnote {
+      font-size: 0.9rem;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1rem;
+      margin-top: 2rem;
+    }
+    .flex-center {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    .file-info {
+      font-size: 0.85rem;
+      background: #f1f5f9;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  
+  <!-- header -->
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+    <div>
+      <h1>Image to JPG</h1>
+      <div class="subhead">Convert any image to JPG format online free · browser‑based, private, instant</div>
+    </div>
+    <span class="badge
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

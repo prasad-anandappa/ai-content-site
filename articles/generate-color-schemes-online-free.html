@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 Generate Color Schemes Online Free You Need to Know About | Free Online DESIGN Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for a Color Scheme Generator. It combines a comprehensive article on color theory with a live, adjustable palette">
+    <meta name="description" content="This is a complete, ready-to-use HTML document for an interactive color scheme generator tool. It combines a practical, SEO-optimized article with a hands-on">
     <meta name="keywords" content="Generate color schemes online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,21 +128,25 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for a Color Scheme Generator. It combines a comprehensive article on color theory with a live, adjustable palette generator, all optimized for the target keyword.
+            This is a complete, ready-to-use HTML document for an interactive color scheme generator tool. It combines a practical, SEO-optimized article with a hands-on palette generator, allowing users to explore color theory and create harmonies directly on the page.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Scheme Generator · generate color schemes online free</title>
-  <meta name="description" content="Generate color schemes online free with interactive palette tools. Learn color theory, tips, and actionable advice for designers.">
+  <title>🎨 Color Scheme Generator · Generate color schemes online free</title>
+  <meta name="description" content="Generate color schemes online free with our interactive palette tool. Learn color theory, harmonies, and practical tips to elevate your design projects.">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #f8f9fb;
-      color: #1e1e2f;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f6f8fc;
+      color: #1e293b;
       line-height: 1.6;
       padding: 2rem 1rem;
     }
@@ -155,217 +159,213 @@
       padding: 2rem 2rem 3rem;
     }
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #1e2b4f, #3b4f7a);
+      background: linear-gradient(135deg, #0f172a 0%, #3b0764 80%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
     }
     .subhead {
       font-size: 1.2rem;
-      color: #4a5578;
-      border-left: 5px solid #6c7cff;
-      padding-left: 1.2rem;
+      color: #475569;
       margin-bottom: 2rem;
-      font-weight: 400;
+      border-left: 4px solid #a855f7;
+      padding-left: 1rem;
     }
     .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
-      margin-bottom: 3rem;
+      margin: 2.5rem 0 3rem;
     }
-    @media (max-width: 780px) {
-      .tool-grid { grid-template-columns: 1fr; }
-      h1 { font-size: 1.9rem; }
-    }
-    .palette-preview {
-      background: #f0f2f8;
+    .palette-panel {
+      flex: 1 1 360px;
+      background: #f1f5f9;
       border-radius: 1.5rem;
-      padding: 1.8rem;
+      padding: 1.8rem 1.5rem;
     }
-    .palette-preview h2 {
-      font-size: 1.3rem;
+    .palette-panel h2 {
+      font-size: 1.5rem;
       font-weight: 600;
-      color: #1d2b4a;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     .color-row {
       display: flex;
       gap: 0.75rem;
       flex-wrap: wrap;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.8rem;
+      justify-content: center;
     }
-    .color-swatch {
-      flex: 1 0 100px;
-      height: 90px;
-      border-radius: 20px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
-      padding: 0.6rem;
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: #fff;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.3);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.04);
-      transition: transform 0.1s ease;
-      word-break: break-all;
+    .swatch {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.2s;
+      border: 2px solid white;
     }
-    .color-swatch.dark-text {
-      color: #1a1a2a;
-      text-shadow: none;
+    .swatch:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     }
     .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1rem;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .btn {
       background: white;
-      border-radius: 1.5rem;
-      padding: 1.8rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-      border: 1px solid #e9ecf3;
-    }
-    .controls h2 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #1d2b4a;
-      margin-bottom: 1.2rem;
-    }
-    .control-group {
-      margin-bottom: 1.5rem;
-    }
-    .control-group label {
+      border: 1px solid #cbd5e1;
+      padding: 0.6rem 1.4rem;
+      border-radius: 40px;
       font-weight: 500;
-      display: block;
-      margin-bottom: 0.3rem;
-      color: #2c3a5e;
-    }
-    .control-group input[type="color"] {
-      width: 100%;
-      height: 48px;
-      border: 1px solid #d0d6e3;
-      border-radius: 60px;
-      padding: 0.2rem;
-      background: white;
+      font-size: 0.9rem;
       cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
-    .control-group select {
-      width: 100%;
-      padding: 0.7rem 1rem;
-      border: 1px solid #d0d6e3;
-      border-radius: 60px;
-      background: white;
-      font-weight: 500;
-      color: #1e2b4f;
-    }
-    .btn-generate {
-      background: #1e2b4f;
+    .btn-primary {
+      background: #0f172a;
+      border-color: #0f172a;
       color: white;
-      border: none;
-      padding: 0.9rem 1.5rem;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 1rem;
-      width: 100%;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.05s;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 8px rgba(15,23,42,0.15);
     }
-    .btn-generate:hover {
-      background: #2f3f6b;
+    .btn-primary:hover {
+      background: #1e293b;
+      transform: translateY(-2px);
     }
-    .btn-generate:active {
-      transform: scale(0.97);
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #94a3b8;
+    }
+    .btn-outline:hover {
+      background: #e2e8f0;
+      border-color: #64748b;
     }
     .hex-codes {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem 1rem;
-      margin-top: 1.2rem;
-      background: #eef1f9;
-      padding: 0.8rem 1.2rem;
-      border-radius: 60px;
+      gap: 0.5rem 1rem;
+      justify-content: center;
       font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
+      background: #e9edf3;
+      padding: 0.75rem 1rem;
+      border-radius: 60px;
+      margin-top: 0.8rem;
     }
     .hex-item {
       background: white;
       padding: 0.2rem 0.8rem;
       border-radius: 30px;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     }
     .article-content {
-      margin-top: 2.5rem;
+      margin-top: 1rem;
     }
-    .article-content h2 {
+    h2 {
       font-size: 1.8rem;
       font-weight: 600;
       margin: 2rem 0 0.8rem;
-      color: #121b33;
+      letter-spacing: -0.01em;
     }
-    .article-content h3 {
+    h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      margin: 1.8rem 0 0.6rem;
-      color: #1f2d4e;
+      margin: 1.8rem 0 0.5rem;
+      color: #0f172a;
     }
-    .article-content p {
+    p {
       margin-bottom: 1.2rem;
-      color: #2b3550;
+      color: #1e293b;
     }
-    .article-content ul {
+    ul, ol {
       margin: 0.8rem 0 1.5rem 1.5rem;
     }
-    .article-content li {
+    li {
       margin-bottom: 0.4rem;
     }
-    .cta-box {
-      background: #eef3ff;
-      border-radius: 2rem;
-      padding: 2rem 2.2rem;
-      margin: 2.5rem 0 1rem;
+    .highlight {
+      background: #f0f0ff;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    .tip-box {
+      background: #f8f4ff;
+      border-left: 6px solid #a855f7;
+      padding: 1.2rem 1.5rem;
+      border-radius: 16px;
+      margin: 1.8rem 0;
+    }
+    .cta {
+      background: #0f172a;
+      color: white;
+      padding: 2rem 2rem;
+      border-radius: 24px;
       text-align: center;
+      margin: 2.5rem 0 1rem;
     }
-    .cta-box h3 {
-      font-size: 1.6rem;
-      margin-bottom: 0.6rem;
+    .cta h3 {
+      color: white;
+      margin-top: 0;
+      font-size: 1.8rem;
     }
-    .cta-box p {
+    .cta p {
+      color: #cbd5e1;
+      max-width: 600px;
+      margin: 0.5rem auto 1.5rem;
+    }
+    .cta .btn {
+      background: white;
+      color: #0f172a;
+      border: none;
+      font-weight: 600;
+      padding: 0.8rem 2.5rem;
       font-size: 1.1rem;
     }
-    .badge {
-      display: inline-block;
-      background: #6c7cff;
-      color: white;
-      padding: 0.1rem 1rem;
-      border-radius: 30px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.3px;
-      text-transform: uppercase;
+    .cta .btn:hover {
+      background: #e2e8f0;
+      transform: scale(1.02);
     }
     footer {
-      margin-top: 3rem;
       text-align: center;
-      color: #6b7a9a;
+      margin-top: 2rem;
+      color: #64748b;
       font-size: 0.9rem;
+    }
+    @media (max-width: 640px) {
+      .container { padding: 1.5rem; }
+      h1 { font-size: 2rem; }
+      .swatch { width: 52px; height: 52px; }
     }
   </style>
 </head>
 <body>
 <div class="container">
-  <span class="badge">✨ free design tool</span>
+  <!-- Title & intro -->
   <h1>🎨 Color Scheme Generator</h1>
-  <div class="subhead">Generate color schemes online free — harmonious palettes in seconds</div>
+  <div class="subhead">✨ Generate color schemes online free — interactive palette & expert guide</div>
 
-  <!-- interactive tool -->
+  <!-- INTERACTIVE TOOL -->
   <div class="tool-grid">
-    <div class="palette-preview">
-      <h2>🎯 Live palette</h2>
-      <div class="color-row" id="paletteRow"></div>
-      <div class="hex-codes" id="hexDisplay"></div>
-      <p style="margin-top: 1rem; font-size: 0.9rem; color:
+    <div style="flex:1 1 280px;">
+      <div style="background:#f1f5f9; border-radius:1.5rem; padding:1.8rem 1.5rem; height:100%;">
+        <h2 style="display:flex; align-items:center; gap:0.5rem; font-size:1.5rem; margin-bottom:1.2rem;">🎯 pick a base</h2>
+        <div style="display:flex; flex-direction:
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

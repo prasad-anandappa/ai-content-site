@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 Convert Between Measurement Units Online Free You Need to Know About | Free Online CALCULATOR Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for a "Unit Converter" tool and informational page. It combines an interactive conversion interface with a">
+    <meta name="description" content="This is a complete, interactive HTML page for a free online unit converter. It's designed as a practical tool and comprehensive guide, allowing you to convert">
     <meta name="keywords" content="Convert between measurement units online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,283 +128,262 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for a "Unit Converter" tool and informational page. It combines an interactive conversion interface with a detailed article, all styled for a clean, professional look.
+            This is a complete, interactive HTML page for a free online unit converter. It's designed as a practical tool and comprehensive guide, allowing you to convert between various measurement units directly in your browser.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Convert between measurement units online free with our fast, accurate unit converter. Length, mass, volume, temperature and more.">
-  <title>Unit Converter · Convert between measurement units online free</title>
+  <title>Unit Converter · Free Online Tool</title>
+  <!-- Font Awesome for icons (optional but clean) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
-      background: #f4f7fc;
-      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      color: #1e293b;
-      line-height: 1.6;
+      background: #f5f9fe;
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
       padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
       background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px -10px rgba(0, 20, 40, 0.15);
-      padding: 2rem 2.5rem;
+      border-radius: 32px;
+      box-shadow: 0 20px 40px rgba(0,20,50,0.08);
+      padding: 2rem 2rem 3rem;
     }
-
-    @media (max-width: 600px) {
-      .container { padding: 1.5rem 1.2rem; }
-    }
-
     h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      background: linear-gradient(145deg, #0b2b5c, #1e4b7a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #0a2540;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
       margin-bottom: 0.5rem;
-      display: inline-block;
     }
-
+    h1 i {
+      color: #2b7be4;
+      font-size: 2.2rem;
+    }
     .subhead {
-      font-size: 1.1rem;
-      color: #475569;
-      border-left: 4px solid #3b82f6;
+      font-size: 1.2rem;
+      color: #3c5a7a;
+      margin-bottom: 2rem;
+      border-left: 4px solid #2b7be4;
       padding-left: 1rem;
-      margin: 0.5rem 0 1.8rem 0;
-      font-weight: 400;
+      background: #f0f6ff;
+      border-radius: 0 12px 12px 0;
+      padding: 0.8rem 1.2rem;
     }
-
-    /* ---- interactive converter ---- */
-    .converter-card {
-      background: #f8fafc;
-      border-radius: 1.5rem;
-      padding: 2rem 1.8rem;
-      margin: 2rem 0 2.5rem 0;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-    }
-
     .converter-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem 2rem;
-      align-items: flex-end;
+      gap: 2rem;
+      margin: 2rem 0 2.5rem;
     }
-
-    .converter-item {
-      flex: 1 1 160px;
-      min-width: 130px;
+    .converter-card {
+      flex: 1 1 340px;
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 1.8rem 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      border: 1px solid #eef3fa;
+      transition: all 0.2s;
     }
-
-    .converter-item label {
-      display: block;
-      font-size: 0.8rem;
+    .converter-card:hover {
+      border-color: #cbdff7;
+      box-shadow: 0 12px 28px rgba(43, 123, 228, 0.08);
+    }
+    .converter-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #0a2540;
       font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: #475569;
-      margin-bottom: 0.3rem;
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #e5edf8;
+      padding-bottom: 0.75rem;
     }
-
-    .converter-item select,
-    .converter-item input {
-      width: 100%;
-      padding: 0.7rem 0.8rem;
-      border-radius: 12px;
-      border: 1px solid #cbd5e1;
-      background: white;
+    .converter-card h3 i {
+      color: #2b7be4;
+      width: 28px;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .input-group label {
+      font-weight: 500;
+      color: #1d3a5c;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+    }
+    .input-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .input-row input {
+      flex: 2 1 120px;
+      padding: 12px 14px;
+      border: 1px solid #dae2ed;
+      border-radius: 16px;
       font-size: 1rem;
-      transition: 0.2s;
+      background: #fafcff;
+      transition: 0.15s;
+      font-weight: 500;
     }
-
-    .converter-item select:focus,
-    .converter-item input:focus {
-      border-color: #3b82f6;
+    .input-row input:focus {
+      border-color: #2b7be4;
       outline: none;
-      box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+      box-shadow: 0 0 0 3px rgba(43,123,228,0.15);
+      background: white;
     }
-
+    .input-row select {
+      flex: 1 1 80px;
+      padding: 12px 8px;
+      border: 1px solid #dae2ed;
+      border-radius: 16px;
+      background: white;
+      font-weight: 500;
+      cursor: pointer;
+    }
     .swap-btn {
-      background: #eef2f6;
+      background: #eef3fa;
       border: none;
       border-radius: 40px;
-      padding: 0.6rem 1.4rem;
-      font-weight: 600;
-      color: #1e293b;
+      padding: 10px 14px;
+      font-size: 1.1rem;
       cursor: pointer;
+      color: #1d3a5c;
       transition: 0.15s;
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      font-size: 0.9rem;
-      margin-top: 1.2rem;
+      justify-content: center;
     }
-
     .swap-btn:hover {
-      background: #dce3ec;
-      transform: scale(0.97);
+      background: #d5e3f5;
+      color: #0a2540;
     }
-
-    .result-area {
-      margin-top: 1.8rem;
-      background: white;
-      padding: 1rem 1.4rem;
+    .result-box {
+      background: #f2f8ff;
+      padding: 0.9rem 1rem;
       border-radius: 20px;
-      border: 1px solid #dce3ec;
+      margin-top: 0.8rem;
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
       justify-content: space-between;
-    }
-
-    .result-value {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #0b2b5c;
-      word-break: break-all;
-    }
-
-    .result-label {
-      color: #475569;
-      font-size: 0.95rem;
-    }
-
-    .badge-free {
-      background: #dbeafe;
-      color: #1e4b7a;
-      padding: 0.2rem 1rem;
-      border-radius: 30px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      display: inline-block;
-      margin-left: 0.7rem;
-    }
-
-    /* article */
-    article {
-      margin-top: 1.5rem;
-    }
-
-    article h2 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin: 2rem 0 0.8rem 0;
-      letter-spacing: -0.01em;
-      color: #0f2a4a;
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.3rem;
-    }
-
-    article h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin: 1.5rem 0 0.6rem 0;
-      color: #1e3a5f;
-    }
-
-    article p {
-      margin-bottom: 1rem;
-      color: #1e293b;
-    }
-
-    article ul {
-      margin: 0.8rem 0 1.2rem 1.8rem;
-    }
-
-    article li {
-      margin-bottom: 0.4rem;
-    }
-
-    .tip-box {
-      background: #eef7ff;
-      border-radius: 1.2rem;
-      padding: 1.2rem 1.8rem;
-      border-left: 6px solid #3b82f6;
-      margin: 1.5rem 0;
-    }
-
-    .cta-section {
-      background: #0b2b5c;
-      color: white;
-      border-radius: 2rem;
-      padding: 2rem 2.5rem;
-      margin: 2.5rem 0 0.5rem 0;
-      text-align: center;
-    }
-
-    .cta-section h3 {
-      color: white;
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .cta-button {
-      background: white;
-      border: none;
-      color: #0b2b5c;
-      font-weight: 700;
-      padding: 0.9rem 2.8rem;
-      border-radius: 60px;
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: 0.2s;
-      margin-top: 1rem;
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    .cta-button:hover {
-      background: #e6f0ff;
-      transform: scale(0.97);
-    }
-
-    footer {
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #64748b;
-      text-align: center;
-      border-top: 1px solid #e2e8f0;
-      padding-top: 1.5rem;
-    }
-
-    .flex-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
       align-items: center;
+      border: 1px solid #dce8f5;
     }
-  </style>
-</head>
-<body>
-<div class="container">
-
-  <!-- header -->
-  <header>
-    <h1>⚡ Unit Converter</h1>
-    <div class="subhead">Convert between measurement units online free — length, mass, volume, temperature & more</div>
-  </header>
-
-  <!-- interactive converter tool -->
-  <div class="converter-card">
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
-      <span style="font-weight: 600; font-size: 1.2rem;">📐 instant converter</span>
-      <span class="badge-free">free · no signup</span>
-    </div>
-
-    <div class="converter-grid
+    .result-box span:first-child {
+      font-weight: 500;
+      color: #1f4970;
+    }
+    .result-value {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #0a2540;
+      background: white;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      min-width: 70px;
+      text-align: right;
+    }
+    .article-section {
+      margin-top: 2.5rem;
+      border-top: 1px solid #e6edf6;
+      padding-top: 2rem;
+    }
+    h2 {
+      font-size: 1.9rem;
+      color: #0a2540;
+      margin: 1.8rem 0 0.8rem;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 1.4rem;
+      color: #1d3a5c;
+      margin: 1.5rem 0 0.6rem;
+      font-weight: 600;
+    }
+    p {
+      line-height: 1.7;
+      color: #1f2f44;
+      margin-bottom: 1.1rem;
+      font-size: 1.05rem;
+    }
+    ul, ol {
+      margin: 1rem 0 1.5rem 1.8rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+      color: #1f2f44;
+    }
+    .tip-box {
+      background: #e9f2fa;
+      border-radius: 20px;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2b7be4;
+    }
+    .cta-box {
+      background: #0a2540;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem 2.5rem;
+      margin: 2.5rem 0 1rem;
+      text-align: center;
+    }
+    .cta-box h3 {
+      color: white;
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+    .cta-box p {
+      color: #dce8f5;
+      font-size: 1.1rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #2b7be4;
+      color: white;
+      padding: 14px 38px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-top: 0.8rem;
+      text-decoration: none;
+      transition: 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    .cta-button:hover {
+      background: #1b5bbf;
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(43,123,228,0.3);
+    }
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #5b7393;
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 1.
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

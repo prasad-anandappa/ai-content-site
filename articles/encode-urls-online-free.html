@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Encode Urls Online Free Matters More Than Ever | Free Online TEXT Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive URL Encoder tool and an SEO-optimized article. You can run it directly in your browser to">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive URL encoding tool and educational page. It combines a functional encoder with a detailed">
     <meta name="keywords" content="Encode URLs online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,7 +128,7 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive URL Encoder tool and an SEO-optimized article. You can run it directly in your browser to encode URLs and learn about the process.
+            This is a complete, self-contained HTML document for an interactive URL encoding tool and educational page. It combines a functional encoder with a detailed guide, all styled for clarity and ease of use.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -136,7 +136,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>URL Encoder · Encode URLs online free</title>
-  <meta name="description" content="Encode URLs online free with our interactive URL Encoder tool. Fast, secure, and works in your browser. Learn how URL encoding works with practical tips.">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -144,227 +145,240 @@
       box-sizing: border-box;
     }
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #f4f7fb;
-      color: #1e293b;
+      background: #f4f7fc;
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
       line-height: 1.6;
+      color: #1e293b;
       padding: 2rem 1rem;
     }
     .container {
       max-width: 1100px;
       margin: 0 auto;
       background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px rgba(0, 10, 30, 0.08);
-      padding: 2rem 2rem 3rem;
+      border-radius: 32px;
+      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.25);
+      padding: 2rem 1.8rem;
     }
     h1 {
       font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin-bottom: 0.2rem;
       color: #0f172a;
+      margin-bottom: 0.25rem;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 10px;
       flex-wrap: wrap;
+    }
+    h1 i {
+      color: #2563eb;
+      font-size: 2rem;
     }
     .subhead {
       font-size: 1.1rem;
       color: #475569;
-      margin-bottom: 2rem;
       border-left: 4px solid #3b82f6;
       padding-left: 1rem;
+      margin: 0.5rem 0 1.8rem 0;
+    }
+    .tool-card {
       background: #f8fafc;
-      border-radius: 0 12px 12px 0;
-      padding: 0.75rem 1.25rem;
+      border-radius: 24px;
+      padding: 1.8rem 1.5rem;
+      margin: 2rem 0 2.5rem 0;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
     }
     .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.8rem;
-      margin: 2.5rem 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
     }
-    @media (max-width: 700px) {
-      .tool-grid { grid-template-columns: 1fr; }
-      h1 { font-size: 1.8rem; }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
     }
-    .input-area, .output-area {
-      background: #f1f5f9;
-      border-radius: 1.25rem;
-      padding: 1.5rem;
-      transition: 0.2s;
-    }
-    .input-area label, .output-area label {
+    .input-group label {
       font-weight: 600;
-      display: block;
-      margin-bottom: 0.5rem;
-      color: #1e293b;
       font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
+      color: #1e293b;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
     textarea {
       width: 100%;
-      min-height: 120px;
-      padding: 0.9rem 1rem;
-      border: 2px solid #e2e8f0;
-      border-radius: 1rem;
+      min-height: 100px;
+      padding: 14px 16px;
+      border: 1px solid #d1d9e6;
+      border-radius: 20px;
       font-size: 1rem;
-      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
       background: white;
+      transition: 0.2s;
       resize: vertical;
-      transition: 0.15s;
     }
     textarea:focus {
-      outline: none;
-      border-color: #3b82f6;
+      outline: 2px solid #3b82f6;
+      border-color: transparent;
       box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
     }
-    .output-area textarea {
-      background: #f8fafc;
-      border-color: #cbd5e1;
-      color: #0b1e33;
-    }
-    .actions {
+    .action-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 1.2rem;
-      align-items: center;
+      gap: 12px;
+      margin: 0.8rem 0 0.2rem 0;
     }
     .btn {
-      background: white;
-      border: 2px solid #cbd5e1;
-      padding: 0.6rem 1.4rem;
-      border-radius: 2rem;
+      border: none;
+      background: #ffffff;
+      padding: 10px 22px;
+      border-radius: 40px;
       font-weight: 600;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: 0.15s;
-      color: #1e293b;
+      font-size: 0.95rem;
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 10px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      transition: all 0.15s ease;
+      border: 1px solid #dce3ed;
+      color: #1e293b;
     }
     .btn-primary {
       background: #2563eb;
-      border-color: #2563eb;
+      border: 1px solid #2563eb;
       color: white;
-      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
+      box-shadow: 0 4px 8px rgba(37,99,235,0.2);
     }
     .btn-primary:hover {
       background: #1d4ed8;
       transform: scale(1.02);
     }
     .btn-outline:hover {
-      background: #e9edf2;
-      border-color: #94a3b8;
+      background: #eef2f6;
+      border-color: #b9c7da;
     }
-    .btn-copy {
+    .btn-icon {
+      background: transparent;
+      border: none;
+      font-size: 1.2rem;
+      padding: 6px 10px;
+      color: #4b5563;
+    }
+    .btn-icon:hover {
+      color: #0f172a;
+      background: #e9edf3;
+      border-radius: 30px;
+    }
+    .result-area {
       background: #f1f5f9;
-      border-color: #cbd5e1;
+      border-radius: 20px;
+      padding: 1rem 1.2rem;
+      margin-top: 0.8rem;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      word-break: break-all;
+    }
+    .result-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      background: white;
+      padding: 0.6rem 1rem;
+      border-radius: 16px;
+      flex: 1;
+      border: 1px solid #dce3ed;
+      min-height: 3rem;
+    }
+    .copy-btn {
+      background: white;
+      border: 1px solid #cbd5e1;
+      border-radius: 40px;
+      padding: 8px 18px;
+      font-weight: 500;
+      transition: 0.1s;
+    }
+    .copy-btn:hover {
+      background: #eef2f6;
     }
     .badge {
       background: #dbeafe;
       color: #1e40af;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.2rem 0.8rem;
       border-radius: 40px;
-      margin-left: 1rem;
-      letter-spacing: 0.02em;
-    }
-    .stats {
-      margin-top: 0.8rem;
-      font-size: 0.85rem;
-      color: #475569;
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .article-section {
-      margin-top: 3.5rem;
-      border-top: 2px solid #eef2f6;
-      padding-top: 2.2rem;
+      padding: 0.2rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-block;
     }
     h2 {
       font-size: 1.8rem;
-      margin: 2rem 0 0.8rem;
       font-weight: 700;
+      margin-top: 2.2rem;
+      margin-bottom: 0.8rem;
       color: #0f172a;
-    }
-    h2:first-of-type {
-      margin-top: 0.2rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.3rem;
     }
     h3 {
       font-size: 1.3rem;
-      margin: 1.8rem 0 0.5rem;
       font-weight: 600;
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
       color: #1e293b;
     }
     p {
-      margin-bottom: 1.1rem;
+      margin-bottom: 1rem;
     }
     ul, ol {
-      margin: 0.8rem 0 1.5rem 1.5rem;
+      margin-left: 1.6rem;
+      margin-bottom: 1.4rem;
     }
     li {
       margin-bottom: 0.3rem;
     }
-    code {
-      background: #eef2f6;
-      padding: 0.1rem 0.4rem;
-      border-radius: 8px;
-      font-size: 0.9em;
-      color: #0c4a6e;
-    }
-    .highlight-box {
+    .tip-box {
       background: #f0f9ff;
-      border-left: 5px solid #3b82f6;
-      padding: 1.2rem 1.5rem;
-      border-radius: 1rem;
+      border-left: 5px solid #0ea5e9;
+      padding: 1rem 1.5rem;
+      border-radius: 16px;
       margin: 1.8rem 0;
     }
-    .footer-note {
-      margin-top: 3rem;
-      text-align: center;
-      color: #64748b;
-      font-size: 0.9rem;
+    .faq-item {
+      background: #fafbfc;
+      border-radius: 16px;
+      padding: 0.8rem 1.2rem;
+      margin: 0.6rem 0;
+      border: 1px solid #e9edf2;
     }
-    .keyword-highlight {
-      color: #2563eb;
-      font-weight: 500;
+    .faq-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #0f172a;
+    }
+    footer {
+      margin-top: 2.8rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1.5rem;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.2rem; }
+      h1 { font-size: 1.8rem; }
+      .action-bar { flex-direction: column; }
     }
   </style>
 </head>
 <body>
 <div class="container">
-  
-  <!-- HEADER -->
-  <header style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
-    <div>
-      <h1>🔗 URL Encoder <span class="badge">free · online</span></h1>
-      <div class="subhead">Encode URLs online free — instantly transform any string into a valid percent‑encoded URL.</div>
-    </div>
-  </header>
-
-  <!-- INTERACTIVE TOOL -->
-  <div class="tool-grid">
-    <div class="input-area">
-      <label for="inputText">Enter text or URL to encode</label>
-      <textarea id="inputText" placeholder="e.g. https://example.com/search?q=hello world&lang=en">https://example.com/search?q=hello world&lang=en</textarea>
-      <div class="actions">
-        <button class="btn btn-primary" id="encodeBtn">⚡ Encode now</button>
-        <button class="btn btn-outline" id="clearBtn">✕ Clear</button>
-        <button class="btn btn-outline" id="exampleBtn">↻ Load example</button>
-      </div>
-      <div class="stats">
-        <span>Characters: <span id="inputCharCount">48</span></span>
-        <span>Encoded length: <span id="encodedLengthPreview">—</span></span>
-      </div>
-    </div>
-    <div class
+  <!-- Header -->
+  <h1><i class="fas fa-link"></i> URL Encoder</h1>
+  <div class="subhead"><i class="fas fa-globe"></i> Encode URLs online free — instant percent‑encoding for any text</div
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

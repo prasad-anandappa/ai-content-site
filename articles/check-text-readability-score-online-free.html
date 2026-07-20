@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ultimate Guide to Check Text Readability Score Online Free in 2025 | Free Online SEO Tool</title>
-    <meta name="description" content="This is a complete, ready-to-use HTML document for an interactive "Readability Score" tool. It combines an SEO-optimized article with a live text analysis">
+    <meta name="description" content="This is a self-contained HTML tool page for checking text readability scores online. It combines a functional text analysis tool with an informative article,">
     <meta name="keywords" content="Check text readability score online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,252 +128,243 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, ready-to-use HTML document for an interactive "Readability Score" tool. It combines an SEO-optimized article with a live text analysis feature, allowing you to check the readability of any text online for free. The tool calculates key metrics like the Flesch Reading Ease and grade levels, while the article provides context and practical tips.
+            This is a self-contained HTML tool page for checking text readability scores online. It combines a functional text analysis tool with an informative article, all styled for a clean, professional look.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Readability Score · Check text readability score online free</title>
-    <meta name="description" content="Check text readability score online free with our interactive tool. Flesch Reading Ease, grade level, word stats & SEO tips.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: #f5f9fc;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #1a2634;
-            padding: 2rem 1rem;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 28px;
-            box-shadow: 0 20px 40px -12px rgba(0,20,40,0.15);
-            padding: 2rem 2rem 3rem;
-        }
-        h1 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #0b2f56, #1b5a7a);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.35rem;
-            line-height: 1.2;
-        }
-        .subhead {
-            font-size: 1.2rem;
-            color: #3e5a6b;
-            margin-bottom: 1.8rem;
-            border-left: 4px solid #2b7a9c;
-            padding-left: 1rem;
-            font-weight: 400;
-        }
-        .tool-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin: 2rem 0 2.5rem;
-        }
-        @media (max-width: 700px) {
-            .tool-grid { grid-template-columns: 1fr; }
-            h1 { font-size: 1.9rem; }
-            .container { padding: 1.5rem; }
-        }
-        .input-area textarea {
-            width: 100%;
-            min-height: 220px;
-            padding: 1rem 1.2rem;
-            font-size: 1rem;
-            border: 2px solid #dae4ed;
-            border-radius: 20px;
-            background: #fafdff;
-            transition: 0.2s;
-            resize: vertical;
-            font-family: inherit;
-            line-height: 1.6;
-        }
-        .input-area textarea:focus {
-            outline: none;
-            border-color: #2b7a9c;
-            box-shadow: 0 0 0 4px rgba(43,122,156,0.12);
-        }
-        .input-area label {
-            font-weight: 600;
-            font-size: 1.1rem;
-            display: block;
-            margin-bottom: 0.6rem;
-            color: #1a3b4e;
-        }
-        .btn-group {
-            display: flex;
-            gap: 0.8rem;
-            margin-top: 1.2rem;
-            flex-wrap: wrap;
-        }
-        .btn {
-            background: white;
-            border: 2px solid #cbdae6;
-            padding: 0.6rem 1.6rem;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: 0.15s;
-            color: #1f3b4e;
-            background: #f2f7fc;
-        }
-        .btn-primary {
-            background: #1a5f7a;
-            border-color: #1a5f7a;
-            color: white;
-        }
-        .btn-primary:hover {
-            background: #0d445b;
-            border-color: #0d445b;
-            transform: scale(0.97);
-        }
-        .btn-outline:hover {
-            background: #e4eef5;
-            border-color: #8baec6;
-        }
-        .stats-panel {
-            background: #f2f8fe;
-            border-radius: 24px;
-            padding: 1.5rem 1.8rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .score-main {
-            display: flex;
-            align-items: baseline;
-            gap: 0.6rem;
-            flex-wrap: wrap;
-            margin-bottom: 1.2rem;
-        }
-        .score-number {
-            font-size: 3.8rem;
-            font-weight: 700;
-            line-height: 1;
-            color: #0d2f46;
-        }
-        .score-label {
-            font-size: 1.1rem;
-            color: #2b5b78;
-            font-weight: 500;
-        }
-        .grade-badge {
-            background: #dcebf5;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 1rem;
-            color: #0a3247;
-            display: inline-block;
-            margin-top: 0.25rem;
-        }
-        .stat-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.2rem 2rem;
-            margin-top: 0.8rem;
-            padding-top: 1rem;
-            border-top: 1px solid #d3e2ed;
-        }
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-        }
-        .stat-value {
-            font-weight: 700;
-            font-size: 1.4rem;
-            color: #133b51;
-        }
-        .stat-label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            color: #4f738b;
-        }
-        .interpretation {
-            background: #e7f0f7;
-            padding: 0.8rem 1.2rem;
-            border-radius: 40px;
-            font-weight: 500;
-            margin-top: 1rem;
-            color: #0b3348;
-        }
-        .article {
-            margin-top: 2.8rem;
-            padding-top: 1.5rem;
-            border-top: 2px solid #e6edf4;
-        }
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin: 1.8rem 0 0.8rem;
-            letter-spacing: -0.01em;
-            color: #0f3044;
-        }
-        h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.6rem 0 0.5rem;
-            color: #1f4a61;
-        }
-        p {
-            margin-bottom: 1.1rem;
-            color: #1f3342;
-        }
-        ul {
-            margin: 0.8rem 0 1.5rem 1.6rem;
-        }
-        li {
-            margin-bottom: 0.4rem;
-        }
-        .callout {
-            background: #edf6fc;
-            padding: 1.2rem 1.8rem;
-            border-radius: 28px;
-            margin: 1.8rem 0;
-            border-left: 6px solid #1e6f8f;
-        }
-        .footer-note {
-            margin-top: 2.5rem;
-            font-size: 0.9rem;
-            color: #4b6f84;
-            text-align: center;
-        }
-        a {
-            color: #1a6a8a;
-        }
-        .inline-keyword {
-            font-weight: 500;
-            background: #eaf3fa;
-            padding: 0.05rem 0.3rem;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readability Score · check text readability online free</title>
+  <meta name="description" content="Check text readability score online free. Analyze Flesch-Kincaid, Gunning Fog, SMOG & more. Get instant readability feedback for SEO, content, and education.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f8fafc;
+      color: #0b1b2f;
+      line-height: 1.6;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .page {
+      max-width: 1150px;
+      width: 100%;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+      padding: 2rem 2rem 3rem;
+      margin: 1.5rem 0;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .subhead {
+      font-size: 1.1rem;
+      color: #2c3e50;
+      border-left: 5px solid #2a7f62;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+    .tool-section {
+      background: #f1f5f9;
+      border-radius: 1.5rem;
+      padding: 1.8rem 1.8rem 2rem;
+      margin: 2rem 0 2.5rem;
+      border: 1px solid #e2e8f0;
+    }
+    .tool-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .input-area {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    label {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1e293b;
+    }
+    textarea {
+      width: 100%;
+      min-height: 180px;
+      padding: 1rem 1.2rem;
+      border-radius: 1rem;
+      border: 1px solid #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.6;
+      background: white;
+      resize: vertical;
+      transition: 0.2s;
+    }
+    textarea:focus {
+      outline: 2px solid #2a7f62;
+      border-color: transparent;
+      box-shadow: 0 0 0 4px rgba(42,127,98,0.15);
+    }
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .btn-primary {
+      background: #1f5e4a;
+      color: white;
+      border: none;
+      padding: 0.8rem 2.2rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 8px rgba(31,94,74,0.2);
+    }
+    .btn-primary:hover {
+      background: #134232;
+      transform: scale(1.02);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #94a3b8;
+      padding: 0.7rem 1.6rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-outline:hover {
+      background: #e9edf2;
+      border-color: #64748b;
+    }
+    .score-dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1.8rem;
+    }
+    .score-card {
+      background: white;
+      border-radius: 1.2rem;
+      padding: 1rem 0.8rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      border: 1px solid #e2e8f0;
+    }
+    .score-card h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #475569;
+      margin-bottom: 0.3rem;
+    }
+    .score-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f2c3b;
+      line-height: 1.2;
+    }
+    .score-value.small {
+      font-size: 1.5rem;
+    }
+    .score-label {
+      font-size: 0.75rem;
+      color: #64748b;
+      margin-top: 0.2rem;
+    }
+    .interpretation {
+      margin-top: 1.2rem;
+      background: #dce7e3;
+      padding: 0.8rem 1.4rem;
+      border-radius: 1.2rem;
+      font-weight: 500;
+      color: #1a3a2f;
+    }
+    .article-content {
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 0.8rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+      border-bottom: 2px solid #eef2f6;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin: 1.6rem 0 0.6rem;
+      font-weight: 600;
+      color: #1e3f33;
+    }
+    p {
+      margin-bottom: 1.1rem;
+    }
+    ul {
+      margin: 0.8rem 0 1.5rem 1.8rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .callout {
+      background: #eaf3ef;
+      padding: 1.2rem 1.8rem;
+      border-radius: 1.2rem;
+      border-left: 6px solid #2a7f62;
+      margin: 1.8rem 0;
+    }
+    .footer-note {
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+      color: #4a5f73;
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1.8rem;
+    }
+    @media (max-width: 600px) {
+      .page { padding: 1.2rem; }
+      h1 { font-size: 1.8rem; }
+      .score-dashboard { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-    <h1>🔍 Readability Score</h1>
-    <div class="subhead">Check text readability score online free — Flesch, grade level & word stats</div>
+<div class="page">
+  <h1>📖 Readability Score</h1>
+  <div class="subhead">Check text readability score online free — Flesch, Fog, SMOG & grade level</div>
 
-    <!-- interactive tool -->
+  <!-- interactive tool -->
+  <div class="tool-section">
     <div class="tool-grid">
-        <div class="input-area">
-            <label for="textInput">✏️ Paste your text to check readability</label>
-            <textarea id="textInput" placeholder="Paste or type your content here... (at least 20–30 words for
+      <div class="input-area">
+        <label for="textInput">✏️ Paste or type your text below</label>
+        <textarea id="textInput" placeholder="Paste your content, article, or essay here to check readability score online free...">The quick brown fox jumps over the lazy dog. This simple sentence is easy to read. However, implementing a comprehensive readability analysis requires sophisticated algorithms and linguistic understanding.</textarea>
+      </div>
+      <div class="action-row">
+        <button class="btn-primary" id="analyzeBtn">🔍 Check readability score</button>
+        <button class="btn-outline" id="clearBtn">Clear text</button>
+        <span style="font-size:0.9rem; color:#475569; margin-left:auto;">~ instant, no storage</span>
+      </div>
+    </div
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

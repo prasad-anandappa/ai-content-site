@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert Pdf Pages To Jpg Images Online Free: Complete Review and Buying Guide | Free Online PDF Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for converting PDF pages to JPG images online. It includes a functional drag-and-drop uploader, a preview area for">
+    <meta name="description" content="This is a self-contained HTML document for a PDF to JPG conversion tool. It combines a practical, browser-based converter with an informative article about the">
     <meta name="keywords" content="Convert PDF pages to JPG images online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,254 +128,263 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for converting PDF pages to JPG images online. It includes a functional drag-and-drop uploader, a preview area for extracted pages, and a comprehensive article optimized for your target keyword.
+            This is a self-contained HTML document for a PDF to JPG conversion tool. It combines a practical, browser-based converter with an informative article about the process. The page is designed for clarity and ease of use, featuring a drag-and-drop interface and a comprehensive guide on converting PDF pages to images.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF to JPG · Convert PDF pages to JPG images online free</title>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background: #f4f7fc;
-      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
-      padding: 2rem 1rem;
-      color: #1e293b;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 32px;
-      padding: 2rem 2rem 3rem;
-      box-shadow: 0 20px 40px -12px rgba(0,20,50,0.15);
-    }
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #0b2b4a;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 0.3rem;
-    }
-    h1 i {
-      color: #3b82f6;
-      font-size: 2rem;
-    }
-    .subhead {
-      font-size: 1.1rem;
-      color: #475569;
-      margin-bottom: 2rem;
-      border-left: 4px solid #3b82f6;
-      padding-left: 1rem;
-    }
-    /* TOOL CARD */
-    .tool-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 28px;
-      padding: 2rem 1.5rem 1.8rem;
-      margin-bottom: 2.5rem;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.02);
-    }
-    .upload-area {
-      border: 2px dashed #cbd5e1;
-      background: #ffffff;
-      border-radius: 24px;
-      padding: 2.5rem 1rem;
-      text-align: center;
-      transition: 0.2s;
-      cursor: pointer;
-    }
-    .upload-area.dragover {
-      background: #eef6ff;
-      border-color: #3b82f6;
-    }
-    .upload-area i {
-      font-size: 3.2rem;
-      color: #3b82f6;
-      margin-bottom: 0.5rem;
-    }
-    .upload-area p {
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
-    .upload-area small {
-      color: #64748b;
-    }
-    #fileInput {
-      display: none;
-    }
-    .btn {
-      background: #2563eb;
-      border: none;
-      color: white;
-      font-weight: 600;
-      padding: 0.75rem 2rem;
-      border-radius: 40px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.15s;
-      box-shadow: 0 4px 6px -2px rgba(37,99,235,0.2);
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .btn:hover {
-      background: #1d4ed8;
-      transform: scale(0.98);
-    }
-    .btn:disabled {
-      opacity: 0.5;
-      pointer-events: none;
-    }
-    .btn-secondary {
-      background: #e2e8f0;
-      color: #1e293b;
-      box-shadow: none;
-    }
-    .btn-secondary:hover {
-      background: #cbd5e1;
-    }
-    .flex-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      justify-content: center;
-      margin: 1.5rem 0 0.5rem;
-    }
-    .status-box {
-      background: #f1f5f9;
-      border-radius: 40px;
-      padding: 0.5rem 1.2rem;
-      font-size: 0.95rem;
-      color: #334155;
-      display: inline-block;
-    }
-    /* preview gallery */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      gap: 16px;
-      margin: 1.8rem 0 1rem;
-    }
-    .gallery-item {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.04);
-      overflow: hidden;
-      border: 1px solid #e9edf2;
-      text-align: center;
-      padding-bottom: 6px;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 110px;
-      object-fit: cover;
-      display: block;
-      background: #f1f5f9;
-    }
-    .gallery-item span {
-      font-size: 0.75rem;
-      color: #475569;
-      display: block;
-      margin: 4px 0 2px;
-    }
-    .gallery-item a {
-      text-decoration: none;
-      font-size: 0.7rem;
-      color: #2563eb;
-      font-weight: 500;
-    }
-    .article {
-      margin-top: 2rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #0b2b4a;
-      margin: 2rem 0 1rem;
-      border-bottom: 2px solid #eef2f6;
-      padding-bottom: 0.3rem;
-    }
-    h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin: 1.6rem 0 0.8rem;
-      color: #1e3a5f;
-    }
-    p {
-      margin-bottom: 1rem;
-      color: #1e293b;
-    }
-    ul {
-      margin: 1rem 0 1rem 1.5rem;
-    }
-    li {
-      margin-bottom: 0.4rem;
-    }
-    .fa-ul li {
-      list-style: disc;
-    }
-    .cta-box {
-      background: #eef6ff;
-      border-radius: 24px;
-      padding: 1.5rem 2rem;
-      margin: 2rem 0 0.5rem;
-      text-align: center;
-    }
-    .cta-box h3 {
-      margin-top: 0;
-    }
-    footer {
-      margin-top: 2.5rem;
-      font-size: 0.85rem;
-      color: #64748b;
-      text-align: center;
-      border-top: 1px solid #e2e8f0;
-      padding-top: 1.5rem;
-    }
-    @media (max-width: 600px) {
-      .container { padding: 1.5rem; }
-      h1 { font-size: 1.7rem; }
-      .gallery { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); }
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-  <h1><i class="fas fa-file-pdf"></i> PDF → JPG</h1>
-  <div class="subhead">Convert PDF pages to JPG images online free — no upload limits, no sign-up.</div>
-
-  <!-- TOOL SECTION -->
-  <div class="tool-card">
-    <div class="upload-area" id="dropZone">
-      <i class="fas fa-cloud-upload-alt"></i>
-      <p><strong>Drop PDF here</strong> or click to browse</p>
-      <small>Max 20 pages · files stay private</small>
-      <input type="file" id="fileInput" accept=".pdf,application/pdf" />
-    </div>
-
-    <div class="flex-row">
-      <button class="btn" id="convertBtn" disabled><i class="fas fa-image"></i> Convert to JPG</button>
-      <button class="btn btn-secondary" id="clearBtn"><i class="fas fa-trash-alt"></i> Clear</button>
-    </div>
-    <div id="statusMessage" class="status-box" style="margin: 0 auto; display: table;">📄 No PDF loaded</div>
-
-    <!-- preview gallery -->
-    <div id="pre
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to JPG · Convert PDF pages to JPG images online free</title>
+    <meta name="description" content="Convert PDF pages to JPG images online free. No upload, no server, fully private. Instant high-quality JPG extraction from any PDF.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background: #f6f9fc;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            background: white;
+            border-radius: 2.5rem;
+            box-shadow: 0 20px 40px -12px rgba(0,20,30,0.15);
+            padding: 2.2rem 2rem 3rem;
+        }
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #0b2b3b;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 0.3rem;
+        }
+        .subhead {
+            font-size: 1.2rem;
+            color: #2c5770;
+            margin-bottom: 2rem;
+            border-left: 4px solid #2f8db2;
+            padding-left: 1rem;
+            background: #eef6fa;
+            border-radius: 0 12px 12px 0;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+        .tool-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            background: #f0f7fb;
+            border-radius: 2rem;
+            padding: 1.8rem 2rem;
+            margin-bottom: 3rem;
+            align-items: flex-start;
+        }
+        .upload-area {
+            flex: 2;
+            min-width: 260px;
+        }
+        .preview-area {
+            flex: 3;
+            min-width: 280px;
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.2rem 1.2rem 1.2rem;
+            box-shadow: 0 8px 18px rgba(0, 20, 30, 0.05);
+        }
+        .drop-zone {
+            border: 2px dashed #7bb8d4;
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.8rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .drop-zone:hover {
+            background: #e5f1f9;
+            border-color: #1f7a9e;
+        }
+        .drop-zone.dragover {
+            background: #d1e9f5;
+            border-color: #0f5e7a;
+        }
+        .drop-zone p {
+            font-weight: 500;
+            color: #124e6b;
+            font-size: 1.1rem;
+        }
+        .drop-zone .icon {
+            font-size: 2.8rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .file-input {
+            display: none;
+        }
+        .convert-btn {
+            background: #11698b;
+            color: white;
+            border: none;
+            padding: 0.9rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 4px 8px rgba(0,60,80,0.1);
+            margin-top: 1.2rem;
+            width: 100%;
+        }
+        .convert-btn:hover:not(:disabled) {
+            background: #0a4d66;
+            transform: scale(1.02);
+        }
+        .convert-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #7f9aa8;
+        }
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            flex-wrap: wrap;
+        }
+        .preview-header span {
+            font-weight: 600;
+            color: #0a3b4f;
+        }
+        .page-indicator {
+            background: #e1edf5;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+        }
+        .preview-box {
+            background: #eef3f7;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .preview-box canvas, .preview-box img {
+            max-width: 100%;
+            max-height: 260px;
+            border-radius: 0.8rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            background: white;
+        }
+        .preview-actions {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 0.8rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #2a7a9c;
+            color: #1a5f7a;
+            padding: 0.4rem 1.2rem;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-outline:hover {
+            background: #dbeaf2;
+        }
+        .btn-primary-sm {
+            background: #11698b;
+            border: none;
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-primary-sm:hover {
+            background: #0a4d66;
+        }
+        .grid-thumbs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.8rem;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+        .grid-thumbs img {
+            width: 48px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #cbdae3;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+        .grid-thumbs img:hover {
+            border-color: #0f5e7a;
+            transform: scale(1.03);
+        }
+        .status-msg {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #1e5a72;
+        }
+        .article-section {
+            margin-top: 1.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #0b2b3b;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            font-weight: 650;
+            letter-spacing: -0.01em;
+        }
+        h3 {
+            font-size: 1.3rem;
+            color: #144d66;
+            margin: 1.5rem 0 0.5rem;
+            font-weight: 600;
+        }
+        p {
+            line-height: 1.6;
+            color: #1e3b49;
+            margin: 1rem 0;
+        }
+        ul {
+            margin: 0.8rem 0 1.2rem 1.5rem;
+        }
+        li {
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+            color: #1f3f4e;
+        }
+        .highlight-box {
+            background: #e4f0f7;
+            padding: 1.2rem 1.8rem;
+            border-radius: 1.2rem;
+            margin: 1.8rem 0;
+        }
+        .footer-note {
+            text-align: center;
+            margin
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pick Colors From Images Online Free: Complete Review and Buying Guide | Free Online IMAGE Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Color Picker" tool. It allows users to upload an image and click anywhere on it to">
+    <title>Top 10 Pick Colors From Images Online Free You Need to Know About | Free Online IMAGE Tool</title>
+    <meta name="description" content="Here is the interactive HTML tool page for a "Color Picker" that lets users pick colors from images online for free. It combines a functional color extraction">
     <meta name="keywords" content="Pick colors from images online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Pick Colors From Images Online Free: Complete Review and Buying Guide</h1>
+        <h1>Top 10 Pick Colors From Images Online Free You Need to Know About</h1>
         <p>Free Online IMAGE Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,259 +128,294 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive "Color Picker" tool. It allows users to upload an image and click anywhere on it to instantly capture the hex, RGB, and HSL color values. The page also includes a comprehensive, SEO-friendly article about picking colors from images online for free, with practical tips and a clear call to action.
+            Here is the interactive HTML tool page for a "Color Picker" that lets users pick colors from images online for free. It combines a functional color extraction tool with a comprehensive, SEO-optimized article.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Picker – Pick colors from images online free</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>Color Picker: Pick colors from images online free</title>
+  <!-- Font & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
+
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
-      line-height: 1.6;
+      background: #f4f7fc;
+      display: flex;
+      justify-content: center;
       padding: 2rem 1rem;
     }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    /* interactive tool card */
-    .tool-card {
-      background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 35px -10px rgba(0,0,0,0.15);
-      padding: 2rem 2rem 2.5rem;
-      margin-bottom: 3rem;
-      transition: box-shadow 0.2s;
-    }
-    .tool-card h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.25rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .tool-card .subhead {
-      color: #475569;
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
-      border-left: 4px solid #6366f1;
-      padding-left: 1rem;
-    }
-    .picker-area {
-      display: flex;
-      flex-direction: column;
-      gap: 1.8rem;
-    }
-    .upload-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1rem 1.5rem;
-    }
-    .upload-btn-wrapper {
-      position: relative;
-      overflow: hidden;
-      display: inline-block;
-    }
-    .upload-btn-wrapper input[type=file] {
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: 0;
+
+    .page-wrapper {
+      max-width: 1200px;
       width: 100%;
-      height: 100%;
-      cursor: pointer;
-    }
-    .btn {
-      background: #1e293b;
-      color: white;
-      font-weight: 600;
-      padding: 0.7rem 1.6rem;
-      border-radius: 60px;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .btn-primary {
-      background: #6366f1;
-    }
-    .btn-primary:hover {
-      background: #4f46e5;
-      transform: scale(1.02);
-    }
-    .btn-outline {
-      background: transparent;
-      border: 1.5px solid #cbd5e1;
-      color: #1e293b;
-    }
-    .btn-outline:hover {
-      background: #f1f5f9;
-    }
-    .image-container {
-      position: relative;
-      display: inline-block;
-      max-width: 100%;
-      margin: 0.5rem 0 0.8rem;
-      border-radius: 24px;
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
       overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      background: #e2e8f0;
-      min-height: 200px;
+      padding: 2rem 2rem 2.5rem;
     }
-    .image-container img {
-      display: block;
-      max-width: 100%;
-      max-height: 480px;
-      object-fit: contain;
-      cursor: crosshair;
-      transition: opacity 0.3s;
+
+    /* tool card */
+    .tool-card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+      border: 1px solid #eef2f6;
+      margin-bottom: 2.5rem;
     }
-    .image-container canvas {
+
+    .tool-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.8rem;
+    }
+
+    .tool-header h1 {
+      font-size: 1.9rem;
+      font-weight: 620;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #0b1e33, #1d3b5c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .badge-free {
+      background: #d3e6fd;
+      color: #0057a3;
+      font-weight: 600;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      letter-spacing: 0.3px;
+      display: inline-block;
+    }
+
+    .drop-area {
+      border: 2px dashed #b9d1e9;
+      border-radius: 24px;
+      padding: 2.2rem 1.5rem;
+      text-align: center;
+      background: #f9fcff;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    .drop-area:hover, .drop-area.drag-over {
+      background: #eef5fe;
+      border-color: #2d7ad4;
+    }
+
+    .drop-area i {
+      font-size: 2.8rem;
+      color: #2d7ad4;
+      margin-bottom: 0.75rem;
+    }
+
+    .drop-area p {
+      color: #2c3e50;
+      font-weight: 500;
+    }
+
+    .drop-area .sub {
+      font-size: 0.9rem;
+      color: #5b6f82;
+      margin-top: 0.3rem;
+    }
+
+    .hidden-input {
       display: none;
     }
-    .color-preview-row {
+
+    .preview-section {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      gap: 1.5rem 2rem;
-      background: #f1f5f9;
-      padding: 1rem 1.5rem;
-      border-radius: 60px;
-      margin-top: 0.5rem;
+      gap: 2rem;
+      margin-top: 1.8rem;
+      align-items: flex-start;
     }
+
+    .image-preview-box {
+      flex: 2 1 280px;
+      min-width: 240px;
+      background: #f0f4fa;
+      border-radius: 20px;
+      padding: 0.8rem;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.02);
+    }
+
+    .image-preview-box img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 16px;
+      display: block;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+
+    .picker-canvas-wrapper {
+      flex: 1 1 200px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1rem 1rem 1.2rem;
+      border: 1px solid #e3eaf2;
+    }
+
+    .canvas-container {
+      position: relative;
+      width: 100%;
+      cursor: crosshair;
+      background: #eef2f6;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    #imageCanvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #f8fafc;
+      border-radius: 16px;
+    }
+
+    .color-preview-group {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 1rem 0 0.8rem;
+      flex-wrap: wrap;
+    }
+
     .color-swatch {
-      width: 64px;
-      height: 64px;
+      width: 48px;
+      height: 48px;
       border-radius: 20px;
       border: 2px solid white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      transition: background 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: 0.1s;
     }
-    .color-values {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem 1.8rem;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 1rem;
-    }
-    .color-values span {
-      background: white;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
-    }
-    .color-values strong {
+
+    .color-hex {
+      background: #f2f6fc;
+      padding: 0.4rem 1rem;
+      border-radius: 60px;
       font-weight: 600;
-      color: #334155;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      color: #0b1e33;
     }
-    .copy-hint {
+
+    .color-rgb {
       font-size: 0.9rem;
-      color: #64748b;
+      color: #3d5a73;
+    }
+
+    .copy-btn {
+      background: white;
+      border: 1px solid #d0ddee;
+      border-radius: 40px;
+      padding: 0.5rem 1.2rem;
+      font-weight: 500;
+      color: #1d3b5c;
+      transition: 0.15s;
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
       margin-left: auto;
     }
-    .empty-state {
-      padding: 2.5rem 1rem;
-      text-align: center;
-      color: #64748b;
+
+    .copy-btn:hover {
+      background: #e5effa;
+      border-color: #2d7ad4;
     }
-    .empty-state svg {
-      opacity: 0.4;
-      margin-bottom: 0.5rem;
+
+    .copy-btn:active {
+      transform: scale(0.96);
     }
-    .click-instruction {
-      font-size: 0.95rem;
-      margin-top: 0.2rem;
-      color: #475569;
+
+    .info-badge {
+      background: #eef4fa;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      color: #1f4973;
     }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e3eaf2;
+      margin: 2rem 0 1.8rem;
+    }
+
     /* article styles */
-    article {
-      background: white;
-      border-radius: 2rem;
-      padding: 2.5rem 2rem;
-      box-shadow: 0 10px 25px -8px rgba(0,0,0,0.05);
-    }
-    article h2 {
+    .article-content h2 {
       font-size: 1.8rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      color: #0f172a;
-      border-bottom: 3px solid #eef2ff;
-      padding-bottom: 0.4rem;
+      font-weight: 620;
+      margin: 2rem 0 0.8rem;
+      color: #0b1e33;
+      letter-spacing: -0.01em;
     }
-    article h2:first-of-type {
-      margin-top: 0;
-    }
-    article h3 {
+
+    .article-content h3 {
       font-size: 1.3rem;
-      margin: 1.8rem 0 0.8rem;
-      color: #1e293b;
+      font-weight: 600;
+      margin: 1.6rem 0 0.5rem;
+      color: #1a3b58;
     }
-    article p {
-      margin-bottom: 1.1rem;
-      color: #1e293b;
+
+    .article-content p {
+      line-height: 1.7;
+      color: #1f2f40;
+      margin: 1rem 0;
+      font-size: 1.02rem;
     }
-    article ul {
+
+    .article-content ul {
       margin: 1rem 0 1.5rem 1.5rem;
     }
-    article li {
-      margin-bottom: 0.5rem;
+
+    .article-content li {
+      margin: 0.6rem 0;
+      line-height: 1.6;
     }
+
+    .article-content strong {
+      color: #0b2b4a;
+    }
+
     .callout {
-      background: #f1f5f9;
-      border-left: 6px solid #6366f1;
+      background: #e9f2fc;
+      border-left: 5px solid #2d7ad4;
       padding: 1.2rem 1.8rem;
       border-radius: 20px;
       margin: 1.8rem 0;
     }
-    .callout p {
-      margin-bottom: 0.2rem;
+
+    .callout i {
+      color: #1d4e7a;
+      margin-right: 0.5rem;
     }
+
     .footer-note {
       margin-top: 2.5rem;
       text-align: center;
-      font-size: 0.9rem;
-      color: #94a3b8;
-    }
-    @media (max-width: 640px) {
-      .tool-card { padding: 1.5rem; }
-      .color-preview-row { border-radius: 30px; flex-direction: column; align-items: stretch; gap: 0.8rem; }
-      .color-values { justify-content: center; }
-      .copy-hint { margin-left: 0; text-align: center; }
-      .tool-card h1 { font-size: 1.8rem; }
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-  <!-- interactive tool -->
-  <div class="tool-card">
-    <h1>🎨 Color Picker <span style="font-size: 1.2rem; font-weight: 400; color: #475569;">from images</span></h1>
-    <div class="subhead">Pick colors from images online free — click any pixel</div>
-
-    <div class="picker-area">
-      <div class="upload-row">
-        <div class="upload-btn-wrapper">
-          <button class="btn btn-primary">📁 Upload image</button>
-          <input type
+      color: #6a7f94;
+     
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

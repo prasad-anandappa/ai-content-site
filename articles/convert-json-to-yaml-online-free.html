@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ultimate Guide to Convert Json To Yaml Online Free in 2025 | Free Online DEV Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for converting JSON to YAML online. It includes a clean, dual-pane editor with a "Convert" button, a sample JSON to get">
+    <meta name="description" content="Here is an interactive HTML tool page that converts JSON to YAML. It includes a clean editor, a live preview, and a comprehensive guide on the conversion">
     <meta name="keywords" content="Convert JSON to YAML online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,250 +128,267 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for converting JSON to YAML online. It includes a clean, dual-pane editor with a "Convert" button, a sample JSON to get started, and a comprehensive article about the tool and its usage.
+            Here is an interactive HTML tool page that converts JSON to YAML. It includes a clean editor, a live preview, and a comprehensive guide on the conversion process.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON to YAML · Convert JSON to YAML online free</title>
-    <!-- Font & basic styling -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #f6f9fc;
-            color: #1e293b;
-            line-height: 1.6;
-            padding: 2rem 1.5rem;
-        }
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-        /* header / tool area */
-        .tool-header {
-            text-align: center;
-            margin-bottom: 2.5rem;
-        }
-        .tool-header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(145deg, #0f172a, #334155);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .tool-header p {
-            color: #475569;
-            font-size: 1.25rem;
-            margin-top: 0.5rem;
-        }
-        .badge {
-            display: inline-block;
-            background: #dbeafe;
-            color: #1e40af;
-            font-weight: 600;
-            font-size: 0.85rem;
-            padding: 0.2rem 1rem;
-            border-radius: 40px;
-            margin-bottom: 0.75rem;
-        }
-        /* converter panel */
-        .converter-panel {
-            background: white;
-            border-radius: 28px;
-            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
-            padding: 2rem 1.8rem;
-            margin-bottom: 3rem;
-        }
-        .dual-pane {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-        .pane {
-            flex: 1 1 280px;
-            min-width: 240px;
-        }
-        .pane-label {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: #0f172a;
-            margin-bottom: 0.6rem;
-            letter-spacing: -0.01em;
-        }
-        .pane-label span:first-child {
-            background: #eef2ff;
-            padding: 0.2rem 0.8rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            color: #1e40af;
-        }
-        .pane-label button {
-            background: none;
-            border: none;
-            color: #3b82f6;
-            font-weight: 500;
-            font-size: 0.8rem;
-            cursor: pointer;
-            padding: 0.2rem 0.6rem;
-            border-radius: 30px;
-            transition: background 0.2s;
-        }
-        .pane-label button:hover {
-            background: #eef2ff;
-        }
-        textarea {
-            width: 100%;
-            height: 320px;
-            padding: 1rem 1.2rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 18px;
-            font-family: 'Inter', 'SF Mono', 'Fira Code', monospace;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            resize: vertical;
-            background: #fafcff;
-            transition: border 0.2s, box-shadow 0.2s;
-        }
-        textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
-        }
-        .textarea-error {
-            border-color: #ef4444;
-            box-shadow: 0 0 0 3px rgba(239,68,68,0.1);
-        }
-        .action-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            margin: 1.5rem 0 0.5rem;
-            gap: 0.8rem;
-        }
-        .action-btn {
-            background: #0f172a;
-            border: none;
-            color: white;
-            font-weight: 600;
-            padding: 0.8rem 2.2rem;
-            border-radius: 60px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.2s, transform 0.1s;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            box-shadow: 0 6px 12px -6px rgba(15,23,42,0.25);
-        }
-        .action-btn:hover {
-            background: #1e293b;
-        }
-        .action-btn:active {
-            transform: scale(0.97);
-        }
-        .action-btn.secondary {
-            background: transparent;
-            color: #0f172a;
-            box-shadow: none;
-            border: 1px solid #cbd5e1;
-            padding: 0.6rem 1.5rem;
-            font-weight: 500;
-        }
-        .action-btn.secondary:hover {
-            background: #f1f5f9;
-        }
-        .copy-feedback {
-            font-size: 0.85rem;
-            color: #10b981;
-            font-weight: 500;
-            margin-left: 0.5rem;
-        }
-        .status-msg {
-            font-size: 0.9rem;
-            padding: 0.4rem 0.8rem;
-            border-radius: 40px;
-            background: #f1f5f9;
-            color: #334155;
-        }
-        .status-msg.error {
-            background: #fee2e2;
-            color: #b91c1c;
-        }
-        /* article section */
-        .article-section {
-            background: white;
-            border-radius: 28px;
-            padding: 2.5rem 2.8rem;
-            box-shadow: 0 8px 24px -8px rgba(0,0,0,0.06);
-            margin-top: 2rem;
-        }
-        .article-section h2 {
-            font-size: 1.9rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-top: 2.2rem;
-            margin-bottom: 1rem;
-            color: #0f172a;
-        }
-        .article-section h2:first-of-type {
-            margin-top: 0.2rem;
-        }
-        .article-section h3 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-top: 1.8rem;
-            margin-bottom: 0.6rem;
-            color: #1e293b;
-        }
-        .article-section p {
-            margin-bottom: 1.2rem;
-            color: #334155;
-        }
-        .article-section ul {
-            margin: 1rem 0 1.5rem 1.5rem;
-        }
-        .article-section li {
-            margin-bottom: 0.5rem;
-            color: #1e293b;
-        }
-        .article-section .highlight {
-            background: #f1f5f9;
-            padding: 0.2rem 0.6rem;
-            border-radius: 12px;
-            font-family: monospace;
-            font-size: 0.9rem;
-        }
-        hr {
-            margin: 2rem 0;
-            border: 0;
-            border-top: 1px solid #e2e8f0;
-        }
-        .footer-note {
-            text-align: center;
-            margin-top: 2.8rem;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-        @media (max-width: 680px) {
-            body { padding: 1.2rem; }
-            .tool-header h1 { font-size: 2rem; }
-            .converter-panel { padding: 1.5
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON to YAML · free online converter</title>
+  <meta name="description" content="Convert JSON to YAML online free — instant, accurate, no uploads. Paste JSON, copy YAML. Dev tool with live preview and syntax highlights.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f6f9fc;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #1a2634;
+    }
+    .container {
+      max-width: 1300px;
+      width: 100%;
+    }
+    /* header */
+    .header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #0b2b4a, #1e4b6e);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+    .header .sub {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-top: 0.25rem;
+      opacity: 0.8;
+    }
+    .badge {
+      display: inline-block;
+      background: #1e4b6e;
+      color: white;
+      padding: 0.25rem 1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      background: #1e4b6e;
+    }
+    /* converter panel */
+    .converter-panel {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 1.8rem 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.2);
+      margin-bottom: 3rem;
+    }
+    .editor-area {
+      flex: 1 1 300px;
+      min-width: 260px;
+    }
+    .editor-area label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #1e3b5a;
+    }
+    textarea {
+      width: 100%;
+      height: 280px;
+      padding: 1rem;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.9rem;
+      background: #f2f5f9;
+      border: 1px solid #d8e2ed;
+      border-radius: 16px;
+      resize: vertical;
+      transition: 0.15s;
+      color: #0b1f2e;
+      line-height: 1.5;
+    }
+    textarea:focus {
+      border-color: #2b6a9e;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(33, 103, 170, 0.2);
+      background: #ffffff;
+    }
+    .output-area {
+      flex: 1 1 300px;
+      min-width: 260px;
+      position: relative;
+    }
+    .output-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .output-header span {
+      font-weight: 600;
+      color: #1e3b5a;
+    }
+    .copy-btn {
+      background: #eef3f9;
+      border: none;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #1a3f5c;
+      cursor: pointer;
+      transition: 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .copy-btn:hover {
+      background: #d4e2f0;
+    }
+    .copy-btn:active {
+      transform: scale(0.96);
+    }
+    .output-box {
+      background: #f2f5f9;
+      border: 1px solid #d8e2ed;
+      border-radius: 16px;
+      padding: 1rem;
+      height: 280px;
+      overflow: auto;
+      white-space: pre-wrap;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #0b1f2e;
+    }
+    .placeholder {
+      opacity: 0.45;
+      font-style: italic;
+    }
+    .error-message {
+      color: #b13a3a;
+      background: #ffe9e9;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      display: none;
+    }
+    .action-bar {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      align-items: center;
+    }
+    .btn {
+      background: white;
+      border: 1px solid #cbd9e8;
+      padding: 0.5rem 1.3rem;
+      border-radius: 40px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: #1a3f5c;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+    .btn-primary {
+      background: #1a4b72;
+      border: 1px solid #1a4b72;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #0f3b5c;
+      border-color: #0f3b5c;
+    }
+    .btn:hover {
+      background: #eef3f9;
+    }
+    .btn-primary:hover {
+      background: #0f3b5c;
+    }
+    .stats {
+      margin-left: auto;
+      font-size: 0.8rem;
+      color: #4a6179;
+    }
+    /* article section */
+    .article {
+      background: white;
+      border-radius: 28px;
+      padding: 2rem 2.2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+      margin-top: 1rem;
+    }
+    .article h2 {
+      font-size: 1.8rem;
+      font-weight: 650;
+      margin: 1.8rem 0 0.8rem;
+      color: #0a253b;
+      border-bottom: 2px solid #e7eef7;
+      padding-bottom: 0.3rem;
+    }
+    .article h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+      color: #1a3f5c;
+    }
+    .article p {
+      line-height: 1.7;
+      margin: 1rem 0;
+      color: #1f2f3e;
+    }
+    .article ul {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+    .article li {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+    .highlight {
+      background: #eaf1fa;
+      padding: 0.1rem 0.3rem;
+      border-radius: 6px;
+      font-family: monospace;
+    }
+    .cta-box {
+      background: #e2edf9;
+      border-radius: 24px;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0 0.5rem;
+      text-align: center;
+    }
+    .cta-box p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .footer-note {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+    @media (max-width: 680px) {
+      .header h1 { font-size: 2rem
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

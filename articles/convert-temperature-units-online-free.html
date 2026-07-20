@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Best Convert Temperature Units Online Free Solutions Compared | Free Online CALCULATOR Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for a temperature converter. You can run this code directly in your browser to convert between Celsius, Fahrenheit, and">
+    <meta name="description" content="Here is the interactive HTML tool page for a Temperature Converter. It includes a clean, responsive interface for converting between Celsius, Fahrenheit, and">
     <meta name="keywords" content="Convert temperature units online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,242 +128,257 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for a temperature converter. You can run this code directly in your browser to convert between Celsius, Fahrenheit, and Kelvin, and read the accompanying guide.
+            Here is the interactive HTML tool page for a Temperature Converter. It includes a clean, responsive interface for converting between Celsius, Fahrenheit, and Kelvin, along with a comprehensive article optimized for the target keyword.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Converter · Convert temperature units online free</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background: linear-gradient(145deg, #f5f9ff 0%, #e6edf7 100%);
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 2rem 1rem;
-        }
-        .card {
-            max-width: 1000px;
-            width: 100%;
-            background: #ffffff;
-            border-radius: 2.5rem;
-            box-shadow: 0 20px 50px -10px rgba(0, 20, 40, 0.25);
-            padding: 2rem 2.2rem 2.8rem;
-            transition: all 0.2s ease;
-        }
-        @media (max-width: 600px) {
-            .card { padding: 1.5rem 1.2rem; }
-        }
-        .converter-panel {
-            background: #f2f7fe;
-            border-radius: 2rem;
-            padding: 1.8rem 1.5rem 2rem;
-            margin-bottom: 2.2rem;
-            border: 1px solid #dce6f2;
-        }
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin: 1.2rem 0 1.5rem;
-        }
-        @media (max-width: 580px) {
-            .grid-3 { grid-template-columns: 1fr; gap: 0.8rem; }
-        }
-        .input-group {
-            background: white;
-            border-radius: 1.2rem;
-            padding: 0.5rem 0.8rem 0.8rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
-            border: 1px solid #dae2ed;
-        }
-        .input-group label {
-            display: block;
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: #2b4b6e;
-            margin-bottom: 0.2rem;
-        }
-        .input-group input {
-            width: 100%;
-            border: none;
-            background: transparent;
-            font-size: 1.4rem;
-            font-weight: 500;
-            padding: 0.25rem 0;
-            outline: none;
-            color: #0a1f33;
-            font-family: inherit;
-        }
-        .input-group input:focus {
-            border-bottom: 2px solid #1d6fa5;
-        }
-        .input-group input::placeholder {
-            color: #b0c6db;
-            font-weight: 300;
-            font-size: 0.9rem;
-        }
-        .unit-badge {
-            font-size: 0.7rem;
-            background: #dce6f2;
-            padding: 0.2rem 0.7rem;
-            border-radius: 30px;
-            color: #1a3b5c;
-            font-weight: 500;
-            display: inline-block;
-            margin-top: 0.2rem;
-        }
-        .convert-btn {
-            background: #1d6fa5;
-            border: none;
-            color: white;
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 0.9rem 2rem;
-            border-radius: 60px;
-            cursor: pointer;
-            transition: 0.15s;
-            letter-spacing: 0.3px;
-            box-shadow: 0 6px 14px rgba(26, 80, 120, 0.25);
-            width: 100%;
-            max-width: 260px;
-            margin: 0.2rem auto 0;
-            display: block;
-        }
-        .convert-btn:hover {
-            background: #135684;
-            transform: scale(1.01);
-            box-shadow: 0 8px 18px rgba(20, 70, 110, 0.3);
-        }
-        .convert-btn:active {
-            transform: scale(0.97);
-        }
-        .swap-link {
-            text-align: center;
-            margin: 0.6rem 0 0.2rem;
-        }
-        .swap-link a {
-            color: #1d6fa5;
-            font-weight: 500;
-            font-size: 0.9rem;
-            cursor: pointer;
-            text-decoration: none;
-            border-bottom: 1px dashed #9bb9d9;
-        }
-        .swap-link a:hover {
-            color: #0b3e60;
-            border-bottom-style: solid;
-        }
-        .result-note {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #2f5579;
-            margin-top: 0.8rem;
-            opacity: 0.8;
-        }
-        /* article styling */
-        .article {
-            color: #1c2a3f;
-            line-height: 1.6;
-        }
-        .article h1 {
-            font-size: 2rem;
-            font-weight: 650;
-            letter-spacing: -0.5px;
-            color: #0b2a44;
-            margin: 0 0 0.6rem;
-        }
-        .article h2 {
-            font-size: 1.7rem;
-            font-weight: 600;
-            margin: 2rem 0 0.8rem;
-            color: #133857;
-            border-left: 6px solid #1d6fa5;
-            padding-left: 1rem;
-        }
-        .article h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.8rem 0 0.5rem;
-            color: #1f4a6b;
-        }
-        .article p {
-            margin: 1rem 0;
-        }
-        .article ul {
-            margin: 0.8rem 0 1.2rem 1.8rem;
-        }
-        .article li {
-            margin: 0.5rem 0;
-        }
-        .article .intro-highlight {
-            background: #e9f0fa;
-            padding: 1.2rem 1.6rem;
-            border-radius: 1.5rem;
-            margin: 1.2rem 0;
-            border-left: 4px solid #1d6fa5;
-        }
-        .cta-box {
-            background: #133857;
-            color: white;
-            padding: 1.6rem 2rem;
-            border-radius: 2rem;
-            margin: 2rem 0 0.5rem;
-            text-align: center;
-        }
-        .cta-box a {
-            color: #ffe484;
-            font-weight: 600;
-            text-decoration: underline;
-        }
-        .cta-box a:hover {
-            color: white;
-        }
-        .footnote {
-            font-size: 0.8rem;
-            color: #5a6f87;
-            margin-top: 2rem;
-            border-top: 1px solid #d5e0ec;
-            padding-top: 1.2rem;
-        }
-        .inline-code {
-            background: #eef3fa;
-            padding: 0.1rem 0.5rem;
-            border-radius: 12px;
-            font-family: monospace;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter · Free online tool</title>
+  <!-- Font Awesome for icons (optional, but nice) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      background: linear-gradient(145deg, #f8faff 0%, #eef3f9 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      color: #1e293b;
+    }
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(2px);
+      border-radius: 2.5rem;
+      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.25);
+      padding: 2rem 2rem 2.5rem;
+      transition: 0.2s;
+    }
+    .converter-card {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 1.8rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      margin-bottom: 2.5rem;
+      border: 1px solid rgba(255,255,255,0.6);
+    }
+    .tool-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.6rem;
+    }
+    .tool-header i {
+      font-size: 2rem;
+      color: #2563eb;
+      background: #eef4ff;
+      padding: 10px;
+      border-radius: 18px;
+    }
+    .tool-header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+    }
+    .input-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: flex-end;
+    }
+    .input-field {
+      flex: 2 1 200px;
+    }
+    .input-field label {
+      display: block;
+      font-weight: 500;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #475569;
+      margin-bottom: 6px;
+    }
+    .input-field input {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1px solid #d1d9e6;
+      border-radius: 20px;
+      font-size: 1.1rem;
+      background: #f9fcff;
+      transition: 0.2s;
+    }
+    .input-field input:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+      background: white;
+    }
+    .select-unit {
+      flex: 1 1 130px;
+    }
+    .select-unit select {
+      width: 100%;
+      padding: 0.9rem 0.8rem;
+      border-radius: 20px;
+      border: 1px solid #d1d9e6;
+      background: #f9fcff;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .convert-btn {
+      background: #2563eb;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.9rem 2rem;
+      border-radius: 40px;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: 0.15s;
+      box-shadow: 0 4px 8px rgba(37,99,235,0.2);
+      border: 1px solid rgba(255,255,255,0.1);
+      flex: 0.5 0 auto;
+      justify-content: center;
+    }
+    .convert-btn:hover {
+      background: #1d4ed8;
+      transform: scale(1.02);
+      box-shadow: 0 8px 16px rgba(37,99,235,0.25);
+    }
+    .convert-btn:active {
+      transform: scale(0.97);
+    }
+    .result-area {
+      margin-top: 2rem;
+      background: #f1f6fe;
+      border-radius: 1.8rem;
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .result-box {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem 1.5rem;
+      flex-wrap: wrap;
+    }
+    .result-box span:first-child {
+      font-weight: 500;
+      color: #334155;
+    }
+    .result-box .big-result {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+    }
+    .result-box .unit-label {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #475569;
+    }
+    .reset-link {
+      color: #64748b;
+      background: transparent;
+      border: none;
+      text-decoration: underline dotted;
+      cursor: pointer;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 40px;
+      transition: 0.1s;
+    }
+    .reset-link:hover {
+      color: #1e293b;
+      background: #e2e8f0;
+    }
+    .swap-icon {
+      background: white;
+      border-radius: 50%;
+      padding: 6px 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      border: 1px solid #e2e8f0;
+      cursor: pointer;
+      transition: 0.1s;
+    }
+    .swap-icon:hover {
+      background: #f1f5f9;
+    }
+    /* article styling */
+    .article {
+      margin-top: 1.5rem;
+    }
+    .article h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 2rem 0 0.8rem;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+      border-bottom: 2px solid #dbeafe;
+      padding-bottom: 0.3rem;
+    }
+    .article h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.6rem 0 0.5rem;
+      color: #1e293b;
+    }
+    .article p {
+      line-height: 1.7;
+      margin-bottom: 1.1rem;
+      font-size: 1.05rem;
+      color: #1e293b;
+    }
+    .article ul {
+      margin: 0.8rem 0 1.3rem 1.5rem;
+    }
+    .article li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+    .highlight {
+      background: #fef9e7;
+      padding: 0.1rem 0.3rem;
+      border-radius: 8px;
+    }
+    .fa-arrow-right-arrow-left {
+      font-size: 1.2rem;
+    }
+    footer {
+      margin-top: 2.5rem;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1.5rem;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.2rem; }
+      .converter-card { padding: 1.5rem 1rem; }
+      .tool-header h1 { font-size: 1.4rem; }
+      .result-box .big-result { font-size: 1.6rem; }
+    }
+  </style>
 </head>
 <body>
-<div class="card">
-    <!-- interactive converter -->
-    <div class="converter-panel">
-        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-            <span style="font-weight: 600; color: #0f2f4b;">🌡️</span>
-            <span style="font-weight: 500; color: #0f2f4b;">Convert temperature units online free</span>
-        </div>
-        <div class="grid-3">
-            <div class="input-group">
-                <label for="celsius">Celsius</label>
-                <input type="number" id="celsius" placeholder="0" step="any" value="0">
-                <span class="unit-badge">°C</span>
-            </div>
-            <div class="input-group">
-                <label for="fahrenheit">Fahrenheit</label>
-                <input type="number" id="fahrenheit" placeholder="32" step="any" value="32">
-                <
+<div
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

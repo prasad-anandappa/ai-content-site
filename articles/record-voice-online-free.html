@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Record Voice Online Free: Complete Review and Buying Guide | Free Online MEDIA Tool</title>
-    <meta name="description" content="Here is an interactive HTML tool page for a free online voice recorder. It includes a functional recording interface and a comprehensive, SEO-optimized article">
+    <meta name="description" content="Here is the interactive HTML tool page for a free online voice recorder. It combines a functional recording interface with a comprehensive, SEO-optimized">
     <meta name="keywords" content="Record voice online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,225 +128,253 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is an interactive HTML tool page for a free online voice recorder. It includes a functional recording interface and a comprehensive, SEO-optimized article about recording voice online.
+            Here is the interactive HTML tool page for a free online voice recorder. It combines a functional recording interface with a comprehensive, SEO-optimized article about recording voice online.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voice Recorder · Record voice online free</title>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-    }
-    body {
-      background: #f7f9fc;
-      display: flex;
-      justify-content: center;
-      padding: 2rem 1rem;
-    }
-    .page {
-      max-width: 1100px;
-      width: 100%;
-      background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 40px -12px rgba(0,20,30,0.15);
-      overflow: hidden;
-      padding: 2rem 2rem 3rem;
-    }
-    /* recorder widget */
-    .recorder-card {
-      background: linear-gradient(145deg, #1e2b3c, #0f1a26);
-      border-radius: 28px;
-      padding: 2rem 2rem 2.2rem;
-      margin-bottom: 3rem;
-      color: white;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
-    }
-    .recorder-card h1 {
-      font-size: 1.9rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 0.25rem;
-    }
-    .recorder-card h1 i {
-      color: #64b5f6;
-      font-size: 2rem;
-    }
-    .recorder-card .subhead {
-      opacity: 0.8;
-      font-weight: 400;
-      margin-bottom: 1.8rem;
-      border-left: 3px solid #64b5f6;
-      padding-left: 1rem;
-    }
-    .wave-area {
-      background: rgba(255,255,255,0.06);
-      border-radius: 60px;
-      padding: 1rem 1.5rem;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.8rem 1.5rem;
-      margin-bottom: 1.8rem;
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .wave-icon {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      flex: 1;
-      min-width: 120px;
-    }
-    .wave-icon span {
-      display: inline-block;
-      width: 6px;
-      height: 24px;
-      background: #64b5f6;
-      border-radius: 12px;
-      animation: wave 0.8s infinite alternate ease-in-out;
-    }
-    .wave-icon span:nth-child(2) { height: 36px; animation-delay: 0.1s; background: #42a5f5; }
-    .wave-icon span:nth-child(3) { height: 18px; animation-delay: 0.3s; }
-    .wave-icon span:nth-child(4) { height: 30px; animation-delay: 0.2s; background: #90caf9; }
-    .wave-icon span:nth-child(5) { height: 12px; animation-delay: 0.4s; }
-    @keyframes wave {
-      0% { transform: scaleY(0.5); opacity: 0.5; }
-      100% { transform: scaleY(1); opacity: 1; }
-    }
-    .timer-box {
-      font-size: 2.2rem;
-      font-weight: 500;
-      letter-spacing: 2px;
-      background: #0a121e;
-      padding: 0.2rem 1.2rem;
-      border-radius: 60px;
-      font-variant-numeric: tabular-nums;
-      border: 1px solid #2a3a4e;
-    }
-    .rec-actions {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1rem 1.5rem;
-      margin: 1.5rem 0 0.5rem;
-    }
-    .btn {
-      border: none;
-      background: white;
-      color: #0f1a26;
-      padding: 0.8rem 1.8rem;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 1rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      cursor: pointer;
-      transition: 0.2s;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .btn i { font-size: 1.2rem; }
-    .btn.record { background: #e53935; color: white; }
-    .btn.record i { color: white; }
-    .btn.record:hover { background: #c62828; transform: scale(1.02); }
-    .btn.stop { background: #546e7a; color: white; }
-    .btn.stop:hover { background: #37474f; }
-    .btn.download { background: #2e7d32; color: white; }
-    .btn.download:hover { background: #1b5e20; }
-    .btn:disabled { opacity: 0.5; pointer-events: none; filter: grayscale(0.6); }
-    .status-badge {
-      background: rgba(255,255,255,0.1);
-      padding: 0.3rem 1.2rem;
-      border-radius: 40px;
-      font-size: 0.9rem;
-      border: 1px solid rgba(255,255,255,0.15);
-    }
-    .audio-preview {
-      margin-top: 1.2rem;
-      width: 100%;
-    }
-    .audio-preview audio {
-      width: 100%;
-      border-radius: 40px;
-      outline: none;
-    }
-    /* article */
-    .article {
-      margin-top: 1rem;
-    }
-    .article h2 {
-      font-size: 2rem;
-      margin-top: 2.2rem;
-      margin-bottom: 0.8rem;
-      font-weight: 600;
-      border-bottom: 2px solid #eef2f6;
-      padding-bottom: 0.4rem;
-      color: #0a1a2a;
-    }
-    .article h3 {
-      font-size: 1.4rem;
-      margin: 1.8rem 0 0.6rem;
-      color: #1a2b3c;
-    }
-    .article p {
-      line-height: 1.7;
-      color: #1f2a36;
-      margin-bottom: 1.2rem;
-      font-size: 1.05rem;
-    }
-    .article ul {
-      margin: 0.8rem 0 1.5rem 1.8rem;
-    }
-    .article ul li {
-      margin-bottom: 0.5rem;
-      line-height: 1.6;
-      list-style-type: '🎙️ ';
-      padding-left: 0.6rem;
-    }
-    .article .highlight {
-      background: #eef5ff;
-      padding: 0.2rem 0.6rem;
-      border-radius: 12px;
-      font-weight: 500;
-    }
-    .cta-box {
-      background: #eaf2fb;
-      border-radius: 28px;
-      padding: 2rem 2rem;
-      margin: 2.5rem 0 1rem;
-      text-align: center;
-      border: 1px solid #c8daea;
-    }
-    .cta-box p {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .cta-box .btn {
-      background: #0f1a26;
-      color: white;
-      padding: 0.9rem 2.4rem;
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-    }
-    .cta-box .btn:hover { background: #1f3348; }
-    footer {
-      margin-top: 2.5rem;
-      font-size: 0.9rem;
-      color: #6b7a8a;
-      text-align: center;
-      border-top: 1px solid #e2e8f0;
-      padding-top: 1.8
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Voice Recorder · Record voice online free</title>
+    <!-- Clean, modern styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background: #f6f9fc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2rem 1rem 3rem;
+            min-height: 100vh;
+        }
+        .main-wrapper {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 20px 40px -12px rgba(0,20,30,0.15);
+            padding: 2rem 2rem 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        /* tool card */
+        .recorder-card {
+            background: linear-gradient(145deg, #f0f5fe, #e8f0fa);
+            border-radius: 1.75rem;
+            padding: 2rem 1.8rem;
+            margin-bottom: 2.5rem;
+            box-shadow: inset 0 1px 3px rgba(255,255,255,0.7), 0 8px 18px rgba(0, 30, 50, 0.08);
+        }
+        .recorder-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #0a2a3b;
+            margin-bottom: 1.2rem;
+        }
+        .recorder-title svg {
+            width: 32px;
+            height: 32px;
+            fill: #1e6f9f;
+        }
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem 1.8rem;
+        }
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            background: white;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 60px;
+            font-weight: 500;
+            font-size: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: all 0.15s ease;
+            cursor: pointer;
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+        .btn-primary {
+            background: #1e6f9f;
+            color: white;
+            border: 1px solid #1a608b;
+            box-shadow: 0 4px 8px rgba(26,96,139,0.2);
+        }
+        .btn-primary:hover {
+            background: #135780;
+            transform: scale(1.02);
+        }
+        .btn-primary:disabled {
+            opacity: 0.5;
+            transform: none;
+            background: #7f9fb5;
+            border-color: #7f9fb5;
+            cursor: not-allowed;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #b6cbd9;
+            color: #1a3b4b;
+        }
+        .btn-outline:hover {
+            background: #e3edf5;
+        }
+        .btn-outline:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            background: transparent;
+        }
+        .btn-danger {
+            background: #c2544b;
+            color: white;
+            border: 1px solid #a8433b;
+        }
+        .btn-danger:hover {
+            background: #a83e36;
+        }
+        .btn-success {
+            background: #2b7a5a;
+            color: white;
+            border: 1px solid #1f6348;
+        }
+        .btn-success:hover {
+            background: #1f5e44;
+        }
+        .status-badge {
+            background: rgba(0,0,0,0.02);
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            border: 1px solid #d7e0e8;
+            color: #1a3b4b;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .status-badge .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #9bb7cb;
+            display: inline-block;
+        }
+        .dot.recording {
+            background: #d94f4a;
+            animation: pulse 1.2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.5; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.1); }
+            100% { opacity: 0.5; transform: scale(0.9); }
+        }
+        .timer {
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #0a2a3b;
+            min-width: 5rem;
+        }
+        .player-wrapper {
+            margin-top: 1.5rem;
+            background: white;
+            border-radius: 60px;
+            padding: 0.3rem 0.3rem 0.3rem 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.6rem;
+            border: 1px solid #dce5ed;
+        }
+        .player-wrapper audio {
+            flex: 1;
+            min-width: 180px;
+            height: 44px;
+        }
+        .download-section {
+            margin-top: 0.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+        }
+        .download-link {
+            background: #eaf1f8;
+            border-radius: 40px;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: #104b6b;
+            font-weight: 500;
+            border: 1px solid #cbdae6;
+        }
+        .download-link:hover {
+            background: #d4e3f0;
+        }
+        /* article styling */
+        .article-content h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0a2a3b;
+            margin: 1.5rem 0 0.5rem;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        .article-content .subhead {
+            font-size: 1.1rem;
+            color: #2e5a70;
+            border-left: 4px solid #1e6f9f;
+            padding-left: 1rem;
+            margin: 0.5rem 0 1.5rem;
+        }
+        .article-content h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 2rem 0 0.8rem;
+            color: #0f3447;
+            border-bottom: 2px solid #e2ecf5;
+            padding-bottom: 0.3rem;
+        }
+        .article-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.5rem;
+            color: #1a4a5e;
+        }
+        .article-content p {
+            line-height: 1.7;
+            color: #1d3a47;
+            margin: 1rem 0;
+            font-size: 1.05rem;
+        }
+        .article-content ul, .article-content ol {
+            margin: 0.8rem 0 1.2rem 1.8rem;
+        }
+        .article-content li {
+            line-height: 1.7;
+            margin: 0.4rem 0;
+            color: #1d3a47;
+        }
+        .highlight-box {
+            background: #eaf4fb;
+            border-radius: 1.2rem;
+            padding: 1.2rem 1.6
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>
