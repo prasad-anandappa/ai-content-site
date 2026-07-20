@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compress Audio Files Online Free: Complete Review and Buying Guide | Free Online MEDIA Tool</title>
-    <meta name="description" content="This is a complete, ready-to-run HTML document for an interactive audio compressor tool page. It combines a practical, browser-based audio compression utility">
+    <meta name="description" content="This is a complete, ready-to-use HTML document for an interactive audio compressor tool. It allows you to reduce audio file sizes online for free, with a">
     <meta name="keywords" content="Compress audio files online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,7 +128,7 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, ready-to-run HTML document for an interactive audio compressor tool page. It combines a practical, browser-based audio compression utility with an SEO-optimized article about compressing audio files online for free.
+            This is a complete, ready-to-use HTML document for an interactive audio compressor tool. It allows you to reduce audio file sizes online for free, with a clean, modern interface and a comprehensive guide.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -136,231 +136,245 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
   <title>Audio Compressor · compress audio files online free</title>
-  <meta name="description" content="Compress audio files online free – reduce MP3, WAV, OGG size without losing quality. Interactive tool + expert guide.">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     }
     body {
-      background: #f6f9fc;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      padding: 2rem 1.5rem;
-      color: #1e293b;
-      line-height: 1.6;
+      background: linear-gradient(145deg, #f7f9fc 0%, #eef1f5 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
     }
-    .wrapper {
-      max-width: 1100px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
-      padding: 2rem 2rem 3rem;
+    .main-card {
+      max-width: 1200px;
+      width: 100%;
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 3rem;
+      padding: 2.5rem 2.2rem;
+      box-shadow: 0 25px 45px -12px rgba(0,20,40,0.25);
+      border: 1px solid rgba(255,255,255,0.5);
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      background: linear-gradient(145deg, #0b2b4b, #1c4e6f);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 0.4rem;
+      color: #0b1a33;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      border-bottom: 2px solid rgba(0,100,200,0.15);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 i {
+      color: #1e6bb8;
+      font-size: 2rem;
     }
     .subhead {
-      font-size: 1.2rem;
-      color: #3b5b7a;
-      border-left: 5px solid #3b82f6;
-      padding-left: 1rem;
+      font-size: 1.1rem;
+      color: #2a405c;
+      margin-top: -0.5rem;
       margin-bottom: 2rem;
       font-weight: 400;
-    }
-    .tool-grid {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .badge {
+      background: #1b6bb0;
+      color: white;
+      padding: 0.3rem 1rem;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      box-shadow: 0 4px 8px rgba(0,80,160,0.2);
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      margin: 2.5rem 0 3rem;
-      background: #f0f5fe;
-      border-radius: 28px;
-      padding: 2rem 1.8rem;
+      margin: 2rem 0 2.5rem;
+    }
+    @media (max-width: 720px) {
+      .tool-grid { grid-template-columns: 1fr; gap: 2rem; }
+      h1 { font-size: 1.8rem; }
+      .main-card { padding: 1.8rem 1.2rem; }
     }
     .upload-area {
-      flex: 1.2;
-      min-width: 240px;
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      border: 1px dashed #b8ccdd;
+      transition: all 0.2s;
     }
-    .controls-area {
-      flex: 1;
-      min-width: 200px;
+    .upload-area:hover {
+      border-color: #1e6bb8;
+      background: #fafdff;
+    }
+    .upload-box {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-    }
-    .drop-zone {
-      border: 2px dashed #3b82f6;
-      background: white;
-      border-radius: 24px;
-      padding: 2.2rem 1.5rem;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      transition: 0.2s;
+      min-height: 160px;
+    }
+    .upload-box i {
+      font-size: 3.2rem;
+      color: #1e6bb8;
+      margin-bottom: 0.5rem;
+    }
+    .upload-box p {
+      color: #1f3a5f;
+      font-weight: 500;
+    }
+    .file-input-wrapper {
+      margin-top: 1rem;
+    }
+    input[type="file"] {
+      background: #eaf1fa;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 60px;
+      font-size: 0.95rem;
+      color: #0b1a33;
+      cursor: pointer;
+      transition: 0.15s;
+      max-width: 220px;
+    }
+    input[type="file"]::file-selector-button {
+      background: #1e6bb8;
+      color: white;
+      border: none;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      margin-right: 12px;
+      font-weight: 500;
+      transition: 0.1s;
       cursor: pointer;
     }
-    .drop-zone:hover {
-      background: #eaf2ff;
+    input[type="file"]:hover::file-selector-button {
+      background: #0f4f8a;
     }
-    .drop-zone.dragover {
-      background: #dbeafe;
-      border-color: #1d4ed8;
-    }
-    .drop-zone p {
-      font-weight: 500;
-      color: #1e3a5f;
-    }
-    .drop-zone .icon {
-      font-size: 3.2rem;
-      line-height: 1;
-    }
-    .file-info {
+    .settings-panel {
       background: white;
-      border-radius: 20px;
-      padding: 0.9rem 1.2rem;
-      margin-top: 0.8rem;
-      font-size: 0.95rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-      word-break: break-all;
+      border-radius: 2rem;
+      padding: 1.5rem 1.8rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
     }
-    .slider-group {
-      background: white;
-      border-radius: 20px;
-      padding: 1rem 1.2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    .setting-group {
+      margin-bottom: 1.4rem;
     }
-    .slider-group label {
+    .setting-group label {
       display: flex;
       justify-content: space-between;
+      font-weight: 500;
+      color: #0b1a33;
+      margin-bottom: 0.2rem;
+    }
+    .setting-group label span:last-child {
       font-weight: 600;
-      font-size: 0.95rem;
-      color: #0b2b4b;
+      color: #1e6bb8;
     }
     input[type="range"] {
       width: 100%;
-      margin: 0.5rem 0 0.2rem;
-      accent-color: #2563eb;
+      margin: 0.3rem 0;
+      -webkit-appearance: none;
+      background: #dce6f0;
+      height: 5px;
+      border-radius: 10px;
     }
-    .value-badge {
-      background: #e6edf8;
-      padding: 0.2rem 0.8rem;
-      border-radius: 40px;
-      font-size: 0.85rem;
-    }
-    .action-btn {
-      background: #1c4e6f;
-      border: none;
-      color: white;
-      font-weight: 600;
-      padding: 0.9rem 1.2rem;
-      border-radius: 60px;
-      font-size: 1.1rem;
-      width: 100%;
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      background: #1e6bb8;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,60,130,0.2);
       cursor: pointer;
-      transition: 0.2s;
-      letter-spacing: 0.3px;
-      box-shadow: 0 6px 12px -6px rgba(28,78,111,0.3);
     }
-    .action-btn:hover {
-      background: #0f3b55;
-      transform: scale(1.01);
+    .info-chip {
+      background: #e7f0fd;
+      border-radius: 30px;
+      padding: 0.2rem 1rem;
+      font-size: 0.8rem;
+      color: #1f4a7a;
+      display: inline-block;
     }
-    .action-btn:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-      transform: none;
-      box-shadow: none;
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1.5rem 0 0.8rem;
+      gap: 0.8rem;
     }
-    .download-btn {
-      background: #0f973d;
-      box-shadow: 0 6px 12px -6px rgba(15,151,61,0.3);
-    }
-    .download-btn:hover {
-      background: #0d7e33;
-    }
-    .status-msg {
-      font-size: 0.95rem;
-      padding: 0.5rem 0;
-      color: #1e4b6b;
-    }
-    article {
-      margin-top: 2rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin: 2rem 0 0.8rem;
-      letter-spacing: -0.01em;
-      color: #0b2b4b;
-    }
-    h3 {
-      font-size: 1.3rem;
+    .btn {
+      background: white;
+      border: none;
+      padding: 0.7rem 1.8rem;
+      border-radius: 60px;
       font-weight: 600;
-      margin: 1.8rem 0 0.5rem;
-      color: #163a53;
+      font-size: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+      transition: all 0.15s;
+      border: 1px solid #cbdae7;
+      color: #1a2e4a;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
     }
-    p {
-      margin-bottom: 1rem;
+    .btn-primary {
+      background: #1e6bb8;
+      border: 1px solid #1e6bb8;
+      color: white;
+      box-shadow: 0 8px 18px rgba(30,107,184,0.25);
     }
-    ul, ol {
-      margin: 0.5rem 0 1.2rem 1.8rem;
+    .btn-primary:hover {
+      background: #13599e;
+      transform: scale(1.02);
     }
-    li {
-      margin-bottom: 0.3rem;
+    .btn-primary:disabled {
+      opacity: 0.5;
+      transform: none;
+      pointer-events: none;
     }
-    .highlight {
-      background: #eef6ff;
-      padding: 0.2rem 0.4rem;
-      border-radius: 8px;
-      font-weight: 500;
+    .btn-outline {
+      border: 1px solid #b0c7dd;
     }
-    hr {
-      margin: 2.5rem 0 1rem;
-      border: 0;
-      height: 1px;
-      background: linear-gradient(to right, #d9e2ef, transparent);
+    .btn-outline:hover {
+      background: #e8f0fe;
     }
-    .footer-note {
-      margin-top: 2.5rem;
-      font-size: 0.9rem;
-      color: #4b6584;
-      text-align: center;
+    .status-area {
+      margin-top: 1rem;
+      padding: 0.8rem 0;
     }
-    @media (max-width: 650px) {
-      .wrapper { padding: 1.5rem 1rem; }
-      h1 { font-size: 1.8rem; }
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: #dce6f0;
+      border-radius: 20px;
+      margin: 0.8rem 0 0.2rem;
+      overflow: hidden;
     }
-  </style>
-</head>
-<body>
-<div class="wrapper">
-  <h1>🎧 Audio Compressor</h1>
-  <div class="subhead">Compress audio files online free · reduce size, keep clarity</div>
-
-  <!-- interactive tool -->
-  <div class="tool-grid">
-    <div class="upload-area">
-      <div class="drop-zone" id="dropZone">
-        <div class="icon">📂</div>
-        <p><strong>Drop audio file here</strong><br>or tap to browse (MP3, WAV, OGG, M4A)</p>
-        <input type="file" id="fileInput" accept="audio/*" style="display:none">
-      </div>
-      <div class="file-info" id="fileInfo">📄 No file selected</div>
-    </div>
-    <div class="controls-area">
-      <div class="slider-group">
-        <label>🎚️ Quality <span id="qualityValue" class="value-badge">80%</span></label>
-        <input type="range" id="qualitySlider" min="20" max="100" value="80" step="1">
-        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:#4b6a88;">smaller · better</div>
-      </div>
-      <div class="slider-group">
-        <label>⬇️ Target bitrate <span id="bitrateValue" class="value-badge">
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

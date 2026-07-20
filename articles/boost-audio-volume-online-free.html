@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 Boost Audio Volume Online Free You Need to Know About | Free Online MEDIA Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Volume Booster" tool. It lets you upload an audio file or use a microphone, boost the">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Volume Booster" tool. It allows you to upload audio or video files, adjust the volume with">
     <meta name="keywords" content="Boost audio volume online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,16 +128,15 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive "Volume Booster" tool. It lets you upload an audio file or use a microphone, boost the volume by up to 200%, and download the result. The page also includes a detailed, SEO-friendly article about boosting audio volume online for free.
+            This is a complete, self-contained HTML document for an interactive "Volume Booster" tool. It allows you to upload audio or video files, adjust the volume with a slider, and download the boosted version. The page also includes an SEO-optimized article about online volume boosting, all styled for a clean, modern look.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volume Booster – Boost Audio Volume Online Free</title>
-  <!-- Font Awesome for icons (optional) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Volume Booster – Boost audio volume online free</title>
+  <meta name="description" content="Boost audio volume online free with our interactive Volume Booster. Upload any audio or video, amplify sound up to 600%, and download instantly.">
   <style>
     * {
       margin: 0;
@@ -147,249 +146,241 @@
     }
     body {
       background: #f5f7fb;
-      padding: 2rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 2rem 1.5rem 4rem;
     }
     .container {
       max-width: 1100px;
       width: 100%;
-      background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 40px -10px rgba(0,20,30,0.15);
-      padding: 2rem 2rem 3rem;
-      margin-bottom: 2rem;
     }
-    h1 {
-      font-size: 2.4rem;
+    /* tool card */
+    .tool-card {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 2rem 2.5rem;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
+      margin-bottom: 3rem;
+      transition: box-shadow 0.2s;
+    }
+    .tool-card h1 {
+      font-size: 2.2rem;
       font-weight: 700;
-      color: #0b1c2a;
       display: flex;
       align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
+      gap: 0.6rem;
+      color: #0b1a33;
+      margin-bottom: 0.25rem;
     }
-    h1 i {
-      color: #2b7e6b;
-      font-size: 2.2rem;
+    .tool-card h1 small {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #4a5b7a;
+      background: #eef2f9;
+      padding: 0.2rem 0.9rem;
+      border-radius: 40px;
+      margin-left: 0.5rem;
     }
     .subhead {
-      color: #3d5a6c;
+      color: #3a4c6b;
       font-size: 1.1rem;
-      margin-top: 0.4rem;
-      border-left: 4px solid #2b7e6b;
+      margin-bottom: 1.8rem;
+      border-left: 4px solid #2d7aff;
       padding-left: 1rem;
-      background: #f0f5f9;
+      background: #f0f5ff;
       border-radius: 0 12px 12px 0;
-      line-height: 1.6;
-    }
-    .tool-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin: 2.5rem 0 1.8rem;
+      line-height: 1.4;
     }
     .upload-area {
-      flex: 2;
-      min-width: 280px;
-      background: #f8fafd;
-      border-radius: 24px;
-      padding: 1.8rem 1.5rem;
-      border: 1px solid #e6edf4;
-    }
-    .upload-box {
-      border: 2px dashed #b8cdde;
-      background: white;
-      border-radius: 20px;
-      padding: 2rem 1rem;
+      background: #f8faff;
+      border: 2px dashed #b8cae0;
+      border-radius: 28px;
+      padding: 1.8rem 1rem;
       text-align: center;
       transition: 0.2s;
       cursor: pointer;
     }
-    .upload-box:hover {
-      border-color: #2b7e6b;
-      background: #f4faf8;
+    .upload-area:hover {
+      background: #eef4fe;
+      border-color: #2d7aff;
     }
-    .upload-box i {
-      font-size: 3rem;
-      color: #2b7e6b;
-      opacity: 0.7;
-    }
-    .upload-box p {
-      margin: 0.8rem 0 0.2rem;
-      font-weight: 500;
-    }
-    .upload-box small {
-      color: #5f7d95;
-    }
-    #fileInput {
+    .upload-area input {
       display: none;
     }
-    .file-info {
-      margin-top: 1rem;
-      font-size: 0.95rem;
-      background: #eaf1f7;
-      padding: 0.5rem 1rem;
-      border-radius: 40px;
-      display: inline-block;
-    }
-    .control-panel {
-      flex: 1.5;
-      min-width: 240px;
-      background: #f8fafd;
-      border-radius: 24px;
-      padding: 1.8rem 1.5rem;
-      border: 1px solid #e6edf4;
+    .upload-label {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-    }
-    .boost-slider {
-      display: flex;
-      flex-direction: column;
+      align-items: center;
       gap: 0.5rem;
-      margin-bottom: 1.8rem;
+      font-weight: 500;
+      color: #1f2a44;
+      font-size: 1.1rem;
     }
-    .boost-slider label {
-      font-weight: 600;
-      color: #1b2f3f;
+    .upload-label span {
+      background: #eef4fe;
+      padding: 0.5rem 1.4rem;
+      border-radius: 40px;
+      color: #1f3a8a;
+    }
+    .file-info {
+      margin: 1rem 0 1.2rem;
+      font-size: 0.95rem;
+      color: #2a3b5a;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem 2rem;
+      margin: 1.8rem 0 1.2rem;
+    }
+    .gain-group {
+      flex: 2;
+      min-width: 220px;
+    }
+    .gain-group label {
       display: flex;
       justify-content: space-between;
+      font-weight: 600;
+      color: #0b1a33;
     }
     input[type="range"] {
       width: 100%;
-      height: 6px;
-      background: #d0dfec;
+      height: 8px;
+      background: linear-gradient(to right, #2d7aff 0%, #2d7aff 50%, #d0dcf0 50%);
       border-radius: 10px;
+      -webkit-appearance: none;
       appearance: none;
-      outline: none;
     }
     input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
       appearance: none;
       width: 20px;
       height: 20px;
-      background: #2b7e6b;
+      background: white;
+      border: 2px solid #2d7aff;
       border-radius: 50%;
       cursor: pointer;
-      box-shadow: 0 2px 8px rgba(43,126,107,0.3);
+      box-shadow: 0 2px 8px rgba(0,40,100,0.2);
     }
-    .boost-value {
-      font-weight: 700;
-      color: #1b4e3f;
-      background: #e2f0ea;
-      padding: 0.2rem 1rem;
-      border-radius: 40px;
-      font-size: 1.2rem;
+    .gain-value {
+      background: #0b1a33;
+      color: white;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
     }
     .action-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin: 1rem 0 0.5rem;
+      gap: 0.8rem 1rem;
+      margin-top: 0.5rem;
     }
     .btn {
-      border: none;
       background: white;
-      padding: 0.7rem 1.5rem;
+      border: 1px solid #b8cae0;
+      padding: 0.7rem 1.6rem;
       border-radius: 60px;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.95rem;
+      color: #0b1a33;
+      cursor: pointer;
+      transition: 0.15s;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
-      transition: 0.15s;
-      cursor: pointer;
-      border: 1px solid #d4e0ea;
+      gap: 0.4rem;
     }
     .btn-primary {
-      background: #1d3b4f;
-      color: white;
+      background: #0b1a33;
       border: none;
-      box-shadow: 0 6px 12px rgba(23,55,70,0.15);
+      color: white;
+      box-shadow: 0 4px 10px rgba(13, 40, 80, 0.2);
     }
     .btn-primary:hover {
-      background: #0f2c3d;
-      transform: scale(0.97);
+      background: #1d2f50;
+      transform: scale(1.02);
     }
     .btn-primary:disabled {
       opacity: 0.5;
       pointer-events: none;
+      transform: none;
     }
     .btn-outline {
-      background: white;
-      border: 1px solid #b8cdde;
+      background: transparent;
+      border: 1px solid #2d7aff;
+      color: #2d7aff;
     }
     .btn-outline:hover {
-      background: #edf4fa;
-    }
-    .btn-success {
-      background: #2b7e6b;
-      color: white;
-      border: none;
-    }
-    .btn-success:hover {
-      background: #1d5f4f;
-    }
-    .btn-success:disabled {
-      opacity: 0.5;
-      pointer-events: none;
+      background: #eef4fe;
     }
     .status-msg {
       margin-top: 1.5rem;
-      font-size: 0.95rem;
-      color: #1f3a4a;
-      background: #ecf3f8;
-      padding: 0.8rem 1.2rem;
+      padding: 0.6rem 1rem;
+      background: #eef4fe;
       border-radius: 40px;
-      text-align: center;
-    }
-    .article-section {
-      margin-top: 2.5rem;
-      border-top: 1px solid #e2ecf5;
-      padding-top: 2rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin: 1.8rem 0 0.8rem;
-      color: #0a1f2c;
-      font-weight: 600;
-    }
-    h3 {
-      font-size: 1.3rem;
-      margin: 1.5rem 0 0.6rem;
-      color: #1a3e4f;
-    }
-    p {
-      line-height: 1.7;
-      color: #1f3342;
-      margin-bottom: 1.2rem;
-      font-size: 1.05rem;
-    }
-    ul {
-      margin: 0.8rem 0 1.5rem 1.5rem;
-    }
-    li {
-      line-height: 1.7;
-      margin-bottom: 0.5rem;
-      color: #1f3342;
-    }
-    .cta-box {
-      background: #e6f0f5;
-      padding: 1.5rem 2rem;
-      border-radius: 30px;
-      margin: 2rem 0 0.5rem;
-      text-align: center;
-    }
-    .cta-box p {
-      margin-bottom: 0.5rem;
+      color: #1f3a6b;
       font-weight: 500;
     }
-    footer {
-      text-align: center;
-      color: #6a859c;
-     
+    .download-section {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+    .download-link {
+      background: #1f8b4c;
+      color: white;
+      padding: 0.7rem 2rem;
+      border-radius: 60px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.2s;
+    }
+    .download-link:hover {
+      background: #0f6d38;
+      transform: scale(1.02);
+    }
+    /* article */
+    .article {
+      background: white;
+      border-radius: 2rem;
+      padding: 2.5rem 2.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+    .article h2 {
+      font-size: 1.9rem;
+      margin: 1.8rem 0 0.8rem;
+      color: #0a1a2e;
+      border-bottom: 2px solid #e8edf5;
+      padding-bottom: 0.3rem;
+    }
+    .article h2:first-of-type {
+      margin-top: 0;
+    }
+    .article h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.5rem;
+      color: #1a2d4a;
+    }
+    .article p {
+      line-height: 1.7;
+      color: #1f2d44;
+      margin: 1rem 0;
+    }
+    .article ul {
+      margin: 0.8rem 0 1.2rem 1.8rem;
+    }
+    .article li {
+      margin: 0.4rem 0;
+      line-height: 1.6;
+      color: #1f2d44;
+    }
+    .highlight {
+      background: #f0f6ff;
+      padding: 0.1rem 0
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

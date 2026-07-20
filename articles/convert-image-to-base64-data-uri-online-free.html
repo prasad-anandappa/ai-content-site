@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Convert Image To Base64 Data Uri Online Free Matters More Than Ever | Free Online DEV Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML page that creates an interactive "Base64 Image Converter" tool. It allows you to convert images to Base64 data URIs">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive tool that converts images to Base64 data URIs. It combines a user-friendly interface with a">
     <meta name="keywords" content="Convert image to Base64 data URI online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,273 +128,270 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML page that creates an interactive "Base64 Image Converter" tool. It allows you to convert images to Base64 data URIs directly in your browser, with a clean, modern interface.
+            This is a complete, self-contained HTML document for an interactive tool that converts images to Base64 data URIs. It combines a user-friendly interface with a detailed, SEO-optimized article about the process.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Base64 Image · Convert image to Base64 data URI online free</title>
-  <!-- Google Font for clean look -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f6f9fc;
-      color: #1e293b;
-      padding: 2rem 1rem;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.1);
-      padding: 2rem 2rem 3rem;
-    }
-    /* tool header */
-    .tool-header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-    .tool-header h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: #0f172a;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-    .tool-header h1 i {
-      color: #3b82f6;
-      font-size: 2rem;
-    }
-    .tool-header .subhead {
-      color: #475569;
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      font-weight: 400;
-    }
-    .tool-header .target-kw {
-      background: #eef2ff;
-      color: #2563eb;
-      display: inline-block;
-      padding: 0.3rem 1rem;
-      border-radius: 30px;
-      font-weight: 500;
-      font-size: 0.85rem;
-      margin-top: 0.75rem;
-      letter-spacing: 0.3px;
-    }
-    /* converter grid */
-    .converter-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin: 2rem 0 2.5rem;
-    }
-    @media (max-width: 700px) {
-      .converter-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      .tool-header h1 {
-        font-size: 1.8rem;
-      }
-    }
-    .upload-area {
-      background: #f8fafc;
-      border: 2px dashed #cbd5e1;
-      border-radius: 1.5rem;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      transition: border 0.2s, background 0.2s;
-    }
-    .upload-area.dragover {
-      border-color: #3b82f6;
-      background: #eff6ff;
-    }
-    .upload-area i {
-      font-size: 3rem;
-      color: #94a3b8;
-      margin-bottom: 0.75rem;
-    }
-    .upload-area h3 {
-      font-weight: 600;
-      font-size: 1.2rem;
-      margin-bottom: 0.25rem;
-    }
-    .upload-area p {
-      color: #64748b;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-    .file-input-wrapper {
-      display: inline-block;
-      background: #3b82f6;
-      color: white;
-      padding: 0.6rem 1.5rem;
-      border-radius: 40px;
-      font-weight: 500;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: background 0.2s;
-      border: none;
-    }
-    .file-input-wrapper:hover {
-      background: #2563eb;
-    }
-    .file-input-wrapper input {
-      display: none;
-    }
-    .preview-box {
-      background: #f8fafc;
-      border-radius: 1.5rem;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-    }
-    .preview-box h3 {
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .preview-box h3 i {
-      color: #3b82f6;
-    }
-    .image-preview {
-      background: #f1f5f9;
-      border-radius: 1rem;
-      min-height: 160px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      border: 1px solid #e2e8f0;
-      margin-bottom: 1.2rem;
-      position: relative;
-    }
-    .image-preview img {
-      max-width: 100%;
-      max-height: 240px;
-      object-fit: contain;
-      display: block;
-    }
-    .image-preview .placeholder {
-      color: #94a3b8;
-      font-size: 0.9rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.25rem;
-    }
-    .image-preview .placeholder i {
-      font-size: 2.5rem;
-      opacity: 0.4;
-    }
-    .result-area {
-      margin-top: 0.5rem;
-    }
-    .result-area label {
-      font-weight: 500;
-      font-size: 0.9rem;
-      display: block;
-      margin-bottom: 0.4rem;
-      color: #334155;
-    }
-    .datauri-box {
-      background: #f1f5f9;
-      border-radius: 12px;
-      padding: 0.9rem 1rem;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.8rem;
-      word-break: break-all;
-      max-height: 130px;
-      overflow-y: auto;
-      border: 1px solid #e2e8f0;
-      color: #0f172a;
-      white-space: pre-wrap;
-    }
-    .copy-row {
-      display: flex;
-      gap: 0.6rem;
-      margin-top: 0.8rem;
-      flex-wrap: wrap;
-    }
-    .btn {
-      background: #f1f5f9;
-      border: none;
-      padding: 0.5rem 1.2rem;
-      border-radius: 40px;
-      font-weight: 500;
-      font-size: 0.85rem;
-      color: #1e293b;
-      cursor: pointer;
-      transition: 0.15s;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      border: 1px solid #e2e8f0;
-    }
-    .btn-primary {
-      background: #3b82f6;
-      color: white;
-      border: none;
-    }
-    .btn-primary:hover {
-      background: #2563eb;
-    }
-    .btn-primary:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-    .btn-outline {
-      background: white;
-    }
-    .btn-outline:hover {
-      background: #f8fafc;
-    }
-    .btn-copy {
-      background: #0f172a;
-      color: white;
-      border: none;
-    }
-    .btn-copy:hover {
-      background: #1e293b;
-    }
-    .btn-copy:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-    .toast {
-      position: fixed;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #0f172a;
-      color: white;
-      padding: 0.7rem 1.8rem;
-      border-radius: 60px;
-      font-weight: 500;
-      font-size: 0.9rem;
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Image Converter – free online tool</title>
+    <!-- clean, modern style -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background: #f4f7fb;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 20px 40px -12px rgba(0,20,40,0.15);
+            padding: 2.5rem 2rem;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0b1e33;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+        .subhead {
+            font-size: 1.1rem;
+            color: #2c4a6e;
+            margin-bottom: 2rem;
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+            background: #f0f6ff;
+            border-radius: 0 12px 12px 0;
+            line-height: 1.5;
+        }
+        .tool-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            background: #f9fcff;
+            padding: 2rem 1.5rem;
+            border-radius: 24px;
+            border: 1px solid #e2edf7;
+            margin-bottom: 2.5rem;
+        }
+        .drop-zone {
+            flex: 2 1 280px;
+            background: #ffffff;
+            border: 2px dashed #94b8da;
+            border-radius: 24px;
+            padding: 2.2rem 1.5rem;
+            text-align: center;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .drop-zone:hover, .drop-zone.drag-over {
+            border-color: #2563eb;
+            background: #f0f7ff;
+        }
+        .drop-zone p {
+            font-size: 1rem;
+            color: #1e3a5f;
+            margin: 0.8rem 0 0.2rem;
+        }
+        .drop-zone .icon {
+            font-size: 2.8rem;
+            line-height: 1;
+        }
+        .drop-zone .small {
+            font-size: 0.85rem;
+            color: #4b6f8f;
+        }
+        #fileInput {
+            display: none;
+        }
+        .preview-area {
+            flex: 3 1 360px;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .preview-header span {
+            font-weight: 600;
+            color: #0f2b44;
+        }
+        .btn-group {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .btn {
+            background: white;
+            border: 1px solid #cbddee;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1e3a5f;
+            cursor: pointer;
+            transition: 0.15s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+        .btn-primary {
+            background: #1d4ed8;
+            border: 1px solid #1d4ed8;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #2563eb;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #b7d0e8;
+        }
+        .btn-outline:hover {
+            background: #e9f2fc;
+        }
+        .preview-box {
+            background: #f2f6fd;
+            border-radius: 18px;
+            padding: 0.8rem;
+            min-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #dfebf5;
+            flex: 1;
+        }
+        .preview-box img {
+            max-width: 100%;
+            max-height: 180px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+            object-fit: contain;
+        }
+        .placeholder-preview {
+            color: #6c8aa8;
+            font-size: 0.9rem;
+        }
+        .result-panel {
+            margin-top: 1.2rem;
+        }
+        .result-panel label {
+            font-weight: 600;
+            color: #0f2b44;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        .data-uri-box {
+            background: #f1f6fd;
+            border-radius: 18px;
+            padding: 1rem;
+            border: 1px solid #d9e6f2;
+            display: flex;
+            gap: 0.5rem;
+            align-items: stretch;
+        }
+        .data-uri-box textarea {
+            flex: 1;
+            border: none;
+            background: transparent;
+            resize: vertical;
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            padding: 0.3rem;
+            min-height: 72px;
+            color: #0b1e33;
+        }
+        .data-uri-box textarea:focus {
+            outline: 1px solid #3b82f6;
+            border-radius: 8px;
+        }
+        .copy-btn {
+            background: white;
+            border: 1px solid #b7d0e8;
+            border-radius: 40px;
+            padding: 0.2rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            transition: 0.1s;
+        }
+        .copy-btn:hover {
+            background: #e1edfc;
+        }
+        .badge {
+            background: #dbeafe;
+            color: #1e40af;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.7rem;
+            border-radius: 40px;
+            font-weight: 500;
+        }
+        .article {
+            margin-top: 1rem;
+        }
+        .article h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0b1e33;
+            margin: 2rem 0 0.75rem;
+            letter-spacing: -0.01em;
+        }
+        .article h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+            margin: 1.8rem 0 0.6rem;
+        }
+        .article p {
+            line-height: 1.7;
+            color: #1f2e44;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        .article ul {
+            margin: 0.5rem 0 1.2rem 1.5rem;
+        }
+        .article li {
+            line-height: 1.7;
+            margin-bottom: 0.3rem;
+            color: #1f2e44;
+        }
+        .article .highlight {
+            background: #eff6ff;
+            padding: 0.1rem 0.3rem;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: #4b6b89;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e2edf7
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

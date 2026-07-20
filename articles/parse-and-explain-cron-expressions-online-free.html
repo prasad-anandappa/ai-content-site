@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 Parse And Explain Cron Expressions Online Free You Need to Know About | Free Online DEV Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive Cron Expression Parser tool. It allows you to input a cron expression and instantly see a">
+    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive tool for parsing and explaining cron expressions. You can run it directly in your">
     <meta name="keywords" content="Parse and explain cron expressions online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,244 +128,281 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive Cron Expression Parser tool. It allows you to input a cron expression and instantly see a detailed, human-readable explanation of its schedule. The page is designed as a practical developer tool with a clean, modern interface.
+            This is a complete, self-contained HTML document that creates an interactive tool for parsing and explaining cron expressions. You can run it directly in your browser to decode cron schedules.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cron Expression Parser – Parse and explain cron expressions online free</title>
-  <meta name="description" content="Parse and explain cron expressions online free. Interactive tool to decode cron schedules, with examples, tips, and full explanations for developers.">
+  <title>Cron Expression Parser · Explain cron online free</title>
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     }
+
     body {
-      background: #f4f6fa;
+      background: #f4f7fc;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 2rem 1rem;
-      color: #1e293b;
+      color: #1a2634;
+      line-height: 1.5;
     }
+
     .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
-      padding: 2rem 2rem 3rem;
+      max-width: 1200px;
+      width: 100%;
     }
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
+
+    /* interactive tool card */
+    .tool-card {
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      padding: 2rem 2.2rem;
+      margin-bottom: 2.5rem;
+      transition: box-shadow 0.2s;
+      border: 1px solid #e9edf4;
+    }
+
+    .tool-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .tool-header h1 {
+      font-size: 1.9rem;
+      font-weight: 600;
       letter-spacing: -0.02em;
-      margin-bottom: 0.3rem;
-      background: linear-gradient(135deg, #0f172a, #3b82f6);
+      background: linear-gradient(145deg, #0b1c2f, #1f3a5f);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    .subhead {
-      font-size: 1.1rem;
-      color: #475569;
-      margin-bottom: 2rem;
-      border-left: 4px solid #3b82f6;
-      padding-left: 1rem;
-    }
-    .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-bottom: 2.5rem;
-    }
-    @media (max-width: 720px) {
-      .tool-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      .container { padding: 1.5rem; }
-      h1 { font-size: 1.8rem; }
-    }
-    .input-card, .result-card {
-      background: #f8fafc;
-      border-radius: 1.5rem;
-      padding: 1.5rem;
-      border: 1px solid #e2e8f0;
-    }
-    .input-card h2, .result-card h2 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #0f172a;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .input-card h2 i, .result-card h2 i {
-      font-style: normal;
-      background: #dbeafe;
-      padding: 0.2rem 0.6rem;
-      border-radius: 40px;
-      font-size: 0.75rem;
-      color: #2563eb;
-    }
-    .cron-input-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.7rem;
-    }
-    .cron-input-group label {
+
+    .badge {
+      background: #e6edf8;
+      color: #1f3a5f;
+      font-size: 0.8rem;
       font-weight: 500;
-      font-size: 0.9rem;
-      color: #334155;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      letter-spacing: 0.3px;
     }
-    .cron-field {
+
+    .input-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 0.6rem;
+      margin-top: 0.25rem;
+      margin-bottom: 1.8rem;
     }
-    #cronExpression {
-      flex: 1;
-      min-width: 180px;
-      padding: 0.8rem 1rem;
-      font-size: 1.1rem;
-      font-weight: 500;
-      border: 2px solid #cbd5e1;
+
+    .input-group input {
+      flex: 2 1 280px;
+      padding: 0.9rem 1.2rem;
+      border: 1px solid #d8e0ec;
       border-radius: 60px;
-      background: white;
+      font-size: 1.1rem;
+      background: #f9fbfd;
       transition: 0.2s;
       font-family: 'SF Mono', 'Fira Code', monospace;
     }
-    #cronExpression:focus {
-      border-color: #3b82f6;
+
+    .input-group input:focus {
+      border-color: #2b5a8c;
       outline: none;
-      box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
-    }
-    .btn-group {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .btn {
+      box-shadow: 0 0 0 3px rgba(43, 90, 140, 0.15);
       background: white;
-      border: 1px solid #cbd5e1;
-      padding: 0.6rem 1.2rem;
-      border-radius: 60px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: 0.15s;
-      font-size: 0.9rem;
     }
-    .btn-primary {
-      background: #2563eb;
-      border-color: #2563eb;
+
+    .input-group button {
+      background: #1f3a5f;
+      border: none;
       color: white;
+      font-weight: 500;
+      padding: 0.9rem 2.2rem;
+      border-radius: 60px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 4px 8px rgba(31, 58, 95, 0.2);
+      letter-spacing: 0.3px;
     }
-    .btn-primary:hover {
-      background: #1d4ed8;
+
+    .input-group button:hover {
+      background: #152b47;
+      transform: scale(0.98);
+      box-shadow: 0 6px 12px rgba(31, 58, 95, 0.25);
     }
-    .btn-outline:hover {
-      background: #f1f5f9;
-    }
+
     .examples {
-      margin-top: 1.2rem;
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem 0.6rem;
+      gap: 0.5rem 1rem;
+      margin-bottom: 1.6rem;
+      font-size: 0.9rem;
+      align-items: center;
     }
-    .example-chip {
-      background: #eef2ff;
-      color: #4338ca;
-      padding: 0.2rem 0.8rem;
-      border-radius: 30px;
-      font-size: 0.8rem;
-      font-weight: 500;
+
+    .examples span {
+      color: #3b4e67;
+      font-weight: 450;
+    }
+
+    .example-link {
+      color: #1f3a5f;
+      text-decoration: none;
+      border-bottom: 1px dashed #b3c7e0;
       cursor: pointer;
-      border: 1px solid #c7d2fe;
+      font-family: monospace;
+      background: #eef4fa;
+      padding: 0.15rem 0.8rem;
+      border-radius: 30px;
       transition: 0.1s;
     }
-    .example-chip:hover {
-      background: #dbeafe;
-      border-color: #818cf8;
+
+    .example-link:hover {
+      background: #dce6f2;
+      border-bottom: 1px solid #1f3a5f;
     }
-    .result-box {
-      background: white;
-      border-radius: 1rem;
-      padding: 1rem 1.2rem;
-      border: 1px solid #e2e8f0;
-      min-height: 140px;
+
+    /* explanation grid */
+    .output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.8rem;
+      background: #f8faff;
+      border-radius: 24px;
+      padding: 1.2rem 1.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #e2eaf3;
     }
-    #explanationOutput {
-      white-space: pre-wrap;
-      line-height: 1.6;
-      font-size: 0.98rem;
+
+    .field {
+      display: flex;
+      flex-direction: column;
     }
-    .explain-item {
-      margin-bottom: 0.6rem;
-    }
-    .explain-label {
-      font-weight: 600;
-      color: #1e293b;
-      display: inline-block;
-      min-width: 90px;
-    }
-    .explain-value {
-      color: #0f172a;
-    }
-    .badge {
-      background: #dbeafe;
-      color: #1e40af;
-      padding: 0.2rem 0.7rem;
-      border-radius: 30px;
+
+    .field-label {
       font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #4c627b;
       font-weight: 600;
-      margin-left: 0.4rem;
     }
-    .human-friendly {
-      background: #dcfce7;
-      color: #166534;
-      padding: 0.5rem 1rem;
-      border-radius: 60px;
-      display: inline-block;
+
+    .field-value {
+      font-size: 1.1rem;
       font-weight: 500;
-      margin-top: 0.8rem;
-      font-size: 0.95rem;
+      color: #0f263d;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      word-break: break-word;
+      margin-top: 0.1rem;
     }
-    .article-section {
-      margin-top: 2.5rem;
-      border-top: 1px solid #e2e8f0;
+
+    .field-desc {
+      font-size: 0.8rem;
+      color: #3b556f;
+      opacity: 0.85;
+    }
+
+    .human-readable {
+      margin-top: 1.5rem;
+      padding: 1rem 1.5rem;
+      background: #eaf1fa;
+      border-radius: 40px;
+      font-size: 1.1rem;
+      font-weight: 450;
+      border-left: 5px solid #1f3a5f;
+    }
+
+    /* article section */
+    .article {
+      background: white;
+      border-radius: 28px;
+      padding: 2.5rem 2.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+      border: 1px solid #e9edf4;
+      margin-top: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+      color: #0f263d;
+    }
+
+    h2:first-of-type {
+      margin-top: 0.2rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #1a334b;
+    }
+
+    p {
+      margin: 1rem 0;
+      color: #1f3043;
+    }
+
+    ul, ol {
+      margin: 0.8rem 0 1.2rem 1.8rem;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    .callout {
+      background: #eef5fc;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      border-left: 6px solid #2b5a8c;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #2c405a;
+      text-align: center;
+      border-top: 1px solid #dce4ef;
       padding-top: 2rem;
     }
-    h2, h3 {
-      font-weight: 600;
-      letter-spacing: -0.01em;
+
+    @media (max-width: 600px) {
+      .tool-card, .article { padding: 1.5rem; }
+      .tool-header h1 { font-size: 1.6rem; }
+      .input-group button { width: 100%; }
     }
-    h2 { font-size: 1.7rem; margin: 1.5rem 0 0.8rem; color: #0f172a; }
-    h3 { font-size: 1.2rem; margin: 1.2rem 0 0.5rem; color: #1e293b; }
-    p { line-height: 1.7; margin-bottom: 1rem; color: #334155; }
-    ul { margin: 0.5rem 0 1.2rem 1.5rem; }
-    li { margin-bottom: 0.4rem; line-height: 1.6; color: #1e293b; }
-    .highlight { background: #fef9c3; padding: 0.1rem 0.3rem; border-radius: 6px; font-weight: 500; }
-    .cta-box {
-      background: #f1f5f9;
-      border-radius: 1.5rem;
-      padding: 1.8rem 2rem;
-      margin: 2rem 0 0.5rem;
-      text-align: center;
-    }
-    .cta-box p {
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
-    .footer-note {
-      font-size: 0.85rem;
-      color: #64748b;
-      text-align: center;
-      margin-top: 2.5rem;
-    }
-    .
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Interactive tool -->
+  <div class="tool-card">
+    <div class="tool-header">
+      <h1>⏱ Cron Parser · explain online</h1>
+      <span class="badge">free · dev tool</span>
+    </div>
+    <div class="input-group">
+      <input type="text" id="cronInput" placeholder="e.g. */15 0 1,15
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

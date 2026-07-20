@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10 Best Generate Css Gradients Online Free Solutions Compared | Free Online DEV Tool</title>
-    <meta name="description" content="This is a complete, interactive HTML document that creates a CSS Gradient Generator tool. You can run it directly in your browser to visually design linear and">
+    <title>Why Generate Css Gradients Online Free Matters More Than Ever | Free Online DEV Tool</title>
+    <meta name="description" content="Here is the interactive HTML tool page for a CSS Gradient Generator. It combines a practical gradient builder with an in-depth guide on creating and using CSS">
     <meta name="keywords" content="Generate CSS gradients online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>10 Best Generate Css Gradients Online Free Solutions Compared</h1>
+        <h1>Why Generate Css Gradients Online Free Matters More Than Ever</h1>
         <p>Free Online DEV Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,7 +128,7 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, interactive HTML document that creates a CSS Gradient Generator tool. You can run it directly in your browser to visually design linear and radial gradients, copy the generated CSS code, and learn about gradient creation.
+            Here is the interactive HTML tool page for a CSS Gradient Generator. It combines a practical gradient builder with an in-depth guide on creating and using CSS gradients online.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -136,10 +136,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Gradient Generator · Generate CSS gradients online free</title>
-  <!-- Font & reset -->
+  <!-- SEO meta -->
+  <meta name="description" content="Generate CSS gradients online free with our interactive tool. Linear, radial, conic, custom stops, angle, and live preview. Copy code instantly.">
+  <meta name="keywords" content="Generate CSS gradients online free, CSS gradient generator, linear gradient, radial gradient, conic gradient, gradient tool">
+  <!-- Google Fonts & Font Awesome for clean icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -147,232 +151,209 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: #f6f9fc;
-      color: #1a2639;
-      line-height: 1.5;
-      padding: 2rem 1.5rem;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f7f9fc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 2rem 1rem;
     }
     .container {
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 0 auto;
-    }
-    /* tool card */
-    .gradient-tool {
       background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px -12px rgba(0,20,30,0.15);
-      padding: 1.8rem 1.8rem 2.5rem;
-      margin-bottom: 3rem;
+      border-radius: 32px;
+      box-shadow: 0 20px 60px -12px rgba(0,0,0,0.15);
+      overflow: hidden;
+      padding: 2rem 2rem 3rem;
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    h1 small {
-      font-size: 1rem;
-      font-weight: 400;
-      background: #dbeafe;
-      color: #1e4a7a;
-      padding: 0.2rem 1rem;
-      border-radius: 40px;
-      margin-left: 0.5rem;
+      background: linear-gradient(135deg, #0f172a, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.25rem;
     }
     .subhead {
+      font-size: 1.1rem;
       color: #475569;
-      margin: 0.25rem 0 1.5rem 0;
-      font-size: 1.05rem;
+      margin-bottom: 2rem;
       border-left: 4px solid #3b82f6;
       padding-left: 1rem;
+      font-weight: 400;
     }
-    /* preview */
-    .preview-box {
-      width: 100%;
-      height: 220px;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      margin: 1rem 0 1.8rem;
-      transition: box-shadow 0.2s;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    /* controls grid */
-    .controls-grid {
+    .tool-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.2rem 2rem;
+      gap: 2rem;
+      margin: 2.5rem 0 3rem;
+    }
+    @media (max-width: 820px) {
+      .tool-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .container { padding: 1.5rem; }
+      h1 { font-size: 2rem; }
+    }
+    /* preview panel */
+    .preview-panel {
+      background: #f1f5f9;
+      border-radius: 24px;
+      padding: 1.5rem;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+    }
+    .preview-box {
+      flex: 1;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 220px;
+      transition: background 0.2s ease;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      margin-bottom: 1rem;
+    }
+    .preview-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: #334155;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.5rem;
+    }
+    .code-snippet {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 1rem 1.2rem;
+      border-radius: 18px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85rem;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-all;
+      line-height: 1.5;
+      border: 1px solid #1e293b;
+      margin-top: 0.5rem;
+      position: relative;
+    }
+    .copy-btn {
+      background: #3b82f6;
+      border: none;
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 0.5rem;
+    }
+    .copy-btn:hover { background: #2563eb; transform: scale(0.98); }
+    .copy-btn i { font-size: 0.8rem; }
+    /* controls */
+    .controls-panel {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 1.2rem 1.5rem 1.8rem;
+      border: 1px solid #e9edf2;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
     }
     .control-group {
       display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
     }
-    .control-group label {
-      font-weight: 500;
-      font-size: 0.85rem;
-      color: #2c3e50;
-      letter-spacing: 0.01em;
+    .control-item {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      gap: 4px;
     }
-    .control-group label span.value-badge {
-      background: #eef2f6;
-      padding: 0.1rem 0.7rem;
-      border-radius: 20px;
-      font-size: 0.75rem;
+    .control-item label {
+      font-size: 0.7rem;
       font-weight: 600;
-      color: #1e293b;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #64748b;
     }
-    input[type="color"] {
-      width: 100%;
-      height: 44px;
+    select, input[type="number"], input[type="color"] {
+      background: #f8fafc;
       border: 1px solid #d1d9e6;
-      border-radius: 14px;
-      background: white;
-      padding: 2px;
+      border-radius: 40px;
+      padding: 0.45rem 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #0f172a;
+      outline: none;
+      transition: 0.15s;
       cursor: pointer;
+    }
+    select:focus, input:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.2); }
+    input[type="color"] {
+      width: 48px;
+      height: 48px;
+      padding: 4px;
+      border-radius: 50%;
+      background: white;
     }
     input[type="range"] {
-      width: 100%;
-      accent-color: #3b82f6;
+      width: 140px;
       height: 6px;
-      background: #e2e8f0;
-      border-radius: 10px;
+      -webkit-appearance: none;
+      background: #d1d9e6;
+      border-radius: 20px;
+      outline: none;
     }
-    select {
-      padding: 0.6rem 1rem;
-      border-radius: 14px;
-      border: 1px solid #d1d9e6;
-      background: white;
-      font-weight: 500;
-      font-size: 0.9rem;
-    }
-    .double-input {
-      display: flex;
-      gap: 0.8rem;
-      align-items: center;
-    }
-    .double-input > * { flex: 1; }
-    .copy-area {
-      margin-top: 2rem;
-      background: #f1f5f9;
-      border-radius: 18px;
-      padding: 1rem 1.2rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.8rem;
-    }
-    .copy-area code {
-      flex: 1;
-      font-size: 0.9rem;
-      background: white;
-      padding: 0.6rem 1rem;
-      border-radius: 40px;
-      border: 1px solid #dce3ec;
-      color: #0b1e33;
-      word-break: break-all;
-      min-width: 180px;
-    }
-    .btn {
-      background: #1e293b;
-      border: none;
-      color: white;
-      font-weight: 600;
-      padding: 0.6rem 1.5rem;
-      border-radius: 40px;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: 0.15s;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      white-space: nowrap;
-    }
-    .btn:hover { background: #0f172a; transform: scale(0.98); }
-    .btn-outline {
-      background: transparent;
-      border: 1px solid #1e293b;
-      color: #1e293b;
-    }
-    .btn-outline:hover { background: #e9edf3; }
-    .btn-primary {
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
       background: #3b82f6;
-    }
-    .btn-primary:hover { background: #2563eb; }
-    .preset-btns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.6rem;
-    }
-    .preset-btns button {
-      background: #eef2f8;
-      border: none;
-      padding: 0.25rem 1rem;
-      border-radius: 30px;
-      font-size: 0.7rem;
-      font-weight: 500;
-      color: #1e293b;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(59,130,246,0.3);
       cursor: pointer;
-      transition: 0.1s;
-      border: 1px solid transparent;
     }
-    .preset-btns button:hover {
-      background: #dbe4ee;
-      border-color: #94a3b8;
+    .color-pair {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
-
+    .angle-input {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .angle-input input[type="number"] { width: 70px; }
+    .badge {
+      background: #e9edf2;
+      padding: 0.2rem 0.8rem;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
     /* article section */
     .article {
-      background: white;
-      border-radius: 2rem;
-      padding: 2rem 2rem 2.5rem;
-      box-shadow: 0 10px 30px -8px rgba(0,0,0,0.05);
-      margin-top: 1rem;
+      margin-top: 2.5rem;
+      border-top: 1px solid #e9edf2;
+      padding-top: 2.5rem;
     }
     .article h2 {
       font-size: 1.8rem;
       font-weight: 700;
-      margin: 1.8rem 0 0.8rem;
-      letter-spacing: -0.02em;
-    }
-    .article h2:first-of-type { margin-top: 0.2rem; }
-    .article h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin: 1.6rem 0 0.5rem;
-    }
-    .article p {
-      margin: 0.9rem 0;
-      color: #1e293b;
-    }
-    .article ul {
-      margin: 0.8rem 0 1.2rem 1.5rem;
-    }
-    .article li {
-      margin: 0.4rem 0;
-    }
-    .highlight {
-      background: #f0f7ff;
-      padding: 0.1rem 0.3rem;
-      border-radius: 8px;
-      font-weight: 500;
-    }
-    footer {
-      text-align: center;
-      margin-top: 2.5rem;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 680px) {
-      .controls-grid { grid-template-columns: 1fr; gap: 1rem; }
-      .copy-area { flex
+      margin: 2rem 0 1rem;
+      background: linear-gradient(135deg, #0f172a, #2563eb
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>
