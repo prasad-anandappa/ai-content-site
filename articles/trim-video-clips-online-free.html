@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Best Trim Video Clips Online Free Solutions Compared | Free Online MEDIA Tool</title>
-    <meta name="description" content="This is a self-contained HTML webpage for a free online video trimmer tool. It combines an interactive editor with a comprehensive guide, allowing users to">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Video Trimmer" tool page. It's designed to let users trim video clips online for free,">
     <meta name="keywords" content="Trim video clips online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,254 +128,298 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a self-contained HTML webpage for a free online video trimmer tool. It combines an interactive editor with a comprehensive guide, allowing users to trim video clips directly in their browser.
+            This is a complete, self-contained HTML document for an interactive "Video Trimmer" tool page. It's designed to let users trim video clips online for free, directly in their browser. The page includes a dual-pane layout with a functional trimming tool on the left and a comprehensive, SEO-optimized guide article on the right, covering tips, use cases, and a clear call to action.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
-  <title>Video Trimmer · trim video clips online free</title>
-  <meta name="description" content="Trim video clips online free with our browser-based Video Trimmer. No upload, no watermark, instant preview & download.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Trimmer · Trim video clips online free</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #f6f9fe;
-      color: #1a2639;
-      padding: 2rem 1rem;
+      background: #f5f7fb;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      padding: 2rem 1.5rem;
+      color: #1e293b;
       line-height: 1.6;
     }
+
     .container {
-      max-width: 1100px;
+      max-width: 1360px;
       margin: 0 auto;
       background: white;
       border-radius: 2rem;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.1);
-      padding: 2rem 1.8rem 3rem;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
+      padding: 2rem 2.5rem;
     }
-    h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.3rem;
-      background: linear-gradient(145deg, #0b2b5c, #2a5c9a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .subhead {
-      color: #2c3e6b;
-      font-size: 1.1rem;
-      border-left: 4px solid #4a7cf7;
-      padding-left: 1rem;
-      margin-bottom: 2rem;
-    }
-    .tool-grid {
+
+    /* layout */
+    .tool-article-wrap {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
-      margin: 2rem 0 2.5rem;
+      gap: 2.5rem;
     }
+
     .tool-panel {
-      flex: 2;
-      min-width: 300px;
-      background: #f2f6ff;
+      flex: 1 1 380px;
+      background: #f8fafc;
       border-radius: 1.5rem;
-      padding: 1.8rem 1.5rem 1.8rem;
-      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02), 0 8px 18px rgba(42, 92, 154, 0.08);
+      padding: 1.8rem 1.8rem 2.2rem;
+      border: 1px solid #e9edf2;
+      height: fit-content;
     }
-    .info-panel {
-      flex: 1.2;
-      min-width: 200px;
-      background: #fafcff;
-      border-radius: 1.5rem;
-      padding: 1.5rem;
-      border: 1px solid #e3edff;
+
+    .article-panel {
+      flex: 2 1 500px;
+      min-width: 280px;
     }
-    .info-panel h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.75rem;
-      color: #1a2d4a;
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+      color: #0f172a;
     }
-    .info-panel ul {
-      list-style: none;
+
+    .subhead {
+      font-size: 1.1rem;
+      color: #475569;
+      margin-bottom: 1.8rem;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
     }
-    .info-panel li {
-      padding: 0.4rem 0;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.95rem;
-      border-bottom: 1px solid #eaeef8;
-    }
-    .info-panel li:last-child { border: none; }
-    .badge {
-      background: #dce8ff;
-      color: #1a4c8c;
-      border-radius: 20px;
-      padding: 0.2rem 0.8rem;
-      font-size: 0.75rem;
-      font-weight: 600;
-      margin-left: 0.4rem;
-    }
-    .upload-area {
-      border: 2px dashed #b8cdf0;
+
+    /* video trimmer interactive */
+    .drop-zone {
       background: white;
-      border-radius: 2rem;
-      padding: 2.2rem 1.5rem;
+      border: 2px dashed #cbd5e1;
+      border-radius: 1.2rem;
+      padding: 2.8rem 1rem;
       text-align: center;
-      transition: 0.2s;
+      transition: all 0.2s ease;
       cursor: pointer;
+      margin-bottom: 1.5rem;
     }
-    .upload-area:hover {
-      border-color: #4a7cf7;
-      background: #f0f6ff;
+
+    .drop-zone.dragover {
+      border-color: #3b82f6;
+      background: #eff6ff;
     }
-    .upload-area svg {
-      width: 48px;
-      height: 48px;
-      stroke: #4a7cf7;
-      stroke-width: 1.5;
-      fill: none;
+
+    .drop-zone p {
+      font-weight: 500;
+      color: #334155;
+      font-size: 1rem;
+    }
+
+    .drop-zone .icon {
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
-    .upload-area p {
-      color: #2a3f66;
-      font-weight: 500;
+
+    .drop-zone .small {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-top: 0.4rem;
     }
-    .file-name {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #1f4973;
-      word-break: break-all;
+
+    #fileInput {
+      display: none;
     }
+
     .trim-controls {
-      margin-top: 1.8rem;
+      background: white;
+      border-radius: 1.2rem;
+      padding: 1.2rem 1.2rem 1.6rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin: 1.2rem 0 0.8rem;
     }
-    .range-row {
+
+    .time-row {
       display: flex;
+      gap: 0.8rem;
       flex-wrap: wrap;
-      gap: 1rem;
-      align-items: center;
-      margin: 1rem 0;
+      margin-bottom: 1rem;
     }
-    .range-row label {
-      font-weight: 500;
-      min-width: 70px;
-      color: #1a2d4a;
-    }
-    input[type="range"] {
+
+    .time-field {
       flex: 1;
-      min-width: 140px;
-      height: 6px;
-      -webkit-appearance: none;
-      background: linear-gradient(90deg, #4a7cf7 0%, #b8cdf0 100%);
-      border-radius: 10px;
+      min-width: 80px;
     }
-    input[type="range"]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 18px;
-      height: 18px;
-      background: #1a3f6e;
-      border-radius: 50%;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      cursor: pointer;
-      border: 2px solid white;
+
+    .time-field label {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #475569;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
     }
-    .time-display {
+
+    .time-field input {
+      width: 100%;
+      padding: 0.5rem 0.6rem;
+      border: 1px solid #d1d9e6;
+      border-radius: 0.6rem;
+      font-size: 0.95rem;
+      background: white;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      margin: 0.5rem 0 0.2rem;
+      accent-color: #2563eb;
+    }
+
+    .range-labels {
       display: flex;
       justify-content: space-between;
-      background: #eaf1fd;
-      padding: 0.4rem 1rem;
-      border-radius: 40px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: #10233e;
+      font-size: 0.75rem;
+      color: #475569;
     }
-    .action-buttons {
+
+    .btn-group {
       display: flex;
-      flex-wrap: wrap;
       gap: 0.8rem;
-      margin-top: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
     }
+
     .btn {
       background: white;
-      border: 1px solid #b8cdf0;
-      padding: 0.7rem 1.6rem;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: #1a3f6e;
+      border: 1px solid #cbd5e1;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      font-size: 0.9rem;
       cursor: pointer;
       transition: 0.15s;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: #f8fbff;
+      gap: 0.4rem;
     }
+
     .btn-primary {
-      background: #1a3f6e;
-      border: 1px solid #1a3f6e;
+      background: #2563eb;
+      border: 1px solid #2563eb;
       color: white;
-      box-shadow: 0 4px 10px rgba(26,63,110,0.2);
+      box-shadow: 0 4px 8px rgba(37,99,235,0.2);
     }
+
     .btn-primary:hover {
-      background: #0f2d50;
-      transform: scale(0.98);
+      background: #1d4ed8;
     }
-    .btn:disabled {
+
+    .btn-primary:disabled {
       opacity: 0.5;
       pointer-events: none;
-      filter: grayscale(0.4);
     }
-    .btn:hover:not(:disabled) {
-      background: #eaf1fd;
+
+    .btn-outline:hover {
+      background: #f1f5f9;
     }
-    .btn-primary:hover:not(:disabled) {
-      background: #0f2d50;
+
+    .status-msg {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #334155;
+      background: #f1f5f9;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      display: inline-block;
     }
-    .preview-container {
-      margin: 1.8rem 0 0.8rem;
-      background: #0b1a2e;
-      border-radius: 1.2rem;
-      overflow: hidden;
-      aspect-ratio: 16/9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    .preview-container video {
+
+    video {
       width: 100%;
-      height: 100%;
-      object-fit: contain;
-      background: #000;
-      display: block;
+      max-height: 240px;
+      border-radius: 0.8rem;
+      background: #0b1120;
+      margin-top: 0.8rem;
     }
-    .placeholder {
-      color: #b0c7e0;
-      font-size: 0.95rem;
-    }
-    article {
-      margin: 3rem 0 1rem;
-    }
-    article h2 {
-      font-size: 1.8rem;
-      margin: 2rem 0 0.75rem;
-      color: #10233e;
-      border-bottom: 2px solid #dce8ff;
+
+    /* article styling */
+    .article-panel h2 {
+      font-size: 1.7rem;
+      margin: 1.6rem 0 0.8rem;
+      color: #0f172a;
+      border-bottom: 2px solid #e2e8f0;
       padding-bottom: 0.3rem;
     }
-    article h3 {
-      font-size: 1.3rem;
-      margin: 1.5rem 0 0.5rem;
-      color: #1a2d4a;
 
+    .article-panel h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .article-panel h3 {
+      font-size: 1.25rem;
+      margin: 1.4rem 0 0.5rem;
+      color: #1e293b;
+    }
+
+    .article-panel p {
+      margin-bottom: 1rem;
+      color: #1e293b;
+    }
+
+    .article-panel ul, .article-panel ol {
+      margin: 0.5rem 0 1.2rem 1.4rem;
+    }
+
+    .article-panel li {
+      margin-bottom: 0.3rem;
+    }
+
+    .highlight {
+      background: #eef2ff;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.4rem;
+      font-weight: 500;
+    }
+
+    .callout {
+      background: #f0f9ff;
+      border-left: 4px solid #2563eb;
+      padding: 1.2rem 1.5rem;
+      border-radius: 0.8rem;
+      margin: 1.5rem 0;
+    }
+
+    .callout p {
+      margin-bottom: 0.2rem;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 700px) {
+      .container { padding: 1.5rem; }
+      .tool-article-wrap { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>✂️ Video Trimmer</h1>
+  <div class="subhead">Trim video clips online free — no uploads, no server, just your browser.</div>
+
+  <div class="tool-article-wrap">
+    <!-- INTERACTIVE TOOL -->
+    <div class
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

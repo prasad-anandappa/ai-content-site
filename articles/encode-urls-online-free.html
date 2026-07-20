@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Encode Urls Online Free Matters More Than Ever | Free Online TEXT Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive URL encoder tool and an in-depth guide. You can run it directly in your browser to">
+    <meta name="description" content="Here is the interactive HTML tool page for URL encoding, including a comprehensive article and a functional encoder tool.
+```html
+
+
+
+  
+  
+  
+  URL Encoder ·">
     <meta name="keywords" content="Encode URLs online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,234 +136,241 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document that creates an interactive URL encoder tool and an in-depth guide. You can run it directly in your browser to encode URLs and learn best practices.
+            Here is the interactive HTML tool page for URL encoding, including a comprehensive article and a functional encoder tool.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>URL Encoder · Encode URLs online free</title>
-  <meta name="description" content="Encode URLs online free with instant URL encoding tool. Learn how percent encoding works, practical tips, and actionable advice for web developers.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <meta name="description" content="Encode URLs online free – instant, secure, and developer-friendly URL encoding tool. Learn why, when, and how to encode URLs with our interactive encoder and complete guide.">
+  <title>URL Encoder · Encode URLs Online Free</title>
+  <!-- Font & base styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <style>
-    /* modern reset & typography */
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #f8faff;
-      color: #1e293b;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f4f7fc;
+      color: #1a2639;
+      padding: 2rem 1rem;
       line-height: 1.6;
-      padding: 2rem 1.5rem;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.15);
-      padding: 2rem 2rem 2.5rem;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.25);
+      padding: 2rem 2rem 3rem;
     }
-    h1 {
-      font-size: 2.4rem;
+    @media (max-width: 640px) {
+      body { padding: 1rem 0.5rem; }
+      .container { padding: 1.5rem 1rem; border-radius: 1.5rem; }
+    }
+
+    /* interactive encoder card */
+    .encoder-card {
+      background: linear-gradient(145deg, #ffffff, #f0f5fe);
+      border: 1px solid #dce5f0;
+      border-radius: 1.75rem;
+      padding: 2rem 1.75rem;
+      margin-bottom: 2.8rem;
+      box-shadow: 0 6px 14px rgba(0, 20, 40, 0.04);
+    }
+    .encoder-card h1 {
+      font-size: 2.1rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      background: linear-gradient(145deg, #0f2b4f, #1e4b7a);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      color: #0b1d31;
       margin-bottom: 0.25rem;
     }
-    .subhead {
-      font-size: 1.15rem;
-      color: #2c3e50;
-      margin-bottom: 1.8rem;
-      border-left: 4px solid #3b82f6;
+    .encoder-card .subhead {
+      font-size: 1.1rem;
+      color: #2c3e5c;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+      border-left: 4px solid #1e6df2;
       padding-left: 1rem;
-      background: #f0f7ff;
-      border-radius: 0 12px 12px 0;
-      line-height: 1.5;
     }
-    .tool-panel {
-      background: #f1f6fe;
-      border-radius: 24px;
-      padding: 1.8rem 1.8rem 2rem;
-      margin-bottom: 2.5rem;
-      border: 1px solid #dbeafe;
-    }
-    .flex-input {
+    .tool-grid {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-bottom: 1.2rem;
+      flex-direction: column;
+      gap: 1.25rem;
     }
-    .flex-input textarea {
-      flex: 3 1 260px;
-      min-height: 80px;
-      padding: 0.9rem 1rem;
-      border: 1px solid #bfd9fe;
-      border-radius: 20px;
-      font-size: 1rem;
-      background: white;
-      transition: 0.2s;
-      resize: vertical;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-    }
-    .flex-input textarea:focus {
-      outline: none;
-      border-color: #2563eb;
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
-    }
-    .button-group {
+    .input-group {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
     }
-    .btn {
-      background: white;
-      border: 1px solid #b9d3f0;
-      padding: 0.6rem 1.4rem;
-      border-radius: 60px;
+    .input-group label {
       font-weight: 600;
       font-size: 0.95rem;
       color: #1e3a5f;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    textarea, .output-box {
+      width: 100%;
+      padding: 1rem 1.2rem;
+      font-size: 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 1rem;
+      background: white;
+      font-family: 'Inter', monospace;
+      transition: 0.2s;
+      resize: vertical;
+      min-height: 80px;
+    }
+    textarea:focus {
+      outline: none;
+      border-color: #1e6df2;
+      box-shadow: 0 0 0 3px rgba(30, 109, 242, 0.2);
+    }
+    .output-box {
+      background: #f9fcff;
+      border: 1px solid #cbd5e1;
+      color: #0b1d31;
+      word-break: break-all;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+    }
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 0.5rem 0 0.2rem;
+    }
+    .btn {
+      background: #1e6df2;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.75rem 1.8rem;
+      border-radius: 2.5rem;
+      font-size: 1rem;
       cursor: pointer;
-      transition: 0.15s;
+      transition: 0.2s;
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      box-shadow: 0 4px 6px rgba(30, 109, 242, 0.2);
+      border: 1px solid transparent;
     }
-    .btn-primary {
-      background: #1e4b7a;
-      border: 1px solid #1e4b7a;
-      color: white;
-      box-shadow: 0 4px 8px rgba(30, 75, 122, 0.2);
-    }
-    .btn-primary:hover {
-      background: #143a5e;
+    .btn:hover {
+      background: #1552c4;
       transform: scale(1.02);
+      box-shadow: 0 8px 14px rgba(30, 109, 242, 0.25);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #1e3a5f;
+      border: 1px solid #b6c8e0;
+      box-shadow: none;
     }
     .btn-outline:hover {
-      background: #e6f0ff;
-      border-color: #3b82f6;
+      background: #eef4fd;
+      border-color: #1e6df2;
+      transform: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
     }
-    .btn:active { transform: scale(0.97); }
-    .result-area {
-      margin-top: 1.5rem;
-      background: white;
+    .btn-copy {
+      background: #1f8b4c;
+      box-shadow: 0 4px 6px rgba(31, 139, 76, 0.2);
+    }
+    .btn-copy:hover {
+      background: #166f3b;
+    }
+    .badge {
+      background: #dcebfa;
+      color: #004e9e;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.8rem;
       border-radius: 20px;
-      padding: 1rem 1.2rem;
-      border: 1px solid #dce8f5;
-    }
-    .result-label {
-      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.03em;
-      color: #3b6790;
-      font-weight: 600;
-      margin-bottom: 0.4rem;
+      letter-spacing: 0.3px;
     }
-    .encoded-output {
-      background: #f2f7fe;
-      border-radius: 14px;
-      padding: 0.9rem 1rem;
-      word-break: break-all;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.95rem;
-      border: 1px solid #d3e3fc;
-      color: #0f2b4f;
+    .status {
+      font-size: 0.9rem;
+      color: #2b4b6f;
+      margin-top: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
-    .copy-feedback {
-      font-size: 0.85rem;
-      color: #2563eb;
-      margin-left: 1rem;
-      font-weight: 500;
+    .status.success { color: #1f8b4c; }
+    .status i { font-style: normal; }
+
+    /* article styles */
+    .article {
+      margin-top: 1.5rem;
     }
-    hr {
-      margin: 2rem 0 1.5rem;
-      border: 0;
-      height: 2px;
-      background: linear-gradient(to right, #dbeafe, transparent);
-    }
-    h2 {
+    .article h2 {
       font-size: 1.8rem;
-      font-weight: 600;
-      margin: 1.8rem 0 0.8rem;
-      letter-spacing: -0.01em;
-      color: #0c2a4a;
-      border-bottom: 2px solid #e5edf8;
+      font-weight: 700;
+      margin-top: 2.2rem;
+      margin-bottom: 0.8rem;
+      color: #0b1d31;
+      border-bottom: 2px solid #e2edf9;
       padding-bottom: 0.3rem;
     }
-    h3 {
+    .article h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+    .article h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      margin: 1.6rem 0 0.5rem;
-      color: #1a3b5c;
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #1a3350;
     }
-    p {
-      margin: 1rem 0;
+    .article p {
+      margin-bottom: 1.1rem;
+      color: #1f2c40;
     }
-    ul, ol {
-      margin: 0.8rem 0 1.2rem 1.6rem;
+    .article ul, .article ol {
+      margin: 0.8rem 0 1.5rem 1.8rem;
     }
-    li {
-      margin: 0.5rem 0;
+    .article li {
+      margin-bottom: 0.4rem;
     }
-    code {
-      background: #eef4fa;
-      padding: 0.2rem 0.5rem;
-      border-radius: 8px;
-      font-size: 0.9em;
-      font-family: 'SF Mono', monospace;
-      color: #0a2b4a;
+    .highlight {
+      background: #e8f0fe;
+      padding: 0.1rem 0.4rem;
+      border-radius: 6px;
+      font-weight: 500;
     }
     .tip-box {
-      background: #e4f0fc;
-      border-left: 6px solid #2563eb;
-      padding: 1rem 1.5rem;
-      border-radius: 16px;
-      margin: 1.5rem 0;
+      background: #f0f6ff;
+      border-left: 4px solid #1e6df2;
+      padding: 1.2rem 1.6rem;
+      border-radius: 1rem;
+      margin: 1.8rem 0;
     }
-    .callout {
-      background: #fef9e7;
-      border-left: 6px solid #f59e0b;
-      padding: 1rem 1.5rem;
-      border-radius: 16px;
-      margin: 1.5rem 0;
-    }
+    .tip-box p { margin-bottom: 0.3rem; }
     .footer-note {
-      margin-top: 2.5rem;
+      margin-top: 3rem;
       text-align: center;
-      color: #5f7d9c;
-      font-size: 0.9rem;
-      border-top: 1px solid #e2edf9;
-      padding-top: 1.8rem;
+      border-top: 1px solid #dce5f0;
+      padding-top: 2rem;
+      color: #3a5577;
+      font-size: 0.95rem;
     }
-    @media (max-width: 600px) {
-      body { padding: 1rem; }
-      .container { padding: 1.5rem; }
-      h1 { font-size: 1.9rem; }
+    .footer-note a {
+      color: #1e6df2;
+      text-decoration: none;
     }
-  </style>
-</head>
-<body>
-<div class="container">
-  <h1>🔐 URL Encoder</h1>
-  <div class="subhead">Encode URLs online free · instant percent‑encoding for safe web addresses</div>
-
-  <!-- interactive tool -->
-  <div class="tool-panel">
-    <div class="flex-input">
-      <textarea id="inputText" placeholder="Paste URL or text to encode, e.g. https://example.com/search?q=hello world&lang=en">https://example.com/search?q=hello world&lang=en</textarea>
-    </div>
-    <div class="button-group">
-      <button class="btn btn-primary" id="encodeBtn">⚡ Encode URL</button>
-      <button class="btn btn-outline" id="
+    .word-count {
+      font-size: 0.
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

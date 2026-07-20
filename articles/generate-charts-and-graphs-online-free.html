@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ultimate Guide to Generate Charts And Graphs Online Free in 2025 | Free Online DESIGN Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for a "Chart Generator" that helps you create charts and graphs online for free. It includes a fully functional chart">
+    <meta name="description" content="This is a self-contained HTML tool page for a "Chart Generator." It combines an interactive chart creation interface with a comprehensive, SEO-optimized">
     <meta name="keywords" content="Generate charts and graphs online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,262 +128,268 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for a "Chart Generator" that helps you create charts and graphs online for free. It includes a fully functional chart creator and a comprehensive guide article.
+            This is a self-contained HTML tool page for a "Chart Generator." It combines an interactive chart creation interface with a comprehensive, SEO-optimized article about generating charts and graphs online for free.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chart Generator · free online charts & graphs</title>
-  <meta name="description" content="Generate charts and graphs online free – interactive tool + complete guide. Bar, line, pie, doughnut charts with live preview and download.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', -apple-system, system-ui, sans-serif;
-      background: #f8fafc;
-      color: #0b1e33;
-      padding: 24px 16px;
-      line-height: 1.5;
-    }
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    /* tool card */
-    .tool-card {
-      background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
-      padding: 24px 24px 32px;
-      margin-bottom: 48px;
-    }
-    .tool-header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 24px;
-    }
-    .tool-header h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      background: linear-gradient(145deg, #0b2b4f, #1e4c7a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .badge {
-      background: #e6f0fa;
-      color: #1e4c7a;
-      font-weight: 600;
-      font-size: 0.8rem;
-      padding: 6px 14px;
-      border-radius: 40px;
-      letter-spacing: 0.3px;
-    }
-    .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-    }
-    @media (max-width: 800px) {
-      .tool-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-    }
-    .chart-preview {
-      background: #ffffff;
-      border-radius: 24px;
-      padding: 16px 16px 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-    }
-    .chart-preview canvas {
-      width: 100% !important;
-      height: auto !important;
-      max-height: 320px;
-      aspect-ratio: 1/0.8;
-      display: block;
-      margin: 0 auto;
-    }
-    .controls {
-      background: #f2f6fc;
-      border-radius: 24px;
-      padding: 20px 20px 24px;
-    }
-    .controls h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: #0f2a44;
-    }
-    .control-group {
-      margin-bottom: 18px;
-    }
-    .control-group label {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: #1f3a57;
-      display: block;
-      margin-bottom: 6px;
-    }
-    .control-group input, .control-group select {
-      width: 100%;
-      padding: 10px 14px;
-      border: 1px solid #d4e0ec;
-      border-radius: 60px;
-      font-size: 0.9rem;
-      background: white;
-      transition: 0.2s;
-    }
-    .control-group input:focus, .control-group select:focus {
-      outline: none;
-      border-color: #2b6a9e;
-      box-shadow: 0 0 0 3px rgba(43,106,158,0.15);
-    }
-    .inline-group {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .inline-group .control-group {
-      flex: 1;
-      min-width: 90px;
-    }
-    .color-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .color-row input[type="color"] {
-      width: 44px;
-      height: 44px;
-      border: none;
-      border-radius: 50%;
-      background: none;
-      cursor: pointer;
-      padding: 2px;
-    }
-    .color-row input[type="color"]::-webkit-color-swatch-wrapper {
-      padding: 0;
-    }
-    .color-row input[type="color"]::-webkit-color-swatch {
-      border: 2px solid #d4e0ec;
-      border-radius: 50%;
-    }
-    .action-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-    }
-    .btn {
-      background: white;
-      border: 1px solid #cbdbe9;
-      padding: 10px 20px;
-      border-radius: 60px;
-      font-weight: 500;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
-    }
-    .btn-primary {
-      background: #1e4c7a;
-      border: 1px solid #1e4c7a;
-      color: white;
-      box-shadow: 0 4px 8px rgba(30,76,122,0.2);
-    }
-    .btn-primary:hover {
-      background: #123a5e;
-      transform: scale(1.02);
-    }
-    .btn-outline {
-      background: transparent;
-      border: 1px solid #b0c8df;
-    }
-    .btn-outline:hover {
-      background: #e9f0f8;
-    }
-    .btn-download {
-      background: #0f2a44;
-      border-color: #0f2a44;
-      color: white;
-    }
-    .btn-download:hover {
-      background: #1a3e60;
-    }
-
-    /* article */
-    .article-section {
-      background: white;
-      border-radius: 32px;
-      padding: 32px 28px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
-    }
-    .article-section h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin: 1.4em 0 0.6em;
-      color: #0b1e33;
-      letter-spacing: -0.02em;
-    }
-    .article-section h2:first-of-type {
-      margin-top: 0.2em;
-    }
-    .article-section h3 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin: 1.2em 0 0.5em;
-      color: #1a3d60;
-    }
-    .article-section p {
-      margin-bottom: 1em;
-      color: #1e2f40;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .article-section ul, .article-section ol {
-      margin: 0.8em 0 1.2em 1.5em;
-    }
-    .article-section li {
-      margin-bottom: 0.4em;
-      line-height: 1.6;
-    }
-    .highlight {
-      background: #eef5fe;
-      padding: 0.2em 0.4em;
-      border-radius: 8px;
-      font-weight: 500;
-    }
-    .conclusion-box {
-      background: #e3edf7;
-      padding: 24px 28px;
-      border-radius: 24px;
-      margin: 32px 0 16px;
-    }
-    .conclusion-box p {
-      margin-bottom: 0.5rem;
-    }
-    .cta {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-    hr {
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Generator · free online charts & graphs</title>
+    <!-- Font Awesome (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Chart.js 4.x -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background: #f5f9ff;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1300px;
+            width: 100%;
+        }
+        /* header / tool area */
+        .tool-card {
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 12px 30px rgba(0,20,50,0.08);
+            padding: 2rem 2rem 2.5rem;
+            margin-bottom: 3.5rem;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #0b1e33;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        h1 i {
+            color: #2a7de1;
+            font-size: 2rem;
+        }
+        .subhead {
+            color: #3a5470;
+            font-size: 1.1rem;
+            margin: 0.25rem 0 1.5rem 0;
+            border-left: 4px solid #2a7de1;
+            padding-left: 1rem;
+        }
+        .generator-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .control-panel {
+            flex: 2;
+            min-width: 280px;
+        }
+        .chart-preview {
+            flex: 3;
+            min-width: 320px;
+            background: #fafcff;
+            border-radius: 24px;
+            padding: 1rem 1rem 0.5rem 1rem;
+            box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);
+        }
+        .chart-wrapper {
+            position: relative;
+            width: 100%;
+            max-height: 340px;
+            margin: 0 auto;
+        }
+        #liveChart {
+            max-height: 320px;
+            width: 100% !important;
+            height: auto !important;
+        }
+        .input-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.2rem;
+            margin-bottom: 1.5rem;
+            align-items: center;
+        }
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex: 1 0 140px;
+        }
+        .input-field label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #1f3a57;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        .input-field input, .input-field select {
+            padding: 10px 14px;
+            border: 1px solid #dae2ed;
+            border-radius: 60px;
+            font-size: 0.95rem;
+            background: white;
+            transition: 0.2s;
+        }
+        .input-field input:focus, .input-field select:focus {
+            border-color: #2a7de1;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(42,125,225,0.15);
+        }
+        .data-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 12px;
+            background: #f1f6fe;
+            padding: 12px 16px;
+            border-radius: 60px;
+            margin: 12px 0 8px 0;
+            align-items: center;
+        }
+        .data-row span {
+            font-weight: 500;
+            color: #1f3a57;
+        }
+        .data-row input {
+            width: 70px;
+            padding: 8px 10px;
+            border-radius: 30px;
+            border: 1px solid #ccd9ec;
+            text-align: center;
+        }
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 1.2rem 0 0.5rem;
+        }
+        .btn {
+            background: white;
+            border: 1px solid #d0ddef;
+            padding: 10px 22px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #1f3a57;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-primary {
+            background: #1b3b5c;
+            border: 1px solid #1b3b5c;
+            color: white;
+        }
+        .btn-primary i {
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #0f2a44;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #b4c8e0;
+        }
+        .btn-outline:hover {
+            background: #e5edf9;
+        }
+        .btn-icon {
+            background: transparent;
+            border: none;
+            color: #2a7de1;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0 6px;
+        }
+        .color-dot {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+        .footer-note {
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            color: #4c6a89;
+            border-top: 1px solid #e5edf6;
+            padding-top: 1rem;
+        }
+        /* article section */
+        .article {
+            background: white;
+            border-radius: 32px;
+            padding: 2.5rem 2.8rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+            margin-top: 0.8rem;
+        }
+        .article h2 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #0b1e33;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+        }
+        .article h2:first-of-type {
+            margin-top: 0.2rem;
+        }
+        .article h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1a3452;
+            margin: 1.8rem 0 0.6rem;
+        }
+        .article p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #1f2e44;
+            margin-bottom: 1rem;
+        }
+        .article ul {
+            margin: 0.8rem 0 1.2rem 1.8rem;
+        }
+        .article li {
+            font-size: 1.02rem;
+            line-height: 1.6;
+            margin-bottom: 0.3rem;
+            color: #1f2e44;
+        }
+        .highlight {
+            background: #eef4fe;
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        .cta-box {
+            background: #e2ebf9;
+            border-radius: 30px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0 0.5rem;
+            text-align: center;
+        }
+        .cta-box p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+        }
+        .cta-box i {
+            color: #1b3b5c;
+            margin-right: 10px
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

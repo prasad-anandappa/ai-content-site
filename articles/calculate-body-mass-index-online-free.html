@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 Calculate Body Mass Index Online Free You Need to Know About | Free Online CALCULATOR Tool</title>
-    <meta name="description" content="This is a complete, ready-to-run HTML document for an interactive BMI Calculator tool. It combines a clean, modern interface with a comprehensive article about">
+    <meta name="description" content="Here is the interactive HTML tool page for a BMI Calculator. It includes a clean, user-friendly interface for calculating Body Mass Index and a comprehensive">
     <meta name="keywords" content="Calculate Body Mass Index online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,79 +128,93 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, ready-to-run HTML document for an interactive BMI Calculator tool. It combines a clean, modern interface with a comprehensive article about Body Mass Index. You can use it directly on your website to let users calculate their BMI and learn about the topic.
+            Here is the interactive HTML tool page for a BMI Calculator. It includes a clean, user-friendly interface for calculating Body Mass Index and a comprehensive article with health insights.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMI Calculator · Calculate Body Mass Index online free</title>
-  <meta name="description" content="Free BMI Calculator: calculate Body Mass Index online free, understand your category, and get practical health tips. Interactive tool + full guide.">
+  <title>BMI Calculator: Calculate Body Mass Index online free</title>
+  <!-- Font Awesome for icons (optional but nice) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     }
     body {
-      background: #f2f6fc;
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      background: linear-gradient(145deg, #f7f9fc 0%, #eef2f7 100%);
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       padding: 2rem 1rem;
+      color: #1e2a3a;
     }
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       width: 100%;
-      background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.2);
-      padding: 2rem 1.8rem;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(2px);
+      border-radius: 40px;
+      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.25);
+      padding: 2rem 2rem 3rem;
+      border: 1px solid rgba(255,255,255,0.5);
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 700;
-      color: #0a2540;
       letter-spacing: -0.02em;
+      color: #0b1e33;
       margin-bottom: 0.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    h1 i {
+      color: #2a7f62;
+      font-size: 2.2rem;
+    }
+    .subhead {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      opacity: 0.8;
+      margin-bottom: 2rem;
+      border-left: 5px solid #2a7f62;
+      padding-left: 1rem;
+      font-weight: 400;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      .tool-grid { grid-template-columns: 1fr; }
+      .container { padding: 1.5rem 1rem; }
+      h1 { font-size: 1.9rem; }
+    }
+    .calc-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 1.8rem 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+      border: 1px solid rgba(255,255,255,0.7);
+      backdrop-filter: blur(4px);
+      background: rgba(255,255,255,0.85);
+    }
+    .calc-card h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
       display: flex;
       align-items: center;
       gap: 10px;
-      flex-wrap: wrap;
-    }
-    .subhead {
-      color: #4a5b6e;
-      font-size: 1.1rem;
-      margin-bottom: 1.8rem;
-      border-left: 4px solid #2d7aff;
-      padding-left: 1rem;
-    }
-    .tool-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      background: #f0f5fe;
-      border-radius: 28px;
-      padding: 1.8rem 1.5rem;
-      margin-bottom: 2.2rem;
-      align-items: flex-start;
-    }
-    .calc-box {
-      flex: 1 1 280px;
-      background: white;
-      border-radius: 24px;
-      padding: 1.8rem 1.5rem;
-      box-shadow: 0 8px 18px rgba(0, 20, 40, 0.06);
-    }
-    .calc-box h2 {
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: #0a2540;
-      margin-bottom: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      color: #15304d;
+      margin-bottom: 1.5rem;
     }
     .input-group {
       margin-bottom: 1.2rem;
@@ -208,166 +222,153 @@
     .input-group label {
       display: block;
       font-weight: 500;
-      color: #1f3a5f;
+      font-size: 0.9rem;
+      color: #1f3a57;
       margin-bottom: 0.3rem;
-      font-size: 0.95rem;
+      letter-spacing: 0.3px;
     }
-    .input-group input {
+    .input-group input, .input-group select {
       width: 100%;
-      padding: 0.7rem 1rem;
-      border: 1px solid #d0dae8;
+      padding: 12px 16px;
+      border: 1px solid #dce3ec;
       border-radius: 60px;
       font-size: 1rem;
-      background: #fafcff;
+      background: #f8faff;
       transition: 0.2s;
-    }
-    .input-group input:focus {
-      border-color: #2d7aff;
       outline: none;
-      box-shadow: 0 0 0 3px rgba(45, 122, 255, 0.15);
+    }
+    .input-group input:focus, .input-group select:focus {
+      border-color: #2a7f62;
+      box-shadow: 0 0 0 4px rgba(42,127,98,0.15);
+      background: white;
     }
     .unit-toggle {
       display: flex;
-      gap: 0.4rem;
-      margin-bottom: 1.4rem;
+      gap: 10px;
+      margin-bottom: 1.2rem;
       flex-wrap: wrap;
     }
     .unit-btn {
-      background: #eef3fa;
+      background: #eef2f7;
       border: none;
-      padding: 0.4rem 1rem;
-      border-radius: 40px;
+      padding: 8px 20px;
+      border-radius: 60px;
       font-weight: 500;
-      font-size: 0.85rem;
-      color: #1f3a5f;
+      font-size: 0.9rem;
       cursor: pointer;
       transition: 0.15s;
+      color: #1f3a57;
     }
     .unit-btn.active {
-      background: #2d7aff;
+      background: #1f3a57;
       color: white;
-      box-shadow: 0 2px 6px rgba(45,122,255,0.3);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .row-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
     }
     .calc-btn {
-      background: #0a2540;
+      background: #2a7f62;
       color: white;
       border: none;
+      padding: 14px 0;
       width: 100%;
-      padding: 0.8rem;
       border-radius: 60px;
       font-weight: 600;
       font-size: 1.1rem;
-      cursor: pointer;
-      transition: 0.2s;
       margin-top: 0.5rem;
+      transition: 0.2s;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(42,127,98,0.2);
     }
     .calc-btn:hover {
-      background: #173a5c;
+      background: #1e6a50;
       transform: scale(0.98);
+      box-shadow: 0 8px 18px rgba(42,127,98,0.3);
     }
     .result-area {
-      flex: 1 1 240px;
-      background: white;
+      margin-top: 1.5rem;
+      background: #eef5f2;
       border-radius: 24px;
-      padding: 1.8rem 1.5rem;
-      box-shadow: 0 8px 18px rgba(0, 20, 40, 0.06);
+      padding: 1.2rem 1.5rem;
       text-align: center;
-    }
-    .result-area h3 {
-      font-size: 1.2rem;
-      color: #1f3a5f;
-      font-weight: 500;
-      margin-bottom: 0.3rem;
+      border: 1px solid #c8ddd4;
     }
     .bmi-number {
-      font-size: 3.2rem;
-      font-weight: 800;
-      color: #0a2540;
-      letter-spacing: -1px;
-      line-height: 1.1;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #15304d;
+      line-height: 1.2;
     }
     .bmi-category {
+      font-size: 1.1rem;
+      font-weight: 500;
+      background: #d0e3db;
+      display: inline-block;
+      padding: 4px 18px;
+      border-radius: 60px;
+      margin: 8px 0 4px;
+    }
+    .bmi-desc {
+      color: #1f3a57;
+      font-size: 0.95rem;
+    }
+    .health-summary {
+      background: white;
+      border-radius: 28px;
+      padding: 1.5rem 1.8rem;
+      border: 1px solid rgba(255,255,255,0.6);
+      background: rgba(255,255,255,0.7);
+    }
+    .health-summary h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      margin: 0.4rem 0 0.2rem;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      display: inline-block;
-    }
-    .category-underweight { background: #dbeafe; color: #1e4b8a; }
-    .category-normal { background: #d1fae5; color: #0b5e42; }
-    .category-overweight { background: #fef3c7; color: #92400e; }
-    .category-obese { background: #fee2e2; color: #991b1b; }
-    .bmi-desc {
-      font-size: 0.95rem;
-      color: #3d4f66;
-      margin: 0.6rem 0 0.2rem;
-    }
-    .article-content {
-      margin-top: 1.5rem;
-    }
-    .article-content h2 {
-      font-size: 1.7rem;
-      font-weight: 700;
-      color: #0a2540;
-      margin: 1.8rem 0 0.8rem;
-      border-bottom: 2px solid #e6edf6;
-      padding-bottom: 0.3rem;
-    }
-    .article-content h3 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: #1f3a5f;
-      margin: 1.4rem 0 0.6rem;
-    }
-    .article-content p {
-      line-height: 1.6;
-      color: #1f2a3f;
+      color: #15304d;
       margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-    .article-content ul {
-      margin: 0.8rem 0 1.2rem 1.2rem;
+    .health-summary ul {
+      padding-left: 1.2rem;
     }
-    .article-content li {
-      margin-bottom: 0.4rem;
-      line-height: 1.5;
+    .health-summary li {
+      margin-bottom: 0.5rem;
+    }
+    .article-section {
+      margin-top: 2.5rem;
+      border-top: 2px dashed #cbd8e6;
+      padding-top: 2rem;
+    }
+    .article-section h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #0b1e33;
+      margin: 1.8rem 0 0.8rem;
+    }
+    .article-section h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1f3a57;
+      margin: 1.5rem 0 0.5rem;
+    }
+    .article-section p {
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+      color: #1e2a3a;
+    }
+    .article-section ul {
+      margin: 0.8rem 0 1.5rem 1.5rem;
+    }
+    .article-section li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
     }
     .highlight {
-      background: #f0f5fe;
+      background: #e6f0eb;
       padding: 0.2rem 0.6rem;
-      border-radius: 30px;
-      font-weight: 500;
-    }
-    .cta-box {
-      background: #0a2540;
-      color: white;
-      border-radius: 28px;
-      padding: 1.8rem 2rem;
-      margin: 2rem 0 0.5rem;
-      text-align: center;
-    }
-    .cta-box p {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: #e0edff;
-    }
-    .cta-box strong {
-      color: white;
-      font-size: 1.4rem;
-    }
-    .footnote {
-      font-size: 0.9rem;
-      color: #5a6f85;
-      margin-top: 1.5rem;
-      border-top: 1px solid #dfe8f2;
-      padding-top: 1.2rem;
-    }
-    @media (max-width: 600px) {
-      .container { padding: 1.2rem; }
-      h1 { font-size: 1.8rem; }
-      .tool-grid { padding: 1.2rem; }
-    }
-  </style>
 
         </div>
 

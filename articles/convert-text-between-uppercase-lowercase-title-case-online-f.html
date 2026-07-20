@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Best Convert Text Between Uppercase Lowercase Title Case Online Free Solutions Compared | Free Online TEXT Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive Case Converter tool. You can run it directly in your browser to instantly">
+    <meta name="description" content="Here is the interactive HTML tool page for a Case Converter. It allows you to convert text between uppercase, lowercase, and title case online for free. The">
     <meta name="keywords" content="Convert text between uppercase lowercase title case online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,254 +128,258 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document that creates an interactive Case Converter tool. You can run it directly in your browser to instantly transform text between uppercase, lowercase, title case, and more.
+            Here is the interactive HTML tool page for a Case Converter. It allows you to convert text between uppercase, lowercase, and title case online for free. The page includes a clean, dual-panel interface with real-time conversion and character/word counters.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Converter · Uppercase, Lowercase, Title Case Online</title>
-    <meta name="description" content="Free online Case Converter tool. Convert text between uppercase, lowercase, title case, sentence case, and toggle case instantly. Clean, fast, no ads.">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background: #f6f9fc;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem 1rem 4rem;
-            color: #1a2634;
-        }
-        .tool-container {
-            max-width: 1100px;
-            width: 100%;
-            background: white;
-            border-radius: 2.5rem;
-            box-shadow: 0 20px 40px -12px rgba(0,20,40,0.18);
-            padding: 2rem 2rem 2.5rem;
-            transition: box-shadow 0.2s;
-        }
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(145deg, #0b2b44, #1c4e70);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 0.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .subhead {
-            font-size: 1.05rem;
-            color: #3b4e62;
-            margin-bottom: 2rem;
-            border-left: 4px solid #3b8fc2;
-            padding-left: 1rem;
-            background: #eef4fa;
-            border-radius: 0 12px 12px 0;
-            line-height: 1.4;
-        }
-        .subhead strong {
-            font-weight: 600;
-            color: #0d2c42;
-        }
-        .editor-area {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        .input-group {
-            background: #f0f5fb;
-            border-radius: 20px;
-            padding: 1.5rem 1.5rem 1rem;
-        }
-        .input-group label {
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            color: #2c4b66;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #inputText {
-            width: 100%;
-            min-height: 140px;
-            padding: 1rem;
-            font-size: 1rem;
-            border: 1px solid #d4e0ec;
-            border-radius: 18px;
-            background: white;
-            resize: vertical;
-            transition: 0.15s;
-            font-family: inherit;
-            margin-top: 0.5rem;
-            line-height: 1.5;
-        }
-        #inputText:focus {
-            outline: 2px solid #3b8fc2;
-            border-color: transparent;
-            background: #ffffff;
-        }
-        .char-count {
-            font-size: 0.8rem;
-            color: #4f6b83;
-            background: #e4ecf5;
-            padding: 0.2rem 1rem;
-            border-radius: 30px;
-        }
-        .action-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.7rem 0.8rem;
-            margin: 1.2rem 0 1.2rem;
-        }
-        .case-btn {
-            background: white;
-            border: 1px solid #cbdae9;
-            padding: 0.65rem 1.2rem;
-            border-radius: 60px;
-            font-weight: 550;
-            font-size: 0.9rem;
-            color: #1a2f42;
-            cursor: pointer;
-            transition: all 0.15s;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            flex: 0 1 auto;
-        }
-        .case-btn:hover {
-            background: #e5eff9;
-            border-color: #7fa3c0;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(30,80,120,0.08);
-        }
-        .case-btn:active {
-            transform: translateY(0px);
-            background: #d3e2f0;
-        }
-        .case-btn.primary-action {
-            background: #1c4e70;
-            border-color: #1c4e70;
-            color: white;
-        }
-        .case-btn.primary-action:hover {
-            background: #0f3b57;
-            border-color: #0f3b57;
-        }
-        .case-btn.secondary-bg {
-            background: #eef3f9;
-        }
-        .output-area {
-            background: #f7faff;
-            border-radius: 20px;
-            padding: 1.5rem 1.5rem 1rem;
-            border: 1px solid #dce7f2;
-        }
-        .output-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.6rem;
-        }
-        #outputText {
-            width: 100%;
-            min-height: 120px;
-            padding: 1rem;
-            font-size: 1rem;
-            border: 1px solid #d4e0ec;
-            border-radius: 18px;
-            background: white;
-            resize: vertical;
-            font-family: inherit;
-            line-height: 1.5;
-            color: #152b3b;
-        }
-        .copy-btn {
-            background: transparent;
-            border: 1px solid #b8cee2;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: #1f4a69;
-            cursor: pointer;
-            transition: 0.1s;
-        }
-        .copy-btn:hover {
-            background: #d8e6f5;
-            border-color: #6f93b2;
-        }
-        .clear-btn {
-            background: transparent;
-            border: none;
-            color: #6b8aa8;
-            cursor: pointer;
-            text-decoration: underline dotted;
-            font-size: 0.8rem;
-        }
-        .clear-btn:hover {
-            color: #123753;
-        }
-        .article-section {
-            max-width: 1100px;
-            width: 100%;
-            margin-top: 3rem;
-            background: white;
-            border-radius: 2rem;
-            padding: 2rem 2.5rem 2.8rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.02);
-        }
-        .article-section h2 {
-            font-size: 1.8rem;
-            margin: 2rem 0 0.8rem;
-            color: #0b2b44;
-            border-bottom: 2px solid #e2edf7;
-            padding-bottom: 0.3rem;
-        }
-        .article-section h2:first-of-type {
-            margin-top: 0.2rem;
-        }
-        .article-section h3 {
-            font-size: 1.3rem;
-            margin: 1.8rem 0 0.5rem;
-            color: #1d4b6b;
-        }
-        .article-section p {
-            line-height: 1.7;
-            margin: 1rem 0;
-            color: #1f3345;
-        }
-        .article-section ul {
-            margin: 0.8rem 0 1.2rem 1.5rem;
-        }
-        .article-section li {
-            margin: 0.4rem 0;
-            line-height: 1.6;
-        }
-        .footer-note {
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
-            color: #3b5d79;
-            text-align: center;
-            border-top: 1px solid #d3e2ef;
-            padding-top: 1.5rem;
-        }
-        @media (max-width: 650px) {
-            .tool-container { padding: 1.5rem 1rem; }
-            .article
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Converter · Convert text between uppercase lowercase title case online free</title>
+  <meta name="description" content="Free online case converter: instantly transform text to UPPERCASE, lowercase, Title Case, or toggle case. Fast, private, no ads.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f6f9fc;
+      color: #1e293b;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
+      padding: 2rem 2rem 3rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.25rem;
+    }
+    .subhead {
+      font-size: 1.1rem;
+      color: #475569;
+      margin-bottom: 2rem;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+      margin: 2rem 0 1.5rem;
+    }
+    @media (max-width: 680px) {
+      .tool-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+      .container { padding: 1.5rem 1rem; }
+      h1 { font-size: 1.8rem; }
+    }
+    .input-panel, .output-panel {
+      background: #f8fafc;
+      border-radius: 1.2rem;
+      padding: 1.5rem 1.5rem 1rem;
+      border: 1px solid #e2e8f0;
+      transition: border 0.2s;
+    }
+    .input-panel:focus-within {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+    }
+    .panel-label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.6rem;
+    }
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 1rem;
+      background: white;
+      resize: vertical;
+      font-family: inherit;
+      line-height: 1.5;
+      transition: 0.15s;
+    }
+    textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+    }
+    .output-area {
+      background: white;
+      border-radius: 1rem;
+      padding: 1rem;
+      min-height: 200px;
+      border: 1px solid #e2e8f0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-size: 1rem;
+      line-height: 1.5;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .output-area.empty {
+      color: #94a3b8;
+      font-style: italic;
+    }
+    .stats {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin: 0.8rem 0 0.2rem;
+      font-size: 0.85rem;
+      color: #475569;
+    }
+    .stats span {
+      background: #e9edf2;
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+    }
+    .action-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.5rem 0 1rem;
+    }
+    .btn {
+      background: white;
+      border: 1px solid #cbd5e1;
+      padding: 0.6rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+    .btn-primary {
+      background: #1e293b;
+      border-color: #1e293b;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #0f172a;
+      border-color: #0f172a;
+    }
+    .btn-outline-blue {
+      border-color: #3b82f6;
+      color: #1e4b8a;
+      background: #eff6ff;
+    }
+    .btn-outline-blue:hover {
+      background: #dbeafe;
+      border-color: #3b82f6;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+    }
+    .btn:active {
+      transform: translateY(0);
+    }
+    .btn-group-label {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-right: 0.3rem;
+      align-self: center;
+    }
+    .copy-feedback {
+      font-size: 0.8rem;
+      color: #16a34a;
+      margin-left: 0.5rem;
+      transition: opacity 0.2s;
+    }
+    .article-section {
+      margin-top: 3rem;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 1.8rem 0 0.8rem;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+      color: #0f172a;
+    }
+    p {
+      margin: 1rem 0;
+    }
+    ul, ol {
+      margin: 0.8rem 0 1.2rem 1.6rem;
+    }
+    li {
+      margin: 0.4rem 0;
+    }
+    .highlight {
+      background: #f1f5f9;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.9em;
+    }
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+    }
+    .badge {
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 0.15rem 0.7rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-left: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>
+      <span>🔤 Case Converter</span>
+      <span class="badge">free · no ads</span>
+    </h1>
+    <div class="subhead">Convert text between uppercase, lowercase, title case online free — instantly.</div>
+  </header>
+
+  <!-- interactive tool -->
+  <div class="tool-grid">
+    <div class="input-panel">
+      <div class="panel-label">
+        <span>✏️ Your
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

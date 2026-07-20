@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Best Create Infographics Online Free Solutions Compared | Free Online DESIGN Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Infographic Maker" tool page. It's designed to help you create infographics online for">
+    <meta name="description" content="This is a self-contained HTML page for an "Infographic Maker" tool. It combines an interactive design canvas with a comprehensive article about creating">
     <meta name="keywords" content="Create infographics online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,255 +128,239 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive "Infographic Maker" tool page. It's designed to help you create infographics online for free, combining a practical drag-and-drop style builder with a comprehensive, SEO-friendly article.
+            This is a self-contained HTML page for an "Infographic Maker" tool. It combines an interactive design canvas with a comprehensive article about creating infographics online for free. You can add text, images, and shapes, then download your work as an image.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infographic Maker · Create infographics online free</title>
-    <meta name="description" content="Create infographics online free with our interactive Infographic Maker. Drag & drop templates, charts, icons – no design skills needed.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-        }
-        body {
-            background: #f8faff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem 1rem;
-        }
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            background: white;
-            border-radius: 2rem;
-            box-shadow: 0 20px 40px rgba(0,20,50,0.08);
-            overflow: hidden;
-            padding: 2rem 2rem 3rem;
-        }
-        h1 {
-            font-size: 2.6rem;
-            font-weight: 700;
-            line-height: 1.2;
-            background: linear-gradient(145deg, #0b2b5c, #1d4e89);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-        }
-        .subhead {
-            font-size: 1.2rem;
-            color: #2c3e66;
-            margin-bottom: 2rem;
-            border-left: 5px solid #4f8cff;
-            padding-left: 1rem;
-            background: #f0f6ff;
-            border-radius: 0 12px 12px 0;
-            line-height: 1.4;
-        }
-        .tool-preview {
-            background: #ffffff;
-            border-radius: 28px;
-            padding: 1.8rem 1.5rem 2rem;
-            box-shadow: 0 8px 30px rgba(0, 32, 64, 0.08);
-            border: 1px solid #eef3fc;
-            margin-bottom: 2.8rem;
-        }
-        .tool-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.8rem;
-        }
-        .editor-area {
-            flex: 2;
-            min-width: 280px;
-            background: #fbfdff;
-            border-radius: 24px;
-            padding: 1.5rem;
-            border: 1px dashed #b8d0f0;
-        }
-        .infographic-canvas {
-            background: white;
-            border-radius: 18px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.03);
-            padding: 1.2rem 1rem 1rem;
-            min-height: 260px;
-            border: 1px solid #e0ebf9;
-        }
-        .canvas-header {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 2px solid #eaf1fd;
-            padding-bottom: 0.6rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-            color: #1c3a6b;
-        }
-        .chart-row {
-            display: flex;
-            align-items: flex-end;
-            gap: 0.8rem;
-            margin-bottom: 0.8rem;
-            flex-wrap: wrap;
-        }
-        .bar-group {
-            display: flex;
-            align-items: flex-end;
-            gap: 0.3rem;
-            flex: 1;
-        }
-        .bar {
-            width: 2rem;
-            background: #4f8cff;
-            border-radius: 8px 8px 4px 4px;
-            transition: height 0.2s;
-            min-height: 8px;
-        }
-        .bar-label {
-            font-size: 0.7rem;
-            color: #1f3d6b;
-            text-align: center;
-        }
-        .stat-badge {
-            background: #e7f0ff;
-            border-radius: 40px;
-            padding: 0.2rem 1rem;
-            font-size: 0.9rem;
-            display: inline-block;
-            color: #1e4b8a;
-        }
-        .icon-row {
-            display: flex;
-            gap: 0.8rem;
-            flex-wrap: wrap;
-            margin: 0.8rem 0;
-        }
-        .icon-item {
-            background: #f3f8ff;
-            border-radius: 30px;
-            padding: 0.3rem 1rem 0.3rem 0.6rem;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            border: 1px solid #dae6fa;
-        }
-        .icon-symbol {
-            font-size: 1.3rem;
-        }
-        .sidebar-controls {
-            flex: 1;
-            min-width: 180px;
-            background: #f5faff;
-            border-radius: 24px;
-            padding: 1.5rem 1.2rem;
-        }
-        .control-group {
-            margin-bottom: 1.8rem;
-        }
-        .control-group h4 {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #1d3d6e;
-            margin-bottom: 0.8rem;
-            border-bottom: 1px solid #d6e3f9;
-            padding-bottom: 0.3rem;
-        }
-        .btn {
-            background: white;
-            border: 1px solid #c7daf5;
-            border-radius: 60px;
-            padding: 0.5rem 1.2rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #1c3f70;
-            cursor: pointer;
-            transition: all 0.1s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-        }
-        .btn-primary {
-            background: #1d4e89;
-            border-color: #1d4e89;
-            color: white;
-            box-shadow: 0 4px 8px rgba(29,78,137,0.15);
-        }
-        .btn-primary:hover {
-            background: #0f3d6e;
-            transform: scale(0.97);
-        }
-        .btn-outline {
-            background: transparent;
-        }
-        .btn-outline:hover {
-            background: #e9f0fe;
-        }
-        .btn-sm {
-            padding: 0.3rem 1rem;
-            font-size: 0.8rem;
-        }
-        .flex-wrap {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-        .tag {
-            background: white;
-            border-radius: 30px;
-            padding: 0.2rem 1rem;
-            font-size: 0.8rem;
-            border: 1px solid #c9daf5;
-        }
-        .article-content {
-            margin-top: 2.2rem;
-            padding-top: 1rem;
-            border-top: 2px solid #e7effa;
-        }
-        h2 {
-            font-size: 1.9rem;
-            margin: 2rem 0 0.8rem;
-            color: #0b2b5c;
-            font-weight: 600;
-        }
-        h3 {
-            font-size: 1.4rem;
-            margin: 1.8rem 0 0.6rem;
-            color: #1a3f6b;
-            font-weight: 600;
-        }
-        p {
-            line-height: 1.7;
-            color: #1f2f4a;
-            margin-bottom: 1rem;
-            font-size: 1.05rem;
-        }
-        ul {
-            margin: 0.8rem 0 1.5rem 1.8rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-            color: #1f2f4a;
-        }
-        .highlight {
-            background: #eef5ff;
-            padding: 0.2rem 0.5rem;
-            border-radius: 8px;
-            font-weight: 500;
-        }
-        .cta-box {
-            background: #e8f0fe;
-            border-radius: 28px;
-            padding: 1.8rem 2rem;
-            margin: 2rem 0 0.5rem
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infographic Maker · Create infographics online free</title>
+  <!-- Font & icons for nicer UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f4f7fc;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 2rem 1.5rem;
+      color: #1a2639;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 2.5rem;
+      box-shadow: 0 20px 40px rgba(0, 10, 30, 0.08);
+      overflow: hidden;
+      padding: 2rem 2rem 3rem;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #0b2b4a, #2a5c7a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    h1 i {
+      background: #1d3557;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 60px;
+      font-size: 1.4rem;
+      -webkit-text-fill-color: white;
+      background: #1d3557;
+    }
+    .subhead {
+      font-size: 1.2rem;
+      color: #3a5770;
+      margin-bottom: 2rem;
+      border-left: 6px solid #3d8cbd;
+      padding-left: 1.2rem;
+      font-weight: 400;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 2.5rem 0 3rem;
+    }
+    @media (max-width: 820px) {
+      .tool-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 2rem; }
+    }
+    /* canvas card */
+    .canvas-card {
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+      padding: 1.5rem;
+      border: 1px solid #e9edf4;
+    }
+    .canvas-area {
+      background: #fafbfd;
+      border-radius: 20px;
+      padding: 1rem;
+      border: 2px dashed #d0dae8;
+      position: relative;
+      min-height: 340px;
+    }
+    #infographicCanvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      cursor: crosshair;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.8rem 1.2rem;
+      margin-top: 1.8rem;
+    }
+    .toolbar button, .toolbar label {
+      background: #f0f4fa;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #1a2b3e;
+      transition: 0.2s;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .toolbar button:hover, .toolbar label:hover {
+      background: #e2eaf3;
+      border-color: #b8c9dd;
+    }
+    .toolbar input[type="color"] {
+      width: 38px;
+      height: 38px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+    }
+    .toolbar i {
+      font-size: 1rem;
+      color: #2b4b6a;
+    }
+    .action-buttons {
+      display: flex;
+      gap: 0.8rem;
+      margin-left: auto;
+    }
+    .btn-primary {
+      background: #1d3557 !important;
+      color: white !important;
+      border: none;
+      padding: 0.6rem 1.6rem;
+    }
+    .btn-primary i { color: white; }
+    .btn-primary:hover { background: #143049 !important; }
+    .btn-outline {
+      background: transparent !important;
+      border: 1px solid #b8c9dd !important;
+    }
+    /* right panel – article */
+    .article-panel {
+      padding: 0.2rem 0 0.2rem 0.5rem;
+    }
+    .article-panel h2 {
+      font-size: 1.9rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+      color: #0b2b4a;
+      margin: 1.2rem 0 0.8rem;
+      border-bottom: 3px solid #eef3f9;
+      padding-bottom: 0.4rem;
+    }
+    .article-panel h2:first-of-type {
+      margin-top: 0.2rem;
+    }
+    .article-panel h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+      color: #1d3b57;
+    }
+    .article-panel p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: #1f2e44;
+    }
+    .article-panel ul {
+      margin: 0.8rem 0 1.4rem 1.8rem;
+    }
+    .article-panel li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    .highlight {
+      background: #eef6fe;
+      padding: 1.2rem 1.6rem;
+      border-radius: 24px;
+      border-left: 6px solid #2f7eb3;
+      margin: 1.8rem 0;
+    }
+    .cta-box {
+      background: #1d3557;
+      color: white;
+      padding: 1.8rem 2rem;
+      border-radius: 28px;
+      margin: 2rem 0 0.5rem;
+      text-align: center;
+    }
+    .cta-box p {
+      color: #d6e3f0;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .cta-box strong {
+      color: white;
+      font-size: 1.3rem;
+    }
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #5f738c;
+      text-align: center;
+      border-top: 1px solid #dce3ed;
+      padding-top: 1.8rem;
+    }
+    .flex-icon {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <h1><i class="fas fa-chart-pie"></i> Infographic Maker</h1>
+    <span style="background: #eaf1fa; padding: 0.3rem 1.2rem; border-radius: 60px; font-weight: 500; color: #1d3b57;"><i class="fas fa-magic" style="margin-right: 6px;"></i> Create infographics online free</span>
+  </div>
+  <div class="subhead">
+    <i class="fas fa-pen-fancy" style="margin-right: 10px;"></i> Design stunning visuals in minutes — no sign
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

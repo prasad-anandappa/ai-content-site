@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ultimate Guide to Edit And Preview Markdown Online Free in 2025 | Free Online TEXT Tool</title>
-    <meta name="description" content="This is a complete, ready-to-run HTML document for an interactive Markdown Editor tool. It lets you write and preview Markdown in real-time, all within a">
+    <title>Edit And Preview Markdown Online Free: Complete Review and Buying Guide | Free Online TEXT Tool</title>
+    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive Markdown editor and preview tool. You can run it directly in your browser to write">
     <meta name="keywords" content="Edit and preview Markdown online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>The Ultimate Guide to Edit And Preview Markdown Online Free in 2025</h1>
+        <h1>Edit And Preview Markdown Online Free: Complete Review and Buying Guide</h1>
         <p>Free Online TEXT Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,213 +128,225 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, ready-to-run HTML document for an interactive Markdown Editor tool. It lets you write and preview Markdown in real-time, all within a single, clean webpage.
+            This is a complete, self-contained HTML document that creates an interactive Markdown editor and preview tool. You can run it directly in your browser to write and preview Markdown in real-time.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Markdown Editor · preview online free</title>
-  <!-- Simple, clean styling for editor + article -->
+  <title>Markdown Editor · Edit and preview Markdown online free</title>
+  <!-- Font & minimal reset -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background: #f8fafc;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      color: #0b1a2e;
-      line-height: 1.6;
-      padding: 2rem 1.5rem;
+      color: #1e293b;
+      line-height: 1.5;
+      padding: 2rem 1rem;
     }
-
     .container {
-      max-width: 1280px;
+      max-width: 1300px;
       margin: 0 auto;
-      background: white;
-      border-radius: 2rem;
-      box-shadow: 0 20px 40px -12px rgba(0, 20, 40, 0.2);
-      overflow: hidden;
-      padding: 2rem 2rem 3rem;
     }
-
-    /* interactive editor area */
-    .editor-pane {
+    /* editor layout */
+    .editor-wrapper {
       display: flex;
       flex-wrap: wrap;
       gap: 1.5rem;
-      margin-bottom: 3rem;
+      margin: 2rem 0 3rem 0;
+    }
+    .panel {
+      flex: 1 1 400px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #e9edf2;
+    }
+    .panel-header {
+      padding: 0.9rem 1.5rem;
       background: #f1f5f9;
-      border-radius: 1.5rem;
-      padding: 1.5rem;
-    }
-
-    .editor-box {
-      flex: 1 1 280px;
-      min-width: 260px;
-    }
-
-    .editor-box h3 {
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.01em;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      font-weight: 600;
-      font-size: 1.2rem;
-      margin-bottom: 0.75rem;
-      color: #0f2b45;
     }
-
-    .editor-box textarea {
+    .panel-header span {
+      background: #cbd5e1;
+      color: #0f172a;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.15rem 0.7rem;
+      border-radius: 30px;
+      margin-left: auto;
+    }
+    textarea {
       width: 100%;
-      height: 340px;
-      padding: 1rem 1.1rem;
-      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      border: 1px solid #dce5ed;
-      border-radius: 1rem;
-      background: white;
+      min-height: 420px;
+      padding: 1.5rem;
+      border: none;
       resize: vertical;
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
-      transition: border 0.2s;
-    }
-
-    .editor-box textarea:focus {
+      font-family: 'Menlo', 'Fira Code', monospace;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      background: #ffffff;
+      color: #0b1e33;
       outline: none;
-      border-color: #3b82f6;
-      box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+      flex: 1;
     }
-
-    .preview-box {
-      flex: 1 1 380px;
-      min-width: 280px;
+    textarea::placeholder {
+      color: #94a3b8;
+      font-style: italic;
+    }
+    .preview-pane {
+      padding: 1.5rem 1.8rem;
+      min-height: 420px;
       background: white;
-      border-radius: 1rem;
-      padding: 1.2rem 1.5rem;
-      border: 1px solid #e9edf2;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
-    }
-
-    .preview-box h3 {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-weight: 600;
-      font-size: 1.2rem;
-      margin-bottom: 0.75rem;
-      color: #0f2b45;
-    }
-
-    .preview-area {
-      min-height: 300px;
-      max-height: 450px;
+      flex: 1;
       overflow-y: auto;
-      padding: 0.2rem 0;
-      line-height: 1.7;
       word-wrap: break-word;
     }
-
-    /* markdown preview styling */
-    .preview-area h1, .preview-area h2, .preview-area h3 { margin-top: 1.2em; margin-bottom: 0.4em; font-weight: 600; }
-    .preview-area h1 { font-size: 1.8rem; border-bottom: 2px solid #e5eaef; padding-bottom: 0.2em; }
-    .preview-area h2 { font-size: 1.5rem; border-bottom: 1px solid #eef2f6; padding-bottom: 0.15em; }
-    .preview-area h3 { font-size: 1.25rem; }
-    .preview-area p { margin: 0.8em 0; }
-    .preview-area ul, .preview-area ol { margin: 0.6em 0; padding-left: 1.8em; }
-    .preview-area li { margin: 0.2em 0; }
-    .preview-area code { background: #eef3f8; padding: 0.2em 0.4em; border-radius: 6px; font-size: 0.9em; }
-    .preview-area pre { background: #1e293b; color: #e2e8f0; padding: 1em; border-radius: 12px; overflow-x: auto; font-size: 0.9em; }
-    .preview-area pre code { background: transparent; padding: 0; color: inherit; }
-    .preview-area blockquote { border-left: 4px solid #3b82f6; padding: 0.3em 1em; background: #f8fafc; margin: 1em 0; border-radius: 0 12px 12px 0; }
-    .preview-area a { color: #2563eb; text-decoration: underline; }
-    .preview-area img { max-width: 100%; border-radius: 12px; margin: 1em 0; }
-    .preview-area hr { border: none; border-top: 2px dashed #d0d9e3; margin: 1.5em 0; }
-    .preview-area strong { font-weight: 700; }
+    .preview-pane h1, .preview-pane h2, .preview-pane h3, 
+    .preview-pane h4, .preview-pane h5, .preview-pane h6 {
+      margin-top: 1.2em;
+      margin-bottom: 0.4em;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #0f172a;
+    }
+    .preview-pane h1 { font-size: 1.9rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.2em; }
+    .preview-pane h2 { font-size: 1.5rem; border-bottom: 1px solid #eef2f6; padding-bottom: 0.2em; }
+    .preview-pane h3 { font-size: 1.25rem; }
+    .preview-pane p { margin: 0.8em 0; line-height: 1.7; }
+    .preview-pane ul, .preview-pane ol { margin: 0.6em 0 0.6em 1.8em; }
+    .preview-pane li { margin: 0.25em 0; }
+    .preview-pane blockquote {
+      border-left: 4px solid #3b82f6;
+      background: #f1f5f9;
+      margin: 1.2em 0;
+      padding: 0.8em 1.2em;
+      color: #1e293b;
+      border-radius: 0 12px 12px 0;
+    }
+    .preview-pane code {
+      background: #f1f5f9;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+      font-size: 0.9em;
+      font-family: 'Menlo', monospace;
+      color: #b91c1c;
+    }
+    .preview-pane pre {
+      background: #0f172a;
+      color: #f1f5f9;
+      padding: 1.2em;
+      border-radius: 14px;
+      overflow-x: auto;
+      margin: 1.2em 0;
+      font-size: 0.9rem;
+    }
+    .preview-pane pre code {
+      background: transparent;
+      color: inherit;
+      padding: 0;
+    }
+    .preview-pane img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1.2em 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .preview-pane hr {
+      border: none;
+      border-top: 2px solid #e2e8f0;
+      margin: 1.8em 0;
+    }
+    .preview-pane table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.2em 0;
+    }
+    .preview-pane th, .preview-pane td {
+      border: 1px solid #d1d9e6;
+      padding: 0.6rem 1rem;
+      text-align: left;
+    }
+    .preview-pane th {
+      background: #f1f5f9;
+      font-weight: 600;
+    }
+    .preview-pane a { color: #2563eb; text-decoration: underline; }
+    .preview-pane a:hover { color: #1d4ed8; }
 
     /* article section */
-    .article-content {
-      margin-top: 2.5rem;
-      padding: 0 0.5rem;
+    .article-card {
+      background: white;
+      border-radius: 30px;
+      padding: 2.5rem 2.8rem;
+      margin: 2.5rem 0 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+      border: 1px solid #ecf1f7;
     }
-
-    .article-content h2 {
+    .article-card h2 {
       font-size: 1.9rem;
-      margin: 1.8em 0 0.6em;
-      border-bottom: 3px solid #e2e9f2;
-      padding-bottom: 0.2em;
-      font-weight: 700;
-      color: #0b1f33;
-    }
-
-    .article-content h3 {
-      font-size: 1.4rem;
-      margin: 1.6em 0 0.5em;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
       font-weight: 600;
-      color: #1a324a;
+      color: #0b1f3a;
+      border-bottom: 2px solid #eef2f6;
+      padding-bottom: 0.3rem;
     }
-
-    .article-content p {
-      margin: 1.2em 0;
-      font-size: 1.05rem;
+    .article-card h3 {
+      font-size: 1.4rem;
+      margin-top: 1.8rem;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      color: #1e293b;
     }
-
-    .article-content ul {
-      margin: 1em 0;
-      padding-left: 1.8em;
+    .article-card p {
+      margin: 1rem 0;
+      line-height: 1.7;
+      color: #1e2b3c;
     }
-    .article-content li {
-      margin: 0.5em 0;
+    .article-card ul, .article-card ol {
+      margin: 0.8rem 0 0.8rem 1.8rem;
     }
-
+    .article-card li {
+      margin: 0.4rem 0;
+    }
     .cta-box {
-      background: #eef5ff;
-      border-radius: 1.8rem;
+      background: #f0f6ff;
+      border-radius: 24px;
       padding: 1.8rem 2.2rem;
-      margin: 2.5em 0 1em;
+      margin: 2.2rem 0 0.5rem;
       border-left: 6px solid #2563eb;
     }
-
     .cta-box p {
-      margin: 0.5em 0;
-      font-size: 1.1rem;
+      margin: 0.3rem 0;
     }
-
-    .footer-note {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #4b5f73;
-      text-align: center;
-      border-top: 1px solid #e2e9f2;
-      padding-top: 1.8rem;
-    }
-
-    @media (max-width: 700px) {
-      .container { padding: 1.2rem; }
-      .editor-pane { padding: 1rem; }
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-
-  <!-- MARKDOWN EDITOR – live preview -->
-  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.2rem; flex-wrap: wrap;">
-    <h2 style="font-size: 1.9rem; font-weight: 700; color: #0b1f33; margin:0;">✍️ Markdown Editor</h2>
-    <span style="background: #dbeafe; padding: 0.3rem 1rem; border-radius: 40px; font-size: 0.9rem; font-weight: 500;">edit & preview online free</span>
-  </div>
-
-  <div class="editor-pane">
-    <div class="editor-box">
-      <h3><span>📝</span> Markdown</h3>
-      <textarea id="mdInput" placeholder="Type Markdown here …"># Welcome to Markdown Editor
-
-**Edit and preview Markdown online free** – instantly.
-
-###
+    .btn-like {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      font-weight: 600;
+      padding: 0.6rem 2rem;
+      border-radius: 60px;
+      text
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

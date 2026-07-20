@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 Resize Images Online Free - Resize Jpg Png Gif You Need to Know About | Free Online IMAGE Tool</title>
-    <meta name="description" content="Here is a complete, self-contained HTML document for an interactive image resizer tool and a detailed SEO-optimized article. You can run it directly in your">
+    <meta name="description" content="Here is the interactive HTML tool page for resizing images online. It includes a drag-and-drop uploader, preview, and controls for JPG, PNG, and GIF">
     <meta name="keywords" content="Resize images online free - resize JPG PNG GIF">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,263 +128,262 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is a complete, self-contained HTML document for an interactive image resizer tool and a detailed SEO-optimized article. You can run it directly in your browser.
+            Here is the interactive HTML tool page for resizing images online. It includes a drag-and-drop uploader, preview, and controls for JPG, PNG, and GIF formats.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Resizer · Resize images online free · resize JPG PNG GIF</title>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Image Resizer · Resize images online free – resize JPG PNG GIF</title>
+  <meta name="description" content="Resize images online free – resize JPG, PNG, GIF instantly. No upload limits, no sign-up. Fast, private, and works in your browser.">
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
     body {
-      background: #f6f9fc;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f5f7fc;
+      color: #1e293b;
+      line-height: 1.6;
       padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
     .container {
       max-width: 1100px;
-      width: 100%;
+      margin: 0 auto;
       background: white;
-      border-radius: 32px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.06);
-      padding: 2rem 2rem 3rem;
-      margin-bottom: 2rem;
-      transition: all 0.2s;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.05), 0 8px 20px rgba(0,20,50,0.08);
+      padding: 2rem 1.8rem;
     }
     h1 {
       font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      color: #0b1e33;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    h1 i {
-      color: #2b7be4;
-      font-size: 2rem;
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+      background: linear-gradient(145deg, #0f2b4b, #1e4b6e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     .subhead {
-      color: #4a5a72;
       font-size: 1.1rem;
-      margin: 0.5rem 0 1.8rem 0;
-      border-left: 4px solid #2b7be4;
+      color: #475569;
+      margin-bottom: 2rem;
+      border-left: 4px solid #3b82f6;
       padding-left: 1rem;
-      background: #f0f6fe;
-      border-radius: 0 12px 12px 0;
-      line-height: 1.5;
     }
     .tool-grid {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       gap: 2rem;
-      background: #f9fcff;
-      padding: 2rem 1.5rem;
-      border-radius: 28px;
-      border: 1px solid #e7edf4;
-      margin-bottom: 2.8rem;
+      margin-bottom: 3rem;
     }
     .upload-area {
-      flex: 2;
-      min-width: 240px;
-    }
-    .drop-zone {
-      border: 2px dashed #b8cdff;
-      background: white;
-      border-radius: 24px;
-      padding: 2.2rem 1.5rem;
+      flex: 1 1 320px;
+      background: #f8fafc;
+      border: 2px dashed #cbd5e1;
+      border-radius: 2rem;
+      padding: 2.5rem 1.5rem;
       text-align: center;
       transition: 0.2s;
       cursor: pointer;
     }
-    .drop-zone:hover {
-      border-color: #2b7be4;
-      background: #f2f8ff;
+    .upload-area:hover, .upload-area.drag-over {
+      border-color: #3b82f6;
+      background: #eff6ff;
     }
-    .drop-zone i {
+    .upload-icon {
       font-size: 3rem;
-      color: #2b7be4;
-      opacity: 0.7;
+      margin-bottom: 0.5rem;
     }
-    .drop-zone p {
+    .upload-area p {
+      color: #334155;
       font-weight: 500;
-      color: #1b2c44;
-      margin: 0.5rem 0 0.2rem;
     }
-    .drop-zone .formats {
-      color: #6b7f99;
-      font-size: 0.9rem;
+    .upload-area small {
+      color: #64748b;
     }
     #fileInput {
       display: none;
     }
-    .settings {
-      flex: 3;
-      min-width: 260px;
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
+    .preview-panel {
+      flex: 2 1 400px;
+      background: #ffffff;
+      border-radius: 1.5rem;
+      padding: 1rem 1.2rem 1.5rem;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);
     }
-    .setting-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.8rem 1.2rem;
-    }
-    .setting-row label {
+    .preview-panel h3 {
       font-weight: 600;
-      color: #1b2c44;
-      min-width: 80px;
-    }
-    .setting-row input {
-      padding: 0.6rem 1rem;
-      border: 1px solid #d5e0ec;
-      border-radius: 40px;
-      font-size: 1rem;
-      width: 110px;
-      background: white;
-      transition: 0.15s;
-    }
-    .setting-row input:focus {
-      border-color: #2b7be4;
-      outline: none;
-      box-shadow: 0 0 0 3px rgba(43,123,228,0.15);
-    }
-    .setting-row select {
-      padding: 0.6rem 1.2rem;
-      border: 1px solid #d5e0ec;
-      border-radius: 40px;
-      background: white;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .constrain-box {
+      font-size: 1.1rem;
+      color: #0f172a;
+      margin-bottom: 0.75rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      background: #eef4fa;
-      padding: 0.3rem 1rem 0.3rem 1.2rem;
-      border-radius: 40px;
     }
-    .constrain-box input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      accent-color: #2b7be4;
+    .img-preview-wrapper {
+      background: #f1f5f9;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      min-height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
     }
-    .btn-primary {
-      background: #1a3e6f;
-      border: none;
-      color: white;
+    #preview {
+      max-width: 100%;
+      max-height: 240px;
+      border-radius: 0.75rem;
+      object-fit: contain;
+      background: white;
+    }
+    .placeholder-preview {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      padding: 2rem 0;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem 1.5rem;
+      margin-top: 0.5rem;
+    }
+    .control-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .control-group label {
+      font-weight: 500;
+      color: #1e293b;
+      font-size: 0.9rem;
+    }
+    .control-group input[type="number"] {
+      width: 80px;
+      padding: 0.4rem 0.6rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 0.75rem;
+      font-size: 0.95rem;
+      background: white;
+    }
+    .control-group select {
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.75rem;
+      border: 1px solid #cbd5e1;
+      background: white;
+      font-weight: 500;
+    }
+    .action-buttons {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-top: 0.8rem;
+    }
+    .btn {
+      background: white;
+      border: 1px solid #cbd5e1;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2rem;
       font-weight: 600;
-      padding: 0.8rem 2rem;
-      border-radius: 40px;
-      font-size: 1rem;
+      font-size: 0.9rem;
       cursor: pointer;
-      transition: 0.2s;
+      transition: 0.15s;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      box-shadow: 0 4px 8px rgba(26,62,111,0.12);
-      border: 1px solid #1a3e6f;
+      gap: 0.4rem;
+      background: #f8fafc;
+    }
+    .btn-primary {
+      background: #2563eb;
+      border-color: #2563eb;
+      color: white;
+      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
     }
     .btn-primary:hover {
-      background: #0f2c4f;
+      background: #1d4ed8;
       transform: scale(0.97);
-      box-shadow: 0 6px 14px rgba(26,62,111,0.2);
+    }
+    .btn-primary:disabled {
+      opacity: 0.5;
+      pointer-events: none;
     }
     .btn-outline {
       background: transparent;
-      border: 1px solid #b8cdff;
-      color: #1b2c44;
-      padding: 0.7rem 1.8rem;
-      border-radius: 40px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: 0.15s;
+      border: 1px solid #3b82f6;
+      color: #2563eb;
     }
     .btn-outline:hover {
-      background: #eef4fa;
-      border-color: #2b7be4;
+      background: #eef2ff;
     }
-    .preview-area {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin: 1.5rem 0 0.8rem;
-    }
-    .preview-card {
-      background: #fafdff;
-      border-radius: 20px;
-      padding: 1.2rem 1.2rem 1.5rem;
-      border: 1px solid #e2ebf5;
-      flex: 1 1 200px;
-      text-align: center;
-    }
-    .preview-card h4 {
-      color: #1b2c44;
-      font-weight: 600;
-      font-size: 1rem;
-      border-bottom: 1px solid #e0e9f2;
-      padding-bottom: 0.5rem;
-      margin-bottom: 0.8rem;
-    }
-    .preview-card img {
-      max-width: 100%;
-      max-height: 180px;
-      border-radius: 12px;
-      background: #f0f5fb;
-      object-fit: contain;
-    }
-    .file-info {
+    .info-badge {
       font-size: 0.85rem;
-      color: #4d657f;
-      margin-top: 0.5rem;
+      background: #f1f5f9;
+      padding: 0.25rem 1rem;
+      border-radius: 30px;
+      color: #1e293b;
     }
-    .download-block {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1.2rem;
-    }
-    /* article styling */
     .article {
-      margin-top: 1rem;
-      border-top: 1px solid #e5edf6;
-      padding-top: 2.2rem;
+      margin-top: 2.5rem;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 2rem;
     }
     .article h2 {
       font-size: 1.8rem;
       font-weight: 700;
-      color: #0b1e33;
-      margin: 1.8rem 0 0.8rem 0;
-      letter-spacing: -0.01em;
+      margin: 1.5rem 0 0.8rem;
+      color: #0f172a;
     }
     .article h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      color: #173457;
-      margin: 1.5rem 0 0.5rem 0;
+      margin: 1.2rem 0 0.5rem;
+      color: #1e293b;
     }
     .article p {
-      line-height: 1.7;
-      color: #1f334b;
-
+      margin-bottom: 1rem;
+      color: #1e293b;
+    }
+    .article ul {
+      margin: 0.5rem 0 1.2rem 1.5rem;
+    }
+    .article li {
+      margin-bottom: 0.3rem;
+    }
+    .cta-box {
+      background: #f0f4ff;
+      border-radius: 1.5rem;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0 0.5rem;
+      text-align: center;
+    }
+    .cta-box p {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 700px) {
+      h1 { font-size: 1.8rem; }
+      .container { padding: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>🖼️ Image Resizer</h1>
+  <div class="subhead">Resize images online free – resize JPG, PNG, GIF.
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

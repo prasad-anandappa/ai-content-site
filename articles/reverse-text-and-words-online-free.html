@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Reverse Text And Words Online Free Matters More Than Ever | Free Online TEXT Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Reverse Text and Words Online Free" tool. It combines a clean, user-friendly interface">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Reverse Text" tool. It allows you to reverse text, words, or sentences online for free.">
     <meta name="keywords" content="Reverse text and words online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,266 +128,255 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive "Reverse Text and Words Online Free" tool. It combines a clean, user-friendly interface with a detailed, SEO-optimized article covering the tool's uses, benefits, and practical tips.
+            This is a complete, self-contained HTML document for an interactive "Reverse Text" tool. It allows you to reverse text, words, or sentences online for free. The page includes a clean, dual-pane interface, a character counter, and one-click copy functionality.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse text and words online free · Reverse Text tool</title>
-    <meta name="description" content="Reverse text and words online free. Flip any string, reverse word order, or mirror sentences instantly. Simple, fast, and private.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #f4f7fc;
-            color: #1e293b;
-            padding: 2rem 1rem;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            max-width: 1000px;
-            width: 100%;
-            background: white;
-            border-radius: 2rem;
-            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.1);
-            padding: 2rem 2rem 3rem;
-            transition: 0.2s;
-        }
-        h1 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #0f172a;
-            margin-bottom: 0.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .subhead {
-            font-size: 1.1rem;
-            color: #475569;
-            margin-bottom: 2rem;
-            border-left: 4px solid #3b82f6;
-            padding-left: 1rem;
-        }
-        .tool-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            background: #f8fafc;
-            padding: 2rem;
-            border-radius: 1.5rem;
-            border: 1px solid #e2e8f0;
-            margin-bottom: 2.5rem;
-        }
-        .input-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        label {
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: #1e293b;
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-        }
-        textarea {
-            width: 100%;
-            padding: 1rem 1.2rem;
-            border: 2px solid #e2e8f0;
-            border-radius: 1rem;
-            font-size: 1rem;
-            font-family: inherit;
-            background: white;
-            transition: 0.2s;
-            resize: vertical;
-            min-height: 100px;
-        }
-        textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
-        }
-        .output-box {
-            background: #f1f5f9;
-            border-radius: 1rem;
-            padding: 1rem 1.2rem;
-            border: 2px dashed #cbd5e1;
-            min-height: 80px;
-            word-break: break-word;
-            font-size: 1.1rem;
-            color: #0f172a;
-            transition: 0.2s;
-        }
-        .output-box:empty::before {
-            content: "Reversed text will appear here …";
-            color: #94a3b8;
-            font-style: italic;
-        }
-        .controls {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 0.5rem;
-        }
-        button {
-            background: white;
-            border: 1.5px solid #cbd5e1;
-            padding: 0.6rem 1.4rem;
-            border-radius: 2rem;
-            font-weight: 600;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: 0.15s;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            color: #1e293b;
-        }
-        button.primary {
-            background: #3b82f6;
-            border-color: #3b82f6;
-            color: white;
-            box-shadow: 0 4px 6px -2px rgba(59,130,246,0.3);
-        }
-        button.primary:hover {
-            background: #2563eb;
-            transform: scale(0.98);
-        }
-        button:hover {
-            background: #eef2f6;
-            border-color: #94a3b8;
-        }
-        button:active {
-            transform: scale(0.95);
-        }
-        .badge {
-            background: #dbeafe;
-            color: #1d4ed8;
-            border-radius: 100px;
-            padding: 0.2rem 0.9rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-            text-transform: uppercase;
-            margin-left: 0.5rem;
-        }
-        .mode-toggles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem 1rem;
-            background: #ffffff;
-            padding: 0.6rem 1rem;
-            border-radius: 3rem;
-            border: 1px solid #e2e8f0;
-            align-items: center;
-        }
-        .mode-toggles span {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        .mode-btn {
-            background: transparent;
-            border: none;
-            padding: 0.3rem 1rem;
-            border-radius: 2rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: 0.1s;
-            color: #475569;
-        }
-        .mode-btn.active {
-            background: #3b82f6;
-            color: white;
-        }
-        .mode-btn:not(.active):hover {
-            background: #e2e8f0;
-        }
-        .copy-feedback {
-            font-size: 0.85rem;
-            color: #16a34a;
-            margin-left: 0.5rem;
-            opacity: 0;
-            transition: 0.2s;
-        }
-        .copy-feedback.show {
-            opacity: 1;
-        }
-        hr {
-            margin: 2rem 0 1.5rem;
-            border: 0;
-            border-top: 2px solid #eef2f6;
-        }
-        /* article styling */
-        article h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 2rem 0 0.75rem;
-            color: #0f172a;
-            letter-spacing: -0.01em;
-        }
-        article h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.5rem 0 0.5rem;
-            color: #1e293b;
-        }
-        article p {
-            margin-bottom: 1rem;
-            color: #334155;
-        }
-        article ul, article ol {
-            margin: 0.8rem 0 1.2rem 1.5rem;
-        }
-        article li {
-            margin-bottom: 0.3rem;
-        }
-        .callout {
-            background: #f0f9ff;
-            border-left: 6px solid #3b82f6;
-            padding: 1rem 1.5rem;
-            border-radius: 1rem;
-            margin: 1.5rem 0;
-        }
-        footer {
-            margin-top: 2.5rem;
-            font-size: 0.9rem;
-            color: #64748b;
-            text-align: center;
-        }
-        @media (max-width: 640px) {
-            .container { padding: 1.5rem; }
-            h1 { font-size: 1.8rem; }
-            .tool-grid { padding: 1.2rem; }
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <header>
-        <h1>
-            <span>↩️ Reverse text and words</span>
-            <span class="badge">online free</span>
-        </h1>
-        <div class="subhead">Flip characters, reverse word order, or mirror entire sentences · instant, no tracking.</div>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse Text · reverse words & sentences online free</title>
+  <!-- Font Awesome for icons (optional, but adds polish) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    }
+    body {
+      background: linear-gradient(145deg, #f7f9fc 0%, #eef2f7 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .tool-card {
+      max-width: 1000px;
+      width: 100%;
+      background: white;
+      border-radius: 2.5rem;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      padding: 2.2rem 2rem 2.5rem;
+      transition: box-shadow 0.2s ease;
+      backdrop-filter: blur(2px);
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0b1a33;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.35rem;
+    }
+    h1 i {
+      color: #2a6df4;
+      font-size: 2.4rem;
+    }
+    .subhead {
+      font-size: 1.1rem;
+      color: #3c4d6a;
+      margin-bottom: 1.8rem;
+      border-left: 4px solid #2a6df4;
+      padding-left: 1rem;
+      font-weight: 450;
+      background: #f0f5ff;
+      border-radius: 0 12px 12px 0;
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+    }
+    .editor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+      margin: 1.5rem 0 1.2rem;
+    }
+    @media (max-width: 700px) {
+      .editor-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+      h1 { font-size: 2rem; }
+    }
+    .input-pane, .output-pane {
+      background: #fafcff;
+      border-radius: 1.8rem;
+      padding: 1.5rem 1.5rem 1.2rem;
+      border: 1px solid #e3eaf2;
+      transition: border 0.15s;
+    }
+    .input-pane:focus-within {
+      border-color: #2a6df4;
+      box-shadow: 0 0 0 3px rgba(42,109,244,0.15);
+    }
+    .pane-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: #1c2d4a;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .pane-label i {
+      color: #2a6df4;
+      margin-right: 0.4rem;
+    }
+    textarea {
+      width: 100%;
+      height: 180px;
+      border: none;
+      background: transparent;
+      resize: vertical;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      padding: 0.2rem 0;
+      color: #0b1a33;
+      outline: none;
+      font-weight: 400;
+    }
+    textarea::placeholder {
+      color: #9aabbf;
+      font-weight: 350;
+    }
+    .output-area {
+      background: #f2f6fe;
+      border-radius: 1.2rem;
+      padding: 0.9rem 1.2rem;
+      min-height: 180px;
+      max-height: 300px;
+      overflow-y: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      word-break: break-word;
+      white-space: pre-wrap;
+      color: #0b1a33;
+      border: 1px solid #dce5f0;
+    }
+    .output-area:empty::before {
+      content: "Reversed result appears here …";
+      color: #9aabbf;
+      font-style: italic;
+    }
+    .stat-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.8rem;
+      gap: 0.8rem;
+    }
+    .char-count {
+      background: #e9eef6;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #1f3a5e;
+    }
+    .action-buttons {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background: white;
+      border: 1px solid #d0dbe8;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: #1f3a5e;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .btn-primary {
+      background: #2a6df4;
+      border-color: #2a6df4;
+      color: white;
+      box-shadow: 0 4px 8px rgba(42,109,244,0.25);
+    }
+    .btn-primary i {
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #1a5adf;
+      transform: scale(1.02);
+    }
+    .btn:hover {
+      background: #f0f5fe;
+      border-color: #b2c9e2;
+    }
+    .btn-primary:hover {
+      background: #1a5adf;
+      border-color: #1a5adf;
+    }
+    .btn-copy {
+      background: #eaf0fa;
+    }
+    .btn-copy:hover {
+      background: #d4e2f7;
+    }
+    .mode-selector {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin: 0.5rem 0 0.2rem;
+    }
+    .mode-btn {
+      background: transparent;
+      border: 1px solid #d0dbe8;
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #2f4668;
+      cursor: pointer;
+      transition: 0.1s;
+    }
+    .mode-btn.active {
+      background: #2a6df4;
+      border-color: #2a6df4;
+      color: white;
+    }
+    .mode-btn:not(.active):hover {
+      background: #e9f0fa;
+    }
+    .article-content {
+      margin-top: 2.8rem;
+      border-top: 1px solid #dfe8f2;
+      padding-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0b1a33;
+      margin: 1.8rem 0 0.8rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.6rem 0 0.5rem;
+      color: #1e3b5c;
+    }
+    p {
+      line-height: 1.7;
+      color: #1f2f47;
+      margin-bottom: 1.1rem;
+    }
+    ul, ol {
 
-    <!-- interactive tool -->
-    <div class="tool-grid">
-        <div class
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

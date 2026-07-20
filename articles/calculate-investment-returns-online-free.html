@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculate Investment Returns Online Free: Complete Review and Buying Guide | Free Online CALCULATOR Tool</title>
-    <meta name="description" content="This is a self-contained HTML document for an interactive Investment Calculator tool. It allows you to calculate the future value of your investments based on">
+    <meta name="description" content="Here is the interactive HTML tool page for an investment calculator. It combines a functional calculator with a comprehensive, SEO-optimized">
     <meta name="keywords" content="Calculate investment returns online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,242 +128,260 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a self-contained HTML document for an interactive Investment Calculator tool. It allows you to calculate the future value of your investments based on initial amount, monthly contributions, expected return rate, and time horizon. The page includes a clear input form, a dynamic results section, and a comprehensive guide on how to use the calculator effectively.
+            Here is the interactive HTML tool page for an investment calculator. It combines a functional calculator with a comprehensive, SEO-optimized article.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Investment Calculator | Calculate investment returns online free</title>
+  <title>Free Investment Calculator · Calculate investment returns online free</title>
   <style>
     * {
       box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
     body {
-      background: #f4f7fc;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f6f9fc;
+      color: #1e293b;
       padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      line-height: 1.6;
     }
-    .main-container {
+    .page {
       max-width: 1200px;
-      width: 100%;
+      margin: 0 auto;
       background: white;
-      border-radius: 2.5rem;
-      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.25);
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0,20,50,0.15);
+      overflow: hidden;
       padding: 2rem 2rem 3rem;
+    }
+    @media (max-width: 640px) {
+      .page { padding: 1.5rem 1rem; }
     }
     h1 {
       font-size: 2.4rem;
       font-weight: 700;
-      color: #0b1e33;
-      margin-bottom: 0.5rem;
       letter-spacing: -0.02em;
       line-height: 1.2;
+      margin-bottom: 0.25rem;
+      background: linear-gradient(145deg, #0b2b4a, #1f5e8e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     .subhead {
-      font-size: 1.2rem;
-      color: #2c3e50;
-      border-left: 5px solid #2a7de1;
-      padding-left: 1.2rem;
-      margin: 0.75rem 0 2rem 0;
-      font-weight: 450;
+      font-size: 1.1rem;
+      color: #3b5a7a;
+      margin-bottom: 2rem;
+      border-left: 4px solid #2d7fc1;
+      padding-left: 1rem;
     }
-    .grid-2col {
+    .calc-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
+      background: #eef4fa;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      margin-bottom: 2.5rem;
     }
-    @media (max-width: 780px) {
-      .grid-2col { grid-template-columns: 1fr; gap: 2rem; }
-      .main-container { padding: 1.5rem; }
-      h1 { font-size: 1.9rem; }
+    @media (max-width: 700px) {
+      .calc-grid { grid-template-columns: 1fr; }
     }
-    .calc-card {
-      background: #f9fcff;
-      border-radius: 2rem;
-      padding: 1.8rem 1.8rem 2.2rem;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.8), 0 8px 18px rgba(0,32,64,0.08);
-    }
-    .calc-card label {
-      display: block;
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: #1f3a57;
-      margin: 1rem 0 0.35rem 0;
-      letter-spacing: 0.01em;
-    }
-    .calc-card label:first-of-type {
-      margin-top: 0.2rem;
+    .input-area {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
     }
     .input-group {
       display: flex;
-      align-items: center;
-      background: white;
-      border-radius: 60px;
-      border: 1px solid #d9e2ed;
-      padding: 0.2rem 0.2rem 0.2rem 1.2rem;
-      transition: border 0.2s;
+      flex-direction: column;
+      gap: 0.3rem;
     }
-    .input-group:focus-within {
-      border-color: #2a7de1;
-      box-shadow: 0 0 0 3px rgba(42,125,225,0.2);
-    }
-    .input-group span {
+    .input-group label {
       font-weight: 600;
-      color: #2a4d74;
-      font-size: 1.1rem;
-      margin-right: 0.3rem;
+      font-size: 0.9rem;
+      color: #0a2a44;
+      letter-spacing: 0.01em;
+      display: flex;
+      justify-content: space-between;
     }
     .input-group input {
-      width: 100%;
-      padding: 0.8rem 0.5rem 0.8rem 0.2rem;
-      border: none;
-      background: transparent;
+      padding: 0.8rem 1rem;
+      border: 1px solid #cbdae9;
+      border-radius: 12px;
       font-size: 1rem;
+      background: white;
+      transition: 0.2s;
       font-weight: 500;
-      color: #0a1a2b;
+    }
+    .input-group input:focus {
       outline: none;
-      min-width: 0;
+      border-color: #1f6eb0;
+      box-shadow: 0 0 0 3px rgba(31,110,176,0.2);
     }
-    .input-group input[type="number"]::-webkit-inner-spin-button { opacity: 0.5; }
-    .input-group .pct {
-      margin-left: 0.1rem;
-      margin-right: 0.8rem;
-      color: #4b6f8c;
+    .input-group .helper {
+      font-size: 0.8rem;
+      color: #4a6f8f;
     }
-    .slider-row {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-    .slider-row input[type="range"] {
-      flex: 1;
-      height: 6px;
-      -webkit-appearance: none;
-      background: #d0ddee;
-      border-radius: 10px;
-      outline: none;
-    }
-    .slider-row input[type="range"]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 18px;
-      height: 18px;
-      background: #2a7de1;
-      border-radius: 50%;
-      cursor: pointer;
-      box-shadow: 0 2px 6px rgba(0,60,120,0.3);
-    }
-    .slider-value {
-      min-width: 3.2rem;
-      font-weight: 600;
-      color: #0b2b4a;
-      background: #e6eefb;
-      padding: 0.3rem 0.8rem;
+    .btn-calc {
+      background: #1663a7;
+      color: white;
+      border: none;
+      padding: 0.9rem 1.5rem;
       border-radius: 40px;
-      text-align: center;
-      font-size: 0.9rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 0.5rem;
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 8px rgba(0,40,80,0.1);
+    }
+    .btn-calc:hover {
+      background: #0f4c82;
+      transform: scale(0.98);
+      box-shadow: 0 6px 14px rgba(0,40,80,0.15);
     }
     .result-area {
-      background: #0b1e33;
-      border-radius: 2rem;
-      padding: 1.8rem 2rem 2rem;
-      color: white;
+      background: white;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);
     }
-    .result-area h3 {
+    .result-card {
+      text-align: center;
+    }
+    .result-main {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #0e3b64;
+      margin: 0.5rem 0 0.2rem;
+      letter-spacing: -0.02em;
+    }
+    .result-label {
+      color: #3e6a93;
       font-weight: 500;
       font-size: 1rem;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      opacity: 0.7;
+    }
+    .result-details {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .detail-item {
+      background: #e9f0f8;
+      border-radius: 20px;
+      padding: 0.6rem 1.2rem;
+      min-width: 110px;
+    }
+    .detail-item span {
+      display: block;
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: #2b577e;
+    }
+    .detail-item strong {
+      font-size: 1.2rem;
+      color: #0b2b4a;
+    }
+    .footnote {
+      font-size: 0.8rem;
+      color: #4b6d8a;
+      margin-top: 1rem;
+      border-top: 1px dashed #c7d9ec;
+      padding-top: 0.8rem;
+    }
+    .article {
+      margin-top: 1.5rem;
+    }
+    .article h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+      color: #0b2b4a;
+      letter-spacing: -0.01em;
+    }
+    .article h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.75rem;
+      color: #174b77;
+    }
+    .article p {
+      margin-bottom: 1rem;
+      color: #1d334a;
+    }
+    .article ul {
+      margin: 0.75rem 0 1.5rem 1.5rem;
+    }
+    .article li {
+      margin-bottom: 0.4rem;
+    }
+    .highlight {
+      background: #e7f0fb;
+      padding: 0.1rem 0.3rem;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    .cta-box {
+      background: #e0edfb;
+      border-radius: 24px;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0 0.5rem;
+      text-align: center;
+    }
+    .cta-box p {
+      font-size: 1.2rem;
+      font-weight: 500;
       margin-bottom: 0.5rem;
     }
-    .final-value {
-      font-size: 3.2rem;
-      font-weight: 700;
-      line-height: 1.1;
-      margin: 0.2rem 0 0.5rem 0;
-      word-break: break-word;
-    }
-    .final-value small {
-      font-size: 1.2rem;
-      font-weight: 400;
-      opacity: 0.7;
-      margin-left: 0.3rem;
-    }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-      margin-top: 1.8rem;
-    }
-    .stat-item {
-      background: rgba(255,255,255,0.06);
-      border-radius: 1.2rem;
-      padding: 0.9rem 1.2rem;
-    }
-    .stat-item .label {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      opacity: 0.6;
-      letter-spacing: 0.3px;
-    }
-    .stat-item .value {
-      font-size: 1.6rem;
-      font-weight: 600;
-      margin-top: 0.2rem;
-    }
-    .action-note {
-      margin-top: 1.8rem;
-      border-top: 1px solid rgba(255,255,255,0.15);
-      padding-top: 1.2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .cta-btn {
-      background: #2a7de1;
-      border: none;
+    .cta-box .btn-cta {
+      display: inline-block;
+      background: #0a3d66;
       color: white;
-      padding: 0.8rem 2rem;
-      border-radius: 60px;
+      padding: 0.8rem 2.5rem;
+      border-radius: 40px;
+      text-decoration: none;
       font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
       transition: 0.2s;
-      box-shadow: 0 4px 10px rgba(42,125,225,0.3);
     }
-    .cta-btn:hover {
-      background: #1b62b5;
-      transform: scale(1.02);
+    .cta-box .btn-cta:hover {
+      background: #0a2f4e;
+      transform: scale(0.97);
     }
-    .article-section {
-      margin-top: 3.5rem;
+    .seo-friendly {
+      font-size: 0.9rem;
+      color: #3d5f7e;
     }
-    .article-section h2 {
-      font-size: 1.8rem;
-      color: #0b1e33;
-      margin: 2rem 0 0.8rem 0;
-      border-bottom: 2px solid #e2ebf6;
-      padding-bottom: 0.3rem;
+    hr {
+      margin: 2rem 0 1rem;
+      border: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #b6cee8, transparent);
     }
-    .article-section h3 {
-      font-size: 1.3rem;
-      color: #1f3a57;
-      margin: 1.8rem 0 0.5rem 0;
-    }
-    .article-section p {
-      line-height: 1.7;
-      color: #1f
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>📈 Investment Calculator</h1>
+  <div class="subhead">Calculate investment returns online free — instantly see your wealth potential</div>
+
+  <!-- Interactive calculator -->
+  <div class="calc-grid">
+    <div class="input-area">
+      <div class="input-group">
+        <label>💰 Initial investment ($) <span class="helper">required</span></label>
+        <input type="number" id="initial" value="10000" min="0" step="100">
+
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>
