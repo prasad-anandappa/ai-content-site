@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Generate Css Buttons Online Free Matters More Than Ever | Free Online DESIGN Tool</title>
-    <meta name="description" content="This is a complete, interactive HTML document for a "CSS Button Generator" tool. It combines a practical, free online utility with an informative article. You">
+    <meta name="description" content="Here is the interactive HTML tool page for a CSS Button Generator. It combines a live preview editor with a comprehensive guide on generating CSS buttons">
     <meta name="keywords" content="Generate CSS buttons online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,258 +128,254 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, interactive HTML document for a "CSS Button Generator" tool. It combines a practical, free online utility with an informative article. You can customize button styles like background, text color, border-radius, and shadow, then instantly preview and copy the generated CSS code. The page also includes a comprehensive guide on button design best practices, all styled for a clean, modern look.
+            Here is the interactive HTML tool page for a CSS Button Generator. It combines a live preview editor with a comprehensive guide on generating CSS buttons online for free.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Button Generator · Free online tool</title>
-    <!-- Font Awesome (optional, for icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-        body {
-            background: #f4f7fc;
-            padding: 2rem 1.2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            max-width: 1280px;
-            width: 100%;
-            background: #ffffff;
-            border-radius: 2rem;
-            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
-            padding: 2.5rem 2rem;
-        }
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #0b1e33;
-            margin-bottom: 0.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            flex-wrap: wrap;
-        }
-        .subhead {
-            font-size: 1.1rem;
-            color: #2c3e50;
-            opacity: 0.8;
-            margin-bottom: 1.8rem;
-            border-left: 4px solid #3b82f6;
-            padding-left: 1rem;
-        }
-        .tool-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 2rem;
-            background: #f9fafc;
-            border-radius: 1.5rem;
-            padding: 1.8rem;
-            margin-bottom: 2.8rem;
-            border: 1px solid #e9edf4;
-        }
-        @media (max-width: 720px) {
-            .tool-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            .container { padding: 1.5rem; }
-        }
-        .controls {
-            display: flex;
-            flex-direction: column;
-            gap: 1.3rem;
-        }
-        .control-group {
-            background: white;
-            padding: 0.8rem 1rem;
-            border-radius: 16px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
-            border: 1px solid #eef2f6;
-        }
-        .control-group label {
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: #1e2a3a;
-            display: flex;
-            justify-content: space-between;
-        }
-        .control-group input[type="range"] {
-            width: 100%;
-            margin: 8px 0 4px;
-            accent-color: #3b82f6;
-        }
-        .control-group input[type="color"] {
-            width: 100%;
-            height: 38px;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-            padding: 2px;
-        }
-        .value-badge {
-            background: #eef2f8;
-            padding: 0.1rem 0.6rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-        .preview-area {
-            background: #ffffff;
-            border-radius: 24px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1rem;
-            min-height: 220px;
-            box-shadow: inset 0 0 0 1px #e9edf4;
-        }
-        .preview-btn {
-            font-size: 1.2rem;
-            font-weight: 600;
-            padding: 0.8rem 2.4rem;
-            border: none;
-            cursor: pointer;
-            transition: 0.1s ease;
-            background: #3b82f6;
-            color: white;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(59,130,246,0.25);
-            letter-spacing: 0.3px;
-        }
-        .preview-btn:hover {
-            filter: brightness(1.04);
-        }
-        .code-output {
-            background: #0b1e33;
-            color: #e4eef7;
-            border-radius: 18px;
-            padding: 1.2rem 1.4rem;
-            font-family: 'SF Mono', 'Fira Code', monospace;
-            font-size: 0.85rem;
-            line-height: 1.5;
-            overflow-x: auto;
-            white-space: pre-wrap;
-            word-break: break-word;
-            margin-top: 1.2rem;
-            border: 1px solid #1f3349;
-        }
-        .copy-btn {
-            background: #2d4b6c;
-            border: none;
-            color: white;
-            padding: 0.4rem 1.2rem;
-            border-radius: 30px;
-            font-weight: 500;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 0.4rem;
-        }
-        .copy-btn:hover {
-            background: #3b82f6;
-        }
-        .article-section {
-            margin-top: 1.5rem;
-        }
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #0b1e33;
-            margin: 1.8rem 0 0.8rem;
-            letter-spacing: -0.01em;
-        }
-        h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #1f3349;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            color: #1f2a3a;
-            line-height: 1.6;
-            margin-bottom: 1.2rem;
-            font-size: 1.05rem;
-        }
-        ul {
-            padding-left: 1.6rem;
-            margin-bottom: 1.5rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-            line-height: 1.5;
-            color: #1f2a3a;
-        }
-        .highlight {
-            background: #eef6ff;
-            padding: 0.1rem 0.5rem;
-            border-radius: 8px;
-        }
-        .cta-box {
-            background: #e5eefb;
-            padding: 1.6rem 2rem;
-            border-radius: 24px;
-            margin: 1.8rem 0 0.5rem;
-            text-align: center;
-        }
-        .cta-box p {
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-        .btn-cta {
-            background: #0b1e33;
-            border: none;
-            color: white;
-            font-weight: 600;
-            padding: 0.8rem 2.4rem;
-            border-radius: 40px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: 0.2s;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .btn-cta:hover {
-            background: #3b82f6;
-            transform: scale(1.02);
-        }
-        .footnote {
-            font-size: 0.9rem;
-            color: #5e6f82;
-            text-align: center;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Button Generator · free online tool</title>
+  <meta name="description" content="Generate CSS buttons online free – live preview, custom styles, ready-to-use code. Interactive button maker with gradients, shadows, borders & more.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      background: #f6f9fc;
+      color: #1a2634;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.25);
+      padding: 2rem 1.8rem;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #1e2b3c, #2c3e50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.25rem;
+    }
+    .subhead {
+      font-size: 1.2rem;
+      color: #3d5a73;
+      margin-bottom: 2rem;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
+      font-weight: 400;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 2rem 0 2.5rem;
+    }
+    @media (max-width: 780px) {
+      .tool-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 1.8rem; }
+    }
+    .preview-area {
+      background: #f0f4fa;
+      border-radius: 1.5rem;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .preview-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: center;
+      align-items: center;
+      margin: 1.5rem 0;
+    }
+    .live-btn {
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: default;
+      transition: 0.15s ease;
+      background: #3b82f6;
+      color: white;
+      box-shadow: 0 4px 8px rgba(59,130,246,0.25);
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .controls {
+      background: #ffffff;
+      border-radius: 1.5rem;
+      padding: 1.5rem 1.8rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      border: 1px solid #e9edf4;
+    }
+    .control-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.8rem;
+      margin-bottom: 1.2rem;
+      align-items: center;
+    }
+    .control-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .control-item label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      color: #3d5a73;
+    }
+    input[type="range"] {
+      width: 140px;
+      accent-color: #3b82f6;
+    }
+    input[type="color"] {
+      width: 44px;
+      height: 44px;
+      border: 1px solid #d0d9e6;
+      border-radius: 12px;
+      background: white;
+      cursor: pointer;
+    }
+    select {
+      padding: 8px 14px;
+      border-radius: 40px;
+      border: 1px solid #d0d9e6;
+      background: white;
+      font-weight: 500;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .code-area {
+      background: #1e2630;
+      color: #e2eaf1;
+      padding: 1.4rem 1.8rem;
+      border-radius: 1.2rem;
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 0.85rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 1.8rem 0 1rem;
+      border: 1px solid #2d3848;
+      position: relative;
+    }
+    .copy-btn {
+      background: #2d3848;
+      border: none;
+      color: #bdd3e8;
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      position: absolute;
+      right: 18px;
+      top: 16px;
+      transition: 0.2s;
+    }
+    .copy-btn:hover {
+      background: #3b82f6;
+      color: white;
+    }
+    .article-content {
+      margin-top: 2.8rem;
+      border-top: 1px solid #e2eaf1;
+      padding-top: 1.8rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin: 1.8rem 0 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin: 1.6rem 0 0.6rem;
+      font-weight: 600;
+      color: #1f2a3f;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.3rem;
+    }
+    .btn-demo {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 10px 26px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 0.4rem 0;
+    }
+    .btn-demo:hover {
+      background: #2563eb;
+    }
+    .footer-note {
+      font-size: 0.9rem;
+      color: #4b5e77;
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-    <h1>
-        <i class="fas fa-magic" style="color: #3b82f6;"></i> 
-        CSS Button Generator
-    </h1>
-    <div class="subhead">Generate CSS buttons online free — customize, preview, copy code.</div>
+  <h1>⚡ Button Generator</h1>
+  <div class="subhead">Generate CSS buttons online free – live preview, fine-tune every style, copy code instantly.</div>
 
-    <!-- interactive tool -->
-    <div class="tool-grid">
-        <div class="controls" id="controls">
-            <div class="control-group">
-                <label>Background <span class="value-badge"
+  <!-- interactive tool -->
+  <div class="tool-grid">
+    <div class="preview-area">
+      <div style="font-weight:500; color:#2c3e50;">live preview</div>
+      <div class="preview-box" id="previewContainer">
+        <button class="live-btn" id="previewButton">Click me</button>
+      </div>
+      <div style="font-size:0.8rem; color:#4a5f7a;">⬆ button updates in real time</div>
+    </div>
+
+    <div class="controls">
+      <div class="control-group">
+        <div class="control-item">
+          <label>Background</label>
+          <input type="color" id="bgColor" value="#3b82f6">
+        </div>
+        <div class="control-item">
+          <label>Text color</label>
+          <input type="color" id="textColor" value="#ffffff">
+        </div>
+        <div class="control-item">
+          <label>Border radius</label>
+          <input type="range" id="borderRadius" min="0" max="50" value="8">
+        </div>
+      </div
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

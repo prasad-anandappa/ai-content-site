@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ultimate Guide to Sort Text Lines Alphabetically Online Free in 2025 | Free Online TEXT Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for sorting text lines alphabetically online, free. It includes a clean, dual-panel interface where you can paste your">
+    <meta name="description" content="Here is the interactive HTML tool page for sorting text lines alphabetically. It includes a functional text area, sorting options, and a clean, user-friendly">
     <meta name="keywords" content="Sort text lines alphabetically online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,18 +128,14 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for sorting text lines alphabetically online, free. It includes a clean, dual-panel interface where you can paste your text, sort it with one click, and copy the result.
+            Here is the interactive HTML tool page for sorting text lines alphabetically. It includes a functional text area, sorting options, and a clean, user-friendly interface.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sort Text Alphabetically · Free Online Tool</title>
-  <!-- Font & basic styling -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <title>Sort Text Lines Alphabetically Online Free</title>
   <style>
     * {
       box-sizing: border-box;
@@ -147,224 +143,251 @@
       padding: 0;
     }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f6f9fc;
-      color: #1a2639;
+      background: #f2f5f9;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       padding: 2rem 1rem;
-      line-height: 1.5;
+      color: #1e293b;
+      line-height: 1.6;
     }
     .container {
       max-width: 1100px;
       margin: 0 auto;
       background: white;
-      border-radius: 32px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.05), 0 4px 8px rgba(0,0,0,0.02);
+      border-radius: 28px;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
       padding: 2rem 2rem 3rem;
     }
     h1 {
-      font-weight: 700;
       font-size: 2.2rem;
+      font-weight: 700;
       letter-spacing: -0.02em;
       margin-bottom: 0.25rem;
-      color: #0b1e33;
+      color: #0f172a;
     }
     .subhead {
       font-size: 1.1rem;
-      color: #3e4c5c;
-      margin-bottom: 2rem;
+      color: #475569;
+      margin-bottom: 1.8rem;
       border-left: 4px solid #3b82f6;
       padding-left: 1rem;
-      background: #f0f5ff;
-      border-radius: 0 12px 12px 0;
-      line-height: 1.4;
     }
     .tool-grid {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 1.5rem;
-      margin: 2rem 0 2.5rem;
     }
-    .input-panel, .output-panel {
-      flex: 1 1 300px;
-      background: #fafcff;
-      border-radius: 24px;
-      padding: 1.5rem 1.5rem 1.8rem;
-      border: 1px solid #e9edf4;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    @media (min-width: 700px) {
+      .tool-grid {
+        flex-direction: row;
+        align-items: stretch;
+      }
+      .input-area, .output-area {
+        flex: 1;
+      }
+      .action-bar {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.75rem;
+        min-width: 140px;
+      }
     }
-    .panel-label {
+    .input-area, .output-area {
+      background: #f8fafc;
+      border-radius: 20px;
+      padding: 1.2rem 1.2rem 1rem;
+      border: 1px solid #e2e8f0;
+    }
+    .input-area label, .output-area label {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      gap: 0.5rem;
       font-weight: 600;
       font-size: 0.95rem;
-      color: #1f2a41;
-      margin-bottom: 0.75rem;
       letter-spacing: 0.01em;
-    }
-    .panel-label span {
-      background: #eef3fa;
-      padding: 0.2rem 0.8rem;
-      border-radius: 40px;
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: #2c3e5a;
+      color: #1e293b;
+      margin-bottom: 0.6rem;
     }
     textarea {
       width: 100%;
-      min-height: 260px;
-      padding: 1rem 1rem;
-      border: 1px solid #dce3ec;
-      border-radius: 18px;
+      height: 260px;
+      border: 1px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 1rem;
       font-size: 0.95rem;
-      font-family: 'Inter', monospace;
+      font-family: 'SF Mono', 'Fira Code', monospace;
       background: white;
       resize: vertical;
-      transition: 0.15s;
-      line-height: 1.6;
-      color: #0b1e33;
+      transition: 0.2s;
+      color: #0f172a;
     }
     textarea:focus {
       outline: 2px solid #3b82f6;
       outline-offset: 2px;
       border-color: transparent;
-      box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
     }
-    .output-box {
-      background: white;
-      border: 1px solid #dce3ec;
-      border-radius: 18px;
-      padding: 1rem;
-      min-height: 260px;
-      max-height: 400px;
-      overflow-y: auto;
-      white-space: pre-wrap;
-      word-break: break-word;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #0b1e33;
-      font-family: 'Inter', monospace;
+    .output-area textarea {
+      background: #ffffff;
     }
-    .output-box:empty::before {
-      content: "Sorted lines will appear here";
-      color: #8a9bb0;
-      font-style: italic;
-    }
-    .controls {
+    .action-bar {
+      padding: 0.5rem 0;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      gap: 0.8rem 1.2rem;
-      margin: 1.2rem 0 0.6rem;
+      justify-content: center;
+      gap: 0.75rem;
     }
     .btn {
       background: white;
-      border: 1px solid #d0d9e6;
-      padding: 0.6rem 1.4rem;
-      border-radius: 40px;
-      font-weight: 500;
-      font-size: 0.9rem;
-      color: #1f2a41;
+      border: 1px solid #cbd5e1;
+      padding: 0.7rem 1.4rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1e293b;
       cursor: pointer;
-      transition: all 0.15s;
+      transition: all 0.15s ease;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      justify-content: center;
+      gap: 0.4rem;
+      min-width: 110px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.02);
     }
     .btn-primary {
-      background: #1d4ed8;
-      border: 1px solid #1d4ed8;
+      background: #2563eb;
+      border: 1px solid #2563eb;
       color: white;
-      box-shadow: 0 4px 8px rgba(29,78,216,0.2);
+      box-shadow: 0 4px 8px rgba(37,99,235,0.2);
     }
     .btn-primary:hover {
-      background: #1e40af;
-      border-color: #1e40af;
-      box-shadow: 0 6px 14px rgba(29,78,216,0.25);
-      transform: translateY(-1px);
+      background: #1d4ed8;
+      transform: scale(1.02);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #94a3b8;
     }
     .btn-outline:hover {
-      background: #eef3fa;
-      border-color: #bcc8da;
+      background: #f1f5f9;
+      border-color: #64748b;
     }
-    .btn:active {
-      transform: scale(0.97);
+    .btn-success {
+      background: #0f973d;
+      border-color: #0f973d;
+      color: white;
     }
-    .small-hint {
-      font-size: 0.8rem;
-      color: #5d7188;
-      margin-top: 0.5rem;
+    .btn-success:hover {
+      background: #0b7e33;
+    }
+    .options {
       display: flex;
-      gap: 0.8rem;
       flex-wrap: wrap;
+      gap: 1rem 2rem;
+      background: #f1f5f9;
+      padding: 0.9rem 1.5rem;
+      border-radius: 60px;
+      margin: 0.8rem 0 0.2rem;
+      align-items: center;
     }
-    .badge {
-      background: #e6edf6;
+    .options label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .options input[type="radio"] {
+      accent-color: #2563eb;
+      width: 1rem;
+      height: 1rem;
+    }
+    .options select {
+      background: white;
+      border: 1px solid #cbd5e1;
       border-radius: 40px;
+      padding: 0.35rem 1rem 0.35rem 0.8rem;
+      font-weight: 500;
+      color: #0f172a;
+      font-size: 0.9rem;
+    }
+    .stat-badge {
+      font-size: 0.8rem;
+      color: #64748b;
+      background: #e9edf2;
       padding: 0.2rem 0.9rem;
-      font-size: 0.7rem;
-      font-weight: 500;
-      color: #1f2a41;
+      border-radius: 30px;
+      white-space: nowrap;
+      margin-left: auto;
     }
-    hr {
-      margin: 2.5rem 0 1.8rem;
-      border: 0;
-      border-top: 1px solid #e2eaf2;
+    .footer-links {
+      margin-top: 2.8rem;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
-    /* article styling */
-    .article {
-      max-width: 860px;
-      margin: 0 auto;
+    .footer-links small {
+      color: #64748b;
     }
-    .article h2 {
-      font-size: 1.7rem;
-      font-weight: 600;
-      margin: 2rem 0 0.8rem;
+    .article-content {
+      margin-top: 3.5rem;
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 2rem 1.8rem;
+      border: 1px solid #eef2f6;
+    }
+    .article-content h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 0.75rem;
+      font-weight: 700;
       letter-spacing: -0.01em;
-      color: #0b1e33;
     }
-    .article h3 {
-      font-size: 1.25rem;
+    .article-content h2:first-of-type {
+      margin-top: 0;
+    }
+    .article-content h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.5rem;
       font-weight: 600;
-      margin: 1.6rem 0 0.6rem;
-      color: #1f2a41;
+      color: #0f172a;
     }
-    .article p {
-      margin-bottom: 1rem;
-      color: #1e2f45;
+    .article-content p {
+      margin-bottom: 1.1rem;
+      color: #1e293b;
     }
-    .article ul {
-      margin: 0.8rem 0 1.2rem 1.4rem;
+    .article-content ul {
+      margin: 0.8rem 0 1.4rem 1.5rem;
     }
-    .article li {
-      margin-bottom: 0.4rem;
-    }
-    .article .highlight {
-      background: #f0f7ff;
-      padding: 0.1rem 0.3rem;
-      border-radius: 6px;
-      font-weight: 500;
-    }
-    .callout {
-      background: #eef6ff;
-      border-left: 4px solid #3b82f6;
-      padding: 1.2rem 1.5rem;
-      border-radius: 20px;
-      margin: 1.8rem 0;
-    }
-    .callout p {
+    .article-content li {
       margin-bottom: 0.3rem;
     }
-    .footer-note {
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #546a82;
-      text-align: center;
-      border-top: 1px solid #e2eaf2;
-      padding-top: 1.5rem;
+    .btn-copy {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
     }
+    .btn-copy:hover {
+      background: #e2e8f0;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.2rem; }
+      .options { border-radius: 30px; padding: 0.7rem 1rem; flex-direction: column; align-items: stretch; gap: 0.5rem; }
+      .stat-badge { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>📝 Sort Text Lines Alphabetically</h1>
+  <div class="subhead">Online free tool — arrange any list A→Z or Z→A instantly</div>
 
+  <!-- Interactive tool -->
+  <div class="tool-grid">
+    <div class="input-area">
+      <label><span>📄 Input text
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

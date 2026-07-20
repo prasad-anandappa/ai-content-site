@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocr Scanned Pdf To Searchable Text Online Free: Complete Review and Buying Guide | Free Online PDF Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document for an interactive PDF OCR tool. It allows you to upload a scanned PDF and convert it into searchable text">
+    <title>Top 10 Ocr Scanned Pdf To Searchable Text Online Free You Need to Know About | Free Online PDF Tool</title>
+    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive tool for OCR scanning PDFs. You can run it directly in your browser to convert">
     <meta name="keywords" content="OCR scanned PDF to searchable text online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Ocr Scanned Pdf To Searchable Text Online Free: Complete Review and Buying Guide</h1>
+        <h1>Top 10 Ocr Scanned Pdf To Searchable Text Online Free You Need to Know About</h1>
         <p>Free Online PDF Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,258 +128,296 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document for an interactive PDF OCR tool. It allows you to upload a scanned PDF and convert it into searchable text directly in your browser, using the Tesseract.js library for optical character recognition. The page includes a clean, modern interface and a detailed article explaining the process.
+            This is a complete, self-contained HTML document that creates an interactive tool for OCR scanning PDFs. You can run it directly in your browser to convert scanned PDF pages into searchable text.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF OCR · Searchable text online free</title>
-  <!-- Tesseract.js v5 for OCR -->
-  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
-  <!-- PDF.js for rendering PDF pages to canvas -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <title>PDF OCR · Free Searchable Text Online</title>
+  <!-- Font Awesome for icons (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     }
+
     body {
-      background: #f4f7fc;
-      padding: 2rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      background: #f5f7fb;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1e293b;
+      line-height: 1.5;
+      padding: 2rem 1rem;
     }
+
     .container {
-      max-width: 1200px;
-      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
       background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.25);
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -15px rgba(0, 20, 30, 0.12);
       padding: 2rem 2rem 3rem;
-      margin-bottom: 2.5rem;
     }
-    h1 {
-      font-size: 2.4rem;
-      font-weight: 650;
-      color: #0b2b4a;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
+
+    /* header / tool area */
+    .tool-header {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #e9edf4;
+      padding-bottom: 1.5rem;
     }
-    .subhead {
-      font-size: 1.1rem;
-      color: #2c4b6e;
-      border-left: 4px solid #2a7de1;
-      padding-left: 1rem;
-      margin-bottom: 2rem;
-      background: #f0f5fe;
-      padding: 0.8rem 1.2rem;
-      border-radius: 60px;
-      display: inline-block;
-    }
-    .tool-grid {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin: 2rem 0 1.5rem;
-    }
-    .upload-area {
-      flex: 1 1 280px;
-      background: #f9fcff;
-      border: 2px dashed #b9d3f0;
-      border-radius: 28px;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      transition: all 0.2s;
-    }
-    .upload-area:hover {
-      border-color: #2a7de1;
-      background: #f0f7ff;
-    }
-    .upload-label {
+
+    .tool-header h1 {
+      font-size: 1.9rem;
       font-weight: 600;
-      font-size: 1.2rem;
-      display: block;
-      margin-bottom: 1rem;
-      color: #0b2b4a;
-    }
-    .file-input-wrapper {
-      position: relative;
-      display: inline-block;
-      margin: 0.5rem 0 1rem;
-    }
-    input[type="file"] {
-      background: #eaf1fb;
-      border-radius: 60px;
-      padding: 0.6rem 1.2rem;
-      border: 1px solid #b9d3f0;
-      font-size: 0.95rem;
-      cursor: pointer;
-      max-width: 220px;
-    }
-    .ocr-btn {
-      background: #1a5fb4;
-      border: none;
-      color: white;
-      padding: 0.8rem 2rem;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #0f2b4b, #1d4f7a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      cursor: pointer;
-      transition: 0.15s;
-      box-shadow: 0 4px 8px rgba(26, 95, 180, 0.2);
-      margin: 0.5rem 0;
+      gap: 0.5rem;
     }
-    .ocr-btn:hover {
-      background: #104689;
+
+    .tool-header i {
+      background: #eef3fc;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      color: #1d4f7a;
+      font-size: 1.4rem;
+    }
+
+    .drop-zone {
+      background: #f8faff;
+      border: 2px dashed #cbd5e1;
+      border-radius: 2rem;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+    }
+
+    .drop-zone:hover, .drop-zone.drag-over {
+      background: #eef6ff;
+      border-color: #2563eb;
+    }
+
+    .drop-zone i {
+      font-size: 3rem;
+      color: #3b7bc9;
+      margin-bottom: 0.75rem;
+    }
+
+    .drop-zone p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #1e3a5f;
+    }
+
+    .drop-zone .small-hint {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-top: 0.3rem;
+    }
+
+    .file-input-label {
+      display: inline-block;
+      background: #1e3a5f;
+      color: white;
+      font-weight: 500;
+      padding: 0.6rem 1.8rem;
+      border-radius: 40px;
+      margin-top: 0.8rem;
+      transition: 0.2s;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .file-input-label:hover {
+      background: #143250;
       transform: scale(1.01);
     }
-    .ocr-btn:disabled {
+
+    #fileInput {
+      display: none;
+    }
+
+    .file-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #f1f6fe;
+      padding: 0.8rem 1.2rem;
+      border-radius: 60px;
+      margin: 1rem 0 1.2rem;
+    }
+
+    .file-info span {
+      font-weight: 500;
+    }
+
+    .action-btn {
+      background: #2563eb;
+      border: none;
+      color: white;
+      padding: 0.7rem 2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 6px 12px rgba(37, 99, 235, 0.15);
+    }
+
+    .action-btn:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    .action-btn:disabled {
       opacity: 0.5;
       pointer-events: none;
-      background: #6f8fbb;
+      filter: grayscale(0.3);
     }
-    .progress-box {
-      margin: 0.5rem 0 1rem;
-      font-size: 0.95rem;
-      color: #1f4970;
+
+    .reset-btn {
+      background: transparent;
+      border: 1px solid #cbd5e1;
+      color: #334155;
+      padding: 0.5rem 1.2rem;
+      border-radius: 30px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s;
     }
+
+    .reset-btn:hover {
+      background: #e9edf4;
+    }
+
+    .progress-area {
+      margin: 1rem 0 0.5rem;
+    }
+
     .progress-bar-bg {
       width: 100%;
-      height: 8px;
-      background: #dce6f2;
-      border-radius: 20px;
+      height: 6px;
+      background: #dee6f0;
+      border-radius: 10px;
       overflow: hidden;
-      margin: 8px 0;
     }
+
     .progress-fill {
-      height: 8px;
+      height: 6px;
       width: 0%;
-      background: #1a5fb4;
-      border-radius: 20px;
-      transition: width 0.3s;
+      background: #2563eb;
+      border-radius: 10px;
+      transition: width 0.2s;
     }
-    .result-area {
-      flex: 2 1 400px;
-      background: #fafdff;
+
+    .ocr-result {
+      background: #f9fcff;
+      border: 1px solid #e2eaf5;
       border-radius: 24px;
-      padding: 1.2rem 1.5rem;
-      border: 1px solid #e2edfc;
-      min-height: 280px;
-      display: flex;
-      flex-direction: column;
+      padding: 1.5rem;
+      margin: 1.5rem 0 0.5rem;
     }
-    .result-header {
+
+    .ocr-result h3 {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 0.8rem;
-      flex-wrap: wrap;
-    }
-    .result-header h3 {
+      gap: 0.5rem;
+      font-size: 1.3rem;
       font-weight: 600;
-      color: #0b2b4a;
+      color: #0b2a44;
+      margin-bottom: 0.75rem;
     }
-    .copy-btn {
-      background: transparent;
-      border: 1px solid #b9d3f0;
-      border-radius: 40px;
-      padding: 0.3rem 1rem;
-      font-size: 0.85rem;
-      cursor: pointer;
-      transition: 0.1s;
-    }
-    .copy-btn:hover {
-      background: #eaf1fb;
-    }
-    .ocr-text {
+
+    .ocr-text-box {
       background: white;
-      border-radius: 16px;
-      padding: 1rem;
-      flex: 1;
+      border: 1px solid #dce5f0;
+      border-radius: 18px;
+      padding: 1rem 1.2rem;
+      max-height: 300px;
       overflow-y: auto;
-      max-height: 320px;
+      font-size: 0.95rem;
       white-space: pre-wrap;
       word-break: break-word;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      border: 1px solid #e2edfc;
-      color: #152b42;
+      color: #1e293b;
+      line-height: 1.6;
     }
-    .ocr-placeholder {
-      color: #6b87a8;
-      font-style: italic;
+
+    .copy-btn {
+      background: #f1f6fe;
+      border: 1px solid #cbd5e1;
+      border-radius: 30px;
+      padding: 0.4rem 1.2rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-top: 0.8rem;
+      cursor: pointer;
+      transition: 0.2s;
     }
+
+    .copy-btn:hover {
+      background: #e2eaf5;
+    }
+
     .badge {
-      background: #d4e2f7;
-      color: #0b2b4a;
+      background: #dbeafe;
+      color: #1e4b7a;
       border-radius: 40px;
       padding: 0.25rem 1rem;
       font-size: 0.8rem;
       font-weight: 500;
     }
+
+    /* article area */
     .article {
       margin-top: 3rem;
-      border-top: 1px solid #e2edfc;
+      border-top: 1px solid #e9edf4;
       padding-top: 2rem;
     }
-    .article h2 {
-      font-size: 1.8rem;
-      color: #0b2b4a;
-      margin: 1.5rem 0 0.8rem;
-    }
-    .article h3 {
-      font-size: 1.3rem;
-      color: #1a3b5c;
-      margin: 1.4rem 0 0.5rem;
-    }
-    .article p {
-      line-height: 1.6;
-      color: #1f3857;
-      margin: 0.8rem 0;
-    }
-    .article ul {
-      margin: 0.8rem 0 1.2rem 1.5rem;
-    }
-    .article li {
-      margin: 0.3rem 0;
-      line-height: 1.5;
-    }
-    .footer-note {
-      margin-top: 2rem;
-      text-align: center;
-      color: #4f6f92;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 700px) {
-      .container { padding: 1.5rem; }
-      h1 { font-size: 1.9rem; }
-    }
-  </style>
-</head>
-<body>
-<div class="container" role="main">
-  <h1>🔍 PDF OCR · Searchable text</h1>
-  <div class="subhead">✨ OCR scanned PDF to searchable text online free — no upload, private & fast</div>
 
-  <!-- interactive tool -->
-  <div class="tool-grid">
-    <div class="upload-area">
-      <span class="upload-label">📄 Upload scanned PDF</span>
-      <div class="file-input-wrapper">
-       
+    .article h2 {
+      font-size: 1.7rem;
+      margin: 1.8rem 0 0.8rem;
+      font-weight: 600;
+      color: #0f2b4b;
+    }
+
+    .article h3 {
+      font-size: 1.25rem;
+      margin: 1.5rem 0 0.5rem;
+      font-weight: 600;
+      color: #1d4f7a;
+    }
+
+    .article p {
+      margin: 1rem 0;
+      color: #1e293b;
+    }
+
+    .article ul {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+
+    .article li {
+      margin: 0.
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

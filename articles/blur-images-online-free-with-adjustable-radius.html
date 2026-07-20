@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10 Best Blur Images Online Free With Adjustable Radius Solutions Compared | Free Online IMAGE Tool</title>
-    <meta name="description" content="This is a self-contained HTML document that creates an interactive tool for blurring images online with an adjustable radius. You can upload an image, use the">
+    <title>Why Blur Images Online Free With Adjustable Radius Matters More Than Ever | Free Online IMAGE Tool</title>
+    <meta name="description" content="This is a self-contained HTML page that creates an interactive "Image Blur" tool. You can upload an image and adjust the blur radius with a slider to see the">
     <meta name="keywords" content="Blur images online free with adjustable radius">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>10 Best Blur Images Online Free With Adjustable Radius Solutions Compared</h1>
+        <h1>Why Blur Images Online Free With Adjustable Radius Matters More Than Ever</h1>
         <p>Free Online IMAGE Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,258 +128,272 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a self-contained HTML document that creates an interactive tool for blurring images online with an adjustable radius. You can upload an image, use the slider to control the blur intensity, and download the result.
+            This is a self-contained HTML page that creates an interactive "Image Blur" tool. You can upload an image and adjust the blur radius with a slider to see the effect in real-time.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Blur · Free adjustable radius blur tool</title>
-    <!-- Font & minimal style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background: #f6f9fc;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            padding: 2rem 1rem;
-            color: #1e293b;
-            line-height: 1.5;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 2rem;
-            box-shadow: 0 20px 40px -12px rgba(0,20,30,0.15);
-            padding: 2rem 2rem 3rem;
-        }
-        h1 {
-            font-weight: 700;
-            font-size: 2.2rem;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.25rem;
-            background: linear-gradient(145deg, #0f2b3d, #1e4b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .subhead {
-            font-size: 1.1rem;
-            color: #4b5c6b;
-            margin-bottom: 1.8rem;
-            border-left: 4px solid #7aa9c9;
-            padding-left: 1rem;
-            font-weight: 400;
-        }
-        .tool-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            background: #f0f5fa;
-            border-radius: 1.5rem;
-            padding: 1.8rem;
-            margin: 1.5rem 0 2.5rem;
-        }
-        .upload-area {
-            flex: 1 1 220px;
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-        }
-        .upload-box {
-            background: white;
-            border: 2px dashed #b9d0e1;
-            border-radius: 1.2rem;
-            padding: 1.2rem 0.8rem;
-            text-align: center;
-            transition: 0.2s;
-            cursor: pointer;
-        }
-        .upload-box:hover {
-            border-color: #3e7ca0;
-            background: #eaf2f9;
-        }
-        .upload-box input {
-            display: none;
-        }
-        .upload-label {
-            font-weight: 600;
-            color: #1e4b6b;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-        }
-        .upload-label span {
-            font-size: 0.9rem;
-            font-weight: 400;
-            color: #3f5a6f;
-        }
-        .control-panel {
-            flex: 2 1 320px;
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-        }
-        .slider-group {
-            background: white;
-            padding: 1.2rem 1.5rem;
-            border-radius: 1.2rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
-        }
-        .slider-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-        }
-        .radius-value {
-            background: #dce8f2;
-            padding: 0.1rem 0.9rem;
-            border-radius: 40px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #0a3144;
-        }
-        input[type=range] {
-            width: 100%;
-            height: 6px;
-            background: #cbdde9;
-            border-radius: 10px;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-        input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: #1a577a;
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(20,70,100,0.3);
-            border: 2px solid white;
-        }
-        .action-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            align-items: center;
-        }
-        .btn {
-            background: white;
-            border: none;
-            padding: 0.7rem 1.4rem;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-            transition: all 0.15s;
-            cursor: pointer;
-            border: 1px solid #d3e2ee;
-            color: #1f4a66;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
-        .btn-primary {
-            background: #1a577a;
-            border: 1px solid #1a577a;
-            color: white;
-            box-shadow: 0 4px 10px rgba(26,87,122,0.2);
-        }
-        .btn-primary:hover {
-            background: #0e405c;
-            transform: scale(0.97);
-        }
-        .btn-outline {
-            background: transparent;
-            border: 1px solid #b0c9db;
-        }
-        .btn-outline:hover {
-            background: #e3eef7;
-        }
-        .preview-area {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            justify-content: center;
-            margin: 0.5rem 0 0.5rem;
-        }
-        .canvas-wrapper {
-            background: #eef3f8;
-            border-radius: 1.2rem;
-            padding: 0.8rem;
-            flex: 1 1 200px;
-            min-width: 160px;
-            text-align: center;
-        }
-        .canvas-wrapper p {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            color: #4d6a7e;
-            margin-bottom: 0.5rem;
-        }
-        canvas {
-            max-width: 100%;
-            height: auto;
-            border-radius: 0.8rem;
-            background: #dce5ed;
-            display: block;
-            margin: 0 auto;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        .placeholder-note {
-            color: #6b859c;
-            font-size: 0.85rem;
-            padding: 0.8rem 0;
-        }
-        .article {
-            margin-top: 2.8rem;
-            border-top: 1px solid #dde9f2;
-            padding-top: 2rem;
-        }
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            letter-spacing: -0.01em;
-            margin: 1.8rem 0 0.8rem;
-            color: #0f2f42;
-        }
-        h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.5rem 0 0.5rem;
-            color: #1f4b65;
-        }
-        p, li {
-            color: #1f3b4b;
-        }
-        ul {
-            padding-left: 1.4rem;
-            margin: 0.8rem 0 1.2rem;
-        }
-        li {
-            margin: 0.4rem 0;
-        }
-        .callout {
-            background: #e7f0f8;
-            border-radius: 1rem;
-            padding: 1.2rem 1.8rem;
-            margin: 1.8rem 0;
-            border-left: 6px solid #2d6d94;
-        }
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Blur · blur images online free with adjustable radius</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
+      overflow: hidden;
+      padding: 2rem 2rem 3rem;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .subhead {
+      color: #4b5563;
+      font-size: 1.15rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid #6366f1;
+      padding-left: 1rem;
+      background: #f8faff;
+      border-radius: 0 12px 12px 0;
+    }
+    .tool-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .upload-area {
+      background: #f1f5f9;
+      border: 2px dashed #cbd5e1;
+      border-radius: 24px;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .upload-area:hover {
+      background: #eef2ff;
+      border-color: #818cf8;
+    }
+    .upload-area.dragover {
+      background: #e0e7ff;
+      border-color: #6366f1;
+    }
+    .upload-icon {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+    }
+    .upload-btn {
+      background: #6366f1;
+      color: white;
+      border: none;
+      padding: 0.7rem 2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 4px 8px rgba(99,102,241,0.25);
+    }
+    .upload-btn:hover {
+      background: #4f46e5;
+      transform: scale(1.02);
+    }
+    .file-info {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+    .control-panel {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem 2rem;
+      background: #f8fafc;
+      padding: 1.2rem 1.8rem;
+      border-radius: 60px;
+      margin: 0.5rem 0 1.5rem;
+    }
+    .slider-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex: 2;
+      min-width: 200px;
+    }
+    .slider-group label {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    input[type="range"] {
+      flex: 1;
+      height: 6px;
+      -webkit-appearance: none;
+      background: #cbd5e1;
+      border-radius: 10px;
+      outline: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      background: #6366f1;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(99,102,241,0.4);
+    }
+    .radius-value {
+      min-width: 3.5rem;
+      font-weight: 700;
+      color: #1e293b;
+      background: white;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .action-buttons {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background: white;
+      border: 1px solid #e2e8f0;
+      padding: 0.5rem 1.4rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: 0.15s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-primary {
+      background: #6366f1;
+      border: 1px solid #6366f1;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #4f46e5;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #cbd5e1;
+    }
+    .btn-outline:hover {
+      background: #f1f5f9;
+    }
+    .preview-area {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .canvas-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .canvas-box {
+      flex: 1 1 280px;
+      background: #f1f5f9;
+      border-radius: 24px;
+      padding: 1rem 1rem 0.8rem;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+    }
+    .canvas-box h3 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #64748b;
+      margin-bottom: 0.6rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    canvas {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/3;
+      display: block;
+      border-radius: 16px;
+      background: #e9edf2;
+      object-fit: contain;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .empty-canvas-msg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      min-height: 180px;
+      color: #94a3b8;
+      font-style: italic;
+    }
+    .download-section {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 0.5rem;
+    }
+    .article-content {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e9edf2;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.8rem 0 0.5rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      color: #2c3e50;
+    }
+    ul {
+      margin: 0.8rem 0 1.5rem 1.5rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .highlight {
+      background: #eef2ff;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-weight: 500;
+    }
+    .callout {
+      background: #f1f5f9;
+      padding: 1.5rem 2rem;
+      border-radius: 24px;
+      margin:
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>
