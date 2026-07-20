@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Resize Video Dimensions Online Free Matters More Than Ever | Free Online MEDIA Tool</title>
-    <meta name="description" content="Here is the interactive HTML tool page for resizing video dimensions online. It combines a free, browser-based video resizer with a comprehensive SEO-optimized">
+    <meta name="description" content="This is a complete, interactive HTML webpage for a "Video Resizer" tool. It's designed to help you resize video dimensions online for free. The page includes a">
     <meta name="keywords" content="Resize video dimensions online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,288 +128,257 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            Here is the interactive HTML tool page for resizing video dimensions online. It combines a free, browser-based video resizer with a comprehensive SEO-optimized guide.
+            This is a complete, interactive HTML webpage for a "Video Resizer" tool. It's designed to help you resize video dimensions online for free. The page includes a functional tool, an SEO-optimized article with practical tips, and a clean, professional layout.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Resizer · Resize video dimensions online free</title>
-  <meta name="description" content="Resize video dimensions online free – instant, private, no upload. Change width & height of any video directly in your browser.">
+  <!-- Font & base styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     }
     body {
-      background: #f4f7fc;
-      padding: 20px;
-      color: #1e293b;
-      line-height: 1.6;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f6f9fc;
+      color: #1a2634;
+      line-height: 1.5;
+      padding: 2rem 1.5rem;
     }
     .container {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
       background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.1);
-      padding: 24px 28px 40px;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0,20,30,0.15);
+      padding: 2rem 2rem 3rem;
     }
-    /* tool card */
-    .tool-card {
-      background: #0f172a;
-      border-radius: 28px;
-      padding: 28px 24px 32px;
-      margin-bottom: 40px;
-      color: white;
-    }
-    .tool-card h1 {
-      font-size: 2rem;
+    h1 {
+      font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin-bottom: 8px;
+      margin-bottom: 0.25rem;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 0.5rem;
       flex-wrap: wrap;
     }
-    .tool-card h1 small {
-      font-size: 1rem;
-      font-weight: 400;
-      background: #334155;
-      padding: 2px 14px;
-      border-radius: 40px;
-      color: #cbd5e1;
-    }
-    .tool-sub {
-      color: #94a3b8;
-      margin-bottom: 28px;
-      font-size: 1.05rem;
-      border-left: 3px solid #3b82f6;
-      padding-left: 16px;
-    }
-    .resize-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      align-items: flex-start;
-    }
-    .input-area {
-      flex: 2;
-      min-width: 260px;
-    }
-    .preview-area {
-      flex: 3;
-      min-width: 280px;
-      background: #1e293b;
-      border-radius: 24px;
-      padding: 16px;
-    }
-    .file-drop {
-      border: 2px dashed #334155;
-      border-radius: 24px;
-      padding: 32px 16px;
-      text-align: center;
-      transition: background 0.2s;
-      background: #1e293b;
-      cursor: pointer;
-    }
-    .file-drop:hover {
-      background: #1e2a3a;
-    }
-    .file-drop svg {
-      width: 48px;
-      height: 48px;
-      stroke: #3b82f6;
-      fill: none;
-      stroke-width: 1.5;
-      margin-bottom: 10px;
-    }
-    .file-drop p {
-      color: #94a3b8;
-    }
-    .file-drop .browse {
-      color: #60a5fa;
-      font-weight: 500;
-      text-decoration: underline;
-    }
-    .dimension-controls {
-      margin: 24px 0 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px 20px;
-      background: #1e293b;
-      padding: 16px 20px;
-      border-radius: 24px;
-    }
-    .dim-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .dim-item label {
-      font-weight: 500;
-      color: #cbd5e1;
-      min-width: 50px;
-    }
-    .dim-item input {
-      background: #0f172a;
-      border: 1px solid #334155;
-      padding: 10px 14px;
-      border-radius: 40px;
-      color: white;
-      font-weight: 500;
-      width: 100px;
-      font-size: 1rem;
-      outline: none;
-      transition: 0.2s;
-    }
-    .dim-item input:focus {
-      border-color: #3b82f6;
-      box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
-    }
-    .dim-item span {
-      color: #94a3b8;
+    .badge {
+      background: #d0e6f2;
+      color: #0b4b6b;
       font-size: 0.9rem;
-    }
-    .lock-btn {
-      background: #334155;
-      border: none;
-      border-radius: 40px;
-      padding: 8px 18px;
-      color: white;
-      font-weight: 500;
-      cursor: pointer;
-      transition: 0.2s;
-      font-size: 0.9rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .lock-btn.active {
-      background: #3b82f6;
-    }
-    .action-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin: 18px 0 6px;
-    }
-    .btn {
-      background: #3b82f6;
-      border: none;
-      padding: 12px 28px;
-      border-radius: 60px;
       font-weight: 600;
-      color: white;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .subhead {
+      font-size: 1.1rem;
+      color: #3a4a5a;
+      margin-bottom: 2rem;
+      border-left: 4px solid #2b7a9e;
+      padding-left: 1rem;
+    }
+    /* ----- interactive tool card ----- */
+    .tool-card {
+      background: #f0f5fa;
+      border-radius: 1.5rem;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0 2.5rem;
+      box-shadow: 0 6px 14px rgba(0, 20, 30, 0.06);
+    }
+    .tool-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem 2.5rem;
+      align-items: flex-end;
+    }
+    .input-group {
+      flex: 1 1 160px;
+      min-width: 130px;
+    }
+    .input-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #1f3b4a;
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.01em;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
       font-size: 1rem;
+      border: 1px solid #cbd9e4;
+      border-radius: 14px;
+      background: white;
+      transition: 0.2s;
+      font-weight: 500;
+    }
+    .input-group input:focus {
+      outline: 2px solid #2b7a9e;
+      border-color: transparent;
+    }
+    .input-hint {
+      font-size: 0.75rem;
+      color: #4f6779;
+      margin-top: 0.2rem;
+    }
+    .ratio-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin: 0.5rem 0 0.2rem;
+    }
+    .ratio-toggle button {
+      background: white;
+      border: 1px solid #cbd9e4;
+      border-radius: 30px;
+      padding: 0.3rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+    .ratio-toggle button.active {
+      background: #1f5e7a;
+      border-color: #1f5e7a;
+      color: white;
+    }
+    .ratio-toggle button:not(.active):hover {
+      background: #e2ecf3;
+    }
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .btn-primary {
+      background: #1f5e7a;
+      color: white;
+      border: none;
+      padding: 0.8rem 2.2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1.05rem;
       cursor: pointer;
       transition: 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      box-shadow: 0 4px 8px rgba(25, 80, 110, 0.2);
     }
-    .btn:disabled {
-      opacity: 0.4;
-      pointer-events: none;
+    .btn-primary:hover {
+      background: #0b4b6b;
+      transform: scale(1.02);
     }
     .btn-outline {
       background: transparent;
-      border: 1px solid #3b82f6;
-      color: #93c5fd;
+      border: 1px solid #2b7a9e;
+      color: #1f5e7a;
+      padding: 0.7rem 1.6rem;
+      border-radius: 40px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.15s;
     }
     .btn-outline:hover {
-      background: #1e293b;
-    }
-    .btn:hover {
-      background: #2563eb;
-      transform: scale(0.97);
+      background: #e2edf5;
     }
     .preview-box {
-      background: #0f172a;
-      border-radius: 16px;
-      overflow: hidden;
-      min-height: 180px;
+      margin-top: 1.8rem;
+      background: #dce6ed;
+      border-radius: 20px;
+      padding: 1.2rem 1.5rem;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
-    }
-    .preview-box video {
-      width: 100%;
-      height: auto;
-      max-height: 340px;
-      display: block;
-      border-radius: 12px;
-      background: #000;
-    }
-    .preview-info {
-      display: flex;
       justify-content: space-between;
-      padding: 12px 8px 4px;
-      color: #94a3b8;
-      font-size: 0.9rem;
     }
-    .badge {
-      background: #1e293b;
-      padding: 6px 14px;
+    .preview-item {
+      font-weight: 500;
+    }
+    .preview-item span {
+      font-weight: 700;
+      background: white;
+      padding: 0.2rem 0.9rem;
       border-radius: 40px;
-      color: #cbd5e1;
+      margin-left: 0.3rem;
     }
-    .filename {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    .file-upload-area {
+      background: white;
+      border-radius: 20px;
+      padding: 0.8rem 1.2rem;
+      border: 1px dashed #6c8fa3;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .file-upload-area input {
       max-width: 180px;
     }
-    /* article styles */
-    .article {
-      padding: 8px 4px 0;
+    /* ----- article styling ----- */
+    article {
+      margin: 2rem 0 1rem;
     }
-    .article h2 {
+    h2 {
       font-size: 1.8rem;
       font-weight: 700;
-      margin-top: 2rem;
-      margin-bottom: 0.75rem;
+      margin: 2rem 0 0.8rem;
       letter-spacing: -0.01em;
-      color: #0f172a;
+      color: #0b2c3b;
     }
-    .article h3 {
+    h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      margin-top: 1.8rem;
-      margin-bottom: 0.5rem;
-      color: #1e293b;
+      margin: 1.8rem 0 0.5rem;
+      color: #1e4b60;
     }
-    .article p {
-      margin-bottom: 1rem;
-      color: #334155;
+    p {
+      margin: 1rem 0;
+      color: #1f2f3b;
     }
-    .article ul, .article ol {
+    ul, ol {
       margin: 0.8rem 0 1.2rem 1.8rem;
     }
-    .article li {
-      margin-bottom: 0.4rem;
+    li {
+      margin: 0.4rem 0;
     }
-    .article a {
-      color: #2563eb;
-      text-decoration: underline;
-    }
-    .highlight-box {
-      background: #f1f5f9;
-      border-radius: 20px;
-      padding: 20px 24px;
-      margin: 1.5rem 0;
-      border-left: 4px solid #3b82f6;
+    .highlight {
+      background: #e3f0f7;
+      padding: 0.1rem 0.3rem;
+      border-radius: 6px;
+      font-weight: 500;
     }
     .callout {
-      background: #eef2ff;
-      border-radius: 20px;
-      padding: 20px 24px;
-      margin: 1.5rem 
+      background: #e7f0f6;
+      border-left: 5px solid #2b7a9e;
+      padding: 1.2rem 1.8rem;
+      border-radius: 16px;
+      margin: 2rem 0;
+    }
+    .callout strong {
+      color: #0b4b6b;
+    }
+    .footer-note {
+      margin-top: 3rem;
+      text-align: center;
+      color: #4d6a7d;
+      font-size: 0.9rem;
+      border-top: 1px solid #dce5ec;
+      padding-top: 2rem;
+    }
+
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

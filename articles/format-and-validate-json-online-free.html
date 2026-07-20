@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10 Best Format And Validate Json Online Free Solutions Compared | Free Online TEXT Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive JSON formatter and validator tool. It allows you to paste, format, and validate">
+    <title>The Ultimate Guide to Format And Validate Json Online Free in 2025 | Free Online TEXT Tool</title>
+    <meta name="description" content="Here is an interactive HTML tool page for a JSON Formatter, designed to help you format and validate JSON online free. It includes a code editor, validation">
     <meta name="keywords" content="Format and validate JSON online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>10 Best Format And Validate Json Online Free Solutions Compared</h1>
+        <h1>The Ultimate Guide to Format And Validate Json Online Free in 2025</h1>
         <p>Free Online TEXT Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,264 +128,273 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document that creates an interactive JSON formatter and validator tool. It allows you to paste, format, and validate JSON data directly in your browser.
+            Here is an interactive HTML tool page for a JSON Formatter, designed to help you format and validate JSON online free. It includes a code editor, validation controls, and a comprehensive guide.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JSON Formatter & Validator · format and validate JSON online free</title>
-  <!-- Font & minimal styling -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <title>JSON Formatter · format & validate JSON online free</title>
+  <meta name="description" content="Format and validate JSON online free with this interactive tool. Clean, fast, and secure. No server uploads, all processing in your browser.">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       background: #f4f7fc;
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
       padding: 2rem 1rem;
-      color: #1a2639;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
     .container {
-      max-width: 1300px;
-      margin: 0 auto;
+      max-width: 1200px;
+      width: 100%;
       background: white;
       border-radius: 32px;
-      box-shadow: 0 20px 40px -12px rgba(0, 20, 40, 0.2);
+      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.25);
       padding: 2rem 2rem 3rem;
     }
+
     h1 {
+      font-size: 2.4rem;
       font-weight: 600;
-      font-size: 2.2rem;
       letter-spacing: -0.02em;
+      color: #0b1a2e;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
     }
-    h1 small {
-      font-size: 1rem;
-      font-weight: 400;
-      color: #4b5b77;
-      background: #eef2f9;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      margin-left: 0.25rem;
-    }
+
     .subhead {
-      color: #3e4e6b;
+      color: #2c4b6b;
+      font-size: 1.2rem;
       margin-top: 0.3rem;
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-      border-left: 4px solid #2d7aff;
+      margin-bottom: 1.8rem;
+      border-left: 4px solid #3b82f6;
       padding-left: 1rem;
+      font-weight: 400;
     }
+
     .tool-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.8rem;
-      margin: 2rem 0 2.2rem;
+      margin: 2rem 0 1.5rem;
     }
+
     @media (max-width: 720px) {
       .tool-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
       }
       .container { padding: 1.5rem; }
       h1 { font-size: 1.8rem; }
     }
-    .editor-panel {
+
+    .editor-panel, .output-panel {
       background: #f9fafc;
       border-radius: 20px;
-      padding: 1.5rem;
-      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+      padding: 1.2rem 1.2rem 1rem;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02), 0 4px 12px rgba(0,0,0,0.03);
     }
-    .panel-header {
+
+    .panel-label {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    .panel-header h2 {
+      margin-bottom: 0.8rem;
       font-weight: 500;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      color: #1e2a44;
     }
-    .btn-group {
+
+    textarea {
+      width: 100%;
+      min-height: 280px;
+      padding: 1rem;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.9rem;
+      background: white;
+      border: 1px solid #dce5ed;
+      border-radius: 16px;
+      resize: vertical;
+      line-height: 1.5;
+      transition: 0.2s;
+      color: #0b1a2e;
+    }
+
+    textarea:focus {
+      outline: 2px solid #3b82f6;
+      border-color: transparent;
+      box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
+    }
+
+    .output-area {
+      background: white;
+      border-radius: 16px;
+      padding: 1rem;
+      min-height: 280px;
+      border: 1px solid #dce5ed;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'SF Mono', 'Consolas', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      overflow: auto;
+      max-height: 500px;
+    }
+
+    .output-placeholder {
+      color: #7a8a9e;
+      font-family: system-ui, sans-serif;
+      font-style: italic;
+    }
+
+    .action-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 0.8rem 1rem;
+      margin: 1.5rem 0 2rem;
+      align-items: center;
     }
+
     .btn {
       background: white;
-      border: 1px solid #d0d9e8;
-      padding: 0.4rem 1rem;
-      border-radius: 40px;
-      font-size: 0.85rem;
+      border: 1px solid #cad5e0;
+      padding: 0.6rem 1.4rem;
+      border-radius: 60px;
       font-weight: 500;
+      font-size: 0.95rem;
       cursor: pointer;
       transition: 0.15s;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      color: #1f2a41;
+      color: #1e2a44;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
     }
+
     .btn-primary {
-      background: #1a2c4e;
-      border: 1px solid #1a2c4e;
+      background: #1a3a5c;
+      border: 1px solid #1a3a5c;
       color: white;
+      box-shadow: 0 4px 8px rgba(26,58,92,0.15);
     }
+
     .btn-primary:hover {
-      background: #0f1e38;
+      background: #0f2a46;
+      transform: scale(0.97);
     }
-    .btn-outline {
-      background: transparent;
-      border: 1px solid #bcc7db;
-    }
+
     .btn-outline:hover {
-      background: #e7ecf5;
-      border-color: #8d9ebd;
+      background: #eef2f7;
+      border-color: #a0b7cf;
     }
-    .btn-success {
-      background: #0f7b4a;
-      border-color: #0f7b4a;
-      color: white;
-    }
-    .btn-success:hover {
-      background: #0b6139;
-    }
-    textarea {
-      width: 100%;
-      height: 280px;
-      padding: 1rem;
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      font-size: 0.9rem;
-      line-height: 1.5;
-      border: 1px solid #dce3ef;
-      border-radius: 16px;
-      background: white;
-      resize: vertical;
-      transition: 0.15s;
-      color: #111;
-    }
-    textarea:focus {
-      outline: 2px solid #2d7aff;
-      outline-offset: -1px;
-      border-color: transparent;
-    }
-    .output-area {
-      background: #1e2538;
-      color: #e4e9f2;
-      border-radius: 16px;
-      padding: 1.2rem 1.5rem;
-      min-height: 280px;
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      font-size: 0.9rem;
-      line-height: 1.5;
-      white-space: pre-wrap;
-      word-break: break-word;
-      overflow-x: auto;
-      border: 1px solid #2f3a52;
-    }
-    .status-badge {
-      display: inline-block;
+
+    .badge {
+      background: #e6edf6;
+      color: #1a3a5c;
+      border-radius: 30px;
       padding: 0.2rem 1rem;
-      border-radius: 40px;
       font-size: 0.8rem;
       font-weight: 500;
-      background: #eef2f9;
-      color: #2a3b5a;
     }
-    .badge-valid {
-      background: #d5f0e0;
-      color: #0a5f39;
+
+    .validation-message {
+      margin: 0.5rem 0 0.2rem;
+      padding: 0.6rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      display: inline-block;
+      background: #eef2f7;
     }
-    .badge-invalid {
-      background: #ffe3e0;
-      color: #b13a2e;
+
+    .valid-msg {
+      background: #dff0e0;
+      color: #0f4d2e;
     }
-    .badge-empty {
-      background: #eef2f9;
-      color: #4a5a78;
+
+    .invalid-msg {
+      background: #ffe6e6;
+      color: #a51b1b;
     }
-    .action-row {
-      display: flex;
-      justify-content: flex-end;
-      gap: 12px;
-      margin-top: 1rem;
-      flex-wrap: wrap;
-    }
-    .article-section {
+
+    /* Article styling */
+    .article {
       margin-top: 3rem;
-      border-top: 1px solid #e6ecf5;
+      border-top: 1px solid #dce5ed;
       padding-top: 2rem;
     }
-    .article-section h2 {
-      font-size: 1.7rem;
-      font-weight: 600;
+
+    .article h2 {
+      font-size: 1.8rem;
       margin: 2rem 0 0.8rem;
+      color: #0b1a2e;
       letter-spacing: -0.01em;
     }
-    .article-section h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
+
+    .article h3 {
+      font-size: 1.3rem;
       margin: 1.8rem 0 0.6rem;
-      color: #1a2c4e;
+      color: #16304a;
     }
-    .article-section p {
+
+    .article p {
       line-height: 1.7;
+      color: #1e2f44;
       margin: 1rem 0;
-      color: #1f2e47;
+      font-size: 1.05rem;
     }
-    .article-section ul {
-      margin: 0.8rem 0 1.2rem 1.5rem;
+
+    .article ul {
+      margin: 0.8rem 0 1.2rem 1.8rem;
     }
-    .article-section li {
+
+    .article li {
       margin: 0.4rem 0;
       line-height: 1.6;
+      color: #1e2f44;
     }
-    .cta-box {
-      background: #eaf1fe;
-      border-radius: 24px;
-      padding: 1.8rem 2rem;
-      margin: 2rem 0 0.5rem;
-      text-align: center;
+
+    .callout {
+      background: #eef6ff;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.8rem 0;
+      border-left: 6px solid #3b82f6;
     }
-    .cta-box p {
-      margin: 0.5rem 0;
-      font-size: 1.1rem;
-    }
+
     .footer-note {
-      text-align: center;
-      margin-top: 2rem;
-      opacity: 0.6;
+      margin-top: 2.2rem;
       font-size: 0.9rem;
+      color: #4d627a;
+      text-align: center;
     }
-    .copy-ok {
-      background: #d5f0e0;
-    }
-    .clearfix { clear: both; }
   </style>
 </head>
 <body>
 <div class="container">
-  <!-- HEADER -->
-  <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: baseline;">
-    <h1>
-      ⚡ JSON Formatter
-      <small>format and validate JSON online free</small>
-    </h1>
-    <span style="
+  <header>
+    <h1>🧩 JSON Formatter <span style="font-weight: 400; font-size: 1.6rem; color: #3b82f6;">&</span> Validator</h1>
+    <div class="subhead">Format and validate JSON online free — instantly, safely, client-side.</div>
+  </header>
+
+  <!-- Interactive tool -->
+  <div class="tool-grid">
+    <div class="editor-panel">
+      <div class="panel-label">
+        <span>📄 Input JSON</span>
+        <span class="badge">paste or type</span>
+      </div>
+      <textarea id="jsonInput" placeholder='{ "name":
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

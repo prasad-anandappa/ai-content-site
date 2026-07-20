@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Best Generate Css Shadows Online Free Solutions Compared | Free Online DESIGN Tool</title>
-    <meta name="description" content="This is a complete, ready-to-run HTML document for an interactive CSS Shadow Generator tool. It combines a practical, online utility with a comprehensive,">
+    <meta name="description" content="This is a complete, self-contained HTML document for an interactive "Shadow Generator" tool and an accompanying SEO-optimized article. It allows you to">
     <meta name="keywords" content="Generate CSS shadows online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,7 +128,7 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, ready-to-run HTML document for an interactive CSS Shadow Generator tool. It combines a practical, online utility with a comprehensive, SEO-optimized article about generating CSS shadows.
+            This is a complete, self-contained HTML document for an interactive "Shadow Generator" tool and an accompanying SEO-optimized article. It allows you to visually create and customize CSS box shadows, then copy the generated code.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -136,286 +136,242 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shadow Generator · CSS shadows online free</title>
-  <meta name="description" content="Generate CSS shadows online free with interactive controls. Box-shadow & text-shadow tool with live preview, copy code, and expert tips.">
+  <!-- SEO meta -->
+  <meta name="description" content="Generate CSS shadows online free with live preview. Adjust offset, blur, spread, color & opacity. Copy code instantly – interactive tool + design guide.">
+  <meta name="keywords" content="Generate CSS shadows online free, box-shadow generator, css shadow tool, shadow design">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-
     body {
-      background: #f4f6fb;
-      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
-      line-height: 1.6;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #f6f9fe;
       color: #1e293b;
       padding: 2rem 1rem;
+      line-height: 1.6;
     }
-
     .container {
       max-width: 1200px;
       margin: 0 auto;
+    }
+    /* tool card */
+    .tool-card {
       background: white;
       border-radius: 2rem;
-      box-shadow: 0 20px 60px -12px rgba(0, 0, 0, 0.15);
-      padding: 2rem 2rem 3rem;
+      padding: 2rem 1.8rem 2.5rem;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.1), 0 8px 20px -8px rgba(0,0,0,0.06);
+      margin-bottom: 3.5rem;
+      transition: box-shadow 0.2s;
     }
-
-    h1, h2, h3 {
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-    }
-
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.25rem;
-      background: linear-gradient(145deg, #0f172a, #3b3f5c);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .subhead {
-      font-size: 1.1rem;
-      color: #475569;
-      margin-bottom: 2rem;
-      border-left: 4px solid #6366f1;
-      padding-left: 1rem;
-    }
-
-    /* interactive tool */
-    .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin: 2.5rem 0 3rem;
-      background: #f8fafc;
-      border-radius: 1.5rem;
-      padding: 1.8rem;
-      border: 1px solid #e2e8f0;
-    }
-
-    .control-panel {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-
-    .control-group {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.5rem 1rem;
-    }
-
-    .control-group label {
-      min-width: 80px;
-      font-weight: 500;
-      font-size: 0.9rem;
-      color: #1e293b;
-    }
-
-    .control-group input[type="range"] {
-      flex: 1;
-      min-width: 140px;
-      accent-color: #6366f1;
-      height: 6px;
-      border-radius: 4px;
-    }
-
-    .control-group .value-badge {
-      background: #e2e8f0;
-      padding: 0.15rem 0.7rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #0f172a;
-      min-width: 40px;
-      text-align: center;
-    }
-
-    .color-picker-group {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-    }
-
-    .color-picker-group label {
-      min-width: 80px;
-    }
-
-    .color-picker-group input[type="color"] {
-      width: 44px;
-      height: 44px;
-      border: 2px solid #cbd5e1;
-      border-radius: 12px;
-      background: white;
-      cursor: pointer;
-      padding: 2px;
-    }
-
-    .preview-panel {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #f1f5f9;
-      border-radius: 1.2rem;
-      min-height: 260px;
-      padding: 1.5rem;
-      transition: background 0.2s;
-    }
-
-    .preview-box {
-      width: 180px;
-      height: 180px;
-      background: white;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 1.3rem;
-      color: #0f172a;
-      transition: box-shadow 0.1s ease, transform 0.1s;
-      box-shadow: 0 10px 20px -5px rgba(0,0,0,0.2);
-      margin-bottom: 1rem;
-    }
-
-    .preview-text {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #0f172a;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
-      transition: text-shadow 0.1s;
-    }
-
-    .code-area {
-      background: #0f172a;
-      color: #e2e8f0;
-      padding: 1rem 1.4rem;
-      border-radius: 16px;
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      font-size: 0.9rem;
-      overflow-x: auto;
-      white-space: pre-wrap;
-      word-break: break-word;
-      margin: 1.2rem 0 0.8rem;
-      border: 1px solid #334155;
-    }
-
-    .copy-btn {
-      background: #6366f1;
-      color: white;
-      border: none;
-      padding: 0.6rem 1.6rem;
-      border-radius: 40px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: 0.2s;
-      box-shadow: 0 4px 8px rgba(99,102,241,0.25);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .copy-btn:hover {
-      background: #4f46e5;
-      transform: scale(0.97);
-    }
-
-    .copy-btn:active {
-      background: #4338ca;
-    }
-
-    .tool-footer {
+    .tool-header {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      margin-top: 0.5rem;
+      margin-bottom: 2rem;
     }
-
-    .shadow-type-toggle {
+    .tool-header h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #0f172a, #3b3f8c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tool-header .badge {
+      background: #eef2ff;
+      color: #4338ca;
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      letter-spacing: 0.3px;
+    }
+    .preview-area {
+      background: #f1f5f9;
+      border-radius: 24px;
+      padding: 2.5rem 1rem;
       display: flex;
-      gap: 8px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2.2rem;
+      min-height: 200px;
     }
-
-    .shadow-type-toggle button {
-      background: #e2e8f0;
-      border: none;
-      padding: 0.4rem 1.2rem;
-      border-radius: 30px;
+    .shadow-box {
+      width: 180px;
+      height: 180px;
+      background: white;
+      border-radius: 20px;
+      transition: box-shadow 0.1s ease, transform 0.1s;
+      box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.3);
+    }
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem 1.2rem;
+      margin: 1.8rem 0 1.2rem;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .control-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #334155;
+      display: flex;
+      justify-content: space-between;
+    }
+    .control-group label span {
       font-weight: 500;
+      background: #e9edf3;
+      padding: 0 8px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+    }
+    input[type="range"] {
+      width: 100%;
+      height: 6px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: #d1d9e6;
+      border-radius: 10px;
+      outline: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      background: #4f46e5;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .color-row {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin: 0.5rem 0 0.2rem;
+    }
+    .color-row input[type="color"] {
+      width: 44px;
+      height: 44px;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      background: white;
+      padding: 2px;
+      cursor: pointer;
+    }
+    .opacity-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex: 1;
+      min-width: 130px;
+    }
+    .opacity-wrap input {
+      flex: 1;
+    }
+    .code-area {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 1.2rem 1.5rem;
+      border-radius: 18px;
+      font-family: 'Fira Code', 'JetBrains Mono', monospace;
+      font-size: 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 1.6rem 0 0.4rem;
+    }
+    .code-area code {
+      word-break: break-all;
+      white-space: pre-wrap;
+      font-size: 0.9rem;
+    }
+    .copy-btn {
+      background: #334155;
+      border: none;
+      color: white;
+      font-weight: 500;
+      padding: 0.6rem 1.4rem;
+      border-radius: 40px;
       font-size: 0.8rem;
       cursor: pointer;
-      transition: 0.15s;
+      transition: background 0.2s;
+      white-space: nowrap;
+      border: 1px solid #475569;
+    }
+    .copy-btn:hover {
+      background: #4f46e5;
+      border-color: #4f46e5;
+    }
+    .copy-feedback {
+      font-size: 0.75rem;
+      color: #a5b4fc;
+      margin-left: 0.5rem;
+    }
+    .reset-btn {
+      background: transparent;
+      border: 1px solid #cbd5e1;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
       color: #1e293b;
+      cursor: pointer;
+      transition: 0.2s;
     }
-
-    .shadow-type-toggle button.active {
-      background: #6366f1;
-      color: white;
-      box-shadow: 0 2px 6px rgba(99,102,241,0.3);
+    .reset-btn:hover {
+      background: #e2e8f0;
     }
-
-    /* article */
+    /* article styles */
     article {
-      margin-top: 2.5rem;
+      background: white;
+      border-radius: 2rem;
+      padding: 2.2rem 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
     }
-
     article h2 {
       font-size: 1.8rem;
-      margin: 2rem 0 1rem;
+      font-weight: 700;
+      margin-top: 2.2rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
       color: #0f172a;
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.3rem;
     }
-
+    article h2:first-of-type {
+      margin-top: 0.2rem;
+    }
     article h3 {
       font-size: 1.3rem;
-      margin: 1.5rem 0 0.5rem;
+      font-weight: 600;
+      margin-top: 1.8rem;
+      margin-bottom: 0.4rem;
       color: #1e293b;
     }
-
     article p {
-      margin: 1rem 0;
+      margin-bottom: 1rem;
       color: #334155;
     }
-
     article ul {
-      margin: 0.8rem 0 1.2rem 1.5rem;
-    }
-
-    article li {
-      margin: 0.4rem 0;
-    }
-
-    .highlight {
-      background: #eef2ff;
-      padding: 0.2rem 0.4rem;
-      border-radius: 6px;
-      font-weight: 500;
-    }
-
-    .callout {
-      background: #f1f5f9;
-      border-left: 4px solid #6366f1;
-      padding: 1.2rem 1.6rem;
-      border-radius: 12px;
-      margin: 1.5rem 0;
-    }
-
-    @media (max-width: 800px) {
-      .tool-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      h1 { font-size: 1.8rem; }
-     
+      margin: 0.8rem 0 1.5rem 1
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

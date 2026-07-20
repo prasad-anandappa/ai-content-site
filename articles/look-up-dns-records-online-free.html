@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ultimate Guide to Look Up Dns Records Online Free in 2025 | Free Online DEV Tool</title>
-    <meta name="description" content="This is a complete, interactive HTML page for a DNS lookup tool. It combines a functional, client-side DNS query interface with an SEO-optimized article that">
+    <title>Why Look Up Dns Records Online Free Matters More Than Ever | Free Online DEV Tool</title>
+    <meta name="description" content="This is a complete, interactive HTML page for a DNS Lookup tool. It allows you to query various DNS record types (A, AAAA, MX, CNAME, TXT, NS) for any domain">
     <meta name="keywords" content="Look up DNS records online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>The Ultimate Guide to Look Up Dns Records Online Free in 2025</h1>
+        <h1>Why Look Up Dns Records Online Free Matters More Than Ever</h1>
         <p>Free Online DEV Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,234 +128,271 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, interactive HTML page for a DNS lookup tool. It combines a functional, client-side DNS query interface with an SEO-optimized article that explains how to look up DNS records online for free. The design is clean, modern, and suitable for a dev tools category.
+            This is a complete, interactive HTML page for a DNS Lookup tool. It allows you to query various DNS record types (A, AAAA, MX, CNAME, TXT, NS) for any domain name directly in your browser. The page is designed to be a practical, free resource, with a clean interface and a comprehensive article explaining DNS lookups.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNS Lookup · Look up DNS records online free</title>
-    <!-- Font Awesome for icons (free) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-        }
-        body {
-            background: #f5f7fc;
-            color: #1a1e2b;
-            line-height: 1.6;
-            padding: 1.5rem;
-        }
-        .page-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 32px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.07);
-            padding: 2rem 2.5rem;
-        }
-        /* tool card */
-        .dns-card {
-            background: linear-gradient(145deg, #f0f4ff, #ffffff);
-            border: 1px solid #e2e8f0;
-            border-radius: 28px;
-            padding: 2rem 2rem 2.2rem;
-            margin-bottom: 2.5rem;
-            box-shadow: 0 8px 20px rgba(0,20,50,0.04);
-        }
-        .dns-card h1 {
-            font-size: 2.2rem;
-            font-weight: 650;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .dns-card h1 i {
-            color: #2563eb;
-            font-size: 2rem;
-        }
-        .dns-card .subhead {
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            border-left: 4px solid #3b82f6;
-            padding-left: 1rem;
-            background: #f8faff;
-            border-radius: 0 12px 12px 0;
-        }
-        .dns-lookup-form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            align-items: center;
-            margin-bottom: 1.8rem;
-        }
-        .dns-lookup-form input {
-            flex: 2 1 280px;
-            padding: 0.9rem 1.2rem;
-            border: 1.5px solid #dce2ef;
-            border-radius: 60px;
-            font-size: 1rem;
-            background: white;
-            transition: 0.2s;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-        }
-        .dns-lookup-form input:focus {
-            border-color: #2563eb;
-            outline: none;
-            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
-        }
-        .dns-lookup-form select {
-            flex: 0.7 1 140px;
-            padding: 0.9rem 1rem;
-            border-radius: 60px;
-            background: white;
-            border: 1.5px solid #dce2ef;
-            font-weight: 500;
-            cursor: pointer;
-        }
-        .dns-lookup-form button {
-            background: #1e293b;
-            border: none;
-            padding: 0.9rem 2.2rem;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 1rem;
-            color: white;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            cursor: pointer;
-            transition: 0.2s;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.04);
-            flex: 0.4 0 auto;
-            justify-content: center;
-        }
-        .dns-lookup-form button i {
-            font-size: 1rem;
-        }
-        .dns-lookup-form button:hover {
-            background: #0f172a;
-            transform: scale(1.02);
-            box-shadow: 0 10px 18px rgba(0,0,0,0.08);
-        }
-        .dns-lookup-form button:active {
-            transform: scale(0.96);
-        }
-        #dnsResult {
-            background: #fafcff;
-            border-radius: 20px;
-            padding: 1.5rem 1.8rem;
-            border: 1px solid #e9edf5;
-            margin-top: 1rem;
-            font-family: 'SF Mono', 'Fira Code', monospace;
-            white-space: pre-wrap;
-            word-break: break-all;
-            min-height: 80px;
-            transition: 0.2s;
-        }
-        #dnsResult .placeholder {
-            color: #64748b;
-            font-family: system-ui, sans-serif;
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-        #dnsResult .placeholder i {
-            color: #3b82f6;
-            font-size: 1.4rem;
-        }
-        .badge {
-            background: #e6edfb;
-            color: #1e3a8a;
-            padding: 0.2rem 0.8rem;
-            border-radius: 40px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-            margin-left: 0.5rem;
-        }
-        /* article styling */
-        article h2 {
-            font-size: 1.8rem;
-            margin-top: 2.2rem;
-            margin-bottom: 0.8rem;
-            font-weight: 650;
-            letter-spacing: -0.01em;
-            border-bottom: 2px solid #eef2f8;
-            padding-bottom: 0.4rem;
-        }
-        article h3 {
-            font-size: 1.35rem;
-            margin-top: 1.8rem;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #0b1e3a;
-        }
-        article p {
-            margin-bottom: 1.2rem;
-            color: #1e293b;
-        }
-        article ul {
-            margin: 1rem 0 1.5rem 1.5rem;
-        }
-        article li {
-            margin-bottom: 0.5rem;
-        }
-        .highlight {
-            background: #f0f5ff;
-            padding: 0.1rem 0.4rem;
-            border-radius: 8px;
-            font-weight: 500;
-        }
-        .cta-box {
-            background: #f1f6fe;
-            border-radius: 28px;
-            padding: 1.8rem 2.2rem;
-            margin: 2rem 0 1rem;
-            border-left: 6px solid #2563eb;
-        }
-        .cta-box p {
-            margin-bottom: 0.5rem;
-        }
-        .footer-note {
-            margin-top: 2.5rem;
-            font-size: 0.9rem;
-            color: #5b6a83;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 1.8rem;
-            text-align: center;
-        }
-        @media (max-width: 640px) {
-            .page-wrapper { padding: 1.2rem; }
-            .dns-card { padding: 1.5rem; }
-            .dns-card h1 { font-size: 1.7rem; }
-            .dns-lookup-form button { flex: 1 0 100%; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNS Lookup – Look up DNS records online free</title>
+  <!-- Font Awesome for icons (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      background: #f4f7fc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 20px 40px -12px rgba(0,20,40,0.2);
+      padding: 2rem 2rem 3rem;
+      transition: 0.2s;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 0.4rem;
+    }
+
+    h1 i {
+      color: #2563eb;
+      font-size: 2.2rem;
+    }
+
+    .subhead {
+      font-size: 1.1rem;
+      color: #475569;
+      margin-bottom: 2rem;
+      border-left: 4px solid #2563eb;
+      padding-left: 1rem;
+    }
+
+    /* lookup tool */
+    .tool-card {
+      background: #f8fafc;
+      border-radius: 24px;
+      padding: 1.8rem 1.8rem 2rem;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02), 0 8px 18px -8px rgba(0,40,80,0.08);
+      margin-bottom: 2.8rem;
+      border: 1px solid #e9edf2;
+    }
+
+    .tool-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: flex-end;
+    }
+
+    .input-group {
+      flex: 2 1 260px;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      border: 1px solid #d1d9e6;
+      border-radius: 60px;
+      font-size: 1rem;
+      background: white;
+      transition: 0.2s;
+      outline: none;
+    }
+
+    .input-group input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
+    }
+
+    .record-select {
+      flex: 1 1 140px;
+    }
+
+    .record-select select {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      border: 1px solid #d1d9e6;
+      border-radius: 60px;
+      background: white;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .lookup-btn {
+      flex: 0 0 auto;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.9rem 2.2rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 4px 8px rgba(37,99,235,0.2);
+    }
+
+    .lookup-btn:hover {
+      background: #1d4ed8;
+      transform: scale(0.98);
+      box-shadow: 0 8px 16px rgba(37,99,235,0.25);
+    }
+
+    .lookup-btn i {
+      font-size: 1.2rem;
+    }
+
+    .result-area {
+      margin-top: 2rem;
+      background: white;
+      border-radius: 20px;
+      padding: 1.4rem 1.8rem;
+      border: 1px solid #e2e8f0;
+      min-height: 80px;
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 0.95rem;
+      white-space: pre-wrap;
+      word-break: break-all;
+      color: #0b1e33;
+    }
+
+    .result-placeholder {
+      color: #6b7a8f;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .result-placeholder i {
+      color: #94a3b8;
+      font-size: 1.4rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      background: #e6f0ff;
+      color: #1e4b8a;
+      border-radius: 40px;
+      padding: 0.2rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+
+    /* article styling */
+    .article {
+      margin-top: 1.2rem;
+    }
+
+    .article h2 {
+      font-size: 1.8rem;
+      font-weight: 650;
+      margin: 2rem 0 1rem;
+      color: #0b1e33;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.5rem;
+    }
+
+    .article h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.8rem 0 0.6rem;
+      color: #1e293b;
+    }
+
+    .article p {
+      margin: 1rem 0;
+      color: #1e293b;
+    }
+
+    .article ul {
+      margin: 1rem 0 1.5rem 1.5rem;
+    }
+
+    .article li {
+      margin-bottom: 0.4rem;
+    }
+
+    .highlight {
+      background: #eef2ff;
+      padding: 0.2rem 0.6rem;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    .callout {
+      background: #f1f5f9;
+      border-left: 4px solid #2563eb;
+      padding: 1.2rem 1.5rem;
+      border-radius: 16px;
+      margin: 1.8rem 0;
+    }
+
+    .fa-external-link-alt {
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1.8rem;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem; }
+      h1 { font-size: 1.8rem; }
+      .tool-grid { flex-direction: column; }
+      .lookup-btn { width: 100%; justify-content: center; }
+    }
+  </style>
 </head>
 <body>
-<div class="page-wrapper">
-
-    <!-- ########## INTERACTIVE DNS TOOL ########## -->
-    <div class="dns-card">
-        <h1>
-            <i class="fas fa-globe"></i> DNS Lookup
-            <span class="badge">free · online</span>
-        </h1>
-        <div class="subhead">
-            <i class="fas fa-search" style="margin-right: 8px;"></i> Look up DNS records online free — A, AAAA, CNAME, MX, NS, TXT & more
-        </div>
-
-        <
+<div class="container">
+  <h1>
+    <i class="fas fa-globe"></i> DNS Lookup
+    <span style="font-size: 1rem; font-weight: 400; background: #dbeafe; padding: 0.2rem 1rem; border-radius: 40px; margin-left: 8px;">free</span>
+  </h1>
+  <div class="subhead">
+    <i class="fas fa-search" style="margin-right: 8px;"></i> Look up DNS records online free — A, AAAA, MX, CNAME
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>
