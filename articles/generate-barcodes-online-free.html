@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate Barcodes Online Free: Complete Review and Buying Guide | Free Online IMAGE Tool</title>
-    <meta name="description" content="This is a self-contained HTML document for an interactive barcode generator tool. It allows you to create various barcode types online, with real-time preview">
+    <title>The Ultimate Guide to Generate Barcodes Online Free in 2025 | Free Online IMAGE Tool</title>
+    <meta name="description" content="Here's an interactive HTML tool page for a Barcode Generator, designed to help users generate barcodes online free. It includes a comprehensive article, a">
     <meta name="keywords" content="Generate barcodes online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Generate Barcodes Online Free: Complete Review and Buying Guide</h1>
+        <h1>The Ultimate Guide to Generate Barcodes Online Free in 2025</h1>
         <p>Free Online IMAGE Tool — No Registration Required</p>
     </div>
     <div class="container">
@@ -128,17 +128,16 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a self-contained HTML document for an interactive barcode generator tool. It allows you to create various barcode types online, with real-time preview and customization options.
+            Here's an interactive HTML tool page for a Barcode Generator, designed to help users generate barcodes online free. It includes a comprehensive article, a functional barcode generation tool using the JsBarcode library, and SEO-optimized content.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barcode Generator · Create barcodes online free</title>
-  <!-- Font & minimal icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <title>Free Barcode Generator Online | Generate barcodes online free</title>
+  <!-- JsBarcode library -->
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
   <style>
     * {
       margin: 0;
@@ -146,232 +145,214 @@
       box-sizing: border-box;
     }
     body {
-      background: #f4f7fc;
-      font-family: 'Inter', sans-serif;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f6f9fc;
       color: #1e293b;
-      line-height: 1.6;
       padding: 2rem 1rem;
+      line-height: 1.6;
     }
     .container {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
       background: white;
-      border-radius: 2.5rem;
-      box-shadow: 0 20px 40px -12px rgba(0,20,50,0.15);
-      overflow: hidden;
-      padding: 2rem 2.5rem;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
+      padding: 2rem 2rem 3rem;
     }
     h1 {
       font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 0.25rem;
-    }
-    h1 i {
-      color: #2563eb;
-      font-size: 2rem;
-    }
-    .subhead {
-      font-size: 1.1rem;
-      color: #475569;
-      margin-bottom: 2rem;
-      border-left: 4px solid #2563eb;
-      padding-left: 1rem;
-      background: #f8fafc;
-      border-radius: 0 12px 12px 0;
-    }
-    .tool-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-bottom: 2.5rem;
-    }
-    @media (max-width: 780px) {
-      .tool-grid { grid-template-columns: 1fr; }
-      .container { padding: 1.5rem; }
-      h1 { font-size: 1.8rem; }
-    }
-    /* left panel */
-    .input-panel {
-      background: #f9fafc;
-      padding: 1.8rem;
-      border-radius: 1.8rem;
-      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02), 0 8px 18px -8px rgba(0,20,40,0.08);
-    }
-    .input-group {
-      margin-bottom: 1.5rem;
-    }
-    .input-group label {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-weight: 600;
-      font-size: 0.95rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
       color: #0f172a;
     }
-    .input-group label i {
-      color: #2563eb;
-      width: 1.2rem;
+    .subhead {
+      font-size: 1.2rem;
+      color: #475569;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
     }
-    input, select {
-      width: 100%;
-      padding: 0.8rem 1rem;
-      border: 1px solid #d1d9e6;
-      border-radius: 14px;
-      font-size: 1rem;
-      background: white;
-      transition: 0.2s;
-      font-family: 'Inter', sans-serif;
-    }
-    input:focus, select:focus {
-      outline: 2px solid #2563eb;
-      border-color: transparent;
-      box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
-    }
-    .range-wrap {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-    .range-wrap input[type="range"] {
-      flex: 1;
-      padding: 0;
-      border: none;
-      background: transparent;
-      accent-color: #2563eb;
-    }
-    .range-value {
-      min-width: 2.8rem;
-      font-weight: 600;
-      background: #eef2f6;
-      padding: 0.2rem 0.6rem;
-      border-radius: 40px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    .btn-primary {
-      background: #2563eb;
-      border: none;
-      color: white;
-      font-weight: 600;
-      padding: 1rem 1.8rem;
-      border-radius: 40px;
-      font-size: 1.1rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      width: 100%;
-      cursor: pointer;
-      transition: 0.2s;
-      margin-top: 0.4rem;
-      box-shadow: 0 8px 16px -6px rgba(37,99,235,0.3);
-    }
-    .btn-primary:hover {
-      background: #1d4ed8;
-      transform: scale(0.98);
-      box-shadow: 0 4px 10px -4px #2563eb80;
-    }
-    .btn-secondary {
-      background: #e9edf2;
-      border: none;
-      color: #1e293b;
-      font-weight: 500;
-      padding: 0.7rem 1.4rem;
-      border-radius: 40px;
-      font-size: 0.95rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    .btn-secondary:hover { background: #dce2ec; }
-    .action-row {
+    .tool-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 1.2rem;
-      justify-content: space-between;
+      gap: 2rem;
+      background: #f8fafc;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid #e2e8f0;
     }
-    /* right panel (barcode display) */
-    .preview-panel {
-      background: white;
-      border-radius: 1.8rem;
-      padding: 1.8rem 1.2rem;
+    .tool-form {
+      flex: 1 1 300px;
+    }
+    .tool-preview {
+      flex: 1 1 300px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      border: 1px solid #e9edf4;
-      box-shadow: 0 8px 20px -12px rgba(0,0,0,0.08);
-      min-height: 300px;
+      background: white;
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
-    #barcode-canvas {
+    label {
+      font-weight: 600;
+      display: block;
+      margin: 1rem 0 0.3rem;
+      font-size: 0.95rem;
+      color: #1e293b;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 1rem;
+      font-size: 1rem;
+      background: white;
+      transition: 0.2s;
+    }
+    input:focus, select:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.25);
+    }
+    .btn {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.8rem;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 1.2rem;
+      width: 100%;
+    }
+    .btn:hover {
+      background: #2563eb;
+      transform: scale(0.98);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #3b82f6;
+      color: #3b82f6;
+      margin-top: 0.5rem;
+    }
+    .btn-outline:hover {
+      background: #eef2ff;
+    }
+    #barcode-svg {
       max-width: 100%;
       height: auto;
       background: white;
-      border-radius: 12px;
-      padding: 0.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      padding: 0.75rem;
+      border-radius: 1rem;
+      border: 1px dashed #cbd5e1;
     }
-    .barcode-hint {
-      color: #64748b;
-      font-size: 0.9rem;
-      margin-top: 0.8rem;
+    .barcode-placeholder {
+      color: #94a3b8;
+      font-size: 0.95rem;
       text-align: center;
+      padding: 2rem 0;
     }
-    .barcode-format-badge {
-      background: #eef2f6;
-      padding: 0.25rem 1rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.3px;
-      color: #1e293b;
+    .format-hint {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-top: 0.25rem;
     }
-    /* article section */
     .article {
       margin-top: 2.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 650;
+      margin: 2rem 0 0.8rem;
+      letter-spacing: -0.01em;
+      color: #0f172a;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+      color: #1e293b;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .highlight {
+      background: #f1f5f9;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      font-family: monospace;
+    }
+    .callout {
+      background: #eef2ff;
+      border-left: 5px solid #3b82f6;
+      padding: 1.2rem 1.5rem;
+      border-radius: 1rem;
+      margin: 1.5rem 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #64748b;
+      font-size: 0.9rem;
       border-top: 1px solid #e2e8f0;
       padding-top: 2rem;
     }
-    .article h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin-top: 1.8rem;
-      margin-bottom: 0.8rem;
-      letter-spacing: -0.01em;
+    @media (max-width: 700px) {
+      .container { padding: 1.5rem; }
+      h1 { font-size: 1.8rem; }
     }
-    .article h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: #0f172a;
-    }
-    .article p {
-      margin-bottom: 1.2rem;
-      color: #1e293b;
-    }
-    .article ul {
-      margin: 0.8rem 0 1.5rem 1.5rem;
-    }
-    .article li {
-      margin-bottom: 0.4rem;
-    }
-    .tip-box {
-      background: #f1f5fe;
-      border-left: 5px solid #2563eb;
-      padding: 1.2rem 1.8rem;
-      border-radius: 20px;
-      margin: 1.8rem 0;
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>📦 Barcode Generator · Free Online Tool</h1>
+  <div class="subhead">Generate barcodes online free — instantly create EAN‑13, Code128, UPC‑A & more. No sign‑up, no cost.</div>
 
+  <!-- interactive tool -->
+  <div class="tool-grid">
+    <div class="tool-form">
+      <label for="barcode-input">Barcode content *</label>
+      <input type="text" id="barcode-input" value="5901234123457" placeholder="e.g. 5901234123457 or ABC-123">
+      <div class="format-hint">Numbers for EAN/UPC, alphanumeric for Code128</div>
+
+      <label for="barcode-format">Barcode type</label>
+      <select id="barcode-format">
+        <option value="CODE128">Code128 (alphanumeric, flexible)</option>
+        <option value="EAN13" selected>EAN‑13 (13 digits)</option>
+        <option value="UPCA">UPC‑A (12 digits)</option>
+        <option value="CODE39">Code39 (alphanumeric)</option>
+        <option value="ITF">ITF (even digits)</option>
+        <option value="MSI">MSI (digits)</option>
+      </select>
+
+      <label for="barcode-width">Width (px)</label>
+      <input type="number" id="barcode-width" value="2" min="1" max="10" step="0.5">
+
+      <label for="barcode-height">Height (px)</label>
+      <input type="number" id="barcode-height" value="80" min="30" max="300">
+
+      <label>Background</label>
+      <div style="display:flex;gap:0.5rem;align-items:center;margin-top:0.2rem;">
+        <input type="color" id="barcode-bg" value="#ffffff" style="width:3rem;padding:0.2rem;height:2.5rem;">
+        <span style="color:#475569;">white</span>
+        <input type="color" id="barcode-linecolor" value="#000000" style="width:3rem;padding:0.2rem;height:2.5rem;margin-left:1rem;">
+        <span style="color:#475569;">bar color</span>
+      </div>
+
+     
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>

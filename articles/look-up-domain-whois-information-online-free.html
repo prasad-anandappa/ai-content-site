@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 Look Up Domain Whois Information Online Free You Need to Know About | Free Online DEV Tool</title>
-    <meta name="description" content="This is a complete, self-contained HTML document that creates an interactive WHOIS lookup tool. You can run it directly in your browser to search for domain">
+    <meta name="description" content="This is a complete, self-contained HTML webpage for a WHOIS Lookup tool. It allows you to search for domain registration details directly in your browser,">
     <meta name="keywords" content="Look up domain WHOIS information online free">
     <meta name="google-adsense-account" content="pub-6951897340230511">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6951897340230511" crossorigin="anonymous"></script>
@@ -128,259 +128,245 @@
 
         <div style="background:white; border-radius:12px; padding:25px; margin:20px 0; box-shadow:0 1px 5px rgba(0,0,0,0.05);">
             <h2 style="color:#0066cc; margin-bottom:15px;">About This Tool</h2>
-            This is a complete, self-contained HTML document that creates an interactive WHOIS lookup tool. You can run it directly in your browser to search for domain registration information.
+            This is a complete, self-contained HTML webpage for a WHOIS Lookup tool. It allows you to search for domain registration details directly in your browser, combining a practical tool with an informative guide.
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WHOIS Lookup · Look up domain WHOIS information online free</title>
-  <!-- Font Awesome for icons (free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-    }
-    body {
-      background: linear-gradient(145deg, #f5f9ff 0%, #eef3fc 100%);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1rem;
-    }
-    .container {
-      max-width: 1200px;
-      width: 100%;
-    }
-
-    /* tool card */
-    .whois-card {
-      background: #ffffff;
-      border-radius: 40px;
-      padding: 2.5rem 2.8rem;
-      box-shadow: 0 20px 40px -12px rgba(0, 20, 50, 0.2);
-      margin-bottom: 3rem;
-      transition: box-shadow 0.2s;
-    }
-    .whois-header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.75rem 1.5rem;
-      margin-bottom: 1.8rem;
-    }
-    .whois-header h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: #0a1f44;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-    .whois-header h1 i {
-      color: #2563eb;
-      font-size: 2rem;
-    }
-    .badge-free {
-      background: #dcfce7;
-      color: #166534;
-      font-weight: 600;
-      font-size: 0.85rem;
-      padding: 0.4rem 1.2rem;
-      border-radius: 40px;
-      letter-spacing: 0.3px;
-      border: 1px solid #bbf7d0;
-      white-space: nowrap;
-    }
-    .lookup-form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-bottom: 1.5rem;
-      align-items: center;
-    }
-    .lookup-form input {
-      flex: 2 1 280px;
-      padding: 1rem 1.5rem;
-      border: 2px solid #e2e8f0;
-      border-radius: 60px;
-      font-size: 1.1rem;
-      background: #f8fafc;
-      transition: 0.2s;
-    }
-    .lookup-form input:focus {
-      border-color: #2563eb;
-      outline: none;
-      background: white;
-      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
-    }
-    .lookup-form button {
-      background: #0a1f44;
-      color: white;
-      border: none;
-      padding: 1rem 2.2rem;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      cursor: pointer;
-      transition: 0.15s;
-      box-shadow: 0 6px 12px rgba(10, 31, 68, 0.15);
-    }
-    .lookup-form button:hover {
-      background: #1e3a8a;
-      transform: scale(1.02);
-    }
-    .lookup-form button:active {
-      transform: scale(0.96);
-    }
-    .lookup-form button i {
-      font-size: 1rem;
-    }
-
-    #resultArea {
-      background: #f1f5fe;
-      border-radius: 28px;
-      padding: 1.6rem 1.8rem;
-      min-height: 80px;
-      margin-top: 1rem;
-      border: 1px solid #dbeafe;
-      color: #0b2b4b;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      word-break: break-word;
-    }
-    .result-placeholder {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      color: #3b5f8a;
-    }
-    .result-placeholder i {
-      font-size: 2rem;
-      color: #2563eb;
-      opacity: 0.6;
-    }
-    .whois-data {
-      white-space: pre-wrap;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.9rem;
-      background: #0a1f44;
-      color: #c7e2ff;
-      padding: 1.5rem;
-      border-radius: 24px;
-      overflow-x: auto;
-      margin-top: 0.5rem;
-    }
-    .error-message {
-      color: #b91c1c;
-      background: #fee2e2;
-      padding: 1rem 1.5rem;
-      border-radius: 40px;
-      font-weight: 500;
-    }
-
-    /* article styling */
-    .article {
-      background: white;
-      border-radius: 40px;
-      padding: 2.8rem 3rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-      margin-bottom: 2rem;
-    }
-    .article h2 {
-      font-size: 2rem;
-      margin: 1.8rem 0 1rem;
-      color: #0a1f44;
-      border-left: 6px solid #2563eb;
-      padding-left: 1.2rem;
-    }
-    .article h2:first-of-type {
-      margin-top: 0.2rem;
-    }
-    .article h3 {
-      font-size: 1.5rem;
-      margin: 1.8rem 0 0.8rem;
-      color: #1e3a8a;
-    }
-    .article p {
-      font-size: 1.08rem;
-      line-height: 1.7;
-      color: #1f2937;
-      margin-bottom: 1.2rem;
-    }
-    .article ul {
-      margin: 1rem 0 1.8rem 1.8rem;
-    }
-    .article li {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 0.5rem;
-      list-style-type: '🔍 ';
-      padding-left: 0.6rem;
-    }
-    .article li strong {
-      color: #0a1f44;
-    }
-    .highlight-tip {
-      background: #f0f7ff;
-      border-radius: 30px;
-      padding: 1.5rem 2rem;
-      margin: 1.8rem 0;
-      border-left: 6px solid #2563eb;
-    }
-    .cta-box {
-      background: #0a1f44;
-      color: white;
-      border-radius: 40px;
-      padding: 2rem 2.5rem;
-      margin: 2rem 0 1rem;
-      text-align: center;
-    }
-    .cta-box h3 {
-      color: white;
-      margin-top: 0;
-      font-size: 1.8rem;
-    }
-    .cta-box p {
-      color: #dbeafe;
-      font-size: 1.1rem;
-    }
-    .cta-box i {
-      color: #93c5fd;
-      margin-right: 0.3rem;
-    }
-
-    footer {
-      text-align: center;
-      color: #4b6b8a;
-      padding: 1.5rem 0 0.5rem;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 640px) {
-      .whois-card, .article { padding: 1.8rem 1.2rem; }
-      .whois-header h1 { font-size: 1.8rem; }
-      .lookup-form input { font-size: 1rem; }
-      .article h2 { font-size: 1.6rem; }
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-
-  <!-- TOOL -->
-  <div class="whois-card">
-    <div class="whois-header">
-      <h1><i class
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHOIS Lookup · free domain info tool</title>
+    <!-- Font Awesome 6 (free) for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        body {
+            background: #f6f9fc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem 3rem;
+        }
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.15);
+            padding: 2rem 2rem 3rem;
+            transition: all 0.2s ease;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0b2b3c;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        h1 i {
+            color: #1f7faa;
+            font-size: 2rem;
+        }
+        .subhead {
+            font-size: 1.1rem;
+            color: #2c4a5e;
+            margin-top: 0.25rem;
+            border-left: 4px solid #3b9bc7;
+            padding-left: 1rem;
+            background: #f0f7fb;
+            border-radius: 0 12px 12px 0;
+            padding: 0.6rem 1.2rem;
+            display: inline-block;
+        }
+        .tool-panel {
+            background: #eef5fa;
+            border-radius: 28px;
+            padding: 1.8rem 2rem;
+            margin: 2rem 0 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: inset 0 2px 6px rgba(0,0,0,0.02), 0 8px 18px -8px rgba(0,40,60,0.08);
+        }
+        .tool-panel label {
+            font-weight: 600;
+            color: #0a3142;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        .tool-panel input {
+            flex: 2 1 260px;
+            padding: 0.9rem 1.2rem;
+            border: 1px solid #cbdde8;
+            border-radius: 60px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .tool-panel input:focus {
+            border-color: #1f7faa;
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(31,127,170,0.15);
+        }
+        .tool-panel button {
+            background: #0b2b3c;
+            border: none;
+            color: white;
+            padding: 0.9rem 2.2rem;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 16px -6px rgba(11,43,60,0.2);
+            letter-spacing: 0.3px;
+        }
+        .tool-panel button:hover {
+            background: #124c66;
+            transform: scale(1.02);
+            box-shadow: 0 12px 20px -8px rgba(11,43,60,0.3);
+        }
+        .tool-panel button:active {
+            transform: scale(0.97);
+        }
+        #lookupFeedback {
+            margin-top: 0.8rem;
+            width: 100%;
+            font-size: 0.95rem;
+            color: #144a5e;
+            background: #d9e9f3;
+            padding: 0.6rem 1.4rem;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .whois-result {
+            background: #fafdff;
+            border: 1px solid #ddecf5;
+            border-radius: 24px;
+            padding: 1.8rem;
+            margin: 1.2rem 0 2rem;
+            white-space: pre-wrap;
+            font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            max-height: 380px;
+            overflow-y: auto;
+            color: #1a3343;
+            box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);
+        }
+        .whois-placeholder {
+            color: #6f8b9c;
+            font-family: inherit;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .article {
+            margin-top: 2rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #0b2b3c;
+            margin: 1.8rem 0 0.8rem;
+            letter-spacing: -0.01em;
+        }
+        h2 i {
+            color: #1f7faa;
+            margin-right: 10px;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1b4a5e;
+            margin: 1.6rem 0 0.6rem;
+        }
+        p {
+            line-height: 1.7;
+            color: #1d3849;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        ul {
+            margin: 0.8rem 0 1.6rem 1.6rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+            color: #1d3849;
+        }
+        .highlight {
+            background: #e5f0f7;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .cta-box {
+            background: #0b2b3c;
+            color: white;
+            border-radius: 28px;
+            padding: 2rem 2.5rem;
+            margin: 2.5rem 0 1rem;
+            text-align: center;
+        }
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+            font-weight: 600;
+        }
+        .cta-box p {
+            color: #d6e9f5;
+            margin-bottom: 1.2rem;
+        }
+        .cta-button {
+            background: #f6c343;
+            color: #0b2b3c;
+            border: none;
+            padding: 0.9rem 2.8rem;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .cta-button i {
+            margin-right: 8px;
+        }
+        .cta-button:hover {
+            background: #ffd966;
+            transform: translateY(-2px);
+        }
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #5a7b8e;
+            border-top: 1px solid #d5e3ed;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1.5
         </div>
 
         <a href="../index.html" class="back-link">&larr; Back to Tools</a>
