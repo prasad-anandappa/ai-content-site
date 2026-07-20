@@ -73,11 +73,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://prasadreactjs.github.io/ai-content-site/articles/best-project-management-software.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://prasadreactjs.github.io/ai-content-site/articles/best-travel-gear.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://prasadreactjs.github.io/ai-content-site/articles/best-vpn-service.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prasadreactjs.github.io/ai-content-site/articles/best-vpn.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -246,6 +254,10 @@
   </url>
   <url>
     <loc>https://prasadreactjs.github.io/ai-content-site/articles/industry-analysis.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prasadreactjs.github.io/ai-content-site/articles/instant-pot.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
